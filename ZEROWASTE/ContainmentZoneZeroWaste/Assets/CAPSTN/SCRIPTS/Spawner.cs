@@ -71,12 +71,6 @@ public class Spawner : MonoBehaviour
         OnSpawnerFinished();
     }
 
-    private IEnumerator PrepareNextWave()
-    {
-        yield return new WaitForSeconds(3f);
-        StartWave();
-    }
-
     private void OnSpawnerFinished()
     {
         GameManager.Instance._isWaveRunning = false;
@@ -84,8 +78,6 @@ public class Spawner : MonoBehaviour
         currentWaveIndex++;
         if (currentWaveIndex == waves.Length)
             return;
-        
-        //StartCoroutine(PrepareNextWave());
     }
     #endregion
 }
