@@ -14,6 +14,8 @@ public class TowerGhost : MonoBehaviour
 
     private SpriteRenderer ghostSprite;
 
+    public TowerData GhostData { get { return towerData; } set { towerData = value; } }
+
     private void Start()
     {
         ghostSprite = GetComponent<SpriteRenderer>();
