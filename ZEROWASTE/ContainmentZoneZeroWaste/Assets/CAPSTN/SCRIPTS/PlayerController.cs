@@ -7,7 +7,11 @@ public class PlayerController : MonoBehaviour
     {
         foreach(GameObject spawner in GameObject.FindGameObjectsWithTag("Spawner"))
         {
-            spawner.GetComponent<Spawner>().StartWave();
+            if(spawner.GetComponent<Spawner>() != null)
+                spawner.GetComponent<Spawner>().StartWave();
+
+            if (spawner.GetComponent<ScrapSpawner>() != null)
+                spawner.GetComponent<ScrapSpawner>().StartSpawner();
         }
     }
 }
