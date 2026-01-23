@@ -39,13 +39,16 @@ public class ScrapSpawner : MonoBehaviour
 
     private IEnumerator SpawnScrap()
     {
-        yield return new WaitForSeconds(randomSpawnTimer);
+        while(true)
+        {
+            yield return new WaitForSeconds(randomSpawnTimer);
 
-        GameObject scrapGO = Instantiate(scrapPrefabs[randomIndex], transform.position, Quaternion.identity);
-        Scraps scrap = scrapGO.GetComponent<Scraps>();
-        scrap.InitializeScrap(washStation, salvageStation, waypoints);
+            GameObject scrapGO = Instantiate(scrapPrefabs[randomIndex], transform.position, Quaternion.identity);
+            Scraps scrap = scrapGO.GetComponent<Scraps>();
+            scrap.InitializeScrap(washStation, salvageStation, waypoints);
 
-        randomSpawnTimer = Random.Range(1f, 3f);
-        randomIndex = Random.Range(0, scrapPrefabs.Count - 1);
+            randomSpawnTimer = Random.Range(1f, 3f);
+            randomIndex = Random.Range(0, scrapPrefabs.Count - 1);
+        }
     }
 }
