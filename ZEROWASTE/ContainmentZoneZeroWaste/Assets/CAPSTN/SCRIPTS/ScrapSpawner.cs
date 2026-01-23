@@ -5,50 +5,49 @@ using System.Collections;
 
 public class ScrapSpawner : MonoBehaviour
 {
-    public static ScrapSpawner Instance { get; private set; }
     [Header("References")]
-    [SerializeField] private Transform washStation;
-    [SerializeField] private Transform salvageStation;
-    [SerializeField] private Transform[] waypoints;
-    [SerializeField] private List<GameObject> scrapPrefabs = new List<GameObject>();
+    [SerializeField] private GameObject[] srapPrefabs;
+    [SerializeField] private BoxCollider2D dumpArea;
 
-    private float randomSpawnTimer;
-    private int randomIndex;
+    [Header("Attributes")]
+    [SerializeField] private float minSpawnRate = 4f, maxSpawnRate =  8f;
 
-    private void Awake()
+    private int index = 0;
+    private float spawnTime = 0.1f;
+
+    private void Update()
     {
-        Instance = this;
-    }
-
-    private void Start()
-    {
-        if (scrapPrefabs.Count == 0)
-        {
-            Debug.LogWarning("Scrap prefab list is empty");
-            return;
-        }
-
-        randomSpawnTimer = Random.Range(1f, 3f);
-        randomIndex = Random.Range(0, scrapPrefabs.Count -1);
+        
     }
 
     public void StartSpawner()
     {
-        StartCoroutine(SpawnScrap());
+        StartCoroutine(SpawnScrapResource());
     }
 
-    private IEnumerator SpawnScrap()
+    private Vector2 GetRandomPointInBounds(Bounds bounds)
+    {
+        float x = Random.Range(bounds.min.x, bounds.max.x);
+        float y = Random.Range(bounds.min.y, bounds.max.y);
+        return new Vector2(x, y);
+    }
+
+    private void Randomize()
+    {
+        index = Random.Range(0, srapPrefabs.Length -1);
+        spawnTime = Random.Range(minSpawnRate, maxSpawnRate);
+    }
+
+    private IEnumerator SpawnScrapResource()
     {
         while(true)
         {
-            yield return new WaitForSeconds(randomSpawnTimer);
+            yield return new WaitForSeconds(spawnTime);
 
-            GameObject scrapGO = Instantiate(scrapPrefabs[randomIndex], transform.position, Quaternion.identity);
-            Scraps scrap = scrapGO.GetComponent<Scraps>();
-            scrap.InitializeScrap(washStation, salvageStation, waypoints);
+            Vector2 spawnPos = GetRandomPointInBounds(dumpArea.bounds);
+            GameObject scrapGO = Instantiate(srapPrefabs[index], spawnPos, Quaternion.identity);
 
-            randomSpawnTimer = Random.Range(1f, 3f);
-            randomIndex = Random.Range(0, scrapPrefabs.Count - 1);
+            Randomize();
         }
     }
 }
