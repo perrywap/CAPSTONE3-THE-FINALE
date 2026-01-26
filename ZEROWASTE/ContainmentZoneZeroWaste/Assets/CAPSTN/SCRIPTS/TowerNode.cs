@@ -1,14 +1,15 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class TowerNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+public class TowerNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [Header("References")]
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Color hoverColor;
 
-    private GameObject tower;
     private Color startColor;
+
+    public bool isOccupied;
 
     private void Start()
     {
@@ -23,10 +24,5 @@ public class TowerNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public void OnPointerExit(PointerEventData eventData)
     {
         sr.color = startColor;
-    }
-
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        Debug.Log("Build tower here");
     }
 }
