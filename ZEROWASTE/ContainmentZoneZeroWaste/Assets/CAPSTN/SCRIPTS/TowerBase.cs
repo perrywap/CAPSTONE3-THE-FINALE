@@ -10,19 +10,20 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 {
     #region VARIABLES
     [Header("References")]
-    [SerializeField] private GameObject attackRangeGO;
-    [SerializeField] private Transform turretRotationPoint;
-    [SerializeField] private LayerMask enemyMask;
-    [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private Transform firingPoint;
+    [SerializeField] protected GameObject attackRangeGO;
+    [SerializeField] protected Transform turretRotationPoint;
+    [SerializeField] protected LayerMask enemyMask;
+    [SerializeField] protected GameObject bulletPrefab;
+    [SerializeField] protected Transform firingPoint;
 
     [Header("Attributes")]
-    [SerializeField] private float attackRange = 5f;
-    [SerializeField] private float rotationSpeed = 250f;
-    [SerializeField] private float bps = 1f; // Bullets Per Second
+    [SerializeField] protected float attackRange = 5f;
+    [SerializeField] protected float rotationSpeed = 250f;
+    [SerializeField] protected float bps = 1f; 
+    [SerializeField] protected float damage = 10f; 
 
-    private Transform target;
-    private float timeUntilFire;
+    protected Transform target;
+    protected float timeUntilFire;
 
     #endregion
 
@@ -80,12 +81,13 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
     private bool CheckTargetIsInRange()
     {
+        if (target == null) return false; 
         return Vector2.Distance(target.position, transform.position) <= attackRange;
     }
 
     private void UpdateAttackRangeVisual()
     {
-        float diameter = attackRange / 2f;
+        float diameter = attackRange * 2f; 
 
         attackRangeGO.transform.localScale = new Vector3(
             diameter,
@@ -98,7 +100,9 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     {
         GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
+        
         bulletScript.SetTarget(target);
+        bulletScript.SetDamage(damage);
     }
     #endregion
 
@@ -121,7 +125,7 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Clickerd");
+        Debug.Log("Clicked Tower");
     }
     #endregion
 }
