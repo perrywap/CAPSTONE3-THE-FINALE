@@ -28,7 +28,13 @@ public class TowerGhost : MonoBehaviour
         CheckForNodes();
 
         if(Mouse.current.rightButton.wasPressedThisFrame)
-            Destroy(gameObject);
+            OnCancelBuildClicked();
+    }
+
+    private void OnCancelBuildClicked()
+    {
+        PlayerController.Instance.isBuilding = false;
+        Destroy(gameObject);
     }
 
     private void CheckForNodes()
@@ -58,10 +64,8 @@ public class TowerGhost : MonoBehaviour
 
             if (Mouse.current.leftButton.wasPressedThisFrame)
             {
-                GameObject towerToBuild =
-                    Instantiate(towerData.towerPrefab, transform.position, Quaternion.identity);
-
                 hoveredNode.isOccupied = true;
+                OnBuildTower();
             }
         }
     }
@@ -93,5 +97,12 @@ public class TowerGhost : MonoBehaviour
             return null;
 
         return hit.collider.GetComponent<TowerNode>();
+    }
+
+    private void OnBuildTower()
+    {
+        Instantiate(towerData.towerPrefab, transform.position,  Quaternion.identity);
+
+        OnCancelBuildClicked();
     }
 }
