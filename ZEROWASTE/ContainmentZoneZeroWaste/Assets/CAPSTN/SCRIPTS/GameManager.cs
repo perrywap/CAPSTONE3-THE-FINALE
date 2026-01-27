@@ -26,9 +26,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int glassShard;
 
     [Header("SPAWNED UNITS")]
-    public List<GameObject> _enemies = new List<GameObject>();
+    public List<GameObject> enemies = new List<GameObject>();
 
-    public bool _isWaveRunning;
+    public bool isWaveRunning;
 
     public TextMeshProUGUI WaveText { get { return waveTxt; } set { waveTxt = value; } }
     #endregion
@@ -43,39 +43,37 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         HudManager();
-        
+        plasticFilament = inventory[ResourceType.PLASTIC];
+        metalScrap = inventory[ResourceType.METAL];
+        glassShard = inventory[ResourceType.GLASS];
     }
     #endregion
 
     #region METHODS
     private void HudManager()
     {
-        plasticFilament = inventory[ResourceType.PLASTIC];
-        metalScrap = inventory[ResourceType.METAL];
-        glassShard = inventory[ResourceType.GLASS];
-
         healthTxt.text = health.ToString();
-        plasticTxt.text = plasticFilament.ToString();
-        metalTxt.text = metalScrap.ToString();
-        glassTxt.text = glassShard.ToString();
+        plasticTxt.text = inventory[ResourceType.PLASTIC].ToString();
+        metalTxt.text = inventory[ResourceType.METAL].ToString();
+        glassTxt.text = inventory[ResourceType.GLASS].ToString();
 
-        startWaveBtn.SetActive(_isWaveRunning || _enemies.Count != 0 ? false : true);
+
+        startWaveBtn.SetActive(isWaveRunning || enemies.Count != 0 ? false : true);
     }
 
     private void InitializeInventory()
     {
-        inventory[ResourceType.PLASTIC] = plasticFilament;
-        inventory[ResourceType.METAL] = metalScrap;
-        inventory[ResourceType.GLASS] = glassShard;
+        inventory[ResourceType.PLASTIC] = 0;
+        inventory[ResourceType.METAL] = 0;
+        inventory[ResourceType.GLASS] = 0;
     }
-
     public void AddMaterial(ResourceEntry entry)
     {
         if (!inventory.ContainsKey(entry.resourceType))
         {
             inventory[entry.resourceType] = 0;
         }
-
+        
         inventory[entry.resourceType] += entry.resourceCost;
     }
 

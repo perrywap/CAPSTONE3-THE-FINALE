@@ -18,7 +18,7 @@ public class EnemyBase : MonoBehaviour
 
     public void Die()
     {
-        GameManager.Instance._enemies.Remove(gameObject);
+        GameManager.Instance.enemies.Remove(gameObject);
         Destroy(gameObject);
     }
 }
