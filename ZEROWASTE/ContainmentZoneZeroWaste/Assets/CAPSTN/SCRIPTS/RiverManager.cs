@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public enum RiverState
@@ -14,14 +13,13 @@ public class RiverManager : MonoBehaviour
 
     [Header("River Settings")]
     [Range(0f, 100f)]
-    [SerializeField] private float currentValue = 100;
-    [SerializeField] private float maxValue = 100;
-
+    [SerializeField] private float currentValue = 100f;
+    [SerializeField] private float maxValue = 100f;
+    [SerializeField] private float regenRate = 2f;
 
     [Header("River State Thresholds")]
-    [SerializeField] private float dirtyThreshold = 30;
-    [SerializeField] private float cleanThreshold = 70;
-
+    [SerializeField] private float dirtyThreshold = 30f;
+    [SerializeField] private float cleanThreshold = 70f;
 
     [Header("Visuals")]
     [SerializeField] private SpriteRenderer riverRenderer;
@@ -35,35 +33,43 @@ public class RiverManager : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
-
-        StartCoroutine(RiverTest());
     }
 
     private void Update()
     {
+        HandleRiverFlow();
         UpdateState();
         UpdateVisual();
+    }
+
+    private void HandleRiverFlow()
+    {
+        float totalDamage = 0f;
+
+        foreach (GameObject enemy in GameManager.Instance.enemies)
+        {
+            EnemyBase enemyBase = enemy.GetComponent<EnemyBase>();
+
+            if (enemyBase != null)
+                totalDamage += enemyBase.RiverDamagePerSecond * Time.deltaTime;
+        }
+
+        if (totalDamage > 0)
+            DamageRiver(totalDamage);
+        else
+            CleanRiver(regenRate * Time.deltaTime);
     }
 
     public void DamageRiver(float amount)
     {
         currentValue -= amount;
         currentValue = Mathf.Clamp(currentValue, 0, maxValue);
-        UpdateState();
-        UpdateVisual();
     }
 
     public void CleanRiver(float amount)
     {
         currentValue += amount;
         currentValue = Mathf.Clamp(currentValue, 0, maxValue);
-        UpdateState();
-        UpdateVisual();
-    }
-
-    public RiverState GetRiverState()
-    {
-        return CurrentState;
     }
 
     private void UpdateState()
@@ -74,8 +80,6 @@ public class RiverManager : MonoBehaviour
             CurrentState = RiverState.Clean;
         else
             CurrentState = RiverState.Normal;
-
-
     }
 
     private void UpdateVisual()
@@ -83,17 +87,12 @@ public class RiverManager : MonoBehaviour
         if (riverRenderer == null)
             return;
 
-        float t = (float)currentValue / maxValue;
+        float t = currentValue / maxValue;
         riverRenderer.color = riverGradient.Evaluate(t);
     }
 
-    private IEnumerator RiverTest()
+    public RiverState GetRiverState()
     {
-        while(true)
-        {
-            yield return new WaitForSeconds(0.1f);
-            DamageRiver(0.5f);
-        }
-        
+        return CurrentState;
     }
 }
