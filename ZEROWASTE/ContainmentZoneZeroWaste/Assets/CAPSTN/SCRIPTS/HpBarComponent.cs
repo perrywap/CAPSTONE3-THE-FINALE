@@ -28,7 +28,10 @@ public class HpBarComponent : MonoBehaviour
     {
         currentHp -= amount;
 
-        StartCoroutine(ShowHpBar());
+        this.gameObject.SetActive(true);
+
+        StopAllCoroutines();
+        StartCoroutine(HideHpBarAfterDelay());
 
         if (currentHp <= 0)
         {
@@ -38,9 +41,8 @@ public class HpBarComponent : MonoBehaviour
         }
     }
 
-    private IEnumerator ShowHpBar()
+    private IEnumerator HideHpBarAfterDelay()
     {
-        this.gameObject.SetActive(true);
         yield return new WaitForSeconds(2f);
         this.gameObject.SetActive(false);
     }
