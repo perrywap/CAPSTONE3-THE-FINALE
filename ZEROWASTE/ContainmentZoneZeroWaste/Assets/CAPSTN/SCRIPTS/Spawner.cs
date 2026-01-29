@@ -37,7 +37,7 @@ public class Spawner : MonoBehaviour
     #region METHODS
     public void StartWave()
     {
-        GameManager.Instance._isWaveRunning = true;
+        GameManager.Instance.isWaveRunning = true;
         GameManager.Instance.WaveText.text = $"Wave: {currentWaveIndex + 1}";
 
         currentWaveEnemies = waves[currentWaveIndex]._enemiesToSpawn;
@@ -53,7 +53,7 @@ public class Spawner : MonoBehaviour
         waypointMovement.Waypoints = waypoints;
 
         // THIS SHOULD BE ADDED TO GAME MANAGER > SPAWNED ENEMY LIST
-        GameManager.Instance._enemies.Add(enemyGO);
+        GameManager.Instance.enemies.Add(enemyGO);
     }
 
     private IEnumerator StartSpawner()
@@ -73,7 +73,7 @@ public class Spawner : MonoBehaviour
 
     private void OnSpawnerFinished()
     {
-        GameManager.Instance._isWaveRunning = false;
+        GameManager.Instance.isWaveRunning = false;
 
         currentWaveIndex++;
         if (currentWaveIndex == waves.Length)

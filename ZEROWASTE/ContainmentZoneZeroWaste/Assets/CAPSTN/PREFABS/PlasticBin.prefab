@@ -105,9 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f313dbb30858fd34e8cb7dee3833e367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scraps
-  materialEntry:
-    matType: 0
-    matCost: 10
+  resourceType: 0
+  amount: 10
 --- !u!61 &3298599224501521392
 BoxCollider2D:
   m_ObjectHideFlags: 0

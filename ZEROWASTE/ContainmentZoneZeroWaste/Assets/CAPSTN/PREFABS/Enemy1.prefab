@@ -108,9 +108,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab2a5a1d0756a84baa15ba32dc236d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBase
-  movespeed: 2
+  enemyType: 0
+  moveSpeed: 2
   rewardAmount: 10
-  isDead: 0
+  riverDamagePerSecond: 5
+  attackDamage: 10
+  attackRate: 1
+  attackRange: 0.75
 --- !u!114 &8930087432033449490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,7 +167,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.5, y: 0.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

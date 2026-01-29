@@ -4,7 +4,8 @@ public enum EnemyType
 {
     Normal,
     Fast,
-    Tank
+    Tank,
+    Sludge
 }
 
 public class EnemyBase : MonoBehaviour
@@ -13,6 +14,7 @@ public class EnemyBase : MonoBehaviour
     [SerializeField] private EnemyType enemyType;
     [SerializeField] private float moveSpeed = 2f;
     [SerializeField] private int rewardAmount = 10;
+    [SerializeField] private float riverDamagePerSecond = 0.1f;
 
     [Header("Attack")]
     [SerializeField] private float attackDamage = 10f;
@@ -27,6 +29,7 @@ public class EnemyBase : MonoBehaviour
 
     public float MoveSpeed => moveSpeed;
     public bool IsDead => isDead;
+    public float RiverDamagePerSecond => riverDamagePerSecond;
 
     void Start()
     {
@@ -38,18 +41,15 @@ public class EnemyBase : MonoBehaviour
 
     void Update()
     {
-        if (isDead || target == null || targetHp == null) return;
+        if (isDead || target == null || targetHp == null)
+            return;
 
         float distance = Vector2.Distance(transform.position, target.position);
 
         if (distance > attackRange)
-        {
             Move();
-        }
         else
-        {
             Attack();
-        }
     }
 
     void Move()
@@ -75,9 +75,7 @@ public class EnemyBase : MonoBehaviour
 
         isDead = true;
 
-        GameManager.Instance._enemies.Remove(gameObject);
-        //GameManager.Instance.AddCurrency(rewardAmount);
-
+        GameManager.Instance.enemies.Remove(gameObject);
         Destroy(gameObject);
     }
 }
