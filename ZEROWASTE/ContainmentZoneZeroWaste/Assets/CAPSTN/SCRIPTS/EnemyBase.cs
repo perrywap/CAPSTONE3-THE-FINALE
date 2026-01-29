@@ -17,8 +17,8 @@ public class EnemyBase : MonoBehaviour
     [SerializeField] private float riverDamagePerSecond = 0.1f;
 
     [Header("Attack")]
-    [SerializeField] private float attackDamage = 10f;
-    [SerializeField] private float attackRate = 1f;
+    [SerializeField] public float attackDamage = 10f;
+    [SerializeField] public float attackRate = 1f;
     [SerializeField] private float attackRange = 0.75f;
 
     private float attackCooldown;
