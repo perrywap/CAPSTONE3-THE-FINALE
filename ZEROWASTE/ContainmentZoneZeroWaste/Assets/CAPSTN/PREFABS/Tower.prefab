@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 1719683386933038190}
   m_Layer: 0
   m_Name: Tower
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -498,6 +498,7 @@ MonoBehaviour:
   attackRange: 2
   rotationSpeed: 250
   bps: 1
+  damage: 10
 --- !u!61 &1719683386933038190
 BoxCollider2D:
   m_ObjectHideFlags: 0
