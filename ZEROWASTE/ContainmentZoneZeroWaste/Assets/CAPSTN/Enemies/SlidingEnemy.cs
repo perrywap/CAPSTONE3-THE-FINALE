@@ -1,20 +1,23 @@
 using UnityEngine;
 
 public class SlidingEnemy : MonoBehaviour
-
 {
     private EnemyBase enemy;
     private HpBarComponent targetHp;
+    private WaypointMovement waypointMovement;
+
     private float attackCooldown;
+    private bool isAttacking;
 
     void Awake()
     {
         enemy = GetComponent<EnemyBase>();
+        waypointMovement = GetComponent<WaypointMovement>();
     }
 
     void Update()
     {
-        if (enemy.IsDead || targetHp == null)
+        if (enemy.IsDead || !isAttacking || targetHp == null)
             return;
 
         attackCooldown -= Time.deltaTime;
@@ -31,6 +34,14 @@ public class SlidingEnemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Turret"))
         {
             targetHp = collision.gameObject.GetComponentInChildren<HpBarComponent>();
+
+            if (targetHp != null)
+            {
+                isAttacking = true;
+
+                if (waypointMovement != null)
+                    waypointMovement.enabled = false;
+            }
         }
     }
 
@@ -39,6 +50,10 @@ public class SlidingEnemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Turret"))
         {
             targetHp = null;
+            isAttacking = false;
+
+            if (waypointMovement != null)
+                waypointMovement.enabled = true;
         }
     }
 }
