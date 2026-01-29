@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea02358dec0f9744ba3a10ec55278742, type: 3}
   m_Name: CannonShredder
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
-  towerCost: 0
-  towerGhost: {fileID: 0}
-  towerPrefab: {fileID: 0}
+  resourceEntry: []
+  towerGhost: {fileID: 21300000, guid: 543af990513e3544bafdd49f936b3a38, type: 3}
+  towerPrefab: {fileID: 5182420084640607954, guid: 60c28b04c49bb41a493022281a0ef371, type: 3}
