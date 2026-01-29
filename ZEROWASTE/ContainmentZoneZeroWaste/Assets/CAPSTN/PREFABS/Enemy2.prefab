@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2389348023367758236}
   - component: {fileID: -1947501097345636391}
   - component: {fileID: -5442750571535240549}
+  - component: {fileID: -3581460821024434148}
   m_Layer: 6
   m_Name: Enemy2
   m_TagString: Enemy
@@ -202,6 +203,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 7
+--- !u!114 &-3581460821024434148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7099406950619804989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8955cdafa83a8c441840199f68a148ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlidingEnemy
 --- !u!1 &7864381874676580525
 GameObject:
   m_ObjectHideFlags: 0

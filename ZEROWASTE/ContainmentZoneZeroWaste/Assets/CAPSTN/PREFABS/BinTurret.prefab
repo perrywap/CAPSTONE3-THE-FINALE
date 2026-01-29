@@ -390,10 +390,10 @@ GameObject:
   m_Component:
   - component: {fileID: 642169873975403491}
   - component: {fileID: 977081006463715938}
-  - component: {fileID: 6933253834398164926}
   - component: {fileID: 1719683386933038190}
+  - component: {fileID: -5566918438308729110}
   m_Layer: 0
-  m_Name: Tower
+  m_Name: BinTurret
   m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -476,29 +476,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &6933253834398164926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5182420084640607954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cf2e0e7566eda14384c4ebdba747202, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TowerBase
-  attackRangeGO: {fileID: 215979868801042889}
-  turretRotationPoint: {fileID: 5084092234888647909}
-  enemyMask:
-    serializedVersion: 2
-    m_Bits: 64
-  bulletPrefab: {fileID: 8639265676486719486, guid: 3a1d49f4290fda649a3ec174faad6e15, type: 3}
-  firingPoint: {fileID: 6350246248756106797}
-  attackRange: 2
-  rotationSpeed: 250
-  bps: 1
-  damage: 10
 --- !u!61 &1719683386933038190
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -545,6 +522,29 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-5566918438308729110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5182420084640607954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7235b60f92345dbba7154457d1fd24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BinTurret
+  attackRangeGO: {fileID: 215979868801042889}
+  turretRotationPoint: {fileID: 5084092234888647909}
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 64
+  bulletPrefab: {fileID: 8639265676486719486, guid: 3a1d49f4290fda649a3ec174faad6e15, type: 3}
+  firingPoint: {fileID: 6350246248756106797}
+  attackRange: 4
+  rotationSpeed: 300
+  bps: 3
+  damage: 3
 --- !u!1 &5616911711677782155
 GameObject:
   m_ObjectHideFlags: 0
