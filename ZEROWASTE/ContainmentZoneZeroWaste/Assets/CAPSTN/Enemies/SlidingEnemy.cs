@@ -24,8 +24,8 @@ public class SlidingEnemy : MonoBehaviour
 
         if (attackCooldown <= 0f)
         {
-            targetHp.TakeDamage(enemy.attackDamage);
-            attackCooldown = 1f / enemy.attackRate;
+            //targetHp.TakeDamage(enemy.attackDamage);
+            //attackCooldown = 1f / enemy.attackRate;
         }
     }
 
