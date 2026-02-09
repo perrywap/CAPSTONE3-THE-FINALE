@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea02358dec0f9744ba3a10ec55278742, type: 3}
-  m_Name: CannonShredder
+  m_Name: PlasticCatcher
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
+  towerName: 
+  placementType: 1
   resourceEntry: []
-  towerGhost: {fileID: 21300000, guid: 543af990513e3544bafdd49f936b3a38, type: 3}
-  towerPrefab: {fileID: 5182420084640607954, guid: 60c28b04c49bb41a493022281a0ef371, type: 3}
+  towerGhost: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  towerPrefab: {fileID: 2826954360497304227, guid: 8b30c75ec6cfe40ad8b4f639e646d71a, type: 3}

@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float zoomStep = 0.5f;
     [Range(1f, 2f)]
     [SerializeField] private float minCamSize =2f;
-    [Range(4f, 6f)]
+    [Range(4f, 14f)]
     [SerializeField] private float maxCamSize = 6f;
 
     private float minMapX, minMapY, maxMapX, maxMapY;

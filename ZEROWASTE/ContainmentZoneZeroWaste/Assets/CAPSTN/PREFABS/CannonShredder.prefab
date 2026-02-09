@@ -391,10 +391,10 @@ GameObject:
   - component: {fileID: 642169873975403491}
   - component: {fileID: 977081006463715938}
   - component: {fileID: 1719683386933038190}
-  - component: {fileID: -5566918438308729110}
+  - component: {fileID: 4463642820492997745}
   m_Layer: 0
-  m_Name: BinTurret
-  m_TagString: Turret
+  m_Name: CannonShredder
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -506,7 +506,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -522,7 +522,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-5566918438308729110
+--- !u!114 &4463642820492997745
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -531,20 +531,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 5182420084640607954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7235b60f92345dbba7154457d1fd24, type: 3}
+  m_Script: {fileID: 11500000, guid: f2f275827059c49bfa4bcb8a343f4a1f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BinTurret
+  m_EditorClassIdentifier: Assembly-CSharp::CannonShredder
   attackRangeGO: {fileID: 215979868801042889}
   turretRotationPoint: {fileID: 5084092234888647909}
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
-  bulletPrefab: {fileID: 8639265676486719486, guid: 3a1d49f4290fda649a3ec174faad6e15, type: 3}
+  bulletPrefab: {fileID: 5010924462462844205, guid: 867db89225f2f4bb1a0ba62ca3f6d950, type: 3}
   firingPoint: {fileID: 6350246248756106797}
-  attackRange: 10
-  rotationSpeed: 300
-  bps: 3
-  damage: 3
+  attackRange: 8
+  rotationSpeed: 80
+  bps: 0.5
+  damage: 40
+  laserWidth: 1.5
 --- !u!1 &5616911711677782155
 GameObject:
   m_ObjectHideFlags: 0

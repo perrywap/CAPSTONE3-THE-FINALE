@@ -56,7 +56,7 @@ public class Spawner : MonoBehaviour
     {
         Vector2 spawnPos = GetRandomPointInBounds(boxCol.bounds);
 
-        GameObject enemyGO = Instantiate(enemyToSpawn, spawnPos, Quaternion.identity);
+        GameObject enemyGO = Instantiate(enemyToSpawn, this.transform.position, Quaternion.identity);
 
         // SET SPAWNER'S WAYPOINTS TO THE ENEMY WAYPOINT VARIBLE 
         WaypointMovement waypointMovement = enemyGO.GetComponent<WaypointMovement>();

@@ -107,6 +107,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TowerGhost
   towerData: {fileID: 11400000, guid: 4b02704645299544182a2f722e06e767, type: 2}
   attackRangePreview: {fileID: 5558191237724550738}
+  nodeLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  pathLayer:
+    serializedVersion: 2
+    m_Bits: 16
   defaultCol: {r: 1, g: 1, b: 1, a: 0.49019608}
   occupiedCol: {r: 1, g: 0.118085906, b: 0, a: 1}
   unoccupiedCol: {r: 0.08382094, g: 1, b: 0, a: 1}

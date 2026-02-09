@@ -22,6 +22,7 @@ public class ScrapSpawner : MonoBehaviour
 
     public void StartSpawner()
     {
+        
         StartCoroutine(SpawnScrapResource());
     }
 
@@ -42,13 +43,12 @@ public class ScrapSpawner : MonoBehaviour
     {
         while(true)
         {
-            if (!GameManager.Instance.isWaveRunning && GameManager.Instance.enemies.Count == 0)
-                break;
-
             yield return new WaitForSeconds(spawnTime);
-
             Vector2 spawnPos = GetRandomPointInBounds(dumpArea.bounds);
             GameObject scrapGO = Instantiate(srapPrefabs[index], spawnPos, Quaternion.identity);
+
+            if (!GameManager.Instance.isWaveRunning && GameManager.Instance.enemies.Count == 0)
+                break;
 
             Randomize();
         }

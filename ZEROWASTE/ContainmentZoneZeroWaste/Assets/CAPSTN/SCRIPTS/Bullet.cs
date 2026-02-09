@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -7,10 +8,16 @@ public class Bullet : MonoBehaviour
 
     [Header("Attributes")]
     [SerializeField] private float bulletSpeed = 5f;
-    
+    [SerializeField] private float bulletLife = 3f;
+
     private float damage; 
 
     private Transform target;
+
+    private void Start()
+    {
+        StartCoroutine(BulletLifeSpan());
+    }
 
     public void SetTarget(Transform _target)
     {
@@ -46,6 +53,12 @@ public class Bullet : MonoBehaviour
             }
         }
 
+        Destroy(gameObject);
+    }
+
+    private IEnumerator BulletLifeSpan()
+    {
+        yield return new WaitForSeconds(bulletLife);
         Destroy(gameObject);
     }
 }
