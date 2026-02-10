@@ -4,15 +4,15 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] protected Rigidbody2D rb;
 
     [Header("Attributes")]
-    [SerializeField] private float bulletSpeed = 5f;
-    [SerializeField] private float bulletLife = 3f;
+    [SerializeField] protected float bulletSpeed = 5f;
+    [SerializeField] protected float bulletLife = 3f;
 
-    private float damage; 
+    protected float damage; 
 
-    private Transform target;
+    protected Transform target;
 
     private void Start()
     {
@@ -29,9 +29,14 @@ public class Bullet : MonoBehaviour
         damage = _damage;
     }
 
-    private void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
-        if (!target) 
+        BulletMovement();
+    }
+
+    virtual public void BulletMovement()
+    {
+        if (!target)
             return;
 
         Vector2 direction = (target.position - transform.position).normalized;
@@ -39,14 +44,14 @@ public class Bullet : MonoBehaviour
         rb.linearVelocity = direction * bulletSpeed;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    virtual public void OnTriggerEnter2D(Collider2D collision)
     {
         EnemyBase enemy = collision.gameObject.GetComponent<EnemyBase>();
 
         if (enemy != null)
         {
             HpBarComponent hpBar = collision.gameObject.GetComponentInChildren<HpBarComponent>(true);
-            
+
             if (hpBar != null)
             {
                 hpBar.TakeDamage(damage);
@@ -54,6 +59,11 @@ public class Bullet : MonoBehaviour
         }
 
         Destroy(gameObject);
+    }
+
+     public virtual void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 
     private IEnumerator BulletLifeSpan()

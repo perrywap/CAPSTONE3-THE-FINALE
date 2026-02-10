@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CannonShredder : TowerBase
+public class GlassCannon : TowerBase
 {
     [Header("Laser Settings")]
     [Tooltip("How wide the laser is. 1.5f usually fits ~2-3 grouped enemies.")]
@@ -11,7 +11,7 @@ public class CannonShredder : TowerBase
         // --- CANNON SHREDDER STATS ---
         
         // Slow Attack Speed (0.5 shots per second = 1 shot every 2 seconds)
-        bps = 0.5f;           
+        attackSpeed = 0.5f;           
         
         // High Damage (Laser melts things)
         damage = 40f;        

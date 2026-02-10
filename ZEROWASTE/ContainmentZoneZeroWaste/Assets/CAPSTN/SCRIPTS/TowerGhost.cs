@@ -22,6 +22,13 @@ public class TowerGhost : MonoBehaviour
 
     private void Start()
     {
+        if(towerData.towerPrefab.GetComponent<TowerBase>() != null)
+        {
+            attackRangePreview.transform.localScale = new Vector3(towerData.towerPrefab.GetComponent<TowerBase>().AttackRange * 2f,
+                towerData.towerPrefab.GetComponent<TowerBase>().AttackRange * 2f, 1);
+        }
+            
+
         ghostSprite = GetComponent<SpriteRenderer>();
         if (towerData != null)
         {

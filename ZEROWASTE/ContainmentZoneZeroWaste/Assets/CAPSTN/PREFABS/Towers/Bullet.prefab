@@ -124,7 +124,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -171,3 +171,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   rb: {fileID: 4541911303506821966}
   bulletSpeed: 4
+  bulletLife: 3

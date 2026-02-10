@@ -1,10 +1,31 @@
 fileFormatVersion: 2
-guid: ad0014e208e56224e8040b1b49e36407
+guid: 1f7a34b097cc95e45972cc030c3986f0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4201969982444627683
-    second: sampleTile3 1_0
+      213: -2232005511627243251
+    second: Shredder Launcher Complete Spritesheet_0
+  - first:
+      213: 4603202772131796368
+    second: Shredder Launcher Complete Spritesheet_1
+  - first:
+      213: -640892477181433375
+    second: Shredder Launcher Complete Spritesheet_2
+  - first:
+      213: 7385751554227434737
+    second: Shredder Launcher Complete Spritesheet_3
+  - first:
+      213: 7392726072169353439
+    second: Shredder Launcher Complete Spritesheet_4
+  - first:
+      213: -6115745368217394708
+    second: Shredder Launcher Complete Spritesheet_5
+  - first:
+      213: 6033452955912804717
+    second: Shredder Launcher Complete Spritesheet_6
+  - first:
+      213: -1221305643439719894
+    second: Shredder Launcher Complete Spritesheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,145 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sampleTile3_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b0a1aa46cbdc5345a33f370ec4161c6
-      internalID: -254317845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sampleTile3_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26db49248eaaf5a4b8bf300a9a6534fe
-      internalID: -1131846972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sampleTile3_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7bd43fc1f197a140a47b752111f1601
-      internalID: 210074014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sampleTile3_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dbd5e481776d55348a2fe3190366d9a9
-      internalID: 1877026326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sampleTile3_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d5286236795d194999a9e4f2eb92c1d
-      internalID: 434386204
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sampleTile3_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b54f94f6a27bf64d9f12d744eb265a6
-      internalID: 582601686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sampleTile3_6
+      name: down
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6cdb7ecc79446c40a4060cc216f18c1
-      internalID: 668259087
+      spriteID: 9e7b47e6c0c60a242b488f373e0a5140
+      internalID: 676546856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sampleTile3_7
+      name: downRight
       rect:
         serializedVersion: 2
-        x: 64
+        x: 96
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90accb89f0d068847a3a0f3d66100c9d
-      internalID: 61442039
+      spriteID: 13793bb741a7c274b8167cfbd6702ed1
+      internalID: -1181979861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sampleTile3_8
+      name: right
       rect:
         serializedVersion: 2
-        x: 128
+        x: 192
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,8 +180,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc645c85a1ee9694583e31977925087a
-      internalID: -542628931
+      spriteID: aa3cb1ffd333a1b49ad085f4133a8c04
+      internalID: -1311330109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upRight
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec0b7ea914647b48a099a376b12b9a0
+      internalID: -68772120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: up
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82c285c8d539e4468fe940802e38dcd
+      internalID: 1810173860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upLeft
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98ef6708e8881d48aea768122dbe871
+      internalID: 85215141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: left
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360dacc16b6b2d240b8fad1264a32ced
+      internalID: -1820827857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downLeft
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc36583761b942b45ab0da17ef7192af
+      internalID: 1821547333
       vertices: []
       indices: 
       edges: []
@@ -301,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: aa95c7a930c91814f92670e1974918db
+    spriteID: 49b9d8cc23964d141954f64c5080b831
     internalID: 0
     vertices: []
     indices: 
@@ -311,17 +310,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      sampleTile3_0: -254317845
-      sampleTile3_1: -1131846972
-      sampleTile3_2: 210074014
-      sampleTile3_3: 1877026326
-      sampleTile3_4: 434386204
-      sampleTile3_5: 582601686
-      sampleTile3_6: 668259087
-      sampleTile3_7: 61442039
-      sampleTile3_8: -542628931
+      down: 676546856
+      downLeft: 1821547333
+      downRight: -1181979861
+      left: -1820827857
+      right: -1311330109
+      up: 1810173860
+      upLeft: 85215141
+      upRight: -68772120
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

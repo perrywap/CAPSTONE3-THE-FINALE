@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 543af990513e3544bafdd49f936b3a38, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -89,7 +89,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &215979868801042889
 GameObject:
@@ -222,7 +222,7 @@ Transform:
   m_GameObject: {fileID: 4361232955602658829}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.533, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -278,7 +278,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: d8ea992b3d8cf56449cb034b73d1694a, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -286,7 +286,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4662371812048193682
 GameObject:
@@ -371,7 +371,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.69411767}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -391,10 +391,10 @@ GameObject:
   - component: {fileID: 642169873975403491}
   - component: {fileID: 977081006463715938}
   - component: {fileID: 1719683386933038190}
-  - component: {fileID: -5566918438308729110}
+  - component: {fileID: 6283898281732021871}
   m_Layer: 0
-  m_Name: BinTurret
-  m_TagString: Turret
+  m_Name: CannonShredder
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -466,7 +466,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 543af990513e3544bafdd49f936b3a38, type: 3}
+  m_Sprite: {fileID: 676546856, guid: 1f7a34b097cc95e45972cc030c3986f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -506,7 +506,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -514,7 +514,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3, y: 3}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -522,7 +522,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-5566918438308729110
+--- !u!114 &6283898281732021871
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -531,20 +531,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 5182420084640607954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7235b60f92345dbba7154457d1fd24, type: 3}
+  m_Script: {fileID: 11500000, guid: d1b0f22ef24d20e4e9f1d3f5afa74ee3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BinTurret
+  m_EditorClassIdentifier: Assembly-CSharp::CannonShredder
   attackRangeGO: {fileID: 215979868801042889}
   turretRotationPoint: {fileID: 5084092234888647909}
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
-  bulletPrefab: {fileID: 8639265676486719486, guid: 3a1d49f4290fda649a3ec174faad6e15, type: 3}
+  bulletPrefab: {fileID: 7728112528467379675, guid: 23ea93df491e61a4e953bdaa4bdf94dd, type: 3}
   firingPoint: {fileID: 6350246248756106797}
   attackRange: 10
-  rotationSpeed: 300
-  bps: 3
-  damage: 3
+  rotationSpeed: 250
+  attackSpeed: 0.33
+  damage: 1000
+  turretSprite: {fileID: 977081006463715938}
+  directionSprites:
+  - {fileID: -1311330109, guid: 1f7a34b097cc95e45972cc030c3986f0, type: 3}
+  - {fileID: -68772120, guid: 1f7a34b097cc95e45972cc030c3986f0, type: 3}
+  - {fileID: 1810173860, guid: 1f7a34b097cc95e45972cc030c3986f0, type: 3}
+  - {fileID: 85215141, guid: 1f7a34b097cc95e45972cc030c3986f0, type: 3}
+  - {fileID: -1820827857, guid: 1f7a34b097cc95e45972cc030c3986f0, type: 3}
+  - {fileID: 1821547333, guid: 1f7a34b097cc95e45972cc030c3986f0, type: 3}
+  - {fileID: 676546856, guid: 1f7a34b097cc95e45972cc030c3986f0, type: 3}
+  - {fileID: -1181979861, guid: 1f7a34b097cc95e45972cc030c3986f0, type: 3}
 --- !u!1 &5616911711677782155
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,7 +580,7 @@ Transform:
   m_GameObject: {fileID: 5616911711677782155}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.317, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
