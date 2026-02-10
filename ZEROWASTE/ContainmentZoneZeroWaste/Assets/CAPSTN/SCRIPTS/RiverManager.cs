@@ -2,97 +2,97 @@ using UnityEngine;
 
 public enum RiverState
 {
-    Dirty,
-    Neutral,
+    Polluted,
+    Normal,
     Clean
 }
 
 public class RiverManager : MonoBehaviour
 {
-    public static RiverManager Instance;
+    public static RiverManager Instance { get; private set; }
 
     [Header("River Settings")]
-    [SerializeField] private int maxValue = 100;
-    [SerializeField] private int currentValue = 50;
+    [Range(0f, 100f)]
+    [SerializeField] private float currentValue = 100f;
+    [SerializeField] private float maxValue = 100f;
+    [SerializeField] private float regenRate = 2f;
 
-    [Header("State Thresholds")]
-    [SerializeField] private int dirtyThreshold = 30;
-    [SerializeField] private int cleanThreshold = 70;
+    [Header("River State Thresholds")]
+    [SerializeField] private float dirtyThreshold = 30f;
+    [SerializeField] private float cleanThreshold = 70f;
 
-    [Header("Enemy Buffs (Dirty Water)")]
-    public float enemyHealthMultiplier = 1.3f;
-    public float enemySpeedMultiplier = 1.2f;
-
-    [Header("Tower Buffs (Clean Water)")]
-    public float towerDamageMultiplier = 1.25f;
-    public float towerFireRateMultiplier = 1.2f;
+    [Header("Visuals")]
+    [SerializeField] private SpriteRenderer riverRenderer;
+    [SerializeField] private Gradient riverGradient;
 
     public RiverState CurrentState { get; private set; }
 
     private void Awake()
     {
-        Instance = this;
-        UpdateState();
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
     }
 
-    public void DamageRiver(int amount)
+    private void Update()
+    {
+        HandleRiverFlow();
+        UpdateState();
+        UpdateVisual();
+    }
+
+    private void HandleRiverFlow()
+    {
+        float totalDamage = 0f;
+
+        foreach (GameObject enemy in GameManager.Instance.enemies)
+        {
+            EnemyBase enemyBase = enemy.GetComponent<EnemyBase>();
+
+            if (enemyBase != null)
+                totalDamage += enemyBase.RiverDamagePerSecond * Time.deltaTime;
+        }
+
+        if (totalDamage > 0)
+            DamageRiver(totalDamage);
+        else
+            CleanRiver(regenRate * Time.deltaTime);
+    }
+
+    public void DamageRiver(float amount)
     {
         currentValue -= amount;
         currentValue = Mathf.Clamp(currentValue, 0, maxValue);
-        UpdateState();
     }
 
-    public void CleanRiver(int amount)
+    public void CleanRiver(float amount)
     {
         currentValue += amount;
         currentValue = Mathf.Clamp(currentValue, 0, maxValue);
-        UpdateState();
+    }
+
+    private void UpdateState()
+    {
+        if (currentValue <= dirtyThreshold)
+            CurrentState = RiverState.Polluted;
+        else if (currentValue >= cleanThreshold)
+            CurrentState = RiverState.Clean;
+        else
+            CurrentState = RiverState.Normal;
+    }
+
+    private void UpdateVisual()
+    {
+        if (riverRenderer == null)
+            return;
+
+        float t = currentValue / maxValue;
+        riverRenderer.color = riverGradient.Evaluate(t);
     }
 
     public RiverState GetRiverState()
     {
         return CurrentState;
-    }
-
-    void UpdateState()
-    {
-        if (currentValue <= dirtyThreshold)
-            CurrentState = RiverState.Dirty;
-        else if (currentValue >= cleanThreshold)
-            CurrentState = RiverState.Clean;
-        else
-            CurrentState = RiverState.Neutral;
-    }
-
-    public float GetEnemyHealthMultiplier()
-    {
-        if (CurrentState == RiverState.Dirty)
-            return enemyHealthMultiplier;
-
-        return 1f;
-    }
-
-    public float GetEnemySpeedMultiplier()
-    {
-        if (CurrentState == RiverState.Dirty)
-            return enemySpeedMultiplier;
-
-        return 1f;
-    }
-
-    public float GetTowerDamageMultiplier()
-    {
-        if (CurrentState == RiverState.Clean)
-            return towerDamageMultiplier;
-
-        return 1f;
-    }
-
-    public float GetTowerFireRateMultiplier()
-    {
-        if (CurrentState == RiverState.Clean)
-            return towerFireRateMultiplier;
-
-        return 1f;
     }
 }

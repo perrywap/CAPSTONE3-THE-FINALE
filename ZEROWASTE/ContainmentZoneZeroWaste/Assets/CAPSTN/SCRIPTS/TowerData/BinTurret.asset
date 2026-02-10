@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea02358dec0f9744ba3a10ec55278742, type: 3}
   m_Name: BinTurret
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
-  matCost:
-  - matType: 0
-    matCost: 0
-  towerGhost: {fileID: 21300000, guid: 543af990513e3544bafdd49f936b3a38, type: 3}
-  towerPrefab: {fileID: 5182420084640607954, guid: 1e25e7da33ef09b4ea17aa57e134dbda, type: 3}
+  towerName: 
+  placementType: 0
+  resourceEntry: []
+  towerGhost: {fileID: -2083028900, guid: fc428cf12f59f0346ab17a968a7958a3, type: 3}
+  towerPrefab: {fileID: 5182420084640607954, guid: d633587f450c04259b8f55f7e23cf5f8, type: 3}

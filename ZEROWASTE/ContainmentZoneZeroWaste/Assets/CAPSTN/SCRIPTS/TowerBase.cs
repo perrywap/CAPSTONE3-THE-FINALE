@@ -10,19 +10,26 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 {
     #region VARIABLES
     [Header("References")]
-    [SerializeField] private GameObject attackRangeGO;
-    [SerializeField] private Transform turretRotationPoint;
-    [SerializeField] private LayerMask enemyMask;
-    [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private Transform firingPoint;
+    [SerializeField] protected GameObject attackRangeGO;
+    [SerializeField] protected Transform turretRotationPoint;
+    [SerializeField] protected LayerMask enemyMask;
+    [SerializeField] protected GameObject bulletPrefab;
+    [SerializeField] protected Transform firingPoint;
 
     [Header("Attributes")]
-    [SerializeField] private float attackRange = 5f;
-    [SerializeField] private float rotationSpeed = 250f;
-    [SerializeField] private float bps = 1f; // Bullets Per Second
+    [SerializeField] protected float attackRange = 5f;
+    [SerializeField] protected float rotationSpeed = 250f;
+    [SerializeField] protected float attackSpeed = 1f; 
+    [SerializeField] protected float damage = 10f;
 
-    private Transform target;
-    private float timeUntilFire;
+    [Header("Sprite Direction")]
+    [SerializeField] private SpriteRenderer turretSprite;
+    [SerializeField] private Sprite[] directionSprites;
+
+    protected Transform target;
+    protected float attackCD;
+
+    public float AttackRange { get { return attackRange; } }
 
     #endregion
 
@@ -48,12 +55,12 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
         }
         else
         {
-            timeUntilFire += Time.deltaTime;
+            attackCD += Time.deltaTime;
 
-            if(timeUntilFire >= 1f /  bps)
+            if(attackCD >= 1f /  attackSpeed)
             {
                 Shoot();
-                timeUntilFire = 0f;
+                attackCD = 0f;
             }
         }
     }
@@ -72,20 +79,36 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
     private void RotateTowardsTarget()
     {
-        float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
+        Vector2 dir = target.position - transform.position;
 
-        Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
-        turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        angle = (angle + 360f) % 360f;
+
+        Quaternion targetRotation = Quaternion.Euler(0f, 0f, angle - 90f);
+        turretRotationPoint.rotation = Quaternion.RotateTowards(
+            turretRotationPoint.rotation,
+            targetRotation,
+            rotationSpeed * Time.deltaTime
+        );
+
+        UpdateTurretSprite(angle);
+    }
+
+    private void UpdateTurretSprite(float angle)
+    {
+        int index = Mathf.RoundToInt(angle / 45f) % 8;
+        turretSprite.sprite = directionSprites[index];
     }
 
     private bool CheckTargetIsInRange()
     {
+        if (target == null) return false; 
         return Vector2.Distance(target.position, transform.position) <= attackRange;
     }
 
     private void UpdateAttackRangeVisual()
     {
-        float diameter = attackRange / 2f;
+        float diameter = attackRange * 2f; 
 
         attackRangeGO.transform.localScale = new Vector3(
             diameter,
@@ -98,7 +121,9 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     {
         GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
+        
         bulletScript.SetTarget(target);
+        bulletScript.SetDamage(damage);
     }
     #endregion
 
@@ -106,7 +131,9 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     private void OnDrawGizmosSelected()
     {
         Handles.color = Color.cyan;
-        Handles.DrawWireDisc(transform.position, transform.forward, attackRange);
+
+        Vector3 tiltedNormal = Quaternion.Euler(45f, 0f, 0f) * Vector3.forward;
+        Handles.DrawWireDisc(transform.position, tiltedNormal, attackRange);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -121,7 +148,7 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Clickerd");
+        Debug.Log("Clicked Tower");
     }
     #endregion
 }

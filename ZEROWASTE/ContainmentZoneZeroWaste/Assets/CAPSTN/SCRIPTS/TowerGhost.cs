@@ -7,6 +7,10 @@ public class TowerGhost : MonoBehaviour
     [SerializeField] private TowerData towerData;
     [SerializeField] private GameObject attackRangePreview;
 
+    [Header("Placement Settings")]
+    [SerializeField] private LayerMask nodeLayer; // Set to "Node" layer
+    [SerializeField] private LayerMask pathLayer; // NEW: Set to "Water" or "Path" layer
+
     [Header("Attributes")]
     [SerializeField] private Color defaultCol;
     [SerializeField] private Color occupiedCol;
@@ -18,14 +22,40 @@ public class TowerGhost : MonoBehaviour
 
     private void Start()
     {
+        if(towerData.towerPrefab.GetComponent<TowerBase>() != null)
+        {
+            attackRangePreview.transform.localScale = new Vector3(towerData.towerPrefab.GetComponent<TowerBase>().AttackRange * 2f,
+                towerData.towerPrefab.GetComponent<TowerBase>().AttackRange * 2f, 1);
+        }
+            
+
         ghostSprite = GetComponent<SpriteRenderer>();
-        ghostSprite.sprite = towerData.towerGhost;
+        if (towerData != null)
+        {
+            ghostSprite.sprite = towerData.towerGhost;
+        }
+        
+        // Hide attack range for traps (Plastic Catcher), show for towers
+        if (attackRangePreview != null)
+        {
+            bool isTower = towerData.placementType == PlacementType.Node;
+            attackRangePreview.SetActive(isTower);
+        }
     }
 
     private void Update()
     {
         FollowMouse();
-        CheckForNodes();
+
+        // Switch logic based on what we are building
+        if (towerData.placementType == PlacementType.Node)
+        {
+            CheckForNodes();
+        }
+        else if (towerData.placementType == PlacementType.Path)
+        {
+            CheckForPath();
+        }
 
         if(Mouse.current.rightButton.wasPressedThisFrame)
             OnCancelBuildClicked();
@@ -37,14 +67,14 @@ public class TowerGhost : MonoBehaviour
         Destroy(gameObject);
     }
 
+    // --- LOGIC FOR STANDARD TOWERS (NODES) ---
     private void CheckForNodes()
     {
         TowerNode hoveredNode = GetHoveredNode();
 
         if (hoveredNode == null)
         {
-            ghostSprite.color = defaultCol;
-            attackRangePreview.GetComponent<SpriteRenderer>().color = defaultCol;
+            SetColor(defaultCol);
             return;
         }
         else
@@ -54,20 +84,53 @@ public class TowerGhost : MonoBehaviour
 
         if (hoveredNode.isOccupied)
         {
-            ghostSprite.color = occupiedCol;
-            attackRangePreview.GetComponent<SpriteRenderer>().color = occupiedCol;
+            SetColor(occupiedCol);
         }
         else
         {
-            ghostSprite.color = unoccupiedCol;
-            attackRangePreview.GetComponent<SpriteRenderer>().color = unoccupiedCol;
+            SetColor(unoccupiedCol);
 
             if (Mouse.current.leftButton.wasPressedThisFrame)
             {
                 hoveredNode.isOccupied = true;
-                OnBuildTower();
+                BuildStructure();
             }
         }
+    }
+
+    // --- LOGIC FOR TRAPS (PATH/WATER) ---
+    private void CheckForPath()
+    {
+        // 1. Raycast to find Water/Path
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.zero, 0f, pathLayer);
+
+        // 2. Also check we are NOT hitting a Node (don't overlap towers)
+        RaycastHit2D nodeHit = Physics2D.Raycast(transform.position, Vector2.zero, 0f, nodeLayer);
+
+        bool onPath = hit.collider != null;
+        bool overlappingNode = nodeHit.collider != null;
+
+        if (onPath && !overlappingNode)
+        {
+            SetColor(unoccupiedCol);
+
+            if (Mouse.current.leftButton.wasPressedThisFrame)
+            {
+                BuildStructure();
+            }
+        }
+        else
+        {
+            // If we are off-path or hitting a node, show red
+            SetColor(occupiedCol);
+        }
+    }
+
+    private void SetColor(Color col)
+    {
+        ghostSprite.color = col;
+        if (attackRangePreview != null) 
+            attackRangePreview.GetComponent<SpriteRenderer>().color = col;
     }
 
     private void FollowMouse()
@@ -84,8 +147,6 @@ public class TowerGhost : MonoBehaviour
 
     private TowerNode GetHoveredNode()
     {
-        LayerMask nodeLayer = LayerMask.GetMask("Node");
-
         RaycastHit2D hit = Physics2D.Raycast(
             transform.position,
             Vector2.zero,
@@ -99,10 +160,9 @@ public class TowerGhost : MonoBehaviour
         return hit.collider.GetComponent<TowerNode>();
     }
 
-    private void OnBuildTower()
+    private void BuildStructure()
     {
         Instantiate(towerData.towerPrefab, transform.position,  Quaternion.identity);
-
         OnCancelBuildClicked();
     }
 }

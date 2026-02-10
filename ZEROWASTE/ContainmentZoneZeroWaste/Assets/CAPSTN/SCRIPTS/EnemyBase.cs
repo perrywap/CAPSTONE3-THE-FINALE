@@ -1,24 +1,35 @@
-using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
-
-public enum EnemyType
-{
-
-}
 
 public class EnemyBase : MonoBehaviour
 {
     [Header("Enemy Stats")]
-    [SerializeField] private float movespeed;
-    [SerializeField] private int rewardAmount;
-    [SerializeField] private bool isDead;
+    [SerializeField] private float moveSpeed = 2f;
+    [SerializeField] private int rewardAmount = 10;
+    [SerializeField] private float riverDamagePerSecond = 0.1f;
 
-    public float MoveSpeed { get { return movespeed; } }
-    public bool IsDead {  get { return isDead; } }
+    private bool isDead;
+
+    public float MoveSpeed => moveSpeed;
+    public bool IsDead => isDead;
+    public float RiverDamagePerSecond => riverDamagePerSecond;
+
+    void Start()
+    {
+
+    }
+
+    void Update()
+    {
+ 
+    }
 
     public void Die()
     {
-        GameManager.Instance._enemies.Remove(gameObject);
+        if (isDead) return;
+
+        isDead = true;
+
+        GameManager.Instance.enemies.Remove(gameObject);
         Destroy(gameObject);
     }
 }

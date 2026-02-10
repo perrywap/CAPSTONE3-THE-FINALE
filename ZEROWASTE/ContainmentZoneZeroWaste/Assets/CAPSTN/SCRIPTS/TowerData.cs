@@ -7,6 +7,13 @@ public enum ResourceType
     GLASS
 }
 
+// New Enum to distinguish between Towers and Traps
+public enum PlacementType
+{
+    Node,
+    Path
+}
+
 [System.Serializable]
 public struct ResourceEntry
 {
@@ -17,7 +24,12 @@ public struct ResourceEntry
 [CreateAssetMenu(fileName = "TowerData", menuName = "ScriptableObjectData/TowerData")]
 public class TowerData : ScriptableObject
 {
-    public ResourceEntry[] resourceEntry; // For tower that requires multiple materials
-    public Sprite towerGhost; // For Towerghost rendering
-    public GameObject towerPrefab; // For Instantiating
+    [Header("General Stats")]
+    public string towerName;
+    public PlacementType placementType = PlacementType.Node; // Default to Node
+
+    [Header("Visuals & Prefabs")]
+    public ResourceEntry[] resourceEntry; 
+    public Sprite towerGhost; 
+    public GameObject towerPrefab; 
 }
