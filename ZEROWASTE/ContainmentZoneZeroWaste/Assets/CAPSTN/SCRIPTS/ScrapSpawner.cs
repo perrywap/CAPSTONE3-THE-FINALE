@@ -15,14 +15,11 @@ public class ScrapSpawner : MonoBehaviour
     private int index = 0;
     private float spawnTime = 0.1f;
 
-    private void Update()
-    {
-        
-    }
-
     public void StartSpawner()
     {
-        
+        if (GameManager.Instance.isGameOver)
+            return;
+
         StartCoroutine(SpawnScrapResource());
     }
 

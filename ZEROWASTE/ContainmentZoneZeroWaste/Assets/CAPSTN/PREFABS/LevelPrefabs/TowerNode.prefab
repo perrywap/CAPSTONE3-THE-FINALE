@@ -27,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4406468771792977713}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.88, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!212 &2051138144630182926
 SpriteRenderer:
   serializedVersion: 2
@@ -83,8 +83,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Sprite: {fileID: -7696679942744516926, guid: d18e21f126970cf40b287c4e5051c38b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -141,6 +141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5173503495a5d54b9231f4a93830a75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TowerNode
+  sprites:
+  - {fileID: -8060221526621633897, guid: d18e21f126970cf40b287c4e5051c38b, type: 3}
+  - {fileID: -7696679942744516926, guid: d18e21f126970cf40b287c4e5051c38b, type: 3}
   sr: {fileID: 2051138144630182926}
   hoverColor: {r: 1, g: 0.4886258, b: 0, a: 0.5882353}
   isOccupied: 0

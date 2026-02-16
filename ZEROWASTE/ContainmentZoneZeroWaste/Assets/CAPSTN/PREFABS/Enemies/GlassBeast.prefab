@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 7319281537308400788}
   - component: {fileID: 1636723641556453579}
-  - component: {fileID: 965542964308984369}
   - component: {fileID: 8930087432033449490}
   - component: {fileID: 7006260571433138399}
   - component: {fileID: 8930113719006086783}
   - component: {fileID: 5735848272001643754}
+  - component: {fileID: 7573998651992424637}
   m_Layer: 6
-  m_Name: Enemy1
+  m_Name: GlassBeast
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 8175241566935217780, guid: 1ccbe3f01de4f9a458c1c958e537b132, type: 3}
+  m_Sprite: {fileID: 2275460677165501706, guid: 925e4d695a1511b4d9eb20b54b9b5089, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,21 +97,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &965542964308984369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8053135318514668500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fab2a5a1d0756a84baa15ba32dc236d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyBase
-  moveSpeed: 2
-  rewardAmount: 10
-  riverDamagePerSecond: 5
 --- !u!114 &8930087432033449490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +195,7 @@ Animator:
   m_GameObject: {fileID: 8053135318514668500}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d5d3b3b848dc8604ca33904e8a791c39, type: 2}
+  m_Controller: {fileID: 9100000, guid: 69eee83e9c85f8f48a5a70f099951bf7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -222,6 +207,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7573998651992424637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8053135318514668500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41829d880b845d647990dba4118fbc3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlassCrawler
+  rewardAmount: 10
+  coreDamage: 10
+  moveSpeed: 2
+  riverDamagePerSecond: 0.1
 --- !u!1001 &396997241599569488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -313,6 +314,10 @@ PrefabInstance:
     - target: {fileID: 7090540208082204665, guid: ee90df097d2621745a98554edc935cc4, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778580802647854967, guid: ee90df097d2621745a98554edc935cc4, type: 3}
+      propertyPath: maxHp
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 8853466960489637044, guid: ee90df097d2621745a98554edc935cc4, type: 3}
       propertyPath: m_Name

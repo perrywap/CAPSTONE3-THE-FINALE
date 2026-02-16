@@ -8,7 +8,7 @@ public class CityCore : MonoBehaviour
 
         if (enemy != null)
         {
-            Debug.Log("A garbage reached the city!");
+            GameManager.Instance.TakeDamage(enemy.CoreDamage);
         }
     }
 }

@@ -7,12 +7,10 @@ public class PlayerController : MonoBehaviour
     public static PlayerController Instance { get; private set; }
 
     [Header("References")]
-    //[SerializeField] private GameObject buildPanel;
-
+    [SerializeField] private Button[] skillButtonsPanels;
     [SerializeField] private GameObject[] towerButtonsPanels;
-
-
     [SerializeField] private GameObject towerGhostPrefab;
+    [SerializeField] private GameObject targetLaserPrefab;
 
     public bool isBuilding = false;
 
@@ -21,20 +19,10 @@ public class PlayerController : MonoBehaviour
         Instance = this;
     }
 
-    //private void Update()
-    //{
-    //    OnBuildPanelPressed();
-    //}
-
-    //public void OnBuildPanelPressed()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Space))
-    //    {
-    //        if (isBuilding) return;
-
-    //        buildPanel.SetActive(!buildPanel.activeSelf);
-    //    }
-    //}
+    private void Start()
+    {
+        RefreshSkillButtons();
+    }
 
     #region START WAVE BUTTON
     public void OnStartWaveBtnClicked()
@@ -50,6 +38,25 @@ public class PlayerController : MonoBehaviour
                 spawner.GetComponent<ScrapSpawner>().StartSpawner();
 
         }
+    }
+    #endregion
+
+    #region SKILL BUTTONS
+    public void RefreshSkillButtons()
+    {
+        skillButtonsPanels[0].interactable =
+            BuilderManager.Instance.IsStationTier3(BuildStationType.Printer);
+
+        skillButtonsPanels[1].interactable =
+            BuilderManager.Instance.IsStationTier3(BuildStationType.Forger);
+
+        skillButtonsPanels[2].interactable =
+            BuilderManager.Instance.IsStationTier3(BuildStationType.Modler);
+    }
+
+    public void OnSolarRayBtnClicked()
+    {
+        GameObject targetGO = Instantiate(targetLaserPrefab);
     }
     #endregion
 

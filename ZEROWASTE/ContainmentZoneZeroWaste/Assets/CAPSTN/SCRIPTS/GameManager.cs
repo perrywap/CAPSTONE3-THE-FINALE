@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     [Header("PLAYER HUD")]
+    [SerializeField] private GameObject playerHud;
     [SerializeField] private TextMeshProUGUI healthTxt;
     [SerializeField] private TextMeshProUGUI waveTxt;
     [SerializeField] private TextMeshProUGUI plasticTxt;
@@ -19,21 +20,22 @@ public class GameManager : MonoBehaviour
     [Header("PLAYER STATS")]
     [SerializeField] private int health;
 
-    [Header("INVENTORY")]
-    private Dictionary<ResourceType, int> inventory = new Dictionary<ResourceType, int>();
-    [SerializeField] private int plasticFilament;
-    [SerializeField] private int metalScrap;
-    [SerializeField] private int glassShard;
-
     [Header("SPAWNED UNITS")]
     public List<GameObject> enemies = new List<GameObject>();
 
+    [Header("WAVE SETTINGS")]
     public bool isWaveRunning;
+    public int totalWaveCount = 0;
+
+    [Header("RESULTS SCREEN")]
+    [SerializeField] private GameObject winPanel;
+    [SerializeField] private GameObject losePanel;
+
+    public bool isGameOver = false;
+    private Dictionary<ResourceType, int> inventory = new Dictionary<ResourceType, int>();
+    private Spawner[] spawners;
 
     public TextMeshProUGUI WaveText { get { return waveTxt; } set { waveTxt = value; } }
-
-    private Spawner[] spawners;
-    public int totalWaveCount = 0;
     #endregion
 
     #region UNITY METHODS
@@ -55,9 +57,18 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         HudManager();
-        plasticFilament = inventory[ResourceType.PLASTIC];
-        metalScrap = inventory[ResourceType.METAL];
-        glassShard = inventory[ResourceType.GLASS];
+
+        if(health <= 0)
+        {
+            isGameOver = true;
+            ShowResults(false);
+        }
+        if(health > 0 && enemies.Count == 0 && 
+            Spawner.Instance.CurrentWaveIndex >= totalWaveCount + 1)
+        {
+            isGameOver = true;
+            ShowResults(true);
+        }
     }
     #endregion
 
@@ -118,6 +129,33 @@ public class GameManager : MonoBehaviour
                 return false;
         }
         return true;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        if(health < 0)
+        {
+            health = 0;
+        }
+    }
+
+    public void ShowResults(bool playerWin)
+    {
+        if (!isGameOver)
+            return;
+
+        playerHud.SetActive(false);
+
+        if(playerWin)
+        {
+            winPanel.SetActive(true);
+        }
+        else
+        {
+            losePanel.SetActive(true);
+        }
     }
     #endregion
 }

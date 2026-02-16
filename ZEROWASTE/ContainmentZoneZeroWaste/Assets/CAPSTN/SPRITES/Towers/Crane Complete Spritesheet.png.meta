@@ -112,7 +112,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Crane Complete Spritesheet_0
+      name: left
       rect:
         serializedVersion: 2
         x: 0
@@ -134,7 +134,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crane Complete Spritesheet_1
+      name: downLeft
       rect:
         serializedVersion: 2
         x: 96
@@ -156,7 +156,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crane Complete Spritesheet_2
+      name: down
       rect:
         serializedVersion: 2
         x: 192
@@ -178,7 +178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crane Complete Spritesheet_3
+      name: downRight
       rect:
         serializedVersion: 2
         x: 288
@@ -200,7 +200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crane Complete Spritesheet_4
+      name: right
       rect:
         serializedVersion: 2
         x: 384
@@ -237,11 +237,11 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Crane Complete Spritesheet_0: -1289651595112569437
-      Crane Complete Spritesheet_1: 1764968792664013945
-      Crane Complete Spritesheet_2: -3024584324535749417
-      Crane Complete Spritesheet_3: 4613083966979798564
-      Crane Complete Spritesheet_4: -5903220319675305883
+      down: -3024584324535749417
+      downLeft: 1764968792664013945
+      downRight: 4613083966979798564
+      left: -1289651595112569437
+      right: -5903220319675305883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

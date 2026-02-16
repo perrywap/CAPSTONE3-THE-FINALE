@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 2389348023367758236}
   - component: {fileID: -1947501097345636391}
   - component: {fileID: -5442750571535240549}
-  - component: {fileID: -3581460821024434148}
+  - component: {fileID: 4803755619753649514}
   m_Layer: 6
-  m_Name: Enemy2
+  m_Name: Straw
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,12 +87,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: c54c1e4af5168c746aff748f03aa88ec, type: 3}
+  m_Sprite: {fileID: 3219880604707160, guid: 4f3dc8261b65396479234aa5eeb33d5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -109,13 +109,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab2a5a1d0756a84baa15ba32dc236d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBase
-  enemyType: 0
-  moveSpeed: 2
   rewardAmount: 10
+  coreDamage: 10
+  moveSpeed: 2
   riverDamagePerSecond: 5
-  attackDamage: 10
-  attackRate: 1
-  attackRange: 0.75
 --- !u!114 &2389348023367758236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WaypointMovement
   waypoints: []
   currentIndex: 0
+  direction: 0
 --- !u!61 &-1947501097345636391
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -168,8 +166,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 3, y: 3}
+    newSize: {x: 3, y: 3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -203,18 +201,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 7
---- !u!114 &-3581460821024434148
-MonoBehaviour:
+--- !u!95 &4803755619753649514
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7099406950619804989}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8955cdafa83a8c441840199f68a148ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SlidingEnemy
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a91a99b33443ce844bb5d8846f82a5d8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7864381874676580525
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +413,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1f3d02cb58094b42ae50dafd192cf4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HpBarComponent
-  hpBar: {fileID: 0}
+  hpBar: {fileID: 3834898271705048573}
   currentHp: 0
-  maxHp: 0
+  maxHp: 60

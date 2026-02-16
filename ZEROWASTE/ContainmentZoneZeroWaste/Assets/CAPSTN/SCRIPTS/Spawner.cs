@@ -39,6 +39,9 @@ public class Spawner : MonoBehaviour
     #region METHODS
     public void StartWave()
     {
+        if (GameManager.Instance.isGameOver)
+            return;
+
         GameManager.Instance.isWaveRunning = true;
         GameManager.Instance.WaveText.text = $"Wave: {currentWaveIndex + 1}/{GameManager.Instance.totalWaveCount}";
 
