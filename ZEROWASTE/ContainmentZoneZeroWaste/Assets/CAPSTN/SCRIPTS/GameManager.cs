@@ -31,6 +31,9 @@ public class GameManager : MonoBehaviour
     public bool isWaveRunning;
 
     public TextMeshProUGUI WaveText { get { return waveTxt; } set { waveTxt = value; } }
+
+    private Spawner[] spawners;
+    public int totalWaveCount = 0;
     #endregion
 
     #region UNITY METHODS
@@ -38,6 +41,15 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         InitializeInventory();
+
+        spawners = Object.FindObjectsByType<Spawner>(FindObjectsSortMode.None);
+
+        totalWaveCount = 0;
+        foreach (Spawner spawner in spawners)
+        {
+            totalWaveCount = Mathf.Max(totalWaveCount, spawner.Wave.Length);
+            waveTxt.text = $"Wave: 0/{totalWaveCount}";
+        }
     }
 
     private void Update()
@@ -52,7 +64,7 @@ public class GameManager : MonoBehaviour
     #region METHODS
     private void HudManager()
     {
-        healthTxt.text = health.ToString();
+        healthTxt.text = health.ToString() + "%";
         plasticTxt.text = inventory[ResourceType.PLASTIC].ToString();
         metalTxt.text = inventory[ResourceType.METAL].ToString();
         glassTxt.text = inventory[ResourceType.GLASS].ToString();
@@ -67,6 +79,7 @@ public class GameManager : MonoBehaviour
         inventory[ResourceType.METAL] = 0;
         inventory[ResourceType.GLASS] = 0;
     }
+
     public void AddMaterial(ResourceEntry entry)
     {
         if (!inventory.ContainsKey(entry.resourceType))

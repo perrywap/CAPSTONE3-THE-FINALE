@@ -89,20 +89,4 @@ public class BuilderManager : MonoBehaviour
         }
         return 1;
     }
-
-    public void UpgradePrinter()
-    {
-        Debug.Log("should upgrade");
-        UpgradeStation(BuildStationType.Printer);
-    }
-
-    public void UpgradeForger()
-    {
-        UpgradeStation(BuildStationType.Forger);
-    }
-
-    public void UpgradeModler()
-    {
-        UpgradeStation(BuildStationType.Modler);
-    }
 }

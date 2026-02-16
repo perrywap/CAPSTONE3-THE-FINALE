@@ -35,7 +35,7 @@ public class ScrapSpawner : MonoBehaviour
 
     private void Randomize()
     {
-        index = Random.Range(0, srapPrefabs.Length -1);
+        index = Random.Range(0, srapPrefabs.Length);
         spawnTime = Random.Range(minSpawnRate, maxSpawnRate);
     }
 

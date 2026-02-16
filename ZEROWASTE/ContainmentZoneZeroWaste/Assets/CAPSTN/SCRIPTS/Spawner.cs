@@ -23,6 +23,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private int currentWaveIndex;
     [SerializeField] private float spawnInterval;
 
+    public WaveData[] Wave { get { return waves; } }
     public int CurrentWaveIndex { get { return currentWaveIndex + 1; } }
     #endregion
 
@@ -39,7 +40,7 @@ public class Spawner : MonoBehaviour
     public void StartWave()
     {
         GameManager.Instance.isWaveRunning = true;
-        GameManager.Instance.WaveText.text = $"Wave: {currentWaveIndex + 1}";
+        GameManager.Instance.WaveText.text = $"Wave: {currentWaveIndex + 1}/{GameManager.Instance.totalWaveCount}";
 
         currentWaveEnemies = waves[currentWaveIndex]._enemiesToSpawn;
         StartCoroutine(StartSpawner());

@@ -5,8 +5,13 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance { get; private set; }
+
     [Header("References")]
-    [SerializeField] private GameObject buildPanel;
+    //[SerializeField] private GameObject buildPanel;
+
+    [SerializeField] private GameObject[] towerButtonsPanels;
+
+
     [SerializeField] private GameObject towerGhostPrefab;
 
     public bool isBuilding = false;
@@ -16,21 +21,22 @@ public class PlayerController : MonoBehaviour
         Instance = this;
     }
 
-    private void Update()
-    {
-        OnBuildPanelPressed();
-    }
+    //private void Update()
+    //{
+    //    OnBuildPanelPressed();
+    //}
 
-    public void OnBuildPanelPressed()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (isBuilding) return;
+    //public void OnBuildPanelPressed()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        if (isBuilding) return;
 
-            buildPanel.SetActive(!buildPanel.activeSelf);
-        }
-    }
+    //        buildPanel.SetActive(!buildPanel.activeSelf);
+    //    }
+    //}
 
+    #region START WAVE BUTTON
     public void OnStartWaveBtnClicked()
     {
         if (isBuilding) return;
@@ -45,7 +51,43 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+    #endregion
 
+    #region BUILDER UPGRADE BUTTONS
+    public void UpgradePrinter()
+    {
+        BuilderManager.Instance.UpgradeStation(BuildStationType.Printer);
+    }
+
+    public void UpgradeForger()
+    {
+        BuilderManager.Instance.UpgradeStation(BuildStationType.Forger);
+    }
+
+    public void UpgradeModler()
+    {
+        BuilderManager.Instance.UpgradeStation(BuildStationType.Modler);
+    }
+    #endregion
+
+    #region BUILDER BUTTONS
+    public void OnBuilderButtonClicked(int index)
+    {
+        for (int i = 0; i < towerButtonsPanels.Length; i++)
+        {
+            if (i == index)
+            {
+                towerButtonsPanels[i].SetActive(!towerButtonsPanels[i].activeSelf);
+            }
+            else
+            {
+                towerButtonsPanels[i].SetActive(false);
+            }
+        }
+    }
+    #endregion
+
+    #region TOWER BUTTONS
     public void OnTowerBtnClicked(TowerData towerData)
     {
         if (isBuilding) return;
@@ -55,7 +97,11 @@ public class PlayerController : MonoBehaviour
 
         GameManager.Instance.SpendMaterials(towerData.resourceEntry);
 
-        buildPanel.SetActive(false);
+        foreach(GameObject btn in towerButtonsPanels)
+        {
+            btn.SetActive(false);
+        }
+
         isBuilding = true;
 
         towerGhostPrefab.GetComponent<TowerGhost>().GhostData = towerData;
@@ -64,4 +110,5 @@ public class PlayerController : MonoBehaviour
 
         GameObject ghostGO = Instantiate(towerGhostPrefab, mouseWorldPos, Quaternion.identity);
     }
+    #endregion
 }
