@@ -15,14 +15,11 @@ public class ScrapSpawner : MonoBehaviour
     private int index = 0;
     private float spawnTime = 0.1f;
 
-    private void Update()
-    {
-        
-    }
-
     public void StartSpawner()
     {
-        
+        if (GameManager.Instance.isGameOver)
+            return;
+
         StartCoroutine(SpawnScrapResource());
     }
 
@@ -35,7 +32,7 @@ public class ScrapSpawner : MonoBehaviour
 
     private void Randomize()
     {
-        index = Random.Range(0, srapPrefabs.Length -1);
+        index = Random.Range(0, srapPrefabs.Length);
         spawnTime = Random.Range(minSpawnRate, maxSpawnRate);
     }
 

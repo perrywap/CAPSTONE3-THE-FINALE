@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 public class TowerNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [Header("References")]
+    [SerializeField] private Sprite[] sprites;
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Color hoverColor;
 
@@ -13,6 +14,7 @@ public class TowerNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     private void Start()
     {
+        sr.sprite = sprites[Random.Range(0, sprites.Length)];
         startColor = sr.color;
     }
 

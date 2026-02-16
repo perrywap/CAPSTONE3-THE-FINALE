@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 201765444068835434}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -81,15 +81,15 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -2083028900, guid: fc428cf12f59f0346ab17a968a7958a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!1 &215979868801042889
 GameObject:
@@ -467,7 +467,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2083028900, guid: fc428cf12f59f0346ab17a968a7958a3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -475,7 +475,7 @@ SpriteRenderer:
   m_Size: {x: 0.96, y: 0.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &4267885104099512593
 Animator:
@@ -566,9 +566,9 @@ MonoBehaviour:
   firingPoint: {fileID: 6350246248756106797}
   attackRange: 10
   rotationSpeed: 300
-  bps: 3
+  attackSpeed: 1
   damage: 0.1
-  turretSprite: {fileID: 977081006463715938}
+  turretSprite: {fileID: 3512986718841752556}
   directionSprites:
   - {fileID: 542364595, guid: fc428cf12f59f0346ab17a968a7958a3, type: 3}
   - {fileID: -2053488283, guid: fc428cf12f59f0346ab17a968a7958a3, type: 3}

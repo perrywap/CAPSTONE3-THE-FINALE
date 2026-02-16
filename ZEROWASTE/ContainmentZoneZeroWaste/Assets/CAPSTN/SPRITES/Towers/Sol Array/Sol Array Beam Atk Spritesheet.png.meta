@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 5fcdc821da9f88c48835b8fdc1533ae3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3099409737110619193
+    second: Sol Array Beam Atk Spritesheet_0
+  - first:
+      213: 8382429608014730943
+    second: Sol Array Beam Atk Spritesheet_1
+  - first:
+      213: -8010052818446126085
+    second: Sol Array Beam Atk Spritesheet_2
+  - first:
+      213: 4288164054919117981
+    second: Sol Array Beam Atk Spritesheet_3
+  - first:
+      213: 6788797441574734581
+    second: Sol Array Beam Atk Spritesheet_4
+  - first:
+      213: -6131274472820716735
+    second: Sol Array Beam Atk Spritesheet_5
+  - first:
+      213: 1612805126275591833
+    second: Sol Array Beam Atk Spritesheet_6
+  - first:
+      213: 5527076235014554083
+    second: Sol Array Beam Atk Spritesheet_7
+  - first:
+      213: -2564336187071973805
+    second: Sol Array Beam Atk Spritesheet_8
+  - first:
+      213: -5284952078845668004
+    second: Sol Array Beam Atk Spritesheet_9
+  - first:
+      213: -9042043095859923541
+    second: Sol Array Beam Atk Spritesheet_10
+  - first:
+      213: 4709468910616424598
+    second: Sol Array Beam Atk Spritesheet_11
+  - first:
+      213: -9043180316804539342
+    second: Sol Array Beam Atk Spritesheet_12
+  - first:
+      213: -496166392647324168
+    second: Sol Array Beam Atk Spritesheet_13
+  - first:
+      213: -725985502876521495
+    second: Sol Array Beam Atk Spritesheet_14
+  - first:
+      213: -7556004488008557821
+    second: Sol Array Beam Atk Spritesheet_15
+  - first:
+      213: -1463866910994124601
+    second: Sol Array Beam Atk Spritesheet_16
+  - first:
+      213: 8277145913808283317
+    second: Sol Array Beam Atk Spritesheet_17
+  - first:
+      213: -1272302526613702461
+    second: Sol Array Beam Atk Spritesheet_18
+  - first:
+      213: -5204085393273914868
+    second: Sol Array Beam Atk Spritesheet_19
+  - first:
+      213: 3944298945759892392
+    second: Sol Array Beam Atk Spritesheet_20
+  - first:
+      213: 872096938099255795
+    second: Sol Array Beam Atk Spritesheet_21
+  - first:
+      213: 9084711095006403095
+    second: Sol Array Beam Atk Spritesheet_22
+  - first:
+      213: -6103217587044426919
+    second: Sol Array Beam Atk Spritesheet_23
+  - first:
+      213: -8640982519404383043
+    second: Sol Array Beam Atk Spritesheet_24
+  - first:
+      213: 7760805032709866817
+    second: Sol Array Beam Atk Spritesheet_25
+  - first:
+      213: -8521084558129513267
+    second: Sol Array Beam Atk Spritesheet_26
+  - first:
+      213: 8996801224144128622
+    second: Sol Array Beam Atk Spritesheet_27
+  - first:
+      213: 5617088149478870202
+    second: Sol Array Beam Atk Spritesheet_28
+  - first:
+      213: 4161537391886285532
+    second: Sol Array Beam Atk Spritesheet_29
+  - first:
+      213: -4220360869960965696
+    second: Sol Array Beam Atk Spritesheet_30
+  - first:
+      213: -1451382694399782577
+    second: Sol Array Beam Atk Spritesheet_31
+  - first:
+      213: 4410802665945374610
+    second: Sol Array Beam Atk Spritesheet_32
+  - first:
+      213: 5950021260106118385
+    second: Sol Array Beam Atk Spritesheet_33
+  - first:
+      213: 3881654206336268073
+    second: Sol Array Beam Atk Spritesheet_34
+  - first:
+      213: -7099676264351251657
+    second: Sol Array Beam Atk Spritesheet_35
+  - first:
+      213: -6730138186985073424
+    second: Sol Array Beam Atk Spritesheet_36
+  - first:
+      213: 7149331649314870867
+    second: Sol Array Beam Atk Spritesheet_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb7226f34facf4d0800000000000000
+      internalID: -3099409737110619193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb65f64015f545470800000000000000
+      internalID: 8382429608014730943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3f664966396d090800000000000000
+      internalID: -8010052818446126085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c7d000d7e928b30800000000000000
+      internalID: 4288164054919117981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fa8425fd47a63e50800000000000000
+      internalID: 6788797441574734581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14bc9131a5659eaa0800000000000000
+      internalID: -6131274472820716735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ee593a7b5d16610800000000000000
+      internalID: 1612805126275591833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1cb825d8e14bc40800000000000000
+      internalID: 5527076235014554083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35635e403d5a96cd0800000000000000
+      internalID: -2564336187071973805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55117dc51418a6b0800000000000000
+      internalID: -5284952078845668004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5fe7b06b5348280800000000000000
+      internalID: -9042043095859923541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690b90ab5056b5140800000000000000
+      internalID: 4709468910616424598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c9f092a6b208280800000000000000
+      internalID: -9043180316804539342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fde4c07b434d19f0800000000000000
+      internalID: -496166392647324168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb26f41808cce5f0800000000000000
+      internalID: -725985502876521495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b1efa93fda32790800000000000000
+      internalID: -7556004488008557821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c03fb3eccc4fabe0800000000000000
+      internalID: -1463866910994124601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b66e9aba545ed270800000000000000
+      internalID: 8277145913808283317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8bb5ec79fd75ee0800000000000000
+      internalID: -1272302526613702461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0afb1148ef57c7b0800000000000000
+      internalID: -5204085393273914868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a357fd4ef6fcb630800000000000000
+      internalID: 3944298945759892392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9ac1d6b8f4a1c00800000000000000
+      internalID: 872096938099255795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a18e8ab90631e70800000000000000
+      internalID: 9084711095006403095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95bdc49d0f30d4ba0800000000000000
+      internalID: -6103217587044426919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4ba843e20151880800000000000000
+      internalID: -8640982519404383043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1454cb90f0be3bb60800000000000000
+      internalID: 7760805032709866817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccbf93bdb60fb980800000000000000
+      internalID: -8521084558129513267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a09e7db0f0bdc70800000000000000
+      internalID: 8996801224144128622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc8ebd49e7e3fd40800000000000000
+      internalID: 5617088149478870202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Array Beam Atk Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 2784
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda33ea8530c0c930800000000000000
+      internalID: 4161537391886285532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4e9494c714a91854caf9e22651ca5bd4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":30.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Sol Array Beam Atk Spritesheet_0: -3099409737110619193
+      Sol Array Beam Atk Spritesheet_1: 8382429608014730943
+      Sol Array Beam Atk Spritesheet_10: -9042043095859923541
+      Sol Array Beam Atk Spritesheet_11: 4709468910616424598
+      Sol Array Beam Atk Spritesheet_12: -9043180316804539342
+      Sol Array Beam Atk Spritesheet_13: -496166392647324168
+      Sol Array Beam Atk Spritesheet_14: -725985502876521495
+      Sol Array Beam Atk Spritesheet_15: -7556004488008557821
+      Sol Array Beam Atk Spritesheet_16: -1463866910994124601
+      Sol Array Beam Atk Spritesheet_17: 8277145913808283317
+      Sol Array Beam Atk Spritesheet_18: -1272302526613702461
+      Sol Array Beam Atk Spritesheet_19: -5204085393273914868
+      Sol Array Beam Atk Spritesheet_2: -8010052818446126085
+      Sol Array Beam Atk Spritesheet_20: 3944298945759892392
+      Sol Array Beam Atk Spritesheet_21: 872096938099255795
+      Sol Array Beam Atk Spritesheet_22: 9084711095006403095
+      Sol Array Beam Atk Spritesheet_23: -6103217587044426919
+      Sol Array Beam Atk Spritesheet_24: -8640982519404383043
+      Sol Array Beam Atk Spritesheet_25: 7760805032709866817
+      Sol Array Beam Atk Spritesheet_26: -8521084558129513267
+      Sol Array Beam Atk Spritesheet_27: 8996801224144128622
+      Sol Array Beam Atk Spritesheet_28: 5617088149478870202
+      Sol Array Beam Atk Spritesheet_29: 4161537391886285532
+      Sol Array Beam Atk Spritesheet_3: 4288164054919117981
+      Sol Array Beam Atk Spritesheet_4: 6788797441574734581
+      Sol Array Beam Atk Spritesheet_5: -6131274472820716735
+      Sol Array Beam Atk Spritesheet_6: 1612805126275591833
+      Sol Array Beam Atk Spritesheet_7: 5527076235014554083
+      Sol Array Beam Atk Spritesheet_8: -2564336187071973805
+      Sol Array Beam Atk Spritesheet_9: -5284952078845668004
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

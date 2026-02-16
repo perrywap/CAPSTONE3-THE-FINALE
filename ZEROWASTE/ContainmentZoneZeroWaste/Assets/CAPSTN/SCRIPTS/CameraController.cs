@@ -1,114 +1,80 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 
-public class CameraController : MonoBehaviour
+public class CameraController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    [Header("References")]
+    public static CameraController Instance { get; private set; }
+
     [SerializeField] private Camera cam;
+
+    [SerializeField] private float zoomStep, minCamSize, maxCamSize;
+
     [SerializeField] private SpriteRenderer mapRenderer;
 
-    [Header("Zoom Settings")]
-    [Range(0.1f, 1f)]
-    [SerializeField] private float zoomStep = 0.5f;
-    [Range(1f, 2f)]
-    [SerializeField] private float minCamSize =2f;
-    [Range(4f, 14f)]
-    [SerializeField] private float maxCamSize = 6f;
+    private float mapMinX, mapMaxX, mapMinY, mapMaxY;
 
-    private float minMapX, minMapY, maxMapX, maxMapY;
     private Vector3 dragOrigin;
+
+    public bool canMoveCam = true;
 
     private void Awake()
     {
-        Bounds bounds = mapRenderer.bounds;
+        Instance = this;
 
-        minMapX = bounds.min.x;
-        maxMapX = bounds.max.x;
-        minMapY = bounds.min.y;
-        maxMapY = bounds.max.y;
+        mapMinX = mapRenderer.transform.position.x - mapRenderer.bounds.size.x / 2f;
+        mapMaxX = mapRenderer.transform.position.x + mapRenderer.bounds.size.x / 2f;
+
+        mapMinY = mapRenderer.transform.position.y - mapRenderer.bounds.size.y / 2f;
+        mapMaxY = mapRenderer.transform.position.y + mapRenderer.bounds.size.y / 2f;
     }
 
     private void Update()
     {
+        if (GameManager.Instance.isGameOver)
+            return;
+
         PanCamera();
-        HandleScrollZoom();
-    }
 
-    private void PanCamera2()
-    {
-        if (Mouse.current == null) return;
-
-        Vector3 mousePos = Mouse.current.position.ReadValue();
-        mousePos.z = cam.transform.position.y;
-
-        if (Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            dragOrigin = cam.ScreenToWorldPoint(mousePos);
-        }
-
-        if (Mouse.current.leftButton.isPressed)
-        {
-            Vector3 currentPos = cam.ScreenToWorldPoint(mousePos);
-            Vector3 difference = dragOrigin - currentPos;
-
-            cam.transform.position = ClampCamera(cam.transform.position + difference);
-        }
+        if (Input.mouseScrollDelta.y > 0)
+            ZoomIn();
+        if (Input.mouseScrollDelta.y < 0)
+            ZoomOut();
     }
 
     private void PanCamera()
     {
-        if (Mouse.current == null) return;
-
-        // Ignore clicks on UI
-        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+        if (!canMoveCam)
             return;
 
-        Vector3 mousePos = Mouse.current.position.ReadValue();
-        mousePos.z = cam.transform.position.y;
-
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (Input.GetMouseButtonDown(0))
         {
-            dragOrigin = cam.ScreenToWorldPoint(mousePos);
+            Debug.Log("Should pan");
+            dragOrigin = cam.ScreenToWorldPoint(Input.mousePosition);
         }
 
-        if (Mouse.current.leftButton.isPressed)
-        {
-            Vector3 currentPos = cam.ScreenToWorldPoint(mousePos);
-            Vector3 difference = dragOrigin - currentPos;
 
+        if (Input.GetMouseButton(0))
+        {
+            Vector3 difference = dragOrigin - cam.ScreenToWorldPoint(Input.mousePosition);
+
+            //move the camera by that distance
             cam.transform.position = ClampCamera(cam.transform.position + difference);
         }
     }
 
-    private void HandleScrollZoom()
-    {
-        if (Mouse.current == null) return;
-
-        float scrollValue = Mouse.current.scroll.ReadValue().y;
-
-        if (scrollValue > 0f) ZoomIn();
-        else if (scrollValue < 0f) ZoomOut();
-    }
-
     public void ZoomIn()
     {
-        cam.orthographicSize = Mathf.Clamp(
-            cam.orthographicSize - zoomStep,
-            minCamSize,
-            maxCamSize
-        );
-
-        cam.transform.position = ClampCamera(cam.transform.position);
+        float newSize = cam.orthographicSize - zoomStep;
+        cam.orthographicSize = Mathf.Clamp(newSize, minCamSize, maxCamSize);
     }
 
     public void ZoomOut()
     {
-        cam.orthographicSize = Mathf.Clamp(
-            cam.orthographicSize + zoomStep,
-            minCamSize,
-            maxCamSize
-        );
+        float newSize = cam.orthographicSize + zoomStep;
+        cam.orthographicSize = Mathf.Clamp(newSize, minCamSize, maxCamSize);
 
         cam.transform.position = ClampCamera(cam.transform.position);
     }
@@ -116,16 +82,27 @@ public class CameraController : MonoBehaviour
     private Vector3 ClampCamera(Vector3 targetPosition)
     {
         float camHeight = cam.orthographicSize;
-        float camWidth = camHeight * cam.aspect;
+        float camWidth = cam.orthographicSize * cam.aspect;
 
-        float minX = minMapX + camWidth;
-        float maxX = maxMapX - camWidth;
-        float minY = minMapY + camHeight;
-        float maxY = maxMapY - camHeight;
+        float minX = mapMinX + camWidth;
+        float maxX = mapMaxX - camWidth;
+
+        float minY = mapMinY + camHeight;
+        float maxY = mapMaxY - camHeight;
 
         float newX = Mathf.Clamp(targetPosition.x, minX, maxX);
         float newY = Mathf.Clamp(targetPosition.y, minY, maxY);
 
         return new Vector3(newX, newY, targetPosition.z);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        canMoveCam = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        canMoveCam = false;
     }
 }

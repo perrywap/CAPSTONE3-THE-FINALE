@@ -471,7 +471,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -515,7 +515,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 3, y: 3}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 3, y: 3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -545,7 +545,7 @@ MonoBehaviour:
   rotationSpeed: 250
   attackSpeed: 0.33
   damage: 1000
-  turretSprite: {fileID: 977081006463715938}
+  turretSprite: {fileID: 3512986718841752556}
   directionSprites:
   - {fileID: -1311330109, guid: 1f7a34b097cc95e45972cc030c3986f0, type: 3}
   - {fileID: -68772120, guid: 1f7a34b097cc95e45972cc030c3986f0, type: 3}
