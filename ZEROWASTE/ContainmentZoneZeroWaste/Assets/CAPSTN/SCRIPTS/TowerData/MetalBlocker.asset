@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea02358dec0f9744ba3a10ec55278742, type: 3}
   m_Name: MetalBlocker
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
-  towerCost: 0
-  towerGhost: {fileID: 0}
-  towerPrefab: {fileID: 0}
+  towerName: 
+  placementType: 0
+  resourceEntry: []
+  towerGhost: {fileID: 6213255095525241289, guid: 90ba1a958efc4a449993685cca7850f3, type: 3}
+  towerPrefab: {fileID: 5182420084640607954, guid: d633587f450c04259b8f55f7e23cf5f8, type: 3}

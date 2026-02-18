@@ -544,8 +544,8 @@ MonoBehaviour:
   attackRange: 10
   rotationSpeed: 250
   attackSpeed: 0.33
-  damage: 1000
-  turretSprite: {fileID: 3512986718841752556}
+  damage: 30
+  turretSprite: {fileID: 977081006463715938}
   directionSprites:
   - {fileID: -1311330109, guid: 1f7a34b097cc95e45972cc030c3986f0, type: 3}
   - {fileID: -68772120, guid: 1f7a34b097cc95e45972cc030c3986f0, type: 3}
