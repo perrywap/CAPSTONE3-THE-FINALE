@@ -128,104 +128,16 @@ TextureImporter:
         y: 0
         width: 96
         height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.275}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fef244534c365149ba83725905953bd
+      spriteID: d8e03ceeb1a5cc549804ed9b7f7b5c04
       internalID: -980825881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: aim_L
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 707899263a6bd16429399dde4a4d1b30
-      internalID: -1662384986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: aim_LL
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b459c7ed4180542499c24209ca0ef0c5
-      internalID: -863125150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: aim_D
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00e6d057665aa294a87f3c1b808d5ecb
-      internalID: -2083028900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: aim_LR
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9abf720e76062b347a2596d28a5f94fe
-      internalID: -880187999
       vertices: []
       indices: 
       edges: []
@@ -234,20 +146,108 @@ TextureImporter:
       name: aim_R
       rect:
         serializedVersion: 2
-        x: 480
+        x: 96
         y: 0
         width: 96
         height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.275}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26aabd485577d6d499c9479d10b154e1
+      spriteID: b478de19081b9db40a83e3c1b3191576
       internalID: 542364595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim_BL
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdb1362514121146a0e9b5b946d1c11
+      internalID: 1111802544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim_B
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5ddbe000fb3124886f19220b1abd6c
+      internalID: -1426671071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim_BR
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eec8abb1a77dd747bf4c3cb84e1528e
+      internalID: -815802135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim_L
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397b9e54a28f9af46a2ddd4a082126bf
+      internalID: -1559802733
       vertices: []
       indices: 
       edges: []
@@ -260,15 +260,15 @@ TextureImporter:
         y: 0
         width: 96
         height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.275}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbdcfe901f3153f42aaffd77d770e80c
+      spriteID: 1a7111a32c433e646b2fa874cc21c660
       internalID: -2053488283
       vertices: []
       indices: 
@@ -282,15 +282,15 @@ TextureImporter:
         y: 0
         width: 96
         height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.275}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5d1d466506608445b9e3cab9ef2af5a
+      spriteID: 64d8225689201e94ebf0bd7d615595c9
       internalID: 1727266002
       vertices: []
       indices: 
@@ -312,10 +312,10 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      aim_D: -2083028900
-      aim_L: -1662384986
-      aim_LL: -863125150
-      aim_LR: -880187999
+      aim_B: -1426671071
+      aim_BL: 1111802544
+      aim_BR: -815802135
+      aim_L: -1559802733
       aim_R: 542364595
       aim_T: 1727266002
       aim_TL: -980825881
