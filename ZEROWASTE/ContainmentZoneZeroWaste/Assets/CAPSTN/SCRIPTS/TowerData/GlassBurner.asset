@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea02358dec0f9744ba3a10ec55278742, type: 3}
   m_Name: GlassBurner
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
-  towerCost: 0
-  towerGhost: {fileID: 0}
-  towerPrefab: {fileID: 0}
+  towerName: 
+  placementType: 0
+  resourceEntry: []
+  towerGhost: {fileID: -2382626113188323376, guid: c3e5efd6ff3249c41ac16186a861f9da, type: 3}
+  towerPrefab: {fileID: 5182420084640607954, guid: d633587f450c04259b8f55f7e23cf5f8, type: 3}

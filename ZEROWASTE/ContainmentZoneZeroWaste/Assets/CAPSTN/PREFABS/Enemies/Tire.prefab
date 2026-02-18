@@ -109,8 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab2a5a1d0756a84baa15ba32dc236d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBase
-  moveSpeed: 10
   rewardAmount: 10
+  coreDamage: 10
+  moveSpeed: 2
   riverDamagePerSecond: 5
 --- !u!114 &8930087432033449490
 MonoBehaviour:

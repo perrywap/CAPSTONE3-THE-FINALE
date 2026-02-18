@@ -37,6 +37,9 @@ public class PlayerController : MonoBehaviour
             if (spawner.GetComponent<ScrapSpawner>() != null)
                 spawner.GetComponent<ScrapSpawner>().StartSpawner();
 
+            if (spawner.GetComponent<DumperSpawner>() != null)
+                spawner.GetComponent<DumperSpawner>().StartSpawner();
+
         }
     }
     #endregion
