@@ -12,6 +12,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject towerGhostPrefab;
     [SerializeField] private GameObject targetLaserPrefab;
 
+    [SerializeField] private CanvasGroup[] skillCanvasGroups;
+
+    private void SetButtonState(int index, bool isEnabled)
+    {
+        skillCanvasGroups[index].interactable = isEnabled;
+        skillCanvasGroups[index].blocksRaycasts = isEnabled;
+        skillCanvasGroups[index].alpha = isEnabled ? 1f : 0.5f;
+    }
+
     public bool isBuilding = false;
 
     private void Awake()
@@ -45,17 +54,33 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region SKILL BUTTONS
+    //public void RefreshSkillButtons()
+    //{
+    //    skillButtonsPanels[0].interactable =
+    //        BuilderManager.Instance.IsStationTier3(BuildStationType.Printer);
+
+    //    skillButtonsPanels[1].interactable =
+    //        BuilderManager.Instance.IsStationTier3(BuildStationType.Forger);
+
+    //    skillButtonsPanels[2].interactable =
+    //        BuilderManager.Instance.IsStationTier3(BuildStationType.Modler);
+    //}
     public void RefreshSkillButtons()
     {
-        skillButtonsPanels[0].interactable =
+        bool printerUnlocked =
             BuilderManager.Instance.IsStationTier3(BuildStationType.Printer);
 
-        skillButtonsPanels[1].interactable =
+        bool forgerUnlocked =
             BuilderManager.Instance.IsStationTier3(BuildStationType.Forger);
 
-        skillButtonsPanels[2].interactable =
+        bool modlerUnlocked =
             BuilderManager.Instance.IsStationTier3(BuildStationType.Modler);
+
+        SetButtonState(0, printerUnlocked);
+        SetButtonState(1, forgerUnlocked);
+        SetButtonState(2, modlerUnlocked);
     }
+
 
     public void OnSolarRayBtnClicked()
     {
