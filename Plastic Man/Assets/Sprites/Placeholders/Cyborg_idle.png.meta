@@ -1,46 +1,19 @@
 fileFormatVersion: 2
-guid: 17c90ea6a22a43346939a8a793780a52
+guid: 6700633aa3d9031469a022c16aacde4e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 227398847251526588
-    second: Resources Assets (64x64)_0
+      213: -8019239915147560276
+    second: Cyborg_idle_0
   - first:
-      213: 6291053483122176606
-    second: Resources Assets (64x64)_1
+      213: -6526221278753614019
+    second: Cyborg_idle_1
   - first:
-      213: -5990384069120458604
-    second: Resources Assets (64x64)_2
+      213: -1626806750166959302
+    second: Cyborg_idle_2
   - first:
-      213: 8117236894462823273
-    second: Resources Assets (64x64)_3
-  - first:
-      213: -2978971339030128391
-    second: Resources Assets (64x64)_4
-  - first:
-      213: 5734178920787394969
-    second: Resources Assets (64x64)_5
-  - first:
-      213: -3859606295508002764
-    second: Resources Assets (64x64)_6
-  - first:
-      213: -6368993571960243657
-    second: Resources Assets (64x64)_7
-  - first:
-      213: 4211318656948125869
-    second: Resources Assets (64x64)_8
-  - first:
-      213: 481527323970111370
-    second: Resources Assets (64x64)_9
-  - first:
-      213: -8432492749303583213
-    second: Resources Assets (64x64)_10
-  - first:
-      213: -5219965079933634064
-    second: Resources Assets (64x64)_11
-  - first:
-      213: -1498990747790309016
-    second: Resources Assets (64x64)_12
+      213: 7969078075045196988
+    second: Cyborg_idle_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -87,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -136,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MetalLoot
+      name: Cyborg_idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb3b2c8fb02e72300800000000000000
-      internalID: 227398847251526588
+      spriteID: caafef0f8cfe5b090800000000000000
+      internalID: -8019239915147560276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GlassLoot
+      name: Cyborg_idle_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 48
         y: 0
-        width: 64
-        height: 64
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e523b7cbfcf4e4750800000000000000
-      internalID: 6291053483122176606
+      spriteID: d379b4a03543e65a0800000000000000
+      internalID: -6526221278753614019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlasticLoot
+      name: Cyborg_idle_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 96
         y: 0
-        width: 64
-        height: 64
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,8 +168,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4908ae37d61eddca0800000000000000
-      internalID: -5990384069120458604
+      spriteID: a3b371241eb6c69e0800000000000000
+      internalID: -1626806750166959302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyborg_idle_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb43c6a894ad79e60800000000000000
+      internalID: 7969078075045196988
       vertices: []
       indices: 
       edges: []
@@ -205,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3d4f4781898c6e443aff14fffdef46e0
+    spriteID: d635a3ccb0951ac4b868561d45cc810c
     internalID: 0
     vertices: []
     indices: 
@@ -215,11 +210,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      GlassLoot: 6291053483122176606
-      MetalLoot: 227398847251526588
-      PlasticLoot: -5990384069120458604
+      Cyborg_idle_0: -8019239915147560276
+      Cyborg_idle_1: -6526221278753614019
+      Cyborg_idle_2: -1626806750166959302
+      Cyborg_idle_3: 7969078075045196988
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

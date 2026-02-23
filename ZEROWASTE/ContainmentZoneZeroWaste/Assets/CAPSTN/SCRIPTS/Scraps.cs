@@ -3,17 +3,26 @@ using UnityEditor.Rendering.Universal.ShaderGraph;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Scraps : MonoBehaviour, IPointerClickHandler
+public class Scraps : MonoBehaviour
 {
     [Header("Attributes")]
-    [SerializeField] private ResourceType resourceType;
-    [SerializeField] private int amount;
+    [SerializeField] public ResourceType resourceType;
+    [SerializeField] public int amount;
 
-    public void OnPointerClick(PointerEventData eventData)
+    private void OnMouseDown()
     {
-        ResourceEntry materialEntry = new ResourceEntry();
-        materialEntry.resourceType = resourceType;
-        materialEntry.resourceCost = amount;
+        Pickup();
+    }
+
+    private void Pickup()
+    {
+        Debug.Log("Picked up loot");
+
+        ResourceEntry materialEntry = new ResourceEntry
+        {
+            resourceType = resourceType,
+            resourceCost = amount
+        };
 
         GameManager.Instance.AddMaterial(materialEntry);
         Destroy(gameObject);

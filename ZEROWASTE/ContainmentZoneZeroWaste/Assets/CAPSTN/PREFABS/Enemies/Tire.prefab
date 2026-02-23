@@ -111,8 +111,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBase
   rewardAmount: 10
   coreDamage: 10
-  moveSpeed: 2
-  riverDamagePerSecond: 5
+  moveSpeed: 4
+  riverDamagePerSecond: 1.25
+  dropPrefab: {fileID: 1174918223250068912, guid: 7812288eb7eb004469ac53544ce2bca8, type: 3}
+  dropDistance: 0.6
 --- !u!114 &8930087432033449490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,6 +316,10 @@ PrefabInstance:
     - target: {fileID: 7090540208082204665, guid: ee90df097d2621745a98554edc935cc4, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778580802647854967, guid: ee90df097d2621745a98554edc935cc4, type: 3}
+      propertyPath: maxHp
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8853466960489637044, guid: ee90df097d2621745a98554edc935cc4, type: 3}
       propertyPath: m_Name

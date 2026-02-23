@@ -1,46 +1,25 @@
 fileFormatVersion: 2
-guid: 17c90ea6a22a43346939a8a793780a52
+guid: a16e91df4ef81414cbc6dfbd9e40099d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 227398847251526588
-    second: Resources Assets (64x64)_0
+      213: -2760476029438245614
+    second: Cyborg_run_0
   - first:
-      213: 6291053483122176606
-    second: Resources Assets (64x64)_1
+      213: 5798244199525097649
+    second: Cyborg_run_1
   - first:
-      213: -5990384069120458604
-    second: Resources Assets (64x64)_2
+      213: -5068142148817044500
+    second: Cyborg_run_2
   - first:
-      213: 8117236894462823273
-    second: Resources Assets (64x64)_3
+      213: 7958664899273603240
+    second: Cyborg_run_3
   - first:
-      213: -2978971339030128391
-    second: Resources Assets (64x64)_4
+      213: 1971013790562645882
+    second: Cyborg_run_4
   - first:
-      213: 5734178920787394969
-    second: Resources Assets (64x64)_5
-  - first:
-      213: -3859606295508002764
-    second: Resources Assets (64x64)_6
-  - first:
-      213: -6368993571960243657
-    second: Resources Assets (64x64)_7
-  - first:
-      213: 4211318656948125869
-    second: Resources Assets (64x64)_8
-  - first:
-      213: 481527323970111370
-    second: Resources Assets (64x64)_9
-  - first:
-      213: -8432492749303583213
-    second: Resources Assets (64x64)_10
-  - first:
-      213: -5219965079933634064
-    second: Resources Assets (64x64)_11
-  - first:
-      213: -1498990747790309016
-    second: Resources Assets (64x64)_12
+      213: 8889248399938843937
+    second: Cyborg_run_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -87,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -136,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MetalLoot
+      name: Cyborg_run_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb3b2c8fb02e72300800000000000000
-      internalID: 227398847251526588
+      spriteID: 2154a564da1d0b9d0800000000000000
+      internalID: -2760476029438245614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GlassLoot
+      name: Cyborg_run_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 48
         y: 0
-        width: 64
-        height: 64
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e523b7cbfcf4e4750800000000000000
-      internalID: 6291053483122176606
+      spriteID: 1b0a9a90160877050800000000000000
+      internalID: 5798244199525097649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlasticLoot
+      name: Cyborg_run_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 96
         y: 0
-        width: 64
-        height: 64
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,8 +174,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4908ae37d61eddca0800000000000000
-      internalID: -5990384069120458604
+      spriteID: ceb339c51975aa9b0800000000000000
+      internalID: -5068142148817044500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyborg_run_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8b29f1f8bd27e60800000000000000
+      internalID: 7958664899273603240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyborg_run_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77f1e189927a5b10800000000000000
+      internalID: 1971013790562645882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyborg_run_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125709e8254fc5b70800000000000000
+      internalID: 8889248399938843937
       vertices: []
       indices: 
       edges: []
@@ -205,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3d4f4781898c6e443aff14fffdef46e0
+    spriteID: ca24d42a34bab2b45ba1a5604c4e9348
     internalID: 0
     vertices: []
     indices: 
@@ -215,11 +260,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      GlassLoot: 6291053483122176606
-      MetalLoot: 227398847251526588
-      PlasticLoot: -5990384069120458604
+      Cyborg_run_0: -2760476029438245614
+      Cyborg_run_1: 5798244199525097649
+      Cyborg_run_2: -5068142148817044500
+      Cyborg_run_3: 7958664899273603240
+      Cyborg_run_4: 1971013790562645882
+      Cyborg_run_5: 8889248399938843937
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

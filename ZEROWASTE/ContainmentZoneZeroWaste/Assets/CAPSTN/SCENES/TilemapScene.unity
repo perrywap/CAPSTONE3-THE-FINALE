@@ -6813,7 +6813,6 @@ GameObject:
   m_Component:
   - component: {fileID: 905476406}
   - component: {fileID: 905476405}
-  - component: {fileID: 905476408}
   m_Layer: 0
   m_Name: River
   m_TagString: Untagged
@@ -6895,28 +6894,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &905476408
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905476404}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a7d0ddde39139984db885ba8ec318b5e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &910504553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3410057203497542509, guid: 1139a1845b68c8445b2a3de26e4b49c0, type: 3}
