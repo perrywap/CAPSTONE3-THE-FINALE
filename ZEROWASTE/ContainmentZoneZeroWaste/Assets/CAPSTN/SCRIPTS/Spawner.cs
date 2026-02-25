@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
     // FOR MULTIPLE LANE PURPOSES, SPAWNER
     // CAN HAVE ITS OWN SET OF WAYPOINTS
     [SerializeField] private Transform[] waypoints;
+    [SerializeField] private BoxCollider2D boxCol;
     
     // WAVE SETTINGS
     [SerializeField] private WaveData[] waves;
@@ -22,6 +23,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private int currentWaveIndex;
     [SerializeField] private float spawnInterval;
 
+    public WaveData[] Wave { get { return waves; } }
     public int CurrentWaveIndex { get { return currentWaveIndex + 1; } }
     #endregion
 
@@ -37,16 +39,28 @@ public class Spawner : MonoBehaviour
     #region METHODS
     public void StartWave()
     {
+        if (GameManager.Instance.isGameOver)
+            return;
+
         GameManager.Instance.isWaveRunning = true;
-        GameManager.Instance.WaveText.text = $"Wave: {currentWaveIndex + 1}";
+        GameManager.Instance.WaveText.text = $"Wave: {currentWaveIndex + 1}/{GameManager.Instance.totalWaveCount}";
 
         currentWaveEnemies = waves[currentWaveIndex]._enemiesToSpawn;
         StartCoroutine(StartSpawner());
     }
 
+    private Vector2 GetRandomPointInBounds(Bounds bounds)
+    {
+        float x = Random.Range(bounds.min.x, bounds.max.x);
+        float y = Random.Range(bounds.min.y, bounds.max.y);
+        return new Vector2(x, y);
+    }
+
     private void SpawnEnemy(GameObject enemyToSpawn)
     {
-        GameObject enemyGO = Instantiate(enemyToSpawn, this.gameObject.transform.position, Quaternion.identity);
+        Vector2 spawnPos = GetRandomPointInBounds(boxCol.bounds);
+
+        GameObject enemyGO = Instantiate(enemyToSpawn, this.transform.position, Quaternion.identity);
 
         // SET SPAWNER'S WAYPOINTS TO THE ENEMY WAYPOINT VARIBLE 
         WaypointMovement waypointMovement = enemyGO.GetComponent<WaypointMovement>();

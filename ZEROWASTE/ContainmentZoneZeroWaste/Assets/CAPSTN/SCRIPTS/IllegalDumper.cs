@@ -32,7 +32,6 @@ public class IllegalDumper : MonoBehaviour, IPointerDownHandler
 
     void ThrowGarbage()
     {
-        Debug.Log("Dumper throw garbage");
         float roll = Random.value;
 
         if (roll <= scrapChance)

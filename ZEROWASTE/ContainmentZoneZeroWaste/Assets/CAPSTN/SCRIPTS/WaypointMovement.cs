@@ -4,13 +4,30 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
+public enum MoveDirection
+{
+    UP,
+    DOWN,
+    LEFT,
+    RIGHT,
+    UP_LEFT,
+    UP_RIGHT,
+    DOWN_LEFT,
+    DOWN_RIGHT
+}
+
 public class WaypointMovement : MonoBehaviour
 {
     #region VARIABLES
     [SerializeField] private Transform[] waypoints;
     [SerializeField] private int currentIndex;
 
+    public MoveDirection direction;
+
     private EnemyBase enemy;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+    
     #endregion
 
     #region GETTERS AND SETTERS
@@ -21,6 +38,8 @@ public class WaypointMovement : MonoBehaviour
     private void Start()
     {
         enemy = GetComponent<EnemyBase>();
+        animator = GetComponent<Animator>(); // Get the components
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -35,20 +54,47 @@ public class WaypointMovement : MonoBehaviour
         if (waypoints.Length == 0 || enemy.IsDead)
             return;
 
-        if (currentIndex <= waypoints.Length - 1)
+        if (currentIndex < waypoints.Length)
         {
-            transform.position = Vector2.MoveTowards(transform.position, waypoints[currentIndex].position, enemy.MoveSpeed * Time.deltaTime);
+            Vector3 targetPosition = waypoints[currentIndex].position;
+            Vector3 moveVector = (targetPosition - transform.position).normalized;
 
-            if (transform.position == waypoints[currentIndex].position)
+            UpdateAnimation(moveVector);
+
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, enemy.MoveSpeed * Time.deltaTime);
+
+            if (transform.position == targetPosition)
             {
                 currentIndex++;
-            }
 
-            if (currentIndex == waypoints.Length)
-            {
-                OnPathComplete();
+                if (currentIndex >= waypoints.Length)
+                {
+                    OnPathComplete();
+                }
             }
         }
+    }
+
+    private Vector2 GetRandomPointInBounds(Bounds bounds)
+    {
+        float x = Random.Range(bounds.min.x, bounds.max.x);
+        float y = Random.Range(bounds.min.y, bounds.max.y);
+        return new Vector2(x, y);
+    }
+
+
+    private void UpdateAnimation(Vector3 dir)
+    {
+        if (dir.x < -0.1f)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (dir.x > 0.1f)
+        {
+            spriteRenderer.flipX = false;
+        }
+        animator.SetFloat("DirX", Mathf.Abs(dir.x));
+        animator.SetFloat("DirY", dir.y);
     }
 
     private void OnPathComplete()

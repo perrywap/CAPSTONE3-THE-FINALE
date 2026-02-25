@@ -1,4 +1,5 @@
 using UnityEngine;
+using static System.Collections.Specialized.BitVector32;
 
 public enum BuildStationType
 {
@@ -28,6 +29,9 @@ public class BuilderManager : MonoBehaviour
     [Header("BUILD STATIONS")]
     [SerializeField] private BuildStation[] buildStations;
 
+    [Header("UPGRADE BUTTONS")]
+    [SerializeField] private GameObject[] upgradeButtons;
+
     private void Awake()
     {
         if (Instance == null)
@@ -38,12 +42,57 @@ public class BuilderManager : MonoBehaviour
         InitializeStations();
     }
 
+    private void Update()
+    {
+        ShowUpgradeButtons();
+    }
+
     void InitializeStations()
     {
         for (int i = 0; i < buildStations.Length; i++)
         {
             buildStations[i].tier = 1;
         }
+    }
+
+    private void ShowUpgradeButtons()
+    {
+        int count = Mathf.Min(buildStations.Length, upgradeButtons.Length);
+
+        for (int i = 0; i < count; i++)
+        {
+            if (buildStations[i].tier >= 3)
+            {
+                upgradeButtons[i].SetActive(false);
+                continue; 
+            }
+
+            int tierIndex = buildStations[i].tier - 1;
+
+            // SAFETY CHECK
+            if (tierIndex < 0 || tierIndex >= buildStations[i].tierCosts.Length)
+            {
+                upgradeButtons[i].SetActive(false);
+                continue;
+            }
+
+            ResourceEntry[] cost =
+                buildStations[i].tierCosts[tierIndex].costs;
+
+            upgradeButtons[i].SetActive(
+                GameManager.Instance.CanSpend(cost)
+            );
+        }
+    }
+
+    public bool IsStationTier3(BuildStationType type)
+    {
+        foreach (BuildStation station in buildStations)
+        {
+            if (station.stationType == type)
+                return station.tier >= 3;
+        }
+        return false;
     }
 
     public void UpgradeStation(BuildStationType type)
@@ -75,6 +124,8 @@ public class BuilderManager : MonoBehaviour
             station.tier++;
             buildStations[i] = station;
 
+            PlayerController.Instance.RefreshSkillButtons();
+
             Debug.Log(type + " upgraded to Tier " + station.tier);
             return;
         }
@@ -88,21 +139,5 @@ public class BuilderManager : MonoBehaviour
                 return station.tier;
         }
         return 1;
-    }
-
-    public void UpgradePrinter()
-    {
-        Debug.Log("should upgrade");
-        UpgradeStation(BuildStationType.Printer);
-    }
-
-    public void UpgradeForger()
-    {
-        UpgradeStation(BuildStationType.Forger);
-    }
-
-    public void UpgradeModler()
-    {
-        UpgradeStation(BuildStationType.Modler);
     }
 }

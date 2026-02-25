@@ -15,13 +15,11 @@ public class ScrapSpawner : MonoBehaviour
     private int index = 0;
     private float spawnTime = 0.1f;
 
-    private void Update()
-    {
-        
-    }
-
     public void StartSpawner()
     {
+        if (GameManager.Instance.isGameOver)
+            return;
+
         StartCoroutine(SpawnScrapResource());
     }
 
@@ -34,7 +32,7 @@ public class ScrapSpawner : MonoBehaviour
 
     private void Randomize()
     {
-        index = Random.Range(0, srapPrefabs.Length -1);
+        index = Random.Range(0, srapPrefabs.Length);
         spawnTime = Random.Range(minSpawnRate, maxSpawnRate);
     }
 
@@ -42,13 +40,12 @@ public class ScrapSpawner : MonoBehaviour
     {
         while(true)
         {
-            if (!GameManager.Instance.isWaveRunning && GameManager.Instance.enemies.Count == 0)
-                break;
-
             yield return new WaitForSeconds(spawnTime);
-
             Vector2 spawnPos = GetRandomPointInBounds(dumpArea.bounds);
             GameObject scrapGO = Instantiate(srapPrefabs[index], spawnPos, Quaternion.identity);
+
+            if (!GameManager.Instance.isWaveRunning && GameManager.Instance.enemies.Count == 0)
+                break;
 
             Randomize();
         }

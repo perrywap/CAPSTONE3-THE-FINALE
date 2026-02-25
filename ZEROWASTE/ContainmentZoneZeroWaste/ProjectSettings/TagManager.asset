@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Spawner
+  - Base
+  - Turret
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - Enemy
   - Bullet
   - Node
-  - 
+  - Path
   - 
   - 
   - 

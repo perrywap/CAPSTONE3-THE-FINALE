@@ -19,11 +19,17 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     [Header("Attributes")]
     [SerializeField] protected float attackRange = 5f;
     [SerializeField] protected float rotationSpeed = 250f;
-    [SerializeField] protected float bps = 1f; 
-    [SerializeField] protected float damage = 10f; 
+    [SerializeField] protected float attackSpeed = 1f; 
+    [SerializeField] protected float damage = 10f;
+
+    [Header("Sprite Direction")]
+    [SerializeField] private SpriteRenderer turretSprite;
+    [SerializeField] private Sprite[] directionSprites;
 
     protected Transform target;
-    protected float timeUntilFire;
+    protected float attackCD;
+
+    public float AttackRange { get { return attackRange; } }
 
     #endregion
 
@@ -49,12 +55,12 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
         }
         else
         {
-            timeUntilFire += Time.deltaTime;
+            attackCD += Time.deltaTime;
 
-            if(timeUntilFire >= 1f /  bps)
+            if(attackCD >= 1f /  attackSpeed)
             {
                 Shoot();
-                timeUntilFire = 0f;
+                attackCD = 0f;
             }
         }
     }
@@ -73,10 +79,25 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
     private void RotateTowardsTarget()
     {
-        float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
+        Vector2 dir = target.position - transform.position;
 
-        Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
-        turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        angle = (angle + 360f) % 360f;
+
+        Quaternion targetRotation = Quaternion.Euler(0f, 0f, angle - 90f);
+        turretRotationPoint.rotation = Quaternion.RotateTowards(
+            turretRotationPoint.rotation,
+            targetRotation,
+            rotationSpeed * Time.deltaTime
+        );
+
+        UpdateTurretSprite(angle);
+    }
+
+    private void UpdateTurretSprite(float angle)
+    {
+        int index = Mathf.RoundToInt(angle / 45f) % 8;
+        turretSprite.sprite = directionSprites[index];
     }
 
     private bool CheckTargetIsInRange()
@@ -110,7 +131,9 @@ public class TowerBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     private void OnDrawGizmosSelected()
     {
         Handles.color = Color.cyan;
-        Handles.DrawWireDisc(transform.position, transform.forward, attackRange);
+
+        Vector3 tiltedNormal = Quaternion.Euler(45f, 0f, 0f) * Vector3.forward;
+        Handles.DrawWireDisc(transform.position, tiltedNormal, attackRange);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
