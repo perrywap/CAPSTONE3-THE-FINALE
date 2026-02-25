@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7535239519559829298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4393953685103002338}
+  - component: {fileID: 5483257203091459897}
+  m_Layer: 0
+  m_Name: PersistentData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4393953685103002338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535239519559829298}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5483257203091459897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535239519559829298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f5ef5dd9e918547adffb302204c674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitsOwned:
+  - {fileID: 821864623961105595, guid: 4926bac877016794d8eae6f16f91b0c4, type: 3}
+  - {fileID: 6079556535259424904, guid: 64ffb16c5ef978647ba768f30ded11ce, type: 3}
+  - {fileID: 4187163543062640282, guid: cd7b002ca4cb07047ab53ce9701ee821, type: 3}
+  - {fileID: 5896002291059908004, guid: e5bd7e213cc03784ebdba967921f0740, type: 3}
+  - {fileID: 1108254925203342617, guid: 1095db3343c056241906a238d6d5a268, type: 3}
+  - {fileID: 5805697148481037550, guid: 7f3d59f5e9bf1bd4e8e65cc420bf5670, type: 3}
+  unitDatas:
+  - {fileID: 11400000, guid: 83be6d349e33ab74fbd0d67cb0ed45ef, type: 2}
+  - {fileID: 11400000, guid: 770aed65ef16b5f4187f1b71caa90a1c, type: 2}
+  - {fileID: 11400000, guid: b0182c79e89a81f40841b2537f40ed00, type: 2}
+  - {fileID: 11400000, guid: 2f161326e693b784cb96f00c5ae100c1, type: 2}
+  - {fileID: 11400000, guid: 8a764ad9d4069384e9f3baa97fe5ed8c, type: 2}
+  - {fileID: 11400000, guid: 3bf53598bcc91814faf1e02b41d8700a, type: 2}
+  scene: LevelSelect
