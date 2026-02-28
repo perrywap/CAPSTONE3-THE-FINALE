@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject playerBody;
     [SerializeField] private float moveSpeed = 5f;
 
-    [SerializeField] private PlayerAimWeapon playerAimWeapon;
+    //[SerializeField] private PlayerAimWeapon playerAimWeapon;
     private Animator animator;
     private NavMeshAgent agent;
     public Camera mainCamera;
@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
         animator = playerBody.GetComponent<Animator>();
 
-        playerAimWeapon.OnShoot += PlayerAimWeapon_OnShoot;
+        //playerAimWeapon.OnShoot += PlayerAimWeapon_OnShoot;
     }
 
     private void Update()
