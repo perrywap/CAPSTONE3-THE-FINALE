@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float _randomMoveDistance = 3f;
     [SerializeField] private GameObject _player;
 
-    private Vector2 _targetPosition;
+    private NavMeshAgent _agent;
     private float _changeDirectionTimer;
 
     private enum State { Wander, Chase }
@@ -16,26 +17,25 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
+        _agent = GetComponent<NavMeshAgent>();
+        _agent.speed = _movementSpeed;
+        _agent.updateRotation = false;
+        _agent.updateUpAxis = false;
+
         _currentState = State.Wander;
         SetNewRandomPosition();
         _changeDirectionTimer = _changeDirectionTime;
 
         if (_player == null)
         {
-            GameObject playerObject = GameObject.FindWithTag("Player");
-            if (playerObject != null)
-            {
-                _player = playerObject;
-            }
-            else
-            {
-                Debug.LogError("Player object not found! Make sure it has the tag 'Player'.");
-            }
+            _player = GameObject.FindWithTag("Player");
         }
     }
 
     void Update()
     {
+        DetectPlayer();
+
         switch (_currentState)
         {
             case State.Wander:
@@ -46,18 +46,10 @@ public class EnemyAI : MonoBehaviour
                 ChasePlayer();
                 break;
         }
-
-        DetectPlayer();
     }
 
     private void Wander()
     {
-        transform.position = Vector2.MoveTowards(
-            transform.position,
-            _targetPosition,
-            _movementSpeed * Time.deltaTime
-        );
-
         _changeDirectionTimer -= Time.deltaTime;
 
         if (_changeDirectionTimer <= 0f)
@@ -69,10 +61,13 @@ public class EnemyAI : MonoBehaviour
 
     private void SetNewRandomPosition()
     {
-        float randomX = Random.Range(-_randomMoveDistance, _randomMoveDistance);
-        float randomY = Random.Range(-_randomMoveDistance, _randomMoveDistance);
+        Vector3 randomPos = (Vector3)transform.position + new Vector3(
+            Random.Range(-_randomMoveDistance, _randomMoveDistance),
+            Random.Range(-_randomMoveDistance, _randomMoveDistance),
+            0
+        );
 
-        _targetPosition = (Vector2)transform.position + new Vector2(randomX, randomY);
+        _agent.SetDestination(randomPos);
     }
 
     private void DetectPlayer()
@@ -85,21 +80,17 @@ public class EnemyAI : MonoBehaviour
         {
             _currentState = State.Chase;
         }
-        else
+        else if (_currentState == State.Chase)
         {
             _currentState = State.Wander;
+            SetNewRandomPosition();
         }
     }
 
     private void ChasePlayer()
     {
         if (_player == null) return;
-
-        transform.position = Vector2.MoveTowards(
-            transform.position,
-            _player.transform.position,
-            _movementSpeed * Time.deltaTime
-        );
+        _agent.SetDestination(_player.transform.position);
     }
 
     private void OnDrawGizmos()
