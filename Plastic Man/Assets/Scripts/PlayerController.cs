@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject playerBody;
     [SerializeField] private float moveSpeed = 5f;
 
-    //[SerializeField] private PlayerAimWeapon playerAimWeapon;
     private Animator animator;
     private NavMeshAgent agent;
     public Camera mainCamera;
@@ -20,8 +19,6 @@ public class PlayerController : MonoBehaviour
         agent.updateUpAxis = false;
 
         animator = playerBody.GetComponent<Animator>();
-
-        //playerAimWeapon.OnShoot += PlayerAimWeapon_OnShoot;
     }
 
     private void Update()
@@ -93,15 +90,5 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isMoving", false);
         }
-    }
-
-    private void PlayerAimWeapon_OnShoot(object sender, PlayerAimWeapon.OnShootEventArgs e)
-    {
-        Debug.Log("Shooted");
-
-        Vector3 gunEnd = e.gunEndPointPosition;
-        Vector3 target = e.shootPosition;
-
-        Debug.DrawLine(gunEnd, target, Color.red, 1f);
     }
 }

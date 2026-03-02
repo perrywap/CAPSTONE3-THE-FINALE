@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 195944437391927816}
   - component: {fileID: 8983198948337505244}
+  - component: {fileID: -2776871534448174691}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -57,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 4208481742703032022}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.77, y: 1.57, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -123,3 +124,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &-2776871534448174691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208481742703032022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efe04f308a47d14abd5358f6d65bfa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NerfGun
+  fireRate: 0.2
+  projectilePrefab: {fileID: 6396809954166474979, guid: f940f818a2b7890499ae060585668ba5, type: 3}
