@@ -15,5 +15,5 @@ MonoBehaviour:
   towerName: 
   placementType: 0
   resourceEntry: []
-  towerGhost: {fileID: -2083028900, guid: fc428cf12f59f0346ab17a968a7958a3, type: 3}
+  towerGhost: {fileID: -1426671071, guid: fc428cf12f59f0346ab17a968a7958a3, type: 3}
   towerPrefab: {fileID: 5182420084640607954, guid: d633587f450c04259b8f55f7e23cf5f8, type: 3}

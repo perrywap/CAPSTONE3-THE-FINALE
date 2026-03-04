@@ -98,17 +98,17 @@ public class TowerGhost : MonoBehaviour
         }
     }
 
-    // --- LOGIC FOR TRAPS (PATH/WATER) ---
+//     --- LOGIC FOR TRAPS(PATH/WATER) ---
     private void CheckForPath()
     {
-        // 1. Raycast to find Water/Path
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.zero, 0f, pathLayer);
+        // Check if we're overlapping a path
+        Collider2D pathHit = Physics2D.OverlapPoint(transform.position, pathLayer);
 
-        // 2. Also check we are NOT hitting a Node (don't overlap towers)
-        RaycastHit2D nodeHit = Physics2D.Raycast(transform.position, Vector2.zero, 0f, nodeLayer);
+        // Check if we're overlapping a node (tower spot)
+        Collider2D nodeHit = Physics2D.OverlapPoint(transform.position, nodeLayer);
 
-        bool onPath = hit.collider != null;
-        bool overlappingNode = nodeHit.collider != null;
+        bool onPath = pathHit != null;
+        bool overlappingNode = nodeHit != null;
 
         if (onPath && !overlappingNode)
         {
@@ -121,10 +121,10 @@ public class TowerGhost : MonoBehaviour
         }
         else
         {
-            // If we are off-path or hitting a node, show red
             SetColor(occupiedCol);
         }
     }
+
 
     private void SetColor(Color col)
     {

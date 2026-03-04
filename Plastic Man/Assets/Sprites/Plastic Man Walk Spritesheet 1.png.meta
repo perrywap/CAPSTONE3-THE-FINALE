@@ -1,0 +1,1159 @@
+fileFormatVersion: 2
+guid: 1890f3d0c1b5bb54494ab5b80814d472
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7933739944647636378
+    second: Plastic Man Walk Spritesheet 1_0
+  - first:
+      213: -5350669257109682580
+    second: Plastic Man Walk Spritesheet 1_1
+  - first:
+      213: 1498901191367881590
+    second: Plastic Man Walk Spritesheet 1_2
+  - first:
+      213: 6430955359191970440
+    second: Plastic Man Walk Spritesheet 1_3
+  - first:
+      213: -5854501328078234411
+    second: Plastic Man Walk Spritesheet 1_4
+  - first:
+      213: 2228472188522499334
+    second: Plastic Man Walk Spritesheet 1_5
+  - first:
+      213: -4992888900119847689
+    second: Plastic Man Walk Spritesheet 1_6
+  - first:
+      213: 5299628779737036534
+    second: Plastic Man Walk Spritesheet 1_7
+  - first:
+      213: -402835534755626753
+    second: Plastic Man Walk Spritesheet 1_8
+  - first:
+      213: 7793962621611333586
+    second: Plastic Man Walk Spritesheet 1_9
+  - first:
+      213: 2431800049528277315
+    second: Plastic Man Walk Spritesheet 1_10
+  - first:
+      213: -8374276417366960063
+    second: Plastic Man Walk Spritesheet 1_11
+  - first:
+      213: 7373130638347496758
+    second: Plastic Man Walk Spritesheet 1_12
+  - first:
+      213: -8112660204719827359
+    second: Plastic Man Walk Spritesheet 1_13
+  - first:
+      213: -8723379786286118565
+    second: Plastic Man Walk Spritesheet 1_14
+  - first:
+      213: 2554707979048794356
+    second: Plastic Man Walk Spritesheet 1_15
+  - first:
+      213: -5673345347788945088
+    second: Plastic Man Walk Spritesheet 1_16
+  - first:
+      213: -439519270918404411
+    second: Plastic Man Walk Spritesheet 1_17
+  - first:
+      213: -265347764968064473
+    second: Plastic Man Walk Spritesheet 1_18
+  - first:
+      213: -3540824839325372135
+    second: Plastic Man Walk Spritesheet 1_19
+  - first:
+      213: -3334847817614619207
+    second: Plastic Man Walk Spritesheet 1_20
+  - first:
+      213: -8662563882595229688
+    second: Plastic Man Walk Spritesheet 1_21
+  - first:
+      213: -8277590672117663942
+    second: Plastic Man Walk Spritesheet 1_22
+  - first:
+      213: 7778930818817410133
+    second: Plastic Man Walk Spritesheet 1_23
+  - first:
+      213: -6159969620079466877
+    second: Plastic Man Walk Spritesheet 1_24
+  - first:
+      213: -1491634456841016354
+    second: Plastic Man Walk Spritesheet 1_25
+  - first:
+      213: 2422105051333646244
+    second: Plastic Man Walk Spritesheet 1_26
+  - first:
+      213: -2902844985821707501
+    second: Plastic Man Walk Spritesheet 1_27
+  - first:
+      213: -4987047787106180803
+    second: Plastic Man Walk Spritesheet 1_28
+  - first:
+      213: 6582360067079499490
+    second: Plastic Man Walk Spritesheet 1_29
+  - first:
+      213: -6796172807996078555
+    second: Plastic Man Walk Spritesheet 1_30
+  - first:
+      213: 6955939567006504956
+    second: Plastic Man Walk Spritesheet 1_31
+  - first:
+      213: -2380261401801693501
+    second: Plastic Man Walk Spritesheet 1_32
+  - first:
+      213: 8435250648633876459
+    second: Plastic Man Walk Spritesheet 1_33
+  - first:
+      213: 7394062097543439053
+    second: Plastic Man Walk Spritesheet 1_34
+  - first:
+      213: 5330240518417628744
+    second: Plastic Man Walk Spritesheet 1_35
+  - first:
+      213: 3129089641353892086
+    second: Plastic Man Walk Spritesheet 1_36
+  - first:
+      213: 7831310315209897273
+    second: Plastic Man Walk Spritesheet 1_37
+  - first:
+      213: 6462679999938167994
+    second: Plastic Man Walk Spritesheet 1_38
+  - first:
+      213: 8032014042100904386
+    second: Plastic Man Walk Spritesheet 1_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a43fa1e81b5e190800000000000000
+      internalID: -7933739944647636378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66cf53e8aa9eb5b0800000000000000
+      internalID: -5350669257109682580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67374e821ba2dc410800000000000000
+      internalID: 1498901191367881590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882380793d75f3950800000000000000
+      internalID: 6430955359191970440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc18d28f02a0cea0800000000000000
+      internalID: -5854501328078234411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d88b406af1dee10800000000000000
+      internalID: 2228472188522499334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc9d51bff1b5bab0800000000000000
+      internalID: -4992888900119847689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6b9a9eb401c8940800000000000000
+      internalID: 5299628779737036534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff08cf72737d86af0800000000000000
+      internalID: -402835534755626753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7d0ddc5b7b92c60800000000000000
+      internalID: 7793962621611333586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34909e4c24d7fb120800000000000000
+      internalID: 2431800049528277315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14859eb97f798cb80800000000000000
+      internalID: -8374276417366960063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d6045404f925660800000000000000
+      internalID: 7373130638347496758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1661a3ac68a0a6f80800000000000000
+      internalID: -8112660204719827359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59c7958d4450f680800000000000000
+      internalID: -8723379786286118565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f83f0c1f55247320800000000000000
+      internalID: 2554707979048794356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049cce0077a3441b0800000000000000
+      internalID: -5673345347788945088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c648f04d8386e9f0800000000000000
+      internalID: -439519270918404411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a72271d9b415cf0800000000000000
+      internalID: -265347764968064473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911b12891967cdec0800000000000000
+      internalID: -3540824839325372135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_20
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd0813249d38b1d0800000000000000
+      internalID: -3334847817614619207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80068c58b0468c780800000000000000
+      internalID: -8662563882595229688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37f658e327102d80800000000000000
+      internalID: -8277590672117663942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_23
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55443fb7d5054fb60800000000000000
+      internalID: 7778930818817410133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38627f77444638aa0800000000000000
+      internalID: -6159969620079466877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_25
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb22415d56ac4be0800000000000000
+      internalID: -1491634456841016354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_26
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7db6916bb0d9120800000000000000
+      internalID: 2422105051333646244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_27
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313c2168dd507b7d0800000000000000
+      internalID: -2902844985821707501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3163abc5727acab0800000000000000
+      internalID: -4987047787106180803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee6dfd2b9d395b50800000000000000
+      internalID: 6582360067079499490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_30
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526893bb6d42fa1a0800000000000000
+      internalID: -6796172807996078555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_31
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7d18a9e26788060800000000000000
+      internalID: 6955939567006504956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_32
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c66901cddc97fed0800000000000000
+      internalID: -2380261401801693501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_33
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef9437e5c7001570800000000000000
+      internalID: 8435250648633876459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_34
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2a1436d4cfc9660800000000000000
+      internalID: 7394062097543439053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e3dabb281d8f940800000000000000
+      internalID: 5330240518417628744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0d04f3372cc6b20800000000000000
+      internalID: 3129089641353892086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_37
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93530f75d376eac60800000000000000
+      internalID: 7831310315209897273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4065d183d00b950800000000000000
+      internalID: 6462679999938167994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Walk Spritesheet 1_39
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1bf524732777f60800000000000000
+      internalID: 8032014042100904386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a3bc31f58a6f1fe4bb85ed6f38b3a8d6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":40.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Plastic Man Walk Spritesheet 1_0: -7933739944647636378
+      Plastic Man Walk Spritesheet 1_1: -5350669257109682580
+      Plastic Man Walk Spritesheet 1_10: 2431800049528277315
+      Plastic Man Walk Spritesheet 1_11: -8374276417366960063
+      Plastic Man Walk Spritesheet 1_12: 7373130638347496758
+      Plastic Man Walk Spritesheet 1_13: -8112660204719827359
+      Plastic Man Walk Spritesheet 1_14: -8723379786286118565
+      Plastic Man Walk Spritesheet 1_15: 2554707979048794356
+      Plastic Man Walk Spritesheet 1_16: -5673345347788945088
+      Plastic Man Walk Spritesheet 1_17: -439519270918404411
+      Plastic Man Walk Spritesheet 1_18: -265347764968064473
+      Plastic Man Walk Spritesheet 1_19: -3540824839325372135
+      Plastic Man Walk Spritesheet 1_2: 1498901191367881590
+      Plastic Man Walk Spritesheet 1_20: -3334847817614619207
+      Plastic Man Walk Spritesheet 1_21: -8662563882595229688
+      Plastic Man Walk Spritesheet 1_22: -8277590672117663942
+      Plastic Man Walk Spritesheet 1_23: 7778930818817410133
+      Plastic Man Walk Spritesheet 1_24: -6159969620079466877
+      Plastic Man Walk Spritesheet 1_25: -1491634456841016354
+      Plastic Man Walk Spritesheet 1_26: 2422105051333646244
+      Plastic Man Walk Spritesheet 1_27: -2902844985821707501
+      Plastic Man Walk Spritesheet 1_28: -4987047787106180803
+      Plastic Man Walk Spritesheet 1_29: 6582360067079499490
+      Plastic Man Walk Spritesheet 1_3: 6430955359191970440
+      Plastic Man Walk Spritesheet 1_30: -6796172807996078555
+      Plastic Man Walk Spritesheet 1_31: 6955939567006504956
+      Plastic Man Walk Spritesheet 1_32: -2380261401801693501
+      Plastic Man Walk Spritesheet 1_33: 8435250648633876459
+      Plastic Man Walk Spritesheet 1_34: 7394062097543439053
+      Plastic Man Walk Spritesheet 1_35: 5330240518417628744
+      Plastic Man Walk Spritesheet 1_36: 3129089641353892086
+      Plastic Man Walk Spritesheet 1_37: 7831310315209897273
+      Plastic Man Walk Spritesheet 1_38: 6462679999938167994
+      Plastic Man Walk Spritesheet 1_39: 8032014042100904386
+      Plastic Man Walk Spritesheet 1_4: -5854501328078234411
+      Plastic Man Walk Spritesheet 1_5: 2228472188522499334
+      Plastic Man Walk Spritesheet 1_6: -4992888900119847689
+      Plastic Man Walk Spritesheet 1_7: 5299628779737036534
+      Plastic Man Walk Spritesheet 1_8: -402835534755626753
+      Plastic Man Walk Spritesheet 1_9: 7793962621611333586
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

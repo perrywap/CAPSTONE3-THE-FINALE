@@ -51,7 +51,6 @@ public class CameraController : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Should pan");
             dragOrigin = cam.ScreenToWorldPoint(Input.mousePosition);
         }
 

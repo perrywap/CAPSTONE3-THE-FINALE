@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Resources Assets (64x64)_0
+      name: MetalLoot
       rect:
         serializedVersion: 2
         x: 0
@@ -158,7 +158,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Resources Assets (64x64)_1
+      name: GlassLoot
       rect:
         serializedVersion: 2
         x: 64
@@ -180,7 +180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Resources Assets (64x64)_2
+      name: PlasticLoot
       rect:
         serializedVersion: 2
         x: 128
@@ -217,9 +217,9 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Resources Assets (64x64)_0: 227398847251526588
-      Resources Assets (64x64)_1: 6291053483122176606
-      Resources Assets (64x64)_2: -5990384069120458604
+      GlassLoot: 6291053483122176606
+      MetalLoot: 227398847251526588
+      PlasticLoot: -5990384069120458604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
