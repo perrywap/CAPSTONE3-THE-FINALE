@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7b4aa0bf6c9922e4c8da4afbe889bf40
+guid: 45f6d7ebfa4a8f54aa31a632ff41d957
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5918470337615098827
-    second: Shipping Container(Blue)_0
+      213: 8577131758523600744
+    second: WorldLvl01_Map Layout(Draft_02)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 512
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shipping Container(Blue)_0
+      name: WorldLvl01_Map Layout(Draft_02)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 518
-        height: 292
+        x: 383
+        y: 1087
+        width: 27906
+        height: 12418
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc3fb372a61a22250800000000000000
-      internalID: 5918470337615098827
+      spriteID: 86f458a04e7180770800000000000000
+      internalID: 8577131758523600744
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Shipping Container(Blue)_0: 5918470337615098827
+      WorldLvl01_Map Layout(Draft_02)_0: 8577131758523600744
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
