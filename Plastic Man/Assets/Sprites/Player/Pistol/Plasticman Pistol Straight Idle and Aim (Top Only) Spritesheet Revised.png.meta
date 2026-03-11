@@ -1,0 +1,1105 @@
+fileFormatVersion: 2
+guid: 17d98b9dedc9ae641b5a052198d3cf97
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8886061675906673835
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_0
+  - first:
+      213: -2299346986899706205
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_1
+  - first:
+      213: -7963431047560408606
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_2
+  - first:
+      213: 7753467254261748275
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_3
+  - first:
+      213: -7149780170283047905
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_4
+  - first:
+      213: 9046038454604476061
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_5
+  - first:
+      213: 4379062061829953787
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_6
+  - first:
+      213: -7447550212814606388
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_7
+  - first:
+      213: 7861325785436728393
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_8
+  - first:
+      213: 5814917671447756591
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_9
+  - first:
+      213: 8818868533077416875
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_10
+  - first:
+      213: 1936069177761520570
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_11
+  - first:
+      213: -4939445769807515428
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_12
+  - first:
+      213: 4104685766163351609
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_13
+  - first:
+      213: -4619773823097560091
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_14
+  - first:
+      213: -2249198334890142964
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_15
+  - first:
+      213: -1342801691090597099
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_16
+  - first:
+      213: -5174835666359270868
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_17
+  - first:
+      213: 3162313338864090468
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_18
+  - first:
+      213: -4945754513840303626
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_19
+  - first:
+      213: 5093102119827422751
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_20
+  - first:
+      213: -8840836521554368653
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_21
+  - first:
+      213: 6030353046691319579
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_22
+  - first:
+      213: 6982625773655122187
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_23
+  - first:
+      213: -3043253603313824628
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_24
+  - first:
+      213: -8396247990347244978
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_25
+  - first:
+      213: -6095520967373829091
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_26
+  - first:
+      213: -216853805753049874
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_27
+  - first:
+      213: -5480694046780702083
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_28
+  - first:
+      213: 2390528964130500257
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_29
+  - first:
+      213: 3119621777774544293
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_30
+  - first:
+      213: 4899911771968853892
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_31
+  - first:
+      213: 924681361759999081
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_32
+  - first:
+      213: 2417926008572569047
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_33
+  - first:
+      213: -393834365195834957
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_34
+  - first:
+      213: -2730894590339102451
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_35
+  - first:
+      213: 7105957959169133488
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_36
+  - first:
+      213: -3812257656586573422
+    second: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 705
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553de537cfd5ea480800000000000000
+      internalID: -8886061675906673835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 705
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae6a7e09141710e0800000000000000
+      internalID: -2299346986899706205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_2
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 705
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e158d087a53c7190800000000000000
+      internalID: -7963431047560408606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_3
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 704
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33215eb5369d99b60800000000000000
+      internalID: 7753467254261748275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_4
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 704
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14a528f0d0e6cc90800000000000000
+      internalID: -7149780170283047905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_5
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 704
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9e2937eb0cf98d70800000000000000
+      internalID: 9046038454604476061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_6
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 704
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf893c47ebd85cc30800000000000000
+      internalID: 4379062061829953787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_7
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 576
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfec4e4a8cf4a890800000000000000
+      internalID: -7447550212814606388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_8
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 576
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c2398962a091d60800000000000000
+      internalID: 7861325785436728393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 576
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ff8cc30dcb2b050800000000000000
+      internalID: 5814917671447756591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_10
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 576
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab13fad43ae26a70800000000000000
+      internalID: 8818868533077416875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_11
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 576
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbde01d8ac4eda10800000000000000
+      internalID: 1936069177761520570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_12
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 576
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0315f1e30937bb0800000000000000
+      internalID: -4939445769807515428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_13
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 576
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 938c4cee4f5c6f830800000000000000
+      internalID: 4104685766163351609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 448
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e32f9b3f2443efb0800000000000000
+      internalID: -4619773823097560091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_15
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 448
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03197bf70e39c0e0800000000000000
+      internalID: -2249198334890142964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_16
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 448
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b40c6f9f86d5de0800000000000000
+      internalID: -1342801691090597099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 449
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2242aff06a4f28b0800000000000000
+      internalID: -5174835666359270868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_18
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 449
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d397f1a3bc2eb20800000000000000
+      internalID: 3162313338864090468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_19
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 453
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1934039762d5bb0800000000000000
+      internalID: -4945754513840303626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_20
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 453
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e3a11c4655ea640800000000000000
+      internalID: 5093102119827422751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_21
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 325
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377a37f360a0f4580800000000000000
+      internalID: -8840836521554368653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_22
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 325
+        width: 59
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f0b32552e10b350800000000000000
+      internalID: 6030353046691319579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_23
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 325
+        width: 59
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b016336452547e060800000000000000
+      internalID: 6982625773655122187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_24
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 325
+        width: 59
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c4d0db8f034c5d0800000000000000
+      internalID: -3043253603313824628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_25
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 325
+        width: 59
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ad34120f88a7b80800000000000000
+      internalID: -8396247990347244978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_26
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 326
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cccb2c9fb586ba0800000000000000
+      internalID: -6095520967373829091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_27
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 326
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eecd5e3dc949dfcf0800000000000000
+      internalID: -216853805753049874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_28
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 198
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72c90b6dc9a0f3b0800000000000000
+      internalID: -5480694046780702083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_29
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 198
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aee7446d6ddc2120800000000000000
+      internalID: 2390528964130500257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_30
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 197
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a503d97a7f1b4b20800000000000000
+      internalID: 3119621777774544293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_31
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 197
+        width: 59
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48755f6bbcbfff340800000000000000
+      internalID: 4899911771968853892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_32
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 197
+        width: 59
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9641122acc025dc00800000000000000
+      internalID: 924681361759999081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_33
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 197
+        width: 59
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d56522e4e23e8120800000000000000
+      internalID: 2417926008572569047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_34
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 197
+        width: 59
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b929224bb1d88af0800000000000000
+      internalID: -393834365195834957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_35
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 69
+        width: 59
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d094dc7c6d9e91ad0800000000000000
+      internalID: -2730894590339102451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_36
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 69
+        width: 59
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bbc2296d1f6d9260800000000000000
+      internalID: 7105957959169133488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_37
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 69
+        width: 59
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 299e4ea0cd3281bc0800000000000000
+      internalID: -3812257656586573422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_0: -8886061675906673835
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_1: -2299346986899706205
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_10: 8818868533077416875
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_11: 1936069177761520570
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_12: -4939445769807515428
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_13: 4104685766163351609
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_14: -4619773823097560091
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_15: -2249198334890142964
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_16: -1342801691090597099
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_17: -5174835666359270868
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_18: 3162313338864090468
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_19: -4945754513840303626
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_2: -7963431047560408606
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_20: 5093102119827422751
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_21: -8840836521554368653
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_22: 6030353046691319579
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_23: 6982625773655122187
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_24: -3043253603313824628
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_25: -8396247990347244978
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_26: -6095520967373829091
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_27: -216853805753049874
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_28: -5480694046780702083
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_29: 2390528964130500257
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_3: 7753467254261748275
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_30: 3119621777774544293
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_31: 4899911771968853892
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_32: 924681361759999081
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_33: 2417926008572569047
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_34: -393834365195834957
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_35: -2730894590339102451
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_36: 7105957959169133488
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_37: -3812257656586573422
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_4: -7149780170283047905
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_5: 9046038454604476061
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_6: 4379062061829953787
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_7: -7447550212814606388
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_8: 7861325785436728393
+      Plasticman Pistol Straight Idle and Aim (Top Only) Spritesheet Revised_9: 5814917671447756591
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
