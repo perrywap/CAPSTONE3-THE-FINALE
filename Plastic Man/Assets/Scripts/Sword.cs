@@ -3,7 +3,7 @@ using UnityEngine;
 public class Sword : WeaponBase
 {
     [SerializeField] private float range = 1.5f;
-    [SerializeField] private int damage = 10;
+    //[SerializeField] private int damage = 10;
     [SerializeField] private LayerMask hitLayer;
 
     protected override void Fire(Vector3 origin, Vector3 direction)
