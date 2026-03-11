@@ -42,25 +42,21 @@ public class WeaponManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            PlayerAnimation.Instance.topAnim.SetTrigger("equipRifle");
             PlayerCombat.Instance.ChangeWeapon(weapons[0]);
             newActiveIndex = 0;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            PlayerAnimation.Instance.topAnim.SetTrigger("equipRifle");
             PlayerCombat.Instance.ChangeWeapon(weapons[1]);
             newActiveIndex = 1;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            PlayerAnimation.Instance.topAnim.SetTrigger("equipRifle");
             PlayerCombat.Instance.ChangeWeapon(weapons[2]);
             newActiveIndex = 2;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            PlayerAnimation.Instance.topAnim.SetTrigger("equipRifle");
             PlayerCombat.Instance.ChangeWeapon(weapons[3]);
             newActiveIndex = 3;
         }
