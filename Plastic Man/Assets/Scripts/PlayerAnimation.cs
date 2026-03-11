@@ -11,6 +11,8 @@ public class PlayerAnimation : MonoBehaviour
     public Animator topAnim;
     private Animator botAnim;
 
+    public int weapIndex;
+
     public bool isMoving;
     public bool isShooting;
     public bool isAimingLeft;
@@ -100,6 +102,8 @@ public class PlayerAnimation : MonoBehaviour
         botAnim.SetBool("isMoving", isMoving);
         botAnim.SetBool("isMovingLeft", isMovingLeft);
         botAnim.SetBool("isAimingLeft", isAimingLeft);
+
+        topAnim.SetInteger("equippedWeap", weapIndex);
     }
 
     #region MOUSE WORLD POSITION
