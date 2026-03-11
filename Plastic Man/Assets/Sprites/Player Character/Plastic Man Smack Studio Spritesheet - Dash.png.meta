@@ -1,0 +1,720 @@
+fileFormatVersion: 2
+guid: 52b0bb5c14454e947b1760681222f7ee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6920333795550885279
+    second: Plastic Man Smack Studio Spritesheet - Dash_0
+  - first:
+      213: -501118501771657799
+    second: Plastic Man Smack Studio Spritesheet - Dash_1
+  - first:
+      213: -3837768522765880653
+    second: Plastic Man Smack Studio Spritesheet - Dash_2
+  - first:
+      213: 8446042873501725717
+    second: Plastic Man Smack Studio Spritesheet - Dash_3
+  - first:
+      213: -8672416813070891287
+    second: Plastic Man Smack Studio Spritesheet - Dash_4
+  - first:
+      213: -6149998995647772290
+    second: Plastic Man Smack Studio Spritesheet - Dash_5
+  - first:
+      213: -2264218360918212184
+    second: Plastic Man Smack Studio Spritesheet - Dash_6
+  - first:
+      213: 4554144005244060213
+    second: Plastic Man Smack Studio Spritesheet - Dash_7
+  - first:
+      213: 4925270919719663710
+    second: Plastic Man Smack Studio Spritesheet - Dash_8
+  - first:
+      213: -3527811416477087024
+    second: Plastic Man Smack Studio Spritesheet - Dash_9
+  - first:
+      213: 5576303356614392388
+    second: Plastic Man Smack Studio Spritesheet - Dash_10
+  - first:
+      213: -7707465454609508489
+    second: Plastic Man Smack Studio Spritesheet - Dash_11
+  - first:
+      213: -1904628020296269463
+    second: Plastic Man Smack Studio Spritesheet - Dash_12
+  - first:
+      213: -1217063730896938825
+    second: Plastic Man Smack Studio Spritesheet - Dash_13
+  - first:
+      213: -619942924029739396
+    second: Plastic Man Smack Studio Spritesheet - Dash_14
+  - first:
+      213: -7109779634995175712
+    second: Plastic Man Smack Studio Spritesheet - Dash_15
+  - first:
+      213: 1355599109437505800
+    second: Plastic Man Smack Studio Spritesheet - Dash_16
+  - first:
+      213: 7932417267448734944
+    second: Plastic Man Smack Studio Spritesheet - Dash_17
+  - first:
+      213: -573845860279432517
+    second: Plastic Man Smack Studio Spritesheet - Dash_18
+  - first:
+      213: 5104182007094478432
+    second: Plastic Man Smack Studio Spritesheet - Dash_19
+  - first:
+      213: 6900627146559299617
+    second: Plastic Man Smack Studio Spritesheet - Dash_20
+  - first:
+      213: -827038090484610547
+    second: Plastic Man Smack Studio Spritesheet - Dash_21
+  - first:
+      213: 2069022986084149623
+    second: Plastic Man Smack Studio Spritesheet - Dash_22
+  - first:
+      213: -1099275337881337425
+    second: Plastic Man Smack Studio Spritesheet - Dash_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a0f05141906ff90800000000000000
+      internalID: -6920333795550885279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd368fa06bab09f0800000000000000
+      internalID: -501118501771657799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b23d56acd18dbac0800000000000000
+      internalID: -3837768522765880653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5143ac09e3f563570800000000000000
+      internalID: 8446042873501725717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6c8c06bd265a780800000000000000
+      internalID: -8672416813070891287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79c76f5f70d6aaa0800000000000000
+      internalID: -6149998995647772290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a18d87a561e390e0800000000000000
+      internalID: -2264218360918212184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5320c8808d1933f30800000000000000
+      internalID: 4554144005244060213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58b3786ec31a5440800000000000000
+      internalID: 4925270919719663710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dac0563532ba0fc0800000000000000
+      internalID: -3527811416477087024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ab1dabb52036d40800000000000000
+      internalID: 5576303356614392388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777d7634105990590800000000000000
+      internalID: -7707465454609508489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9614cfc18e66195e0800000000000000
+      internalID: -1904628020296269463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b850ea2cfe1c1fe0800000000000000
+      internalID: -1217063730896938825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7eb038f1358567f0800000000000000
+      internalID: -619942924029739396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee5ec8571df45d90800000000000000
+      internalID: -7109779634995175712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801cbdf253e00d210800000000000000
+      internalID: 1355599109437505800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4e47c1a7b951e60800000000000000
+      internalID: 7932417267448734944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_18
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba473efa3a4908f0800000000000000
+      internalID: -573845860279432517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_19
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0668ec90e72b5d640800000000000000
+      internalID: 5104182007094478432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120a51624d3f3cf50800000000000000
+      internalID: 6900627146559299617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a82f01d35c584f0800000000000000
+      internalID: -827038090484610547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plastic Man Smack Studio Spritesheet - Dash_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779e9a59175a6bc10800000000000000
+      internalID: 2069022986084149623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8611f98c03a178f4a8e7d5ffb4b62117
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Plastic Man Smack Studio Spritesheet - Dash_0: -6920333795550885279
+      Plastic Man Smack Studio Spritesheet - Dash_1: -501118501771657799
+      Plastic Man Smack Studio Spritesheet - Dash_10: 5576303356614392388
+      Plastic Man Smack Studio Spritesheet - Dash_11: -7707465454609508489
+      Plastic Man Smack Studio Spritesheet - Dash_12: -1904628020296269463
+      Plastic Man Smack Studio Spritesheet - Dash_13: -1217063730896938825
+      Plastic Man Smack Studio Spritesheet - Dash_14: -619942924029739396
+      Plastic Man Smack Studio Spritesheet - Dash_15: -7109779634995175712
+      Plastic Man Smack Studio Spritesheet - Dash_16: 1355599109437505800
+      Plastic Man Smack Studio Spritesheet - Dash_17: 7932417267448734944
+      Plastic Man Smack Studio Spritesheet - Dash_18: -573845860279432517
+      Plastic Man Smack Studio Spritesheet - Dash_19: 5104182007094478432
+      Plastic Man Smack Studio Spritesheet - Dash_2: -3837768522765880653
+      Plastic Man Smack Studio Spritesheet - Dash_20: 6900627146559299617
+      Plastic Man Smack Studio Spritesheet - Dash_21: -827038090484610547
+      Plastic Man Smack Studio Spritesheet - Dash_22: 2069022986084149623
+      Plastic Man Smack Studio Spritesheet - Dash_3: 8446042873501725717
+      Plastic Man Smack Studio Spritesheet - Dash_4: -8672416813070891287
+      Plastic Man Smack Studio Spritesheet - Dash_5: -6149998995647772290
+      Plastic Man Smack Studio Spritesheet - Dash_6: -2264218360918212184
+      Plastic Man Smack Studio Spritesheet - Dash_7: 4554144005244060213
+      Plastic Man Smack Studio Spritesheet - Dash_8: 4925270919719663710
+      Plastic Man Smack Studio Spritesheet - Dash_9: -3527811416477087024
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

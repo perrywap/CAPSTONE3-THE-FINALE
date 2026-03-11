@@ -23,12 +23,11 @@ public class Projectile2D : MonoBehaviour
 
     public void Launch(Vector2 direction)
     {
-        rb.linearVelocity = direction.normalized * speed;
+        rb.linearVelocity = transform.right * speed;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        
         Destroy(gameObject);
     }
 }
