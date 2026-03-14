@@ -12,6 +12,9 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float _randomMoveDistance = 3f;
     [SerializeField] private GameObject _player;
 
+    [Header("Combat")]
+    [SerializeField] private GameObject _hitbox;
+
     private NavMeshAgent _agent;
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
@@ -35,6 +38,8 @@ public class EnemyAI : MonoBehaviour
 
         _currentState = State.Wander;
         SetNewRandomPosition();
+
+        if (_hitbox != null) _hitbox.SetActive(false);
     }
 
     void Update()
@@ -87,11 +92,22 @@ public class EnemyAI : MonoBehaviour
         _animator.SetTrigger("AttackSlime");
     }
 
+    public void EnableHitbox()
+    {
+        if (_hitbox != null) _hitbox.SetActive(true);
+    }
+
+    public void DisableHitbox()
+    {
+        if (_hitbox != null) _hitbox.SetActive(false);
+    }
+
     public void OnAttackAnimationFinished()
     {
         _isAttacking = false;
         _agent.isStopped = false;
         _currentTrigger = "";
+        DisableHitbox();
 
         if (_player != null)
         {
