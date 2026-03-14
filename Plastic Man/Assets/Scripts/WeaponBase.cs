@@ -4,6 +4,7 @@ public abstract class WeaponBase : MonoBehaviour
 {
     [Header("Weapon Settings")]
     [SerializeField] protected float fireRate = 0.2f;
+    [SerializeField] protected float damage = 10f;
     
     protected Animator animator;
 

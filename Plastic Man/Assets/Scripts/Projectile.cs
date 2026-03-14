@@ -6,8 +6,9 @@ public class Projectile2D : MonoBehaviour
     public float speed = 10f;
     public float lifetime = 3f;
 
+
     [Header("Damage")]
-    public int damage = 1;
+    public float damage;
 
     private Rigidbody2D rb;
 
