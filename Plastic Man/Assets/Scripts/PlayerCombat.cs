@@ -9,6 +9,8 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private Transform weaponAttach;
     [SerializeField] private Transform aimTransform;
 
+    [SerializeField] private SpriteRenderer equippedWeaponSprite;
+
     private WeaponBase weapon;
 
     private void Awake()
@@ -25,7 +27,7 @@ public class PlayerCombat : MonoBehaviour
         HandleShooting();
     }
 
-    private void HandleAiming()
+    private void HandleAim2ing()
     {
         Vector3 mousePosition = GetMouseWorldPosition();
 
@@ -53,6 +55,41 @@ public class PlayerCombat : MonoBehaviour
         aimTransform.localScale = localScale;
     }
 
+    private void HandleAiming()
+    {
+        Vector3 mousePosition = GetMouseWorldPosition();
+
+        Vector3 aimDirection = (mousePosition - transform.position).normalized;
+        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+
+        float angle360 = angle < 0 ? angle + 360f : angle;
+
+        bool aimingLeft = angle > 90f || angle < -90f;
+
+        if (!aimingLeft)
+        {
+            angle = Mathf.Clamp(angle, -60f, 60f);
+        }
+        else
+        {
+            if (angle > 0)
+                angle = Mathf.Clamp(angle, 120f, 180f);
+            else
+                angle = Mathf.Clamp(angle, -180f, -120f);
+        }
+
+        aimTransform.eulerAngles = new Vector3(0, 0, angle);
+
+        Vector3 localScale = Vector3.one;
+        localScale.y = aimingLeft ? -1f : 1f;
+        aimTransform.localScale = localScale;
+
+        if (angle360 > 30f && angle360 < 165f)
+            equippedWeaponSprite.sortingOrder = 2;
+        else
+            equippedWeaponSprite.sortingOrder = 4;
+    }
+
     private void HandleShooting()
     {
         if (equippedWeapon == null)
@@ -60,14 +97,14 @@ public class PlayerCombat : MonoBehaviour
 
         if (Input.GetMouseButton(1))
         {
-            PlayerAnimation.Instance.isShooting = true;
+            //PlayerAnimation.Instance.isShooting = true;
 
             Vector3 mousePosition = GetMouseWorldPosition();
             weapon.TryFire(mousePosition);
         }
         else
         {
-            PlayerAnimation.Instance.isShooting = false;
+            //PlayerAnimation.Instance.isShooting = false;
         }
     }
 
