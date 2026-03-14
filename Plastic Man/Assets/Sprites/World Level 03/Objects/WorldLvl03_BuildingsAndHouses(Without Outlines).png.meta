@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: e8dd8cff593ec9245ac8d89fae3403ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2593806722716741089
+    second: WorldLvl03_BuildingsAndHouses(Without Outlines)_0
+  - first:
+      213: 452412788962107933
+    second: WorldLvl03_BuildingsAndHouses(Without Outlines)_1
+  - first:
+      213: -5646825440614342067
+    second: WorldLvl03_BuildingsAndHouses(Without Outlines)_2
+  - first:
+      213: -7736143137345472419
+    second: WorldLvl03_BuildingsAndHouses(Without Outlines)_3
+  - first:
+      213: 8041693947814545982
+    second: WorldLvl03_BuildingsAndHouses(Without Outlines)_4
+  - first:
+      213: -7163627232356485470
+    second: WorldLvl03_BuildingsAndHouses(Without Outlines)_5
+  - first:
+      213: 2229550742455171875
+    second: WorldLvl03_BuildingsAndHouses(Without Outlines)_6
+  - first:
+      213: -5207395210060744046
+    second: WorldLvl03_BuildingsAndHouses(Without Outlines)_7
+  - first:
+      213: -3627733399022320883
+    second: WorldLvl03_BuildingsAndHouses(Without Outlines)_8
+  - first:
+      213: -6694959116665257606
+    second: WorldLvl03_BuildingsAndHouses(Without Outlines)_9
+  - first:
+      213: 7082311553901355718
+    second: WorldLvl03_BuildingsAndHouses(Without Outlines)_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WorldLvl03_BuildingsAndHouses(Without Outlines)_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 549
+        width: 396
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed2d83c87d0ff320800000000000000
+      internalID: 2593806722716741089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl03_BuildingsAndHouses(Without Outlines)_1
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 741
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d122ee9d80b474600800000000000000
+      internalID: 452412788962107933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl03_BuildingsAndHouses(Without Outlines)_2
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 549
+        width: 202
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d422b8f0e2272a1b0800000000000000
+      internalID: -5646825440614342067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl03_BuildingsAndHouses(Without Outlines)_3
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 549
+        width: 205
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5872feedc2b3a490800000000000000
+      internalID: -7736143137345472419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl03_BuildingsAndHouses(Without Outlines)_4
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 549
+        width: 205
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a05efe906d99f60800000000000000
+      internalID: 8041693947814545982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl03_BuildingsAndHouses(Without Outlines)_5
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 37
+        width: 296
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6b3189cfea59c90800000000000000
+      internalID: -7163627232356485470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl03_BuildingsAndHouses(Without Outlines)_6
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 472
+        width: 193
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32bbfbc6694f0fe10800000000000000
+      internalID: 2229550742455171875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl03_BuildingsAndHouses(Without Outlines)_7
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 410
+        width: 322
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29a324b75ad9bb7b0800000000000000
+      internalID: -5207395210060744046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl03_BuildingsAndHouses(Without Outlines)_8
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 37
+        width: 291
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d034473b1b3b7adc0800000000000000
+      internalID: -3627733399022320883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl03_BuildingsAndHouses(Without Outlines)_9
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 36
+        width: 401
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a718761a72ab613a0800000000000000
+      internalID: -6694959116665257606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl03_BuildingsAndHouses(Without Outlines)_10
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 37
+        width: 291
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c26fe6a5dc694260800000000000000
+      internalID: 7082311553901355718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WorldLvl03_BuildingsAndHouses(Without Outlines)_0: 2593806722716741089
+      WorldLvl03_BuildingsAndHouses(Without Outlines)_1: 452412788962107933
+      WorldLvl03_BuildingsAndHouses(Without Outlines)_10: 7082311553901355718
+      WorldLvl03_BuildingsAndHouses(Without Outlines)_2: -5646825440614342067
+      WorldLvl03_BuildingsAndHouses(Without Outlines)_3: -7736143137345472419
+      WorldLvl03_BuildingsAndHouses(Without Outlines)_4: 8041693947814545982
+      WorldLvl03_BuildingsAndHouses(Without Outlines)_5: -7163627232356485470
+      WorldLvl03_BuildingsAndHouses(Without Outlines)_6: 2229550742455171875
+      WorldLvl03_BuildingsAndHouses(Without Outlines)_7: -5207395210060744046
+      WorldLvl03_BuildingsAndHouses(Without Outlines)_8: -3627733399022320883
+      WorldLvl03_BuildingsAndHouses(Without Outlines)_9: -6694959116665257606
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: 52ff862f271e4d5459ffd7fadf106309
+guid: 170a0ccadecac344c979d670c55debe0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7502862206799553788
-    second: Scrap Pile(Medium)_0
+      213: -2872292793856530890
+    second: Bench and Trashbins_0
   - first:
-      213: 5687088694428594038
-    second: Scrap Pile(Medium)_1
+      213: 1110558690986220744
+    second: Bench and Trashbins_1
   - first:
-      213: 1019028283927802232
-    second: Scrap Pile(Medium)_2
+      213: -3645159077499078232
+    second: Bench and Trashbins_2
+  - first:
+      213: -461973123724818313
+    second: Bench and Trashbins_3
+  - first:
+      213: -292171075185085162
+    second: Bench and Trashbins_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 96
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,7 +113,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Scrap Pile(Medium)_0
+      name: Bench and Trashbins_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 5
-        width: 17
-        height: 12
+        x: 31
+        y: 63
+        width: 66
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +140,64 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40b5205239a70e790800000000000000
-      internalID: -7502862206799553788
+      spriteID: 636644b0ce09328d0800000000000000
+      internalID: -2872292793856530890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scrap Pile(Medium)_1
+      name: Bench and Trashbins_1
       rect:
         serializedVersion: 2
-        x: 17
+        x: 127
+        y: 63
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccd476de3f796f00800000000000000
+      internalID: 1110558690986220744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bench and Trashbins_2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 63
+        width: 65
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a970e3c12bc96dc0800000000000000
+      internalID: -3645159077499078232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bench and Trashbins_3
+      rect:
+        serializedVersion: 2
+        x: 31
         y: 0
-        width: 94
-        height: 62
+        width: 31
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67f6e8d39099cee40800000000000000
-      internalID: 5687088694428594038
+      spriteID: 778ca9044edb699f0800000000000000
+      internalID: -461973123724818313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scrap Pile(Medium)_2
+      name: Bench and Trashbins_4
       rect:
         serializedVersion: 2
-        x: 113
-        y: 5
-        width: 15
-        height: 10
+        x: 56
+        y: 0
+        width: 8
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 871b79f33d0542e00800000000000000
-      internalID: 1019028283927802232
+      spriteID: 615f2f184fff1fbf0800000000000000
+      internalID: -292171075185085162
       vertices: []
       indices: 
       edges: []
@@ -188,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -198,9 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Scrap Pile(Medium)_0: -7502862206799553788
-      Scrap Pile(Medium)_1: 5687088694428594038
-      Scrap Pile(Medium)_2: 1019028283927802232
+      Bench and Trashbins_0: -2872292793856530890
+      Bench and Trashbins_1: 1110558690986220744
+      Bench and Trashbins_2: -3645159077499078232
+      Bench and Trashbins_3: -461973123724818313
+      Bench and Trashbins_4: -292171075185085162
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
