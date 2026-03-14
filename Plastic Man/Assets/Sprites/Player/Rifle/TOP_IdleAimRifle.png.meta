@@ -1,115 +1,124 @@
 fileFormatVersion: 2
-guid: 8dff9c9905b3c6c49a5b3cbebb9e5749
+guid: 29e936b69cfde4941b10ab41b49b32ce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6048640068279181431
-    second: TOP_ShootUpward_0
+      213: -3273697952677387857
+    second: TOP_IdleAimRifle_0
   - first:
-      213: -7663512986985973338
-    second: TOP_ShootUpward_1
+      213: -8812983859430736284
+    second: TOP_IdleAimRifle_1
   - first:
-      213: 863455857528277754
-    second: TOP_ShootUpward_2
+      213: 7733347787352915418
+    second: TOP_IdleAimRifle_2
   - first:
-      213: 360900975180153478
-    second: TOP_ShootUpward_3
+      213: -8282235826699668274
+    second: TOP_IdleAimRifle_3
   - first:
-      213: 7847877431521530133
-    second: TOP_ShootUpward_4
+      213: -6085846097825516643
+    second: TOP_IdleAimRifle_4
   - first:
-      213: 2385102135142879798
-    second: TOP_ShootUpward_5
+      213: -3347350378291773704
+    second: TOP_IdleAimRifle_5
   - first:
-      213: -5571247575514891821
-    second: TOP_ShootUpward_6
+      213: -4631937496037116019
+    second: TOP_IdleAimRifle_6
   - first:
-      213: -5420319194614901134
-    second: TOP_ShootUpward_7
+      213: 2376146629771675120
+    second: TOP_IdleAimRifle_7
   - first:
-      213: -8172337333470132134
-    second: TOP_ShootUpward_8
+      213: -419527311111508678
+    second: TOP_IdleAimRifle_8
   - first:
-      213: -360491141295234688
-    second: TOP_ShootUpward_9
+      213: -2251617270614812928
+    second: TOP_IdleAimRifle_9
   - first:
-      213: -4854471696555384853
-    second: TOP_ShootUpward_10
+      213: 8320245766301437460
+    second: TOP_IdleAimRifle_10
   - first:
-      213: -4151314838603516677
-    second: TOP_ShootUpward_11
+      213: -8564011217869237361
+    second: TOP_IdleAimRifle_11
   - first:
-      213: -4043247078212631552
-    second: TOP_ShootUpward_12
+      213: 3258271672322031561
+    second: TOP_IdleAimRifle_12
   - first:
-      213: 1714015749112178373
-    second: TOP_ShootUpward_13
+      213: 975226366402655496
+    second: TOP_IdleAimRifle_13
   - first:
-      213: 210825953224596608
-    second: TOP_ShootUpward_14
+      213: -4604909433225114700
+    second: TOP_IdleAimRifle_14
   - first:
-      213: 385726690681548740
-    second: TOP_ShootUpward_15
+      213: 5946820735393907481
+    second: TOP_IdleAimRifle_15
   - first:
-      213: -5343587318087370527
-    second: TOP_ShootUpward_16
+      213: -4924399999683896340
+    second: TOP_IdleAimRifle_16
   - first:
-      213: -2439520582895070683
-    second: TOP_ShootUpward_17
+      213: 411694796540593178
+    second: TOP_IdleAimRifle_17
   - first:
-      213: -2287266590326866925
-    second: TOP_ShootUpward_18
+      213: -4124474663048977904
+    second: TOP_IdleAimRifle_18
   - first:
-      213: -9155421636029975810
-    second: TOP_ShootUpward_19
+      213: 4094904242434050229
+    second: TOP_IdleAimRifle_19
   - first:
-      213: 8315663370947478286
-    second: TOP_ShootUpward_20
+      213: 6228939678278236238
+    second: TOP_IdleAimRifle_20
   - first:
-      213: 3502997083399306422
-    second: TOP_ShootUpward_21
+      213: -33933162353981393
+    second: TOP_IdleAimRifle_21
   - first:
-      213: -8661456664380768707
-    second: TOP_ShootUpward_22
+      213: 4653484179482731267
+    second: TOP_IdleAimRifle_22
   - first:
-      213: -4632699043881766181
-    second: TOP_ShootUpward_23
+      213: 7534522694800148538
+    second: TOP_IdleAimRifle_23
   - first:
-      213: 4992201096127316029
-    second: TOP_ShootUpward_24
+      213: 7755277180854697904
+    second: TOP_IdleAimRifle_24
   - first:
-      213: -7260861442501634929
-    second: TOP_ShootUpward_25
+      213: -7832902769642527608
+    second: TOP_IdleAimRifle_25
   - first:
-      213: 111477232288596371
-    second: TOP_ShootUpward_26
+      213: 14725347763792136
+    second: TOP_IdleAimRifle_26
   - first:
-      213: -6370877038629008684
-    second: TOP_ShootUpward_27
+      213: -8650648322053223854
+    second: TOP_IdleAimRifle_27
   - first:
-      213: -8060604824490835705
-    second: TOP_ShootUpward_28
+      213: 4398411095629065830
+    second: TOP_IdleAimRifle_28
   - first:
-      213: 8224557381187952840
-    second: TOP_ShootUpward_29
+      213: -4259750272074521881
+    second: TOP_IdleAimRifle_29
   - first:
-      213: 6002831214764131047
-    second: TOP_ShootUpward_30
+      213: -7593387337787278782
+    second: TOP_IdleAimRifle_30
   - first:
-      213: 7076563607713220813
-    second: TOP_ShootUpward_31
+      213: 1870346144863983893
+    second: TOP_IdleAimRifle_31
   - first:
-      213: 6992325538141450909
-    second: TOP_ShootUpward_32
+      213: -1213045995037217995
+    second: TOP_IdleAimRifle_32
   - first:
-      213: -7832248592327513033
-    second: TOP_ShootUpward_33
+      213: 8155991280207102587
+    second: TOP_IdleAimRifle_33
   - first:
-      213: 7438851394665893550
-    second: TOP_ShootUpward_34
+      213: 4576098320550899241
+    second: TOP_IdleAimRifle_34
   - first:
-      213: 784846501213145667
-    second: TOP_ShootUpward_35
+      213: -2228675410753910077
+    second: TOP_IdleAimRifle_35
+  - first:
+      213: 6698150640618119359
+    second: TOP_IdleAimRifle_36
+  - first:
+      213: -3525627511758732418
+    second: TOP_IdleAimRifle_37
+  - first:
+      213: -1773233319357759924
+    second: TOP_IdleAimRifle_38
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -177,7 +186,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -205,7 +214,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TOP_ShootUpward_0
+      name: TOP_IdleAimRifle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -220,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 770a9f3581611f350800000000000000
-      internalID: 6048640068279181431
+      spriteID: fa1adbc8e0d7192d0800000000000000
+      internalID: -3273697952677387857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_1
+      name: TOP_IdleAimRifle_1
       rect:
         serializedVersion: 2
         x: 128
@@ -242,14 +251,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a9bb179a8bb5a590800000000000000
-      internalID: -7663512986985973338
+      spriteID: 46e316f7fddf1b580800000000000000
+      internalID: -8812983859430736284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_2
+      name: TOP_IdleAimRifle_2
       rect:
         serializedVersion: 2
         x: 256
@@ -264,14 +273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: afa0433178c9bfb00800000000000000
-      internalID: 863455857528277754
+      spriteID: add39bde6de525b60800000000000000
+      internalID: 7733347787352915418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_3
+      name: TOP_IdleAimRifle_3
       rect:
         serializedVersion: 2
         x: 384
@@ -286,14 +295,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 68284b8568d220500800000000000000
-      internalID: 360900975180153478
+      spriteID: ec47d8395669f0d80800000000000000
+      internalID: -8282235826699668274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_4
+      name: TOP_IdleAimRifle_4
       rect:
         serializedVersion: 2
         x: 512
@@ -308,14 +317,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51155a2b1f249ec60800000000000000
-      internalID: 7847877431521530133
+      spriteID: d93b96dd73bba8ba0800000000000000
+      internalID: -6085846097825516643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_5
+      name: TOP_IdleAimRifle_5
       rect:
         serializedVersion: 2
         x: 640
@@ -330,14 +339,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 632973e41c5991120800000000000000
-      internalID: 2385102135142879798
+      spriteID: 8fe3623e092db81d0800000000000000
+      internalID: -3347350378291773704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_6
+      name: TOP_IdleAimRifle_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8735ee636d08bfb0800000000000000
+      internalID: -4631937496037116019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP_IdleAimRifle_7
       rect:
         serializedVersion: 2
         x: 0
@@ -352,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d9bda909d3fea2b0800000000000000
-      internalID: -5571247575514891821
+      spriteID: 0f548c935c4c9f020800000000000000
+      internalID: 2376146629771675120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_7
+      name: TOP_IdleAimRifle_8
       rect:
         serializedVersion: 2
         x: 128
@@ -374,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2765fbb196827c4b0800000000000000
-      internalID: -5420319194614901134
+      spriteID: a3daf9f122a8d2af0800000000000000
+      internalID: -419527311111508678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_8
+      name: TOP_IdleAimRifle_9
       rect:
         serializedVersion: 2
         x: 256
@@ -396,14 +427,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5889dd7e76069e80800000000000000
-      internalID: -8172337333470132134
+      spriteID: 0079ede9506a0c0e0800000000000000
+      internalID: -2251617270614812928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_9
+      name: TOP_IdleAimRifle_10
       rect:
         serializedVersion: 2
         x: 384
@@ -418,14 +449,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0812c6a87374ffaf0800000000000000
-      internalID: -360491141295234688
+      spriteID: 41e48502173777370800000000000000
+      internalID: 8320245766301437460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_10
+      name: TOP_IdleAimRifle_11
       rect:
         serializedVersion: 2
         x: 512
@@ -440,14 +471,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: befd0aa46b371acb0800000000000000
-      internalID: -4854471696555384853
+      spriteID: f839172eb25862980800000000000000
+      internalID: -8564011217869237361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_11
+      name: TOP_IdleAimRifle_12
       rect:
         serializedVersion: 2
         x: 640
@@ -462,14 +493,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf4ba3e16219366c0800000000000000
-      internalID: -4151314838603516677
+      spriteID: 9cff87aa2d4b73d20800000000000000
+      internalID: 3258271672322031561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_12
+      name: TOP_IdleAimRifle_13
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80576099633b88d00800000000000000
+      internalID: 975226366402655496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP_IdleAimRifle_14
       rect:
         serializedVersion: 2
         x: 0
@@ -484,14 +537,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0040004543083e7c0800000000000000
-      internalID: -4043247078212631552
+      spriteID: 4bb85c1b4431810c0800000000000000
+      internalID: -4604909433225114700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_13
+      name: TOP_IdleAimRifle_15
       rect:
         serializedVersion: 2
         x: 128
@@ -506,14 +559,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c6a1491e3869c710800000000000000
-      internalID: 1714015749112178373
+      spriteID: 913c41483f9578250800000000000000
+      internalID: 5946820735393907481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_14
+      name: TOP_IdleAimRifle_16
       rect:
         serializedVersion: 2
         x: 256
@@ -528,14 +581,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08c926366110de200800000000000000
-      internalID: 210825953224596608
+      spriteID: ceb58e67a4409abb0800000000000000
+      internalID: -4924399999683896340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_15
+      name: TOP_IdleAimRifle_17
       rect:
         serializedVersion: 2
         x: 384
@@ -550,14 +603,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cfe57aa1606a5500800000000000000
-      internalID: 385726690681548740
+      spriteID: a14cda77c32a6b500800000000000000
+      internalID: 411694796540593178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_16
+      name: TOP_IdleAimRifle_18
       rect:
         serializedVersion: 2
         x: 512
@@ -572,14 +625,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e8be1f45a3c7d5b0800000000000000
-      internalID: -5343587318087370527
+      spriteID: 012edd7752ce2c6c0800000000000000
+      internalID: -4124474663048977904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_17
+      name: TOP_IdleAimRifle_19
       rect:
         serializedVersion: 2
         x: 640
@@ -594,14 +647,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 522194a74f4152ed0800000000000000
-      internalID: -2439520582895070683
+      spriteID: 5b8858776b504d830800000000000000
+      internalID: 4094904242434050229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_18
+      name: TOP_IdleAimRifle_20
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e483c1392a3a17650800000000000000
+      internalID: 6228939678278236238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP_IdleAimRifle_21
       rect:
         serializedVersion: 2
         x: 0
@@ -616,14 +691,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 31cb2f0972ff140e0800000000000000
-      internalID: -2287266590326866925
+      spriteID: f2809c7f7f1778ff0800000000000000
+      internalID: -33933162353981393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_19
+      name: TOP_IdleAimRifle_22
       rect:
         serializedVersion: 2
         x: 128
@@ -638,14 +713,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef2f18f878861f080800000000000000
-      internalID: -9155421636029975810
+      spriteID: 303e7fdb43f749040800000000000000
+      internalID: 4653484179482731267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_20
+      name: TOP_IdleAimRifle_23
       rect:
         serializedVersion: 2
         x: 256
@@ -660,14 +735,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e034d0117cb276370800000000000000
-      internalID: 8315663370947478286
+      spriteID: a388ea7a870009860800000000000000
+      internalID: 7534522694800148538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_21
+      name: TOP_IdleAimRifle_24
       rect:
         serializedVersion: 2
         x: 384
@@ -682,14 +757,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6bcbe35a9452d9030800000000000000
-      internalID: 3502997083399306422
+      spriteID: 0bf798bb18740ab60800000000000000
+      internalID: 7755277180854697904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_22
+      name: TOP_IdleAimRifle_25
       rect:
         serializedVersion: 2
         x: 512
@@ -704,14 +779,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3ef42add035cc780800000000000000
-      internalID: -8661456664380768707
+      spriteID: 884a8477e60fb4390800000000000000
+      internalID: -7832902769642527608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_23
+      name: TOP_IdleAimRifle_26
       rect:
         serializedVersion: 2
         x: 640
@@ -726,14 +801,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd2b222c3c855bfb0800000000000000
-      internalID: -4632699043881766181
+      spriteID: 809a7a230a0543000800000000000000
+      internalID: 14725347763792136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_24
+      name: TOP_IdleAimRifle_27
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a40372f29b2f780800000000000000
+      internalID: -8650648322053223854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP_IdleAimRifle_28
       rect:
         serializedVersion: 2
         x: 0
@@ -748,14 +845,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d300cf5727cd74540800000000000000
-      internalID: 4992201096127316029
+      spriteID: 66e6b13769b4a0d30800000000000000
+      internalID: 4398411095629065830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_25
+      name: TOP_IdleAimRifle_29
       rect:
         serializedVersion: 2
         x: 128
@@ -770,14 +867,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f841c5cdcfc3c3b90800000000000000
-      internalID: -7260861442501634929
+      spriteID: 7e2ef1952b352e4c0800000000000000
+      internalID: -4259750272074521881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_26
+      name: TOP_IdleAimRifle_30
       rect:
         serializedVersion: 2
         x: 256
@@ -792,14 +889,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3910b1fb3fb0c8100800000000000000
-      internalID: 111477232288596371
+      spriteID: 24a7d31a27ede9690800000000000000
+      internalID: -7593387337787278782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_27
+      name: TOP_IdleAimRifle_31
       rect:
         serializedVersion: 2
         x: 384
@@ -814,14 +911,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4da43d476191697a0800000000000000
-      internalID: -6370877038629008684
+      spriteID: 51993a3c8edc4f910800000000000000
+      internalID: 1870346144863983893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_28
+      name: TOP_IdleAimRifle_32
       rect:
         serializedVersion: 2
         x: 512
@@ -836,14 +933,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7018c697e9af22090800000000000000
-      internalID: -8060604824490835705
+      spriteID: 53ba89138156a2fe0800000000000000
+      internalID: -1213045995037217995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_29
+      name: TOP_IdleAimRifle_33
       rect:
         serializedVersion: 2
         x: 640
@@ -858,14 +955,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c06684dc5f732270800000000000000
-      internalID: 8224557381187952840
+      spriteID: b728de76bd6ef2170800000000000000
+      internalID: 8155991280207102587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_30
+      name: TOP_IdleAimRifle_34
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ea2b56d21918f30800000000000000
+      internalID: 4576098320550899241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP_IdleAimRifle_35
       rect:
         serializedVersion: 2
         x: 0
@@ -880,14 +999,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e284aa7f275e4350800000000000000
-      internalID: 6002831214764131047
+      spriteID: 3ca8d5e95872211e0800000000000000
+      internalID: -2228675410753910077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_31
+      name: TOP_IdleAimRifle_36
       rect:
         serializedVersion: 2
         x: 128
@@ -902,14 +1021,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc80434ab11053260800000000000000
-      internalID: 7076563607713220813
+      spriteID: fb02912f48c94fc50800000000000000
+      internalID: 6698150640618119359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_32
+      name: TOP_IdleAimRifle_37
       rect:
         serializedVersion: 2
         x: 256
@@ -924,14 +1043,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9230dea70bb90160800000000000000
-      internalID: 6992325538141450909
+      spriteID: e73c6472574721fc0800000000000000
+      internalID: -3525627511758732418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_ShootUpward_33
+      name: TOP_IdleAimRifle_38
       rect:
         serializedVersion: 2
         x: 384
@@ -946,52 +1065,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73ce3cdf6634e4390800000000000000
-      internalID: -7832248592327513033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TOP_ShootUpward_34
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eaecaf34eeb1c3760800000000000000
-      internalID: 7438851394665893550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TOP_ShootUpward_35
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 34a840c0cb554ea00800000000000000
-      internalID: 784846501213145667
+      spriteID: c4e3bc7e0b53467e0800000000000000
+      internalID: -1773233319357759924
       vertices: []
       indices: 
       edges: []
@@ -1000,7 +1075,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 292f89df311daae408ff914218306112
+    spriteID: cf9fcb4654dbeee428d576b09e532438
     internalID: 0
     vertices: []
     indices: 
@@ -1012,42 +1087,45 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      TOP_ShootUpward_0: 6048640068279181431
-      TOP_ShootUpward_1: -7663512986985973338
-      TOP_ShootUpward_10: -4854471696555384853
-      TOP_ShootUpward_11: -4151314838603516677
-      TOP_ShootUpward_12: -4043247078212631552
-      TOP_ShootUpward_13: 1714015749112178373
-      TOP_ShootUpward_14: 210825953224596608
-      TOP_ShootUpward_15: 385726690681548740
-      TOP_ShootUpward_16: -5343587318087370527
-      TOP_ShootUpward_17: -2439520582895070683
-      TOP_ShootUpward_18: -2287266590326866925
-      TOP_ShootUpward_19: -9155421636029975810
-      TOP_ShootUpward_2: 863455857528277754
-      TOP_ShootUpward_20: 8315663370947478286
-      TOP_ShootUpward_21: 3502997083399306422
-      TOP_ShootUpward_22: -8661456664380768707
-      TOP_ShootUpward_23: -4632699043881766181
-      TOP_ShootUpward_24: 4992201096127316029
-      TOP_ShootUpward_25: -7260861442501634929
-      TOP_ShootUpward_26: 111477232288596371
-      TOP_ShootUpward_27: -6370877038629008684
-      TOP_ShootUpward_28: -8060604824490835705
-      TOP_ShootUpward_29: 8224557381187952840
-      TOP_ShootUpward_3: 360900975180153478
-      TOP_ShootUpward_30: 6002831214764131047
-      TOP_ShootUpward_31: 7076563607713220813
-      TOP_ShootUpward_32: 6992325538141450909
-      TOP_ShootUpward_33: -7832248592327513033
-      TOP_ShootUpward_34: 7438851394665893550
-      TOP_ShootUpward_35: 784846501213145667
-      TOP_ShootUpward_4: 7847877431521530133
-      TOP_ShootUpward_5: 2385102135142879798
-      TOP_ShootUpward_6: -5571247575514891821
-      TOP_ShootUpward_7: -5420319194614901134
-      TOP_ShootUpward_8: -8172337333470132134
-      TOP_ShootUpward_9: -360491141295234688
+      TOP_IdleAimRifle_0: -3273697952677387857
+      TOP_IdleAimRifle_1: -8812983859430736284
+      TOP_IdleAimRifle_10: 8320245766301437460
+      TOP_IdleAimRifle_11: -8564011217869237361
+      TOP_IdleAimRifle_12: 3258271672322031561
+      TOP_IdleAimRifle_13: 975226366402655496
+      TOP_IdleAimRifle_14: -4604909433225114700
+      TOP_IdleAimRifle_15: 5946820735393907481
+      TOP_IdleAimRifle_16: -4924399999683896340
+      TOP_IdleAimRifle_17: 411694796540593178
+      TOP_IdleAimRifle_18: -4124474663048977904
+      TOP_IdleAimRifle_19: 4094904242434050229
+      TOP_IdleAimRifle_2: 7733347787352915418
+      TOP_IdleAimRifle_20: 6228939678278236238
+      TOP_IdleAimRifle_21: -33933162353981393
+      TOP_IdleAimRifle_22: 4653484179482731267
+      TOP_IdleAimRifle_23: 7534522694800148538
+      TOP_IdleAimRifle_24: 7755277180854697904
+      TOP_IdleAimRifle_25: -7832902769642527608
+      TOP_IdleAimRifle_26: 14725347763792136
+      TOP_IdleAimRifle_27: -8650648322053223854
+      TOP_IdleAimRifle_28: 4398411095629065830
+      TOP_IdleAimRifle_29: -4259750272074521881
+      TOP_IdleAimRifle_3: -8282235826699668274
+      TOP_IdleAimRifle_30: -7593387337787278782
+      TOP_IdleAimRifle_31: 1870346144863983893
+      TOP_IdleAimRifle_32: -1213045995037217995
+      TOP_IdleAimRifle_33: 8155991280207102587
+      TOP_IdleAimRifle_34: 4576098320550899241
+      TOP_IdleAimRifle_35: -2228675410753910077
+      TOP_IdleAimRifle_36: 6698150640618119359
+      TOP_IdleAimRifle_37: -3525627511758732418
+      TOP_IdleAimRifle_38: -1773233319357759924
+      TOP_IdleAimRifle_4: -6085846097825516643
+      TOP_IdleAimRifle_5: -3347350378291773704
+      TOP_IdleAimRifle_6: -4631937496037116019
+      TOP_IdleAimRifle_7: 2376146629771675120
+      TOP_IdleAimRifle_8: -419527311111508678
+      TOP_IdleAimRifle_9: -2251617270614812928
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

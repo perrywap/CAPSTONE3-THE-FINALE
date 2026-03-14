@@ -1,124 +1,136 @@
 fileFormatVersion: 2
-guid: 29e936b69cfde4941b10ab41b49b32ce
+guid: 73fc0fdeff52e9e4f87344f1fd4d0f50
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3273697952677387857
-    second: TOP_IdleAimRifle_0
+      213: -8870915184287264453
+    second: TOP_ Pistol Diagonal Up IdleShoot_0
   - first:
-      213: -8812983859430736284
-    second: TOP_IdleAimRifle_1
+      213: -7988814092746204892
+    second: TOP_ Pistol Diagonal Up IdleShoot_1
   - first:
-      213: 7733347787352915418
-    second: TOP_IdleAimRifle_2
+      213: -478005321119948249
+    second: TOP_ Pistol Diagonal Up IdleShoot_2
   - first:
-      213: -8282235826699668274
-    second: TOP_IdleAimRifle_3
+      213: -2074268807045216770
+    second: TOP_ Pistol Diagonal Up IdleShoot_3
   - first:
-      213: -6085846097825516643
-    second: TOP_IdleAimRifle_4
+      213: 6686773618493073573
+    second: TOP_ Pistol Diagonal Up IdleShoot_4
   - first:
-      213: -3347350378291773704
-    second: TOP_IdleAimRifle_5
+      213: 4301638489699036508
+    second: TOP_ Pistol Diagonal Up IdleShoot_5
   - first:
-      213: -4631937496037116019
-    second: TOP_IdleAimRifle_6
+      213: -8730289290250578652
+    second: TOP_ Pistol Diagonal Up IdleShoot_6
   - first:
-      213: 2376146629771675120
-    second: TOP_IdleAimRifle_7
+      213: -7633265057082676997
+    second: TOP_ Pistol Diagonal Up IdleShoot_7
   - first:
-      213: -419527311111508678
-    second: TOP_IdleAimRifle_8
+      213: 3989573162849491808
+    second: TOP_ Pistol Diagonal Up IdleShoot_8
   - first:
-      213: -2251617270614812928
-    second: TOP_IdleAimRifle_9
+      213: 4650566591826478412
+    second: TOP_ Pistol Diagonal Up IdleShoot_9
   - first:
-      213: 8320245766301437460
-    second: TOP_IdleAimRifle_10
+      213: 3008312396259433903
+    second: TOP_ Pistol Diagonal Up IdleShoot_10
   - first:
-      213: -8564011217869237361
-    second: TOP_IdleAimRifle_11
+      213: -8325205788115104429
+    second: TOP_ Pistol Diagonal Up IdleShoot_11
   - first:
-      213: 3258271672322031561
-    second: TOP_IdleAimRifle_12
+      213: -4280141446997239203
+    second: TOP_ Pistol Diagonal Up IdleShoot_12
   - first:
-      213: 975226366402655496
-    second: TOP_IdleAimRifle_13
+      213: 5529213729945138558
+    second: TOP_ Pistol Diagonal Up IdleShoot_13
   - first:
-      213: -4604909433225114700
-    second: TOP_IdleAimRifle_14
+      213: 8651473566367915064
+    second: TOP_ Pistol Diagonal Up IdleShoot_14
   - first:
-      213: 5946820735393907481
-    second: TOP_IdleAimRifle_15
+      213: -718932418632261256
+    second: TOP_ Pistol Diagonal Up IdleShoot_15
   - first:
-      213: -4924399999683896340
-    second: TOP_IdleAimRifle_16
+      213: -1660847105155169670
+    second: TOP_ Pistol Diagonal Up IdleShoot_16
   - first:
-      213: 411694796540593178
-    second: TOP_IdleAimRifle_17
+      213: -4622210677837181757
+    second: TOP_ Pistol Diagonal Up IdleShoot_17
   - first:
-      213: -4124474663048977904
-    second: TOP_IdleAimRifle_18
+      213: -3476406890869744445
+    second: TOP_ Pistol Diagonal Up IdleShoot_18
   - first:
-      213: 4094904242434050229
-    second: TOP_IdleAimRifle_19
+      213: 6862148209047856788
+    second: TOP_ Pistol Diagonal Up IdleShoot_19
   - first:
-      213: 6228939678278236238
-    second: TOP_IdleAimRifle_20
+      213: -4991780195154833232
+    second: TOP_ Pistol Diagonal Up IdleShoot_20
   - first:
-      213: -33933162353981393
-    second: TOP_IdleAimRifle_21
+      213: -8784133015660676674
+    second: TOP_ Pistol Diagonal Up IdleShoot_21
   - first:
-      213: 4653484179482731267
-    second: TOP_IdleAimRifle_22
+      213: 201913665345095155
+    second: TOP_ Pistol Diagonal Up IdleShoot_22
   - first:
-      213: 7534522694800148538
-    second: TOP_IdleAimRifle_23
+      213: -6932018286381571658
+    second: TOP_ Pistol Diagonal Up IdleShoot_23
   - first:
-      213: 7755277180854697904
-    second: TOP_IdleAimRifle_24
+      213: -2269205572143007119
+    second: TOP_ Pistol Diagonal Up IdleShoot_24
   - first:
-      213: -7832902769642527608
-    second: TOP_IdleAimRifle_25
+      213: -8088757821189381541
+    second: TOP_ Pistol Diagonal Up IdleShoot_25
   - first:
-      213: 14725347763792136
-    second: TOP_IdleAimRifle_26
+      213: 4048547238591944794
+    second: TOP_ Pistol Diagonal Up IdleShoot_26
   - first:
-      213: -8650648322053223854
-    second: TOP_IdleAimRifle_27
+      213: -8455644858596822046
+    second: TOP_ Pistol Diagonal Up IdleShoot_27
   - first:
-      213: 4398411095629065830
-    second: TOP_IdleAimRifle_28
+      213: 8298373463532206979
+    second: TOP_ Pistol Diagonal Up IdleShoot_28
   - first:
-      213: -4259750272074521881
-    second: TOP_IdleAimRifle_29
+      213: 2233282188546856565
+    second: TOP_ Pistol Diagonal Up IdleShoot_29
   - first:
-      213: -7593387337787278782
-    second: TOP_IdleAimRifle_30
+      213: 3170498044924815234
+    second: TOP_ Pistol Diagonal Up IdleShoot_30
   - first:
-      213: 1870346144863983893
-    second: TOP_IdleAimRifle_31
+      213: 6772612736358749265
+    second: TOP_ Pistol Diagonal Up IdleShoot_31
   - first:
-      213: -1213045995037217995
-    second: TOP_IdleAimRifle_32
+      213: 8871586993749806762
+    second: TOP_ Pistol Diagonal Up IdleShoot_32
   - first:
-      213: 8155991280207102587
-    second: TOP_IdleAimRifle_33
+      213: -7241471157075404002
+    second: TOP_ Pistol Diagonal Up IdleShoot_33
   - first:
-      213: 4576098320550899241
-    second: TOP_IdleAimRifle_34
+      213: 3601513378841220644
+    second: TOP_ Pistol Diagonal Up IdleShoot_34
   - first:
-      213: -2228675410753910077
-    second: TOP_IdleAimRifle_35
+      213: -736990047472900633
+    second: TOP_ Pistol Diagonal Up IdleShoot_35
   - first:
-      213: 6698150640618119359
-    second: TOP_IdleAimRifle_36
+      213: -7650694623654580704
+    second: TOP_ Pistol Diagonal Up IdleShoot_36
   - first:
-      213: -3525627511758732418
-    second: TOP_IdleAimRifle_37
+      213: 5895465116243285720
+    second: TOP_ Pistol Diagonal Up IdleShoot_37
   - first:
-      213: -1773233319357759924
-    second: TOP_IdleAimRifle_38
+      213: 8140879380190083079
+    second: TOP_ Pistol Diagonal Up IdleShoot_38
+  - first:
+      213: 3254525380598611183
+    second: TOP_ Pistol Diagonal Up IdleShoot_39
+  - first:
+      213: -8719597272810986977
+    second: TOP_ Pistol Diagonal Up IdleShoot_40
+  - first:
+      213: 9175151500068150962
+    second: TOP_ Pistol Diagonal Up IdleShoot_41
+  - first:
+      213: -5410739853809254240
+    second: TOP_ Pistol Diagonal Up IdleShoot_42
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -186,7 +198,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -214,7 +226,161 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_0
+      name: TOP_ Pistol Diagonal Up IdleShoot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3150f7d3ad24e480800000000000000
+      internalID: -8870915184287264453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP_ Pistol Diagonal Up IdleShoot_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4295a31c8e7022190800000000000000
+      internalID: -7988814092746204892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP_ Pistol Diagonal Up IdleShoot_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72226e961b8cd59f0800000000000000
+      internalID: -478005321119948249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP_ Pistol Diagonal Up IdleShoot_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5856b8287b633e0800000000000000
+      internalID: -2074268807045216770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP_ Pistol Diagonal Up IdleShoot_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8abbf8d213ccc50800000000000000
+      internalID: 6686773618493073573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP_ Pistol Diagonal Up IdleShoot_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5da8a25a6d72bb30800000000000000
+      internalID: 4301638489699036508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP_ Pistol Diagonal Up IdleShoot_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42597344528c7d680800000000000000
+      internalID: -8730289290250578652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP_ Pistol Diagonal Up IdleShoot_7
       rect:
         serializedVersion: 2
         x: 0
@@ -229,14 +395,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa1adbc8e0d7192d0800000000000000
-      internalID: -3273697952677387857
+      spriteID: bf86f249fd1311690800000000000000
+      internalID: -7633265057082676997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_1
+      name: TOP_ Pistol Diagonal Up IdleShoot_8
       rect:
         serializedVersion: 2
         x: 128
@@ -251,14 +417,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46e316f7fddf1b580800000000000000
-      internalID: -8812983859430736284
+      spriteID: 06b531967afcd5730800000000000000
+      internalID: 3989573162849491808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_2
+      name: TOP_ Pistol Diagonal Up IdleShoot_9
       rect:
         serializedVersion: 2
         x: 256
@@ -273,14 +439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: add39bde6de525b60800000000000000
-      internalID: 7733347787352915418
+      spriteID: c45cd1eeca12a8040800000000000000
+      internalID: 4650566591826478412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_3
+      name: TOP_ Pistol Diagonal Up IdleShoot_10
       rect:
         serializedVersion: 2
         x: 384
@@ -295,14 +461,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec47d8395669f0d80800000000000000
-      internalID: -8282235826699668274
+      spriteID: fad92788f2cafb920800000000000000
+      internalID: 3008312396259433903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_4
+      name: TOP_ Pistol Diagonal Up IdleShoot_11
       rect:
         serializedVersion: 2
         x: 512
@@ -317,14 +483,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d93b96dd73bba8ba0800000000000000
-      internalID: -6085846097825516643
+      spriteID: 35d8f5dc17de67c80800000000000000
+      internalID: -8325205788115104429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_5
+      name: TOP_ Pistol Diagonal Up IdleShoot_12
       rect:
         serializedVersion: 2
         x: 640
@@ -339,14 +505,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8fe3623e092db81d0800000000000000
-      internalID: -3347350378291773704
+      spriteID: d5a9d47f702e994c0800000000000000
+      internalID: -4280141446997239203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_6
+      name: TOP_ Pistol Diagonal Up IdleShoot_13
       rect:
         serializedVersion: 2
         x: 768
@@ -361,14 +527,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8735ee636d08bfb0800000000000000
-      internalID: -4631937496037116019
+      spriteID: e75b794a796bbbc40800000000000000
+      internalID: 5529213729945138558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_7
+      name: TOP_ Pistol Diagonal Up IdleShoot_14
       rect:
         serializedVersion: 2
         x: 0
@@ -383,14 +549,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f548c935c4c9f020800000000000000
-      internalID: 2376146629771675120
+      spriteID: 83c9a030f55301870800000000000000
+      internalID: 8651473566367915064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_8
+      name: TOP_ Pistol Diagonal Up IdleShoot_15
       rect:
         serializedVersion: 2
         x: 128
@@ -405,14 +571,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3daf9f122a8d2af0800000000000000
-      internalID: -419527311111508678
+      spriteID: 87169e936c6d506f0800000000000000
+      internalID: -718932418632261256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_9
+      name: TOP_ Pistol Diagonal Up IdleShoot_16
       rect:
         serializedVersion: 2
         x: 256
@@ -427,14 +593,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0079ede9506a0c0e0800000000000000
-      internalID: -2251617270614812928
+      spriteID: a728dfe7b5c73f8e0800000000000000
+      internalID: -1660847105155169670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_10
+      name: TOP_ Pistol Diagonal Up IdleShoot_17
       rect:
         serializedVersion: 2
         x: 384
@@ -449,14 +615,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41e48502173777370800000000000000
-      internalID: 8320245766301437460
+      spriteID: 3cc4f76c0eb9adfb0800000000000000
+      internalID: -4622210677837181757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_11
+      name: TOP_ Pistol Diagonal Up IdleShoot_18
       rect:
         serializedVersion: 2
         x: 512
@@ -471,14 +637,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f839172eb25862980800000000000000
-      internalID: -8564011217869237361
+      spriteID: 3cc1dfef95251cfc0800000000000000
+      internalID: -3476406890869744445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_12
+      name: TOP_ Pistol Diagonal Up IdleShoot_19
       rect:
         serializedVersion: 2
         x: 640
@@ -493,14 +659,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cff87aa2d4b73d20800000000000000
-      internalID: 3258271672322031561
+      spriteID: 496616c507f3b3f50800000000000000
+      internalID: 6862148209047856788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_13
+      name: TOP_ Pistol Diagonal Up IdleShoot_20
       rect:
         serializedVersion: 2
         x: 768
@@ -515,14 +681,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 80576099633b88d00800000000000000
-      internalID: 975226366402655496
+      spriteID: 0b057fe2c52a9bab0800000000000000
+      internalID: -4991780195154833232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_14
+      name: TOP_ Pistol Diagonal Up IdleShoot_21
       rect:
         serializedVersion: 2
         x: 0
@@ -537,14 +703,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4bb85c1b4431810c0800000000000000
-      internalID: -4604909433225114700
+      spriteID: eb9b3c5009d781680800000000000000
+      internalID: -8784133015660676674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_15
+      name: TOP_ Pistol Diagonal Up IdleShoot_22
       rect:
         serializedVersion: 2
         x: 128
@@ -559,14 +725,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 913c41483f9578250800000000000000
-      internalID: 5946820735393907481
+      spriteID: 3f5013aa8675dc200800000000000000
+      internalID: 201913665345095155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_16
+      name: TOP_ Pistol Diagonal Up IdleShoot_23
       rect:
         serializedVersion: 2
         x: 256
@@ -581,14 +747,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ceb58e67a4409abb0800000000000000
-      internalID: -4924399999683896340
+      spriteID: 6b1e6bf88168ccf90800000000000000
+      internalID: -6932018286381571658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_17
+      name: TOP_ Pistol Diagonal Up IdleShoot_24
       rect:
         serializedVersion: 2
         x: 384
@@ -603,14 +769,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a14cda77c32a6b500800000000000000
-      internalID: 411694796540593178
+      spriteID: 17a341e0e892280e0800000000000000
+      internalID: -2269205572143007119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_18
+      name: TOP_ Pistol Diagonal Up IdleShoot_25
       rect:
         serializedVersion: 2
         x: 512
@@ -625,14 +791,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 012edd7752ce2c6c0800000000000000
-      internalID: -4124474663048977904
+      spriteID: b5228d12e95febf80800000000000000
+      internalID: -8088757821189381541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_19
+      name: TOP_ Pistol Diagonal Up IdleShoot_26
       rect:
         serializedVersion: 2
         x: 640
@@ -647,14 +813,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b8858776b504d830800000000000000
-      internalID: 4094904242434050229
+      spriteID: a5859ac63445f2830800000000000000
+      internalID: 4048547238591944794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_20
+      name: TOP_ Pistol Diagonal Up IdleShoot_27
       rect:
         serializedVersion: 2
         x: 768
@@ -669,14 +835,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e483c1392a3a17650800000000000000
-      internalID: 6228939678278236238
+      spriteID: 2e37a701dc387aa80800000000000000
+      internalID: -8455644858596822046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_21
+      name: TOP_ Pistol Diagonal Up IdleShoot_28
       rect:
         serializedVersion: 2
         x: 0
@@ -691,14 +857,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2809c7f7f1778ff0800000000000000
-      internalID: -33933162353981393
+      spriteID: 38b7d5bc2beb92370800000000000000
+      internalID: 8298373463532206979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_22
+      name: TOP_ Pistol Diagonal Up IdleShoot_29
       rect:
         serializedVersion: 2
         x: 128
@@ -713,14 +879,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 303e7fdb43f749040800000000000000
-      internalID: 4653484179482731267
+      spriteID: 576da8b61563efe10800000000000000
+      internalID: 2233282188546856565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_23
+      name: TOP_ Pistol Diagonal Up IdleShoot_30
       rect:
         serializedVersion: 2
         x: 256
@@ -735,14 +901,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a388ea7a870009860800000000000000
-      internalID: 7534522694800148538
+      spriteID: 28760d08c2fdffb20800000000000000
+      internalID: 3170498044924815234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_24
+      name: TOP_ Pistol Diagonal Up IdleShoot_31
       rect:
         serializedVersion: 2
         x: 384
@@ -757,14 +923,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0bf798bb18740ab60800000000000000
-      internalID: 7755277180854697904
+      spriteID: 15413ff96672dfd50800000000000000
+      internalID: 6772612736358749265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_25
+      name: TOP_ Pistol Diagonal Up IdleShoot_32
       rect:
         serializedVersion: 2
         x: 512
@@ -779,14 +945,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 884a8477e60fb4390800000000000000
-      internalID: -7832902769642527608
+      spriteID: aaece6cfd553e1b70800000000000000
+      internalID: 8871586993749806762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_26
+      name: TOP_ Pistol Diagonal Up IdleShoot_33
       rect:
         serializedVersion: 2
         x: 640
@@ -801,14 +967,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 809a7a230a0543000800000000000000
-      internalID: 14725347763792136
+      spriteID: e1b984f7950218b90800000000000000
+      internalID: -7241471157075404002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_27
+      name: TOP_ Pistol Diagonal Up IdleShoot_34
       rect:
         serializedVersion: 2
         x: 768
@@ -823,14 +989,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 25a40372f29b2f780800000000000000
-      internalID: -8650648322053223854
+      spriteID: 426d5af16552bf130800000000000000
+      internalID: 3601513378841220644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_28
+      name: TOP_ Pistol Diagonal Up IdleShoot_35
       rect:
         serializedVersion: 2
         x: 0
@@ -845,14 +1011,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66e6b13769b4a0d30800000000000000
-      internalID: 4398411095629065830
+      spriteID: 7e52161e47fa5c5f0800000000000000
+      internalID: -736990047472900633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_29
+      name: TOP_ Pistol Diagonal Up IdleShoot_36
       rect:
         serializedVersion: 2
         x: 128
@@ -867,14 +1033,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e2ef1952b352e4c0800000000000000
-      internalID: -4259750272074521881
+      spriteID: 02ee31066c543d590800000000000000
+      internalID: -7650694623654580704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_30
+      name: TOP_ Pistol Diagonal Up IdleShoot_37
       rect:
         serializedVersion: 2
         x: 256
@@ -889,14 +1055,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24a7d31a27ede9690800000000000000
-      internalID: -7593387337787278782
+      spriteID: 8d65367a946e0d150800000000000000
+      internalID: 5895465116243285720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_31
+      name: TOP_ Pistol Diagonal Up IdleShoot_38
       rect:
         serializedVersion: 2
         x: 384
@@ -911,14 +1077,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51993a3c8edc4f910800000000000000
-      internalID: 1870346144863983893
+      spriteID: 708388ff9a63af070800000000000000
+      internalID: 8140879380190083079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_32
+      name: TOP_ Pistol Diagonal Up IdleShoot_39
       rect:
         serializedVersion: 2
         x: 512
@@ -933,14 +1099,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53ba89138156a2fe0800000000000000
-      internalID: -1213045995037217995
+      spriteID: fecb21727956a2d20800000000000000
+      internalID: 3254525380598611183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_33
+      name: TOP_ Pistol Diagonal Up IdleShoot_40
       rect:
         serializedVersion: 2
         x: 640
@@ -955,14 +1121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b728de76bd6ef2170800000000000000
-      internalID: 8155991280207102587
+      spriteID: f12e2a19a74cdf680800000000000000
+      internalID: -8719597272810986977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_34
+      name: TOP_ Pistol Diagonal Up IdleShoot_41
       rect:
         serializedVersion: 2
         x: 768
@@ -977,14 +1143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92ea2b56d21918f30800000000000000
-      internalID: 4576098320550899241
+      spriteID: 2be54f16dafa45f70800000000000000
+      internalID: 9175151500068150962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TOP_IdleAimRifle_35
+      name: TOP_ Pistol Diagonal Up IdleShoot_42
       rect:
         serializedVersion: 2
         x: 0
@@ -999,74 +1165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ca8d5e95872211e0800000000000000
-      internalID: -2228675410753910077
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TOP_IdleAimRifle_36
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fb02912f48c94fc50800000000000000
-      internalID: 6698150640618119359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TOP_IdleAimRifle_37
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e73c6472574721fc0800000000000000
-      internalID: -3525627511758732418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TOP_IdleAimRifle_38
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c4e3bc7e0b53467e0800000000000000
-      internalID: -1773233319357759924
+      spriteID: 0a086a135c039e4b0800000000000000
+      internalID: -5410739853809254240
       vertices: []
       indices: 
       edges: []
@@ -1075,7 +1175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cf9fcb4654dbeee428d576b09e532438
+    spriteID: 8738b9531b8a6534cac5077d93bb76d1
     internalID: 0
     vertices: []
     indices: 
@@ -1087,45 +1187,49 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      TOP_IdleAimRifle_0: -3273697952677387857
-      TOP_IdleAimRifle_1: -8812983859430736284
-      TOP_IdleAimRifle_10: 8320245766301437460
-      TOP_IdleAimRifle_11: -8564011217869237361
-      TOP_IdleAimRifle_12: 3258271672322031561
-      TOP_IdleAimRifle_13: 975226366402655496
-      TOP_IdleAimRifle_14: -4604909433225114700
-      TOP_IdleAimRifle_15: 5946820735393907481
-      TOP_IdleAimRifle_16: -4924399999683896340
-      TOP_IdleAimRifle_17: 411694796540593178
-      TOP_IdleAimRifle_18: -4124474663048977904
-      TOP_IdleAimRifle_19: 4094904242434050229
-      TOP_IdleAimRifle_2: 7733347787352915418
-      TOP_IdleAimRifle_20: 6228939678278236238
-      TOP_IdleAimRifle_21: -33933162353981393
-      TOP_IdleAimRifle_22: 4653484179482731267
-      TOP_IdleAimRifle_23: 7534522694800148538
-      TOP_IdleAimRifle_24: 7755277180854697904
-      TOP_IdleAimRifle_25: -7832902769642527608
-      TOP_IdleAimRifle_26: 14725347763792136
-      TOP_IdleAimRifle_27: -8650648322053223854
-      TOP_IdleAimRifle_28: 4398411095629065830
-      TOP_IdleAimRifle_29: -4259750272074521881
-      TOP_IdleAimRifle_3: -8282235826699668274
-      TOP_IdleAimRifle_30: -7593387337787278782
-      TOP_IdleAimRifle_31: 1870346144863983893
-      TOP_IdleAimRifle_32: -1213045995037217995
-      TOP_IdleAimRifle_33: 8155991280207102587
-      TOP_IdleAimRifle_34: 4576098320550899241
-      TOP_IdleAimRifle_35: -2228675410753910077
-      TOP_IdleAimRifle_36: 6698150640618119359
-      TOP_IdleAimRifle_37: -3525627511758732418
-      TOP_IdleAimRifle_38: -1773233319357759924
-      TOP_IdleAimRifle_4: -6085846097825516643
-      TOP_IdleAimRifle_5: -3347350378291773704
-      TOP_IdleAimRifle_6: -4631937496037116019
-      TOP_IdleAimRifle_7: 2376146629771675120
-      TOP_IdleAimRifle_8: -419527311111508678
-      TOP_IdleAimRifle_9: -2251617270614812928
+      TOP_ Pistol Diagonal Up IdleShoot_0: -8870915184287264453
+      TOP_ Pistol Diagonal Up IdleShoot_1: -7988814092746204892
+      TOP_ Pistol Diagonal Up IdleShoot_10: 3008312396259433903
+      TOP_ Pistol Diagonal Up IdleShoot_11: -8325205788115104429
+      TOP_ Pistol Diagonal Up IdleShoot_12: -4280141446997239203
+      TOP_ Pistol Diagonal Up IdleShoot_13: 5529213729945138558
+      TOP_ Pistol Diagonal Up IdleShoot_14: 8651473566367915064
+      TOP_ Pistol Diagonal Up IdleShoot_15: -718932418632261256
+      TOP_ Pistol Diagonal Up IdleShoot_16: -1660847105155169670
+      TOP_ Pistol Diagonal Up IdleShoot_17: -4622210677837181757
+      TOP_ Pistol Diagonal Up IdleShoot_18: -3476406890869744445
+      TOP_ Pistol Diagonal Up IdleShoot_19: 6862148209047856788
+      TOP_ Pistol Diagonal Up IdleShoot_2: -478005321119948249
+      TOP_ Pistol Diagonal Up IdleShoot_20: -4991780195154833232
+      TOP_ Pistol Diagonal Up IdleShoot_21: -8784133015660676674
+      TOP_ Pistol Diagonal Up IdleShoot_22: 201913665345095155
+      TOP_ Pistol Diagonal Up IdleShoot_23: -6932018286381571658
+      TOP_ Pistol Diagonal Up IdleShoot_24: -2269205572143007119
+      TOP_ Pistol Diagonal Up IdleShoot_25: -8088757821189381541
+      TOP_ Pistol Diagonal Up IdleShoot_26: 4048547238591944794
+      TOP_ Pistol Diagonal Up IdleShoot_27: -8455644858596822046
+      TOP_ Pistol Diagonal Up IdleShoot_28: 8298373463532206979
+      TOP_ Pistol Diagonal Up IdleShoot_29: 2233282188546856565
+      TOP_ Pistol Diagonal Up IdleShoot_3: -2074268807045216770
+      TOP_ Pistol Diagonal Up IdleShoot_30: 3170498044924815234
+      TOP_ Pistol Diagonal Up IdleShoot_31: 6772612736358749265
+      TOP_ Pistol Diagonal Up IdleShoot_32: 8871586993749806762
+      TOP_ Pistol Diagonal Up IdleShoot_33: -7241471157075404002
+      TOP_ Pistol Diagonal Up IdleShoot_34: 3601513378841220644
+      TOP_ Pistol Diagonal Up IdleShoot_35: -736990047472900633
+      TOP_ Pistol Diagonal Up IdleShoot_36: -7650694623654580704
+      TOP_ Pistol Diagonal Up IdleShoot_37: 5895465116243285720
+      TOP_ Pistol Diagonal Up IdleShoot_38: 8140879380190083079
+      TOP_ Pistol Diagonal Up IdleShoot_39: 3254525380598611183
+      TOP_ Pistol Diagonal Up IdleShoot_4: 6686773618493073573
+      TOP_ Pistol Diagonal Up IdleShoot_40: -8719597272810986977
+      TOP_ Pistol Diagonal Up IdleShoot_41: 9175151500068150962
+      TOP_ Pistol Diagonal Up IdleShoot_42: -5410739853809254240
+      TOP_ Pistol Diagonal Up IdleShoot_5: 4301638489699036508
+      TOP_ Pistol Diagonal Up IdleShoot_6: -8730289290250578652
+      TOP_ Pistol Diagonal Up IdleShoot_7: -7633265057082676997
+      TOP_ Pistol Diagonal Up IdleShoot_8: 3989573162849491808
+      TOP_ Pistol Diagonal Up IdleShoot_9: 4650566591826478412
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

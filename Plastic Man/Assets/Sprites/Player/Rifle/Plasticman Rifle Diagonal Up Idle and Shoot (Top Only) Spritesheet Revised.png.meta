@@ -1,0 +1,1497 @@
+fileFormatVersion: 2
+guid: 00375a1a4cb0f8d4cb741b1462d56116
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3787054445059390697
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_0
+  - first:
+      213: -8394742777221754173
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_1
+  - first:
+      213: 1918353798732108841
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_2
+  - first:
+      213: 7711037214639815407
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_3
+  - first:
+      213: -397773902064212424
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_4
+  - first:
+      213: 6595828696725854715
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_5
+  - first:
+      213: -8873159449017166547
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_6
+  - first:
+      213: 4943808285955915148
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_7
+  - first:
+      213: 2833552869381560658
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_8
+  - first:
+      213: -8625659798189557921
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_9
+  - first:
+      213: -6077723531654896512
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_10
+  - first:
+      213: 284076629615273226
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_11
+  - first:
+      213: -423428014902580136
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_12
+  - first:
+      213: -8839828986057351189
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_13
+  - first:
+      213: 1451801725412311667
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_14
+  - first:
+      213: -168422740914503001
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_15
+  - first:
+      213: 2742821078726902987
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_16
+  - first:
+      213: 6986568584105491312
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_17
+  - first:
+      213: 7824371969546140321
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_18
+  - first:
+      213: -5228280305954991996
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_19
+  - first:
+      213: 2017321408485961911
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_20
+  - first:
+      213: 6195596600450987573
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_21
+  - first:
+      213: -2346456284763192402
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_22
+  - first:
+      213: 8039326828008353922
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_23
+  - first:
+      213: 3101759195226709204
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_24
+  - first:
+      213: 176444586761920735
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_25
+  - first:
+      213: 634054932708718854
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_26
+  - first:
+      213: -8862473306023316659
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_27
+  - first:
+      213: 2328099683832249414
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_28
+  - first:
+      213: -4271699285644510079
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_29
+  - first:
+      213: -5483267199973768556
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_30
+  - first:
+      213: -4713101860800781724
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_31
+  - first:
+      213: 3863234634935145896
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_32
+  - first:
+      213: -4297341314067798402
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_33
+  - first:
+      213: 8036375838932414824
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_34
+  - first:
+      213: 1976134257713611993
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_35
+  - first:
+      213: 7278908754278512192
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_36
+  - first:
+      213: 366578414651400269
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_37
+  - first:
+      213: -3520119247275103220
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_38
+  - first:
+      213: 4524342562328892982
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_39
+  - first:
+      213: -7308085072078294413
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_40
+  - first:
+      213: -7447937578172800203
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_41
+  - first:
+      213: 8464575343190832788
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_42
+  - first:
+      213: -5554463125384396307
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_43
+  - first:
+      213: -237828917499311976
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_44
+  - first:
+      213: 5981105786244005351
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_45
+  - first:
+      213: -4342593062504409078
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_46
+  - first:
+      213: 6454550494297421627
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_47
+  - first:
+      213: -5884454335994059237
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_48
+  - first:
+      213: -5195958419249965925
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_49
+  - first:
+      213: -4648869211754941733
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_50
+  - first:
+      213: 8634383293433929850
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_51
+  - first:
+      213: -8352240279159580336
+    second: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713cb210c0ea17bc0800000000000000
+      internalID: -3787054445059390697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2dbeedbe1ef7b80800000000000000
+      internalID: -8394742777221754173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924d2f6bd9c5f9a10800000000000000
+      internalID: 1918353798732108841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea7c6ced7b130b60800000000000000
+      internalID: 7711037214639815407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836aa8a5eb2da7af0800000000000000
+      internalID: -397773902064212424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf91ca3e047198b50800000000000000
+      internalID: 6595828696725854715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d255eed3e743cd480800000000000000
+      internalID: -8873159449017166547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8df802517feb9440800000000000000
+      internalID: 4943808285955915148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259d6c7625dc25720800000000000000
+      internalID: 2833552869381560658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f573b8f3d108b4880800000000000000
+      internalID: -8625659798189557921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0846dac26a697aba0800000000000000
+      internalID: -6077723531654896512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a056535803e31f300800000000000000
+      internalID: 284076629615273226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_12
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c68cfb67eaf1af0800000000000000
+      internalID: -423428014902580136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_13
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef99d26f5e925580800000000000000
+      internalID: -8839828986057351189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_14
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372008f2af5d52410800000000000000
+      internalID: 1451801725412311667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_15
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a281b3d864a9adf0800000000000000
+      internalID: -168422740914503001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc488ff2d35701620800000000000000
+      internalID: 2742821078726902987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07bf28e5c1745f060800000000000000
+      internalID: 6986568584105491312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa325bd9d0c59c60800000000000000
+      internalID: 7824371969546140321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480d16923ca6177b0800000000000000
+      internalID: -5228280305954991996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_20
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0b89ef127fefb10800000000000000
+      internalID: 2017321408485961911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536bf7d484e2bf550800000000000000
+      internalID: 6195596600450987573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_22
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea305b9e076bf6fd0800000000000000
+      internalID: -2346456284763192402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_23
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280b4b8e72d619f60800000000000000
+      internalID: 8039326828008353922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc1a42ed89ab0b20800000000000000
+      internalID: 3101759195226709204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd02c74ba6bd27200800000000000000
+      internalID: 176444586761920735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609ff281a9d9cc800800000000000000
+      internalID: 634054932708718854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43391bcb7b220580800000000000000
+      internalID: -8862473306023316659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_28
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c3580e3521f4020800000000000000
+      internalID: 2328099683832249414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_29
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c7ed3d120e7b4c0800000000000000
+      internalID: -4271699285644510079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_30
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4924301888587e3b0800000000000000
+      internalID: -5483267199973768556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_31
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462acb424d2b79eb0800000000000000
+      internalID: -4713101860800781724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a59b43ae67fc9530800000000000000
+      internalID: 3863234634935145896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_33
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76e068d7d6cc54c0800000000000000
+      internalID: -4297341314067798402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86139193f31f68f60800000000000000
+      internalID: 8036375838932414824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_35
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4008b23a3ac6b10800000000000000
+      internalID: 1976134257713611993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_36
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046704b52f0e30560800000000000000
+      internalID: 7278908754278512192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_37
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d406f9b3029561500800000000000000
+      internalID: 366578414651400269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_38
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ce62be136062fc0800000000000000
+      internalID: -3520119247275103220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_39
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6365bc5e691b9ce30800000000000000
+      internalID: 4524342562328892982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372307ac857749a90800000000000000
+      internalID: -7308085072078294413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5332ab7cb3c93a890800000000000000
+      internalID: -7447937578172800203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_42
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4967b696d66387570800000000000000
+      internalID: 8464575343190832788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_43
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1057d57359ae2b0800000000000000
+      internalID: -5554463125384396307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_44
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 898432f0cdf03bcf0800000000000000
+      internalID: -237828917499311976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_45
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed7b19f508210350800000000000000
+      internalID: 5981105786244005351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_46
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0859512e920cb3c0800000000000000
+      internalID: -4342593062504409078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_47
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b377b651a7b239950800000000000000
+      internalID: 6454550494297421627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b16211665f7365ea0800000000000000
+      internalID: -5884454335994059237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_49
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94d7e8d85f34e7b0800000000000000
+      internalID: -5195958419249965925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_50
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2b81a2516eb7fb0800000000000000
+      internalID: -4648869211754941733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_51
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7062b3cbdd73d770800000000000000
+      internalID: 8634383293433929850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_52
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 059dbf9d7b1e61c80800000000000000
+      internalID: -8352240279159580336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b5f50b41674fa8e45960d39bb9df2146
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_0: -3787054445059390697
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_1: -8394742777221754173
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_10: -6077723531654896512
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_11: 284076629615273226
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_12: -423428014902580136
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_13: -8839828986057351189
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_14: 1451801725412311667
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_15: -168422740914503001
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_16: 2742821078726902987
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_17: 6986568584105491312
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_18: 7824371969546140321
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_19: -5228280305954991996
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_2: 1918353798732108841
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_20: 2017321408485961911
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_21: 6195596600450987573
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_22: -2346456284763192402
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_23: 8039326828008353922
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_24: 3101759195226709204
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_25: 176444586761920735
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_26: 634054932708718854
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_27: -8862473306023316659
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_28: 2328099683832249414
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_29: -4271699285644510079
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_3: 7711037214639815407
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_30: -5483267199973768556
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_31: -4713101860800781724
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_32: 3863234634935145896
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_33: -4297341314067798402
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_34: 8036375838932414824
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_35: 1976134257713611993
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_36: 7278908754278512192
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_37: 366578414651400269
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_38: -3520119247275103220
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_39: 4524342562328892982
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_4: -397773902064212424
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_40: -7308085072078294413
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_41: -7447937578172800203
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_42: 8464575343190832788
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_43: -5554463125384396307
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_44: -237828917499311976
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_45: 5981105786244005351
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_46: -4342593062504409078
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_47: 6454550494297421627
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_48: -5884454335994059237
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_49: -5195958419249965925
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_5: 6595828696725854715
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_50: -4648869211754941733
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_51: 8634383293433929850
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_52: -8352240279159580336
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_6: -8873159449017166547
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_7: 4943808285955915148
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_8: 2833552869381560658
+      Plasticman Rifle Diagonal Up Idle and Shoot (Top Only) Spritesheet Revised_9: -8625659798189557921
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
