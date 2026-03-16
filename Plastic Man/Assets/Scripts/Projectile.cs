@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class Projectile2D : MonoBehaviour
 {
+    [Header("References")]
+    [SerializeField] private GameObject vfx;
+
     [Header("Movement")]
     public float speed = 10f;
     public float lifetime = 3f;
 
     [Header("Damage")]
-    public int damage = 1;
+    public float damage;
 
     private Rigidbody2D rb;
 
@@ -28,6 +31,13 @@ public class Projectile2D : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        EnemyAI enemy = collision.GetComponent<EnemyAI>();
+
+        if (enemy != null)
+        {
+            Instantiate(vfx, this.transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+        
     }
 }
