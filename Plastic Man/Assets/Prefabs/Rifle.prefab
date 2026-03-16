@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 799079452261813002}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.199, y: 0.057, z: 0}
+  m_LocalPosition: {x: 0.651, y: 0.076, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: -2776871534448174691}
   - component: {fileID: 3383843249903623237}
   m_Layer: 0
-  m_Name: Gun
+  m_Name: Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 4208481742703032022}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.287, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -113,9 +113,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2374338568368110206, guid: 5f8adf673c7bb91448be1ff903b7c974, type: 3}
+  m_Sprite: {fileID: -6628414004274166170, guid: 69db06414ad1254469ccc37aff06aa4f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

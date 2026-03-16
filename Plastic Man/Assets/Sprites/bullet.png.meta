@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 6c1562b2ff5e9e64dab22df34aa63cec
+guid: c4cf68e1481de8e48b1c81f919080d63
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1667476667342117222
-    second: sample_0
-  - first:
-      213: 608612860266338385
-    second: sample_1
-  - first:
-      213: -7454911784176862595
-    second: sample_2
-  - first:
-      213: 8630481730897627108
-    second: sample_3
-  - first:
-      213: 452550722664304426
-    second: sample_4
+      213: -2346302928887187388
+    second: bullet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 96
+  spritePixelsToUnits: 512
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,111 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sample_0
+      name: bullet_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 7
+        x: 1
+        y: 1
         width: 30
-        height: 66
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 669dd2cb131142710800000000000000
-      internalID: 1667476667342117222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sample_1
-      rect:
-        serializedVersion: 2
-        x: 116
-        y: 7
-        width: 53
-        height: 66
-      alignment: 9
-      pivot: {x: 0.2725001, y: 0.4872541}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 158d8edfb2a327800800000000000000
-      internalID: 608612860266338385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sample_2
-      rect:
-        serializedVersion: 2
-        x: 213
-        y: 7
-        width: 55
-        height: 66
-      alignment: 9
-      pivot: {x: 0.26037958, y: 0.4872541}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7ab348ea35da8890800000000000000
-      internalID: -7454911784176862595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sample_3
-      rect:
-        serializedVersion: 2
-        x: 312
-        y: 7
-        width: 48
-        height: 86
-      alignment: 9
-      pivot: {x: 0.30137825, y: 0.3597966}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e7c6a27861a5c770800000000000000
-      internalID: 8630481730897627108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sample_4
-      rect:
-        serializedVersion: 2
-        x: 407
-        y: 7
-        width: 31
-        height: 87
-      alignment: 9
-      pivot: {x: 0.41858992, y: 0.34851596}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2f804b0c78c74600800000000000000
-      internalID: 452550722664304426
+      spriteID: 448783cdae1407fd0800000000000000
+      internalID: -2346302928887187388
       vertices: []
       indices: 
       edges: []
@@ -225,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a4f1842e0bc618d41984c84193377c33
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -235,11 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sample_0: 1667476667342117222
-      sample_1: 608612860266338385
-      sample_2: -7454911784176862595
-      sample_3: 8630481730897627108
-      sample_4: 452550722664304426
+      bullet_0: -2346302928887187388
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

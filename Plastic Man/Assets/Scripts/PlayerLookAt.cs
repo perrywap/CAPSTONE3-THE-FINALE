@@ -4,19 +4,28 @@ public class PlayerLookAt : MonoBehaviour
 {
     public static PlayerLookAt Instance { get; private set; }
     public float angle;
+    public bool isLookingLeft;
 
     private void Awake()
     {
         Instance = this;
     }
 
-    public float GetAngle()
+    private void Update()
+    {
+        HandleLookDirection();
+    }
+
+
+    public void HandleLookDirection()
     {
         Vector3 mousePosition = GetMouseWorldPosition();
         Vector3 aimDirection = (mousePosition - transform.position).normalized;
-        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        float _angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
 
-        return angle;
+        isLookingLeft =  _angle > 90f || _angle < -90f;
+
+        angle = _angle < 0 ? _angle + 360f : _angle;
     }
 
     #region MOUSE WORLD POSITION

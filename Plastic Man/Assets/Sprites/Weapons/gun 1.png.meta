@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 6700633aa3d9031469a022c16aacde4e
+guid: 77f2b59c14a6d214a9d709de1b883130
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8019239915147560276
-    second: Cyborg_idle_0
-  - first:
-      213: -6526221278753614019
-    second: Cyborg_idle_1
-  - first:
-      213: -1626806750166959302
-    second: Cyborg_idle_2
-  - first:
-      213: 7969078075045196988
-    second: Cyborg_idle_3
+      213: -6804522799953666648
+    second: gun 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 512
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,89 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cyborg_idle_0
+      name: gun 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 27
+        y: 68
+        width: 175
+        height: 112
+      alignment: 9
+      pivot: {x: -0.26908743, y: 0.46823692}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: caafef0f8cfe5b090800000000000000
-      internalID: -8019239915147560276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cyborg_idle_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d379b4a03543e65a0800000000000000
-      internalID: -6526221278753614019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cyborg_idle_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a3b371241eb6c69e0800000000000000
-      internalID: -1626806750166959302
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cyborg_idle_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cb43c6a894ad79e60800000000000000
-      internalID: 7969078075045196988
+      spriteID: 8ad17bab09a7191a0800000000000000
+      internalID: -6804522799953666648
       vertices: []
       indices: 
       edges: []
@@ -200,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d635a3ccb0951ac4b868561d45cc810c
+    spriteID: 2ce454c6a471a924e84c8e9374d209ac
     internalID: 0
     vertices: []
     indices: 
@@ -208,14 +133,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Cyborg_idle_0: -8019239915147560276
-      Cyborg_idle_1: -6526221278753614019
-      Cyborg_idle_2: -1626806750166959302
-      Cyborg_idle_3: 7969078075045196988
+      gun 1_0: -6804522799953666648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

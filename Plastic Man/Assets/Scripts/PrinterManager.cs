@@ -13,8 +13,6 @@ public class PrinterManager : MonoBehaviour
         Instance = this;
     }
 
-
-
     public void OnPrintBtnClicked()
     {
 

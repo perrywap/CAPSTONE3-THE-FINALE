@@ -42,28 +42,26 @@ public class WeaponManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            PlayerAnimation.Instance.weapIndex = 1;
             PlayerCombat.Instance.ChangeWeapon(weapons[0]);
             newActiveIndex = 0;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            PlayerAnimation.Instance.weapIndex = 2;
             PlayerCombat.Instance.ChangeWeapon(weapons[1]);
             newActiveIndex = 1;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            PlayerAnimation.Instance.weapIndex = 0;
             PlayerCombat.Instance.ChangeWeapon(weapons[2]);
             newActiveIndex = 2;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            PlayerAnimation.Instance.weapIndex = 0;
             PlayerCombat.Instance.ChangeWeapon(weapons[3]);
             newActiveIndex = 3;
         }
+
+
         if (newActiveIndex != activeIndex)
         {
             for (int i = 0; i < slots.Length; i++)

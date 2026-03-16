@@ -7,6 +7,7 @@ public class NerfGun : WeaponBase
 
     protected override void Fire(Vector3 origin, Vector3 direction)
     {
+        CameraShake.Instance.RifleShake();
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         Quaternion rotation = Quaternion.Euler(0f, 0f, angle);
 

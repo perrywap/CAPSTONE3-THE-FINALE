@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: a16e91df4ef81414cbc6dfbd9e40099d
+guid: 3e530673b33dc244884cb356a30f7aba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2760476029438245614
-    second: Cyborg_run_0
+      213: 2736965957119842584
+    second: Sword Atk Spritesheet_0
   - first:
-      213: 5798244199525097649
-    second: Cyborg_run_1
+      213: 911332993202584959
+    second: Sword Atk Spritesheet_1
   - first:
-      213: -5068142148817044500
-    second: Cyborg_run_2
+      213: 4442438143669802680
+    second: Sword Atk Spritesheet_2
   - first:
-      213: 7958664899273603240
-    second: Cyborg_run_3
+      213: 3518874687771294301
+    second: Sword Atk Spritesheet_3
   - first:
-      213: 1971013790562645882
-    second: Cyborg_run_4
-  - first:
-      213: 8889248399938843937
-    second: Cyborg_run_5
+      213: 2969039852627135566
+    second: Sword Atk Spritesheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,133 +112,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cyborg_run_0
+      name: Sword Atk Spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.37148026, y: 0.45618638}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2154a564da1d0b9d0800000000000000
-      internalID: -2760476029438245614
+      spriteID: 81917747908abf520800000000000000
+      internalID: 2736965957119842584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyborg_run_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1b0a9a90160877050800000000000000
-      internalID: 5798244199525097649
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cyborg_run_2
+      name: Sword Atk Spritesheet_1
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.40653118, y: 0.46787}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ceb339c51975aa9b0800000000000000
-      internalID: -5068142148817044500
+      spriteID: f7dfee36784b5ac00800000000000000
+      internalID: 911332993202584959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyborg_run_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8a8b29f1f8bd27e60800000000000000
-      internalID: 7958664899273603240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cyborg_run_4
+      name: Sword Atk Spritesheet_2
       rect:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.39192644, y: 0.44158188}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a77f1e189927a5b10800000000000000
-      internalID: 1971013790562645882
+      spriteID: 8b6951264f5b6ad30800000000000000
+      internalID: 4442438143669802680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyborg_run_5
+      name: Sword Atk Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 240
+        x: 288
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.38608456, y: 0.40945196}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 125709e8254fc5b70800000000000000
-      internalID: 8889248399938843937
+      spriteID: d5ab8bd72ed85d030800000000000000
+      internalID: 3518874687771294301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Atk Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.37732187, y: 0.41821465}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c81dbe306243920800000000000000
+      internalID: 2969039852627135566
       vertices: []
       indices: 
       edges: []
@@ -250,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ca24d42a34bab2b45ba1a5604c4e9348
+    spriteID: ae4d20c000db4264aafbc4732e01c0f6
     internalID: 0
     vertices: []
     indices: 
@@ -260,14 +235,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Cyborg_run_0: -2760476029438245614
-      Cyborg_run_1: 5798244199525097649
-      Cyborg_run_2: -5068142148817044500
-      Cyborg_run_3: 7958664899273603240
-      Cyborg_run_4: 1971013790562645882
-      Cyborg_run_5: 8889248399938843937
+      Sword Atk Spritesheet_0: 2736965957119842584
+      Sword Atk Spritesheet_1: 911332993202584959
+      Sword Atk Spritesheet_2: 4442438143669802680
+      Sword Atk Spritesheet_3: 3518874687771294301
+      Sword Atk Spritesheet_4: 2969039852627135566
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
