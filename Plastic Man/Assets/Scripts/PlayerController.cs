@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [Header("Dash Settings")]
     [SerializeField] private float dashSpeed = 15f;
     [SerializeField] private float dashDuration = 0.2f;
+    [SerializeField] private float dashCooldown = 2f; 
 
     [Header("After Image Settings")]
     public GameObject afterImagePrefab;
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private bool isDashing;
     private float dashTimer;
     private float imageTimer;
+    private float cooldownTimer; 
 
     private void Start()
     {
@@ -41,11 +43,18 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("angle", angle);
         }
 
+        if (cooldownTimer > 0)
+        {
+            cooldownTimer -= Time.deltaTime;
+        }
+
         if (!isDashing)
             HandleWASDMovement();
 
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Keyboard.current.leftShiftKey.wasPressedThisFrame && cooldownTimer <= 0)
+        {
             Dash();
+        }
 
         HandleDash();
     }
@@ -57,7 +66,7 @@ public class PlayerController : MonoBehaviour
 
         Vector3 move = new Vector3(horizontal, vertical, 0f).normalized;
 
-        if (move.magnitude > 0f)
+        if (move.magnitude > 0.1f)
         {
             animator.SetBool("isMoving", true);
             agent.velocity = move * moveSpeed;
@@ -71,8 +80,11 @@ public class PlayerController : MonoBehaviour
 
     private void Dash()
     {
+        if (agent.velocity.magnitude < 0.1f) return;
+
         isDashing = true;
         dashTimer = dashDuration;
+        cooldownTimer = dashCooldown; 
     }
 
     private void HandleDash()
@@ -100,12 +112,12 @@ public class PlayerController : MonoBehaviour
 
     private void SpawnAfterImage()
     {
-        GameObject img = Instantiate(afterImagePrefab, transform.position, transform.rotation);
+        if (afterImagePrefab == null) return;
 
+        GameObject img = Instantiate(afterImagePrefab, transform.position, transform.rotation);
         SpriteRenderer sr = img.GetComponent<SpriteRenderer>();
         sr.sprite = spriteRenderer.sprite;
         sr.flipX = spriteRenderer.flipX;
-
         sr.sortingLayerID = spriteRenderer.sortingLayerID;
         sr.sortingOrder = spriteRenderer.sortingOrder - 1;
     }

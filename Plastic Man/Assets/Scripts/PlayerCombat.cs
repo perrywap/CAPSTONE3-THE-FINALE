@@ -42,7 +42,7 @@ public class PlayerCombat : MonoBehaviour
 
     private void HandleShooting()
     {
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButton(0))
         {
             Vector3 mousePosition = GetMouseWorldPosition();
             equippedWeapon.GetComponent<WeaponBase>().TryFire(mousePosition);
