@@ -6,7 +6,7 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SlimeVariantController
+  m_Name: Level2SlimeVariantController
   m_Controller: {fileID: 9100000, guid: ade38f15bcf294e4da5e2cd3620c03c3, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: ba05828cbee0782428b3f4ddab242722, type: 2}

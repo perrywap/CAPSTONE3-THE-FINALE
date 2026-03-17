@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Level3SlimeVariantController
+  m_Controller: {fileID: 9100000, guid: ade38f15bcf294e4da5e2cd3620c03c3, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ba05828cbee0782428b3f4ddab242722, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2440be0661669934a98c0901aca1c865, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c6cb1f39553c8cf47bc22f8036692a5c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 61e3834e7937e9a4b97cabb2c234cd58, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 681f98f8832294d4e934f06f34be45ba, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2270e173cf83ea243b94e9b21d29bdd2, type: 2}
