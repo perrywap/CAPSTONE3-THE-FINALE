@@ -46,7 +46,7 @@ public class EnemySpawner : MonoBehaviour
         {
             Vector3 spawnPosition = GetValidOffScreenPoint(planes);
 
-            if (spawnPosition != Vector3.zero)
+            if (spawnPosition != Vector3.right * 9999f)
             {
                 GameObject enemy = Instantiate(_enemyPrefab, spawnPosition, Quaternion.identity);
                 _activeEnemies.Add(enemy);
@@ -73,12 +73,14 @@ public class EnemySpawner : MonoBehaviour
                 NavMeshHit hit;
                 if (NavMesh.SamplePosition(randomPoint, out hit, _navMeshCheckRadius, NavMesh.AllAreas))
                 {
-                    return hit.position;
+                    Vector3 finalPos = hit.position;
+                    finalPos.z = 0f;
+                    return finalPos;
                 }
             }
         }
 
-        return Vector3.zero;
+        return Vector3.right * 9999f;
     }
 
     public void RemoveEnemyFromList(GameObject enemy)

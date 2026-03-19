@@ -4,12 +4,12 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     [Header("Settings")]
-    [SerializeField] private float _movementSpeed = 2f;
-    [SerializeField] private float _detectionRadius = 5f;
-    [SerializeField] private float _attackRadius = 1.5f;
+    [SerializeField] private float _movementSpeed = 2.5f;
+    [SerializeField] private float _detectionRadius = 8f;
+    [SerializeField] private float _attackRadius = 1.8f;
     [SerializeField] private float _attackCooldown = 2f;
-    [SerializeField] private float _changeDirectionTime = 2f;
-    [SerializeField] private float _randomMoveDistance = 3f;
+    [SerializeField] private float _changeDirectionTime = 3f;
+    [SerializeField] private float _randomMoveDistance = 4f;
     [SerializeField] private GameObject _player;
 
     [Header("Combat")]
@@ -33,8 +33,11 @@ public class EnemyAI : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
 
         _agent.speed = _movementSpeed;
+        _agent.stoppingDistance = 1.2f;
         _agent.updateRotation = false;
         _agent.updateUpAxis = false;
+
+        if (_player == null) _player = GameObject.FindGameObjectWithTag("Player");
 
         _currentState = State.Wander;
         SetNewRandomPosition();
@@ -44,8 +47,9 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        if (_attackTimer > 0) _attackTimer -= Time.deltaTime;
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
 
+        if (_attackTimer > 0) _attackTimer -= Time.deltaTime;
         if (_isAttacking) return;
 
         DetectPlayer();
@@ -64,20 +68,23 @@ public class EnemyAI : MonoBehaviour
     private void DetectPlayer()
     {
         if (_player == null) return;
-        float distance = Vector2.Distance(transform.position, _player.transform.position);
 
-        if (distance < _attackRadius && _attackTimer <= 0)
+        Vector2 enemyPos2D = new Vector2(transform.position.x, transform.position.y);
+        Vector2 playerPos2D = new Vector2(_player.transform.position.x, _player.transform.position.y);
+        float distance = Vector2.Distance(enemyPos2D, playerPos2D);
+
+        if (distance <= _attackRadius && _attackTimer <= 0)
         {
             _currentState = State.Attack;
         }
-        else if (distance < _detectionRadius)
+        else if (distance <= _detectionRadius)
         {
             _currentState = State.Chase;
         }
         else if (_currentState != State.Wander)
         {
             _currentState = State.Wander;
-            SetNewRandomPosition();
+            _changeDirectionTimer = 0;
         }
     }
 
@@ -85,22 +92,13 @@ public class EnemyAI : MonoBehaviour
     {
         _isAttacking = true;
         _attackTimer = _attackCooldown;
-
         _agent.isStopped = true;
         _agent.velocity = Vector3.zero;
-
         _animator.SetTrigger("AttackSlime");
     }
 
-    public void EnableHitbox()
-    {
-        if (_hitbox != null) _hitbox.SetActive(true);
-    }
-
-    public void DisableHitbox()
-    {
-        if (_hitbox != null) _hitbox.SetActive(false);
-    }
+    public void EnableHitbox() => _hitbox?.SetActive(true);
+    public void DisableHitbox() => _hitbox?.SetActive(false);
 
     public void OnAttackAnimationFinished()
     {
@@ -119,13 +117,8 @@ public class EnemyAI : MonoBehaviour
     private void UpdateAnimation()
     {
         if (_isAttacking) return;
-
         float speed = _agent.velocity.magnitude;
-
-        if (speed > 0.1f)
-            SafeSetTrigger("MoveSlime");
-        else
-            SafeSetTrigger("IdleSlime");
+        SafeSetTrigger(speed > 0.1f ? "MoveSlime" : "IdleSlime");
     }
 
     private void FlipSprite()
@@ -137,10 +130,8 @@ public class EnemyAI : MonoBehaviour
     private void SafeSetTrigger(string triggerName)
     {
         if (_currentTrigger == triggerName) return;
-
         _animator.ResetTrigger("IdleSlime");
         _animator.ResetTrigger("MoveSlime");
-
         _animator.SetTrigger(triggerName);
         _currentTrigger = triggerName;
     }
@@ -173,7 +164,18 @@ public class EnemyAI : MonoBehaviour
 
     private void ForceMoveToDestination(Vector3 target)
     {
-        _agent.isStopped = false;
-        _agent.SetDestination(target);
+        if (_agent.isOnNavMesh)
+        {
+            _agent.isStopped = false;
+            _agent.SetDestination(new Vector3(target.x, target.y, 0f));
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, _detectionRadius);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, _attackRadius);
     }
 }
