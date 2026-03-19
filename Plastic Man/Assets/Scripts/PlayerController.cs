@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [Header("Dash Settings")]
     [SerializeField] private float dashSpeed = 15f;
     [SerializeField] private float dashDuration = 0.2f;
+    [SerializeField] private float dashCooldown = 4f;
 
     [Header("After Image Settings")]
     public GameObject afterImagePrefab;
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     private bool canDash;
     private float dashTimer;
     private float imageTimer;
+    private float cooldownTimer;
 
     private void Start()
     {
@@ -42,11 +44,18 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("angle", angle);
         }
 
+        if (cooldownTimer > 0)
+        {
+            cooldownTimer -= Time.deltaTime;
+        }
+
         if (!isDashing)
             HandleWASDMovement();
 
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Keyboard.current.leftShiftKey.wasPressedThisFrame && cooldownTimer <= 0)
+        {
             Dash();
+        }
 
         HandleDash();
     }
@@ -58,7 +67,7 @@ public class PlayerController : MonoBehaviour
 
         Vector3 move = new Vector3(horizontal, vertical, 0f).normalized;
 
-        if (move.magnitude > 0f)
+        if (move.magnitude > 0.1f)
         {
             canDash = true;
             animator.SetBool("isMoving", true);
@@ -70,20 +79,22 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isMoving", false);
             agent.velocity = Vector3.zero;
         }
-        if(Module.Instance != null)
+
+        if (Module.Instance != null)
             Module.Instance.HandleFrame(animator.GetBool("isMoving"));
     }
 
     private void Dash()
     {
         if (!canDash) return;
+
         isDashing = true;
         dashTimer = dashDuration;
+        cooldownTimer = dashCooldown;
     }
 
     private void HandleDash()
     {
-        if (!canDash) return;
         if (!isDashing) return;
 
         dashTimer -= Time.deltaTime;
@@ -106,7 +117,9 @@ public class PlayerController : MonoBehaviour
     }
 
     private void SpawnAfterImage()
-    { 
+    {
+        if (afterImagePrefab == null) return;
+
         foreach (SpriteRenderer spr in this.GetComponentsInChildren<SpriteRenderer>())
         {
             GameObject img = Instantiate(afterImagePrefab, transform.position, transform.rotation);

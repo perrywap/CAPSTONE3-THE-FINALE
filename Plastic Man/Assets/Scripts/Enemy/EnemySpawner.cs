@@ -1,24 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemySpawner : MonoBehaviour
 {
     [Header("Spawner Settings")]
-    [SerializeField] private GameObject[] _spawnAreas; 
-    [SerializeField] private float _timeBetweenSpawns; 
-    [SerializeField] private EnemyAI _enemyPrefab; 
-    [SerializeField] private int _maxEnemiesAtOnce = 20; 
-    [SerializeField] private int _maxEnemiesAlive = 20; 
+    [SerializeField] private GameObject[] _spawnAreas;
+    [SerializeField] private float _timeBetweenSpawns = 2f;
+    [SerializeField] private GameObject _enemyPrefab;
+    [SerializeField] private int _maxEnemiesAtOnce = 5;
+    [SerializeField] private int _maxEnemiesAlive = 20;
 
+    [Header("NavMesh Settings")]
+    [SerializeField] private float _navMeshCheckRadius = 2f;
+
+    private Camera _mainCamera;
     private float _lastSpawnTime;
-    private GameObject _areaToUse;
-    private Collider2D _areaCollider;
-    private Bounds _bounds;
     private List<GameObject> _activeEnemies = new List<GameObject>();
+
+    void Start()
+    {
+        _mainCamera = Camera.main;
+    }
 
     void Update()
     {
+        _activeEnemies.RemoveAll(item => item == null);
+
         if (_activeEnemies.Count < _maxEnemiesAlive && Time.time > _lastSpawnTime + _timeBetweenSpawns)
         {
             _lastSpawnTime = Time.time;
@@ -28,27 +37,48 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemies()
     {
-        int enemiesToSpawn = Random.Range(1, _maxEnemiesAtOnce + 1);
+        int spaceLeft = _maxEnemiesAlive - _activeEnemies.Count;
+        int enemiesToSpawn = Mathf.Min(Random.Range(1, _maxEnemiesAtOnce + 1), spaceLeft);
+
+        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(_mainCamera);
 
         for (int i = 0; i < enemiesToSpawn; i++)
         {
-            GetRandomCollider();
-            Vector2 spawnPosition = RandomPointInBox(_bounds);
-            GameObject enemy = Instantiate(_enemyPrefab.gameObject, spawnPosition, Quaternion.identity);
-            _activeEnemies.Add(enemy);
+            Vector3 spawnPosition = GetValidOffScreenPoint(planes);
+
+            if (spawnPosition != Vector3.zero)
+            {
+                GameObject enemy = Instantiate(_enemyPrefab, spawnPosition, Quaternion.identity);
+                _activeEnemies.Add(enemy);
+            }
         }
     }
 
-    private void GetRandomCollider()
+    private Vector3 GetValidOffScreenPoint(Plane[] planes)
     {
-        _areaToUse = _spawnAreas[Random.Range(0, _spawnAreas.Length)];
-        _areaCollider = _areaToUse.GetComponent<Collider2D>();
-        _bounds = _areaCollider.bounds;
-    }
+        for (int attempt = 0; attempt < 10; attempt++)
+        {
+            GameObject areaToUse = _spawnAreas[Random.Range(0, _spawnAreas.Length)];
+            Collider2D areaCollider = areaToUse.GetComponent<Collider2D>();
+            Bounds bounds = areaCollider.bounds;
 
-    private Vector2 RandomPointInBox(Bounds bounds)
-    {
-        return new Vector2(Random.Range(bounds.min.x, bounds.max.x), Random.Range(bounds.min.y, bounds.max.y));
+            Vector3 randomPoint = new Vector3(
+                Random.Range(bounds.min.x, bounds.max.x),
+                Random.Range(bounds.min.y, bounds.max.y),
+                0f
+            );
+
+            if (!GeometryUtility.TestPlanesAABB(planes, new Bounds(randomPoint, Vector3.one)))
+            {
+                NavMeshHit hit;
+                if (NavMesh.SamplePosition(randomPoint, out hit, _navMeshCheckRadius, NavMesh.AllAreas))
+                {
+                    return hit.position;
+                }
+            }
+        }
+
+        return Vector3.zero;
     }
 
     public void RemoveEnemyFromList(GameObject enemy)
