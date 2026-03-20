@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    #region Variables
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 5f;
 
@@ -20,9 +21,9 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     private bool isDashing;
-    private bool canDash;
     private float dashTimer;
     private float imageTimer;
+    #endregion
 
     private void Start()
     {
@@ -60,30 +61,29 @@ public class PlayerController : MonoBehaviour
 
         if (move.magnitude > 0f)
         {
-            canDash = true;
             animator.SetBool("isMoving", true);
             agent.velocity = move * moveSpeed;
         }
         else
         {
-            canDash = false;
             animator.SetBool("isMoving", false);
             agent.velocity = Vector3.zero;
         }
-        if(Module.Instance != null)
-            Module.Instance.HandleFrame(animator.GetBool("isMoving"));
+
+        foreach (Module module in this.gameObject.GetComponentsInChildren<Module>())
+        {
+            module.HandleFrame(animator.GetBool("isMoving"));
+        }
     }
 
     private void Dash()
     {
-        if (!canDash) return;
         isDashing = true;
         dashTimer = dashDuration;
     }
 
     private void HandleDash()
     {
-        if (!canDash) return;
         if (!isDashing) return;
 
         dashTimer -= Time.deltaTime;
@@ -106,17 +106,14 @@ public class PlayerController : MonoBehaviour
     }
 
     private void SpawnAfterImage()
-    { 
-        foreach (SpriteRenderer spr in this.GetComponentsInChildren<SpriteRenderer>())
-        {
-            GameObject img = Instantiate(afterImagePrefab, transform.position, transform.rotation);
+    {
+        GameObject img = Instantiate(afterImagePrefab, transform.position, transform.rotation);
 
-            SpriteRenderer sr = img.GetComponent<SpriteRenderer>();
-            sr.sprite = spr.sprite;
-            sr.flipX = spr.flipX;
+        SpriteRenderer sr = img.GetComponent<SpriteRenderer>();
+        sr.sprite = spriteRenderer.sprite;
+        sr.flipX = spriteRenderer.flipX;
 
-            sr.sortingLayerID = spr.sortingLayerID;
-            sr.sortingOrder = spr.sortingOrder - 1;
-        }
+        sr.sortingLayerID = spriteRenderer.sortingLayerID;
+        sr.sortingOrder = spriteRenderer.sortingOrder - 1;
     }
 }
