@@ -4,15 +4,32 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 5f;
 
+    [Header("Dash Settings")]
+    [SerializeField] private float dashSpeed = 15f;
+    [SerializeField] private float dashDuration = 0.2f;
+
+    [Header("After Image Settings")]
+    public GameObject afterImagePrefab;
+    public float afterImageSpacing = 0.05f;
+
     private NavMeshAgent agent;
-    public Animator animator;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+
+    private bool isDashing;
+    private bool canDash;
+    private float dashTimer;
+    private float imageTimer;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
         agent.updateRotation = false;
         agent.updateUpAxis = false;
     }
@@ -21,15 +38,17 @@ public class PlayerController : MonoBehaviour
     {
         if (animator != null)
         {
-            float angle = PlayerLookAt.Instance.GetAngle();
-
-            if (angle < 0)
-                angle += 360f;
-
+            float angle = PlayerLookAt.Instance.angle;
             animator.SetFloat("angle", angle);
         }
 
-        HandleWASDMovement();
+        if (!isDashing)
+            HandleWASDMovement();
+
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+            Dash();
+
+        HandleDash();
     }
 
     private void HandleWASDMovement()
@@ -39,31 +58,65 @@ public class PlayerController : MonoBehaviour
 
         Vector3 move = new Vector3(horizontal, vertical, 0f).normalized;
 
-        //if (horizontal > 0f)
-        //    PlayerAnimation.Instance.isMovingLeft = false;
-        //else if (horizontal < 0f)
-        //    PlayerAnimation.Instance.isMovingLeft = true;
-
-        //if (move.magnitude > 0f)
-        //{
-        //    PlayerAnimation.Instance.isMoving = true;
-        //    agent.velocity = move * moveSpeed;
-        //}
-        //else
-        //{
-        //    PlayerAnimation.Instance.isMoving = false;
-        //    agent.velocity = Vector3.zero;
-        //}
-
         if (move.magnitude > 0f)
         {
+            canDash = true;
             animator.SetBool("isMoving", true);
             agent.velocity = move * moveSpeed;
         }
         else
         {
+            canDash = false;
             animator.SetBool("isMoving", false);
             agent.velocity = Vector3.zero;
+        }
+        if(Module.Instance != null)
+            Module.Instance.HandleFrame(animator.GetBool("isMoving"));
+    }
+
+    private void Dash()
+    {
+        if (!canDash) return;
+        isDashing = true;
+        dashTimer = dashDuration;
+    }
+
+    private void HandleDash()
+    {
+        if (!canDash) return;
+        if (!isDashing) return;
+
+        dashTimer -= Time.deltaTime;
+
+        Vector3 dashDirection = agent.velocity.normalized;
+        agent.velocity = dashDirection * dashSpeed;
+
+        imageTimer -= Time.deltaTime;
+
+        if (imageTimer <= 0f)
+        {
+            SpawnAfterImage();
+            imageTimer = afterImageSpacing;
+        }
+
+        if (dashTimer <= 0f)
+        {
+            isDashing = false;
+        }
+    }
+
+    private void SpawnAfterImage()
+    { 
+        foreach (SpriteRenderer spr in this.GetComponentsInChildren<SpriteRenderer>())
+        {
+            GameObject img = Instantiate(afterImagePrefab, transform.position, transform.rotation);
+
+            SpriteRenderer sr = img.GetComponent<SpriteRenderer>();
+            sr.sprite = spr.sprite;
+            sr.flipX = spr.flipX;
+
+            sr.sortingLayerID = spr.sortingLayerID;
+            sr.sortingOrder = spr.sortingOrder - 1;
         }
     }
 }

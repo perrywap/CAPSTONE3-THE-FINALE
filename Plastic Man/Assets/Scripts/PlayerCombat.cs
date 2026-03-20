@@ -6,77 +6,27 @@ public class PlayerCombat : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private GameObject equippedWeapon;
-    [SerializeField] private Transform weaponAttach;
     [SerializeField] private Transform aimTransform;
-
-    [SerializeField] private SpriteRenderer equippedWeaponSprite;
-
-    private WeaponBase weapon;
 
     private void Awake()
     { 
         Instance = this;
-
-        if (equippedWeapon != null)
-            weapon = equippedWeapon.GetComponent<WeaponBase>();
     }
 
     private void Update()
     {
+        if (equippedWeapon == null)
+            return;
+
         HandleAiming();
         HandleShooting();
     }
 
-    private void HandleAim2ing()
-    {
-        Vector3 mousePosition = GetMouseWorldPosition();
-
-        Vector3 aimDirection = (mousePosition - transform.position).normalized;
-        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-
-        bool aimingLeft = angle > 90f || angle < -90f;
-
-        if (!aimingLeft)
-        {
-            angle = Mathf.Clamp(angle, -60f, 60f);
-        }
-        else
-        {
-            if (angle > 0)
-                angle = Mathf.Clamp(angle, 120f, 180f);
-            else
-                angle = Mathf.Clamp(angle, -180f, -120f);
-        }
-
-        aimTransform.eulerAngles = new Vector3(0, 0, angle);
-
-        Vector3 localScale = Vector3.one;
-        localScale.y = aimingLeft ? -1f : 1f;
-        aimTransform.localScale = localScale;
-    }
-
     private void HandleAiming()
     {
-        Vector3 mousePosition = GetMouseWorldPosition();
 
-        Vector3 aimDirection = (mousePosition - transform.position).normalized;
-        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-
-        float angle360 = angle < 0 ? angle + 360f : angle;
-
-        bool aimingLeft = angle > 90f || angle < -90f;
-
-        if (!aimingLeft)
-        {
-            angle = Mathf.Clamp(angle, -60f, 60f);
-        }
-        else
-        {
-            if (angle > 0)
-                angle = Mathf.Clamp(angle, 120f, 180f);
-            else
-                angle = Mathf.Clamp(angle, -180f, -120f);
-        }
+        float angle = PlayerLookAt.Instance.angle;
+        bool aimingLeft = PlayerLookAt.Instance.isLookingLeft;
 
         aimTransform.eulerAngles = new Vector3(0, 0, angle);
 
@@ -84,27 +34,18 @@ public class PlayerCombat : MonoBehaviour
         localScale.y = aimingLeft ? -1f : 1f;
         aimTransform.localScale = localScale;
 
-        if (angle360 > 30f && angle360 < 165f)
-            equippedWeaponSprite.sortingOrder = 2;
+        if (angle > 45f && angle < 165f)
+            equippedWeapon.GetComponent<SpriteRenderer>().sortingOrder = 1;
         else
-            equippedWeaponSprite.sortingOrder = 4;
+            equippedWeapon.GetComponent<SpriteRenderer>().sortingOrder = 5;
     }
 
     private void HandleShooting()
     {
-        if (equippedWeapon == null)
-            return;
-
         if (Input.GetMouseButton(1))
         {
-            //PlayerAnimation.Instance.isShooting = true;
-
             Vector3 mousePosition = GetMouseWorldPosition();
-            weapon.TryFire(mousePosition);
-        }
-        else
-        {
-            //PlayerAnimation.Instance.isShooting = false;
+            equippedWeapon.GetComponent<WeaponBase>().TryFire(mousePosition);
         }
     }
 
@@ -113,10 +54,8 @@ public class PlayerCombat : MonoBehaviour
         if (equippedWeapon != null)
             Destroy(equippedWeapon.gameObject);
 
-        equippedWeapon = Instantiate(weap, weaponAttach);
-        equippedWeapon.transform.parent = weaponAttach;
-
-        weapon = equippedWeapon.GetComponent<WeaponBase>();
+        equippedWeapon = Instantiate(weap, aimTransform);
+        equippedWeapon.transform.parent = aimTransform;
     }
 
     #region MouseWorldPosition
