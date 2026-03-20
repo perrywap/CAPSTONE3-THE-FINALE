@@ -21,6 +21,9 @@ public class CameraMouseOffset : MonoBehaviour
         Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorld.z = 0;
 
+        if (player == null)
+            return;
+
         Vector3 direction = mouseWorld - player.position;
 
         Vector3 offset = direction * 0.3f; // scale influence

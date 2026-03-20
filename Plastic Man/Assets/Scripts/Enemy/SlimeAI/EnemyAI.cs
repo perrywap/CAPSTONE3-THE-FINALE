@@ -176,9 +176,9 @@ public class EnemyAI : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, _detectionRadius);
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, _detectionRadius); // Seek
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, _attackRadius);
+        Gizmos.DrawWireSphere(transform.position, _attackRadius); // Attack
     }
 }
