@@ -3,12 +3,22 @@ using UnityEngine;
 public class Sword : WeaponBase
 {
     [SerializeField] private float range = 1.5f;
-    //[SerializeField] private int damage = 10;
     [SerializeField] private LayerMask hitLayer;
+
+    [Header("Audio")]
+    [SerializeField] private AudioClip swingSfx; 
+    [SerializeField] private float swingVolume = 0.5f;
 
     protected override void Fire(Vector3 origin, Vector3 direction)
     {
+   
+        if (swingSfx != null)
+        {
+            SfxManager.instance.PlaySFX(swingSfx, swingVolume);
+        }
+
         animator.SetTrigger("swing");
+
         Vector3 hitPosition = origin + direction.normalized * range / 2f;
         float hitRadius = range / 2f;
 
@@ -16,7 +26,8 @@ public class Sword : WeaponBase
 
         foreach (Collider2D hit in hits)
         {
-            Debug.Log("Slash!");
+            hit.GetComponent<EnemyHealth>().TakeDamage(damage);
+            Debug.Log("Slashed");
         }
 
         Debug.DrawLine(origin, origin + direction.normalized * range, Color.red, 0.5f);

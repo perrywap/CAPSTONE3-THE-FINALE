@@ -120,7 +120,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -148,12 +148,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 656
-        width: 77
-        height: 73
+        x: 0
+        y: 640
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_1
       rect:
         serializedVersion: 2
-        x: 227
-        y: 656
-        width: 67
-        height: 76
+        x: 175
+        y: 640
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_2
       rect:
         serializedVersion: 2
-        x: 405
-        y: 656
-        width: 63
-        height: 81
+        x: 350
+        y: 640
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_3
       rect:
         serializedVersion: 2
-        x: 54
-        y: 528
-        width: 64
-        height: 93
+        x: 0
+        y: 512
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -236,12 +236,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_4
       rect:
         serializedVersion: 2
-        x: 230
-        y: 528
-        width: 62
-        height: 81
+        x: 175
+        y: 512
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -258,12 +258,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_5
       rect:
         serializedVersion: 2
-        x: 402
-        y: 528
-        width: 67
-        height: 76
+        x: 350
+        y: 512
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -280,12 +280,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_6
       rect:
         serializedVersion: 2
-        x: 50
-        y: 400
-        width: 77
-        height: 73
+        x: 0
+        y: 384
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -302,12 +302,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_7
       rect:
         serializedVersion: 2
-        x: 225
-        y: 400
-        width: 75
-        height: 67
+        x: 175
+        y: 384
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -324,12 +324,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_8
       rect:
         serializedVersion: 2
-        x: 399
-        y: 400
-        width: 77
-        height: 62
+        x: 350
+        y: 384
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -346,12 +346,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_9
       rect:
         serializedVersion: 2
-        x: 46
-        y: 272
-        width: 83
-        height: 58
+        x: 0
+        y: 256
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -368,12 +368,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_10
       rect:
         serializedVersion: 2
-        x: 196
-        y: 272
-        width: 133
-        height: 76
+        x: 175
+        y: 256
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -390,12 +390,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_11
       rect:
         serializedVersion: 2
-        x: 354
-        y: 272
-        width: 167
-        height: 90
+        x: 350
+        y: 256
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -412,12 +412,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_12
       rect:
         serializedVersion: 2
-        x: 21
-        y: 144
-        width: 133
-        height: 76
+        x: 0
+        y: 128
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -434,12 +434,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_13
       rect:
         serializedVersion: 2
-        x: 230
-        y: 144
-        width: 62
-        height: 81
+        x: 175
+        y: 128
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -456,12 +456,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_14
       rect:
         serializedVersion: 2
-        x: 407
-        y: 143
-        width: 61
-        height: 81
+        x: 350
+        y: 128
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -478,12 +478,12 @@ TextureImporter:
       name: LEVEL1-ATTACK_15
       rect:
         serializedVersion: 2
-        x: 48
-        y: 15
-        width: 75
-        height: 73
+        x: 0
+        y: 0
+        width: 175
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -500,7 +500,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 90211a0942a2dea40af557f2554e6b81
     internalID: 0
     vertices: []
     indices: 
@@ -508,7 +508,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":6.0},"gridSpriteSize":{"x":175.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       LEVEL1-ATTACK_0: 879879116283222682
       LEVEL1-ATTACK_1: -6445686974621382836

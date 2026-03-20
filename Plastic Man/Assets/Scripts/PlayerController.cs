@@ -82,6 +82,9 @@ public class PlayerController : MonoBehaviour
             agent.velocity = Vector3.zero;
         }
 
+        // Toggle footsteps sfx
+        this.gameObject.GetComponent<PlayerFootSteps>().isMoving = animator.GetBool("isMoving");
+
         if (Module.Instance != null)
             Module.Instance.HandleFrame(animator.GetBool("isMoving"));
     }
