@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 2f175bed812fdcc40975d855ef8c3ee4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1185070894712921725
+    second: LEVEL3-ATTACK_0
+  - first:
+      213: 8297080591643646113
+    second: LEVEL3-ATTACK_1
+  - first:
+      213: 633625507404195670
+    second: LEVEL3-ATTACK_2
+  - first:
+      213: -8623549776995756287
+    second: LEVEL3-ATTACK_3
+  - first:
+      213: 4685468190597209498
+    second: LEVEL3-ATTACK_4
+  - first:
+      213: 8290303600627882361
+    second: LEVEL3-ATTACK_5
+  - first:
+      213: -2160288873372223403
+    second: LEVEL3-ATTACK_6
+  - first:
+      213: -5377957837706749973
+    second: LEVEL3-ATTACK_7
+  - first:
+      213: 5519709710092607557
+    second: LEVEL3-ATTACK_8
+  - first:
+      213: -1379911003522446206
+    second: LEVEL3-ATTACK_9
+  - first:
+      213: 2831852338715058152
+    second: LEVEL3-ATTACK_10
+  - first:
+      213: -6693361121767380271
+    second: LEVEL3-ATTACK_11
+  - first:
+      213: -8617837425374165984
+    second: LEVEL3-ATTACK_12
+  - first:
+      213: -2603393146707049732
+    second: LEVEL3-ATTACK_13
+  - first:
+      213: -6697129403688063785
+    second: LEVEL3-ATTACK_14
+  - first:
+      213: -1753974434412057838
+    second: LEVEL3-ATTACK_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 657
+        width: 75
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3816bfecc48cd8fe0800000000000000
+      internalID: -1185070894712921725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 657
+        width: 70
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a815b996d6252370800000000000000
+      internalID: 8297080591643646113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_2
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 657
+        width: 63
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6572479ba071bc800800000000000000
+      internalID: 633625507404195670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 529
+        width: 69
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107d447da2ff25880800000000000000
+      internalID: -8623549776995756287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_4
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 529
+        width: 63
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d50f2ae70260140800000000000000
+      internalID: 4685468190597209498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_5
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 529
+        width: 75
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 979119b63331d0370800000000000000
+      internalID: 8290303600627882361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 402
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5587b6227bc1502e0800000000000000
+      internalID: -2160288873372223403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 402
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7167a17d7ad55b0800000000000000
+      internalID: -5377957837706749973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_8
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 402
+        width: 77
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54028559cb2f99c40800000000000000
+      internalID: 5519709710092607557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_9
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 274
+        width: 83
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c446dd04299dce0800000000000000
+      internalID: -1379911003522446206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_10
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 274
+        width: 133
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef5871c2b2cc4720800000000000000
+      internalID: 2831852338715058152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_11
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 275
+        width: 167
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da25afc5876c13a0800000000000000
+      internalID: -6693361121767380271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 146
+        width: 133
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0248188558a476880800000000000000
+      internalID: -8617837425374165984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_13
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 145
+        width: 63
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf207d7f9b3eedbd0800000000000000
+      internalID: -2603393146707049732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_14
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 145
+        width: 70
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc695e4a440f03a0800000000000000
+      internalID: -6697129403688063785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL3-ATTACK_15
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 17
+        width: 75
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ba0cb7b81a8a7e0800000000000000
+      internalID: -1753974434412057838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LEVEL3-ATTACK_0: -1185070894712921725
+      LEVEL3-ATTACK_1: 8297080591643646113
+      LEVEL3-ATTACK_10: 2831852338715058152
+      LEVEL3-ATTACK_11: -6693361121767380271
+      LEVEL3-ATTACK_12: -8617837425374165984
+      LEVEL3-ATTACK_13: -2603393146707049732
+      LEVEL3-ATTACK_14: -6697129403688063785
+      LEVEL3-ATTACK_15: -1753974434412057838
+      LEVEL3-ATTACK_2: 633625507404195670
+      LEVEL3-ATTACK_3: -8623549776995756287
+      LEVEL3-ATTACK_4: 4685468190597209498
+      LEVEL3-ATTACK_5: 8290303600627882361
+      LEVEL3-ATTACK_6: -2160288873372223403
+      LEVEL3-ATTACK_7: -5377957837706749973
+      LEVEL3-ATTACK_8: 5519709710092607557
+      LEVEL3-ATTACK_9: -1379911003522446206
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
