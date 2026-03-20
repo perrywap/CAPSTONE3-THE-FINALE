@@ -25,7 +25,19 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Enemy Defeated!");
+        LootSpawner lootSpawner = Object.FindFirstObjectByType<LootSpawner>();
+
+        if (lootSpawner != null)
+        {
+            lootSpawner.DropLoot(transform.position);
+        }
+
+        EnemySpawner spawner = Object.FindFirstObjectByType<EnemySpawner>();
+        if (spawner != null)
+        {
+            spawner.RemoveEnemyFromList(gameObject);
+        }
+
         Destroy(gameObject);
     }
 }
