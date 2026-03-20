@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5622161749225198249}
   - component: {fileID: 4359576851070073331}
   - component: {fileID: 7033358090210405455}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6015625, y: 0.5703125}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.77, y: 0.73}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 5264958394628267605}
   - component: {fileID: 1661679890165630236}
   - component: {fileID: 2211334694046226835}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

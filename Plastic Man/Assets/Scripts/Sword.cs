@@ -16,7 +16,8 @@ public class Sword : WeaponBase
 
         foreach (Collider2D hit in hits)
         {
-            Debug.Log("Slash!");
+            hit.GetComponent<EnemyHealth>().TakeDamage(damage);
+            Debug.Log("Slashed");
         }
 
         Debug.DrawLine(origin, origin + direction.normalized * range, Color.red, 0.5f);

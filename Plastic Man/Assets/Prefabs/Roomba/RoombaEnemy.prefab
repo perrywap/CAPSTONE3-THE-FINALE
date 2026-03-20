@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5526502758115998716}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 6052203116062483216}
   - component: {fileID: 1326149701389960139}
   - component: {fileID: 3485852412664511347}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoombaEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

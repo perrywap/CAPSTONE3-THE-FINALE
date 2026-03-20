@@ -106,11 +106,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sword
   fireRate: 0.2
-  damage: 10
+  damage: 1000
   range: 1.5
   hitLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!95 &6016597500034344761
 Animator:
   serializedVersion: 7
