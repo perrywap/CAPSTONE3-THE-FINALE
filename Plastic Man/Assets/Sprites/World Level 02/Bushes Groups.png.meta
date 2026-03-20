@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 2f581bffbdf51d04d9c9de1bf1cc7f3f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5067780397641809561
+    second: Bushes Groups_0
+  - first:
+      213: -865560639054544945
+    second: Bushes Groups_1
+  - first:
+      213: 1142334739455427140
+    second: Bushes Groups_2
+  - first:
+      213: -1487335523274928675
+    second: Bushes Groups_3
+  - first:
+      213: -3043679599127552010
+    second: Bushes Groups_4
+  - first:
+      213: 2677465221528270369
+    second: Bushes Groups_5
+  - first:
+      213: 489930224436523294
+    second: Bushes Groups_6
+  - first:
+      213: 2760450975211885500
+    second: Bushes Groups_7
+  - first:
+      213: 1410002811271249361
+    second: Bushes Groups_8
+  - first:
+      213: 8082845853905038285
+    second: Bushes Groups_9
+  - first:
+      213: 2331785914913330924
+    second: Bushes Groups_10
+  - first:
+      213: -17023380296648951
+    second: Bushes Groups_11
+  - first:
+      213: 5148036292205763290
+    second: Bushes Groups_12
+  - first:
+      213: -6175993899758454880
+    second: Bushes Groups_13
+  - first:
+      213: -1953494778785113558
+    second: Bushes Groups_14
+  - first:
+      213: 1836753400780250035
+    second: Bushes Groups_15
+  - first:
+      213: 1801251126257451980
+    second: Bushes Groups_16
+  - first:
+      213: -3159446456680864896
+    second: Bushes Groups_17
+  - first:
+      213: 4257415059022077250
+    second: Bushes Groups_18
+  - first:
+      213: 6175085108439298631
+    second: Bushes Groups_19
+  - first:
+      213: -6884129349612884337
+    second: Bushes Groups_20
+  - first:
+      213: -6174235589796814588
+    second: Bushes Groups_21
+  - first:
+      213: 1600386878312070869
+    second: Bushes Groups_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bushes Groups_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 656
+        width: 132
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7614fde1490aba9b0800000000000000
+      internalID: -5067780397641809561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 655
+        width: 106
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcff7994f29ecf3f0800000000000000
+      internalID: -865560639054544945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_2
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 656
+        width: 98
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44244d7a4636adf00800000000000000
+      internalID: 1142334739455427140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_3
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 656
+        width: 132
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dddc069c83ceb5be0800000000000000
+      internalID: -1487335523274928675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_4
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 655
+        width: 106
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff16ebd78da2c5d0800000000000000
+      internalID: -3043679599127552010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_5
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 656
+        width: 98
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126b7a3ee64482520800000000000000
+      internalID: 2677465221528270369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_6
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 560
+        width: 132
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11344081f49cc600800000000000000
+      internalID: 489930224436523294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_7
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 559
+        width: 106
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3926559871f4620800000000000000
+      internalID: 2760450975211885500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_8
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 560
+        width: 98
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ddff1a1616519310800000000000000
+      internalID: 1410002811271249361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_9
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 560
+        width: 132
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcbaf38ba790c2070800000000000000
+      internalID: 8082845853905038285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_10
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 559
+        width: 106
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce61bae6fea2c5020800000000000000
+      internalID: 2331785914913330924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_11
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 560
+        width: 98
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907ba88635583cff0800000000000000
+      internalID: -17023380296648951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 480
+        width: 285
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada5eb77bbf717740800000000000000
+      internalID: 5148036292205763290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_13
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 480
+        width: 194
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7faed15467a4aa0800000000000000
+      internalID: -6175993899758454880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_14
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 400
+        width: 431
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2adee749dac3e4e0800000000000000
+      internalID: -1953494778785113558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_15
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 400
+        width: 163
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb5f798c757d7910800000000000000
+      internalID: 1836753400780250035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_16
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 400
+        width: 180
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc309db1b545ff810800000000000000
+      internalID: 1801251126257451980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_17
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 316
+        width: 257
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 083aba6ef246724d0800000000000000
+      internalID: -3159446456680864896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_18
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 317
+        width: 243
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24dd86e7070651b30800000000000000
+      internalID: 4257415059022077250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_19
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 320
+        width: 296
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742345a603f42b550800000000000000
+      internalID: 6175085108439298631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_20
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 240
+        width: 773
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8eab7884d8a670a0800000000000000
+      internalID: -6884129349612884337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 956
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401269e8175b05aa0800000000000000
+      internalID: -6174235589796814588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes Groups_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 29
+        width: 956
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5debcf8f267b53610800000000000000
+      internalID: 1600386878312070869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bushes Groups_0: -5067780397641809561
+      Bushes Groups_1: -865560639054544945
+      Bushes Groups_10: 2331785914913330924
+      Bushes Groups_11: -17023380296648951
+      Bushes Groups_12: 5148036292205763290
+      Bushes Groups_13: -6175993899758454880
+      Bushes Groups_14: -1953494778785113558
+      Bushes Groups_15: 1836753400780250035
+      Bushes Groups_16: 1801251126257451980
+      Bushes Groups_17: -3159446456680864896
+      Bushes Groups_18: 4257415059022077250
+      Bushes Groups_19: 6175085108439298631
+      Bushes Groups_2: 1142334739455427140
+      Bushes Groups_20: -6884129349612884337
+      Bushes Groups_21: -6174235589796814588
+      Bushes Groups_22: 1600386878312070869
+      Bushes Groups_3: -1487335523274928675
+      Bushes Groups_4: -3043679599127552010
+      Bushes Groups_5: 2677465221528270369
+      Bushes Groups_6: 489930224436523294
+      Bushes Groups_7: 2760450975211885500
+      Bushes Groups_8: 1410002811271249361
+      Bushes Groups_9: 8082845853905038285
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
