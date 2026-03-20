@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 3900678631590910362}
   - component: {fileID: 820618255120969642}
   - component: {fileID: 3585979852734191622}
+  - component: {fileID: 5532568950797069975}
   - component: {fileID: 3260932154076827769}
   - component: {fileID: 8513747529267422063}
   - component: {fileID: 142191355881588694}
@@ -209,6 +210,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerLookAt
   angle: 0
   isLookingLeft: 0
+--- !u!114 &5532568950797069975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7778651085268212264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98bf36359c1b43f48a32d23cfa8362c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LootInventory
+  polyethyleneCount: 0
+  acrylicCount: 0
+  polycarbonateCount: 0
 --- !u!114 &3260932154076827769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +240,7 @@ MonoBehaviour:
   moveSpeed: 5
   dashSpeed: 15
   dashDuration: 0.2
+  dashCooldown: 4
   afterImagePrefab: {fileID: 8045429306492461762, guid: f3094a468da3154498c1792bd95a788d, type: 3}
   afterImageSpacing: 0.05
 --- !u!95 &8513747529267422063
@@ -298,6 +315,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   _maxHealth: 100
   _healthBarFill: {fileID: 0}
+  _blinkCount: 3
+  _blinkSpeed: 0.1
 --- !u!70 &8277854105434842158
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
