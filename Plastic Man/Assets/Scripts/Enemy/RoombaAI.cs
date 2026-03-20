@@ -12,6 +12,8 @@ public class RoombaAI : MonoBehaviour
     [SerializeField] private float _randomMoveDistance = 5f;
     [SerializeField] private GameObject _player;
 
+    [SerializeField] private LayerMask _obstacleMask;
+
     [Header("Ranged Combat")]
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private Transform _firePoint;
@@ -65,16 +67,32 @@ public class RoombaAI : MonoBehaviour
 
         float distance = Vector2.Distance(transform.position, _player.transform.position);
 
-        if (distance <= _attackRadius && _attackTimer <= 0)
+        bool hasLineOfSight = false;
+        if (distance <= _detectionRadius)
+        {
+            Vector2 direction = (_player.transform.position - transform.position).normalized;
+            // Shoot a ray to see if a wall or blocker is in the way
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, _obstacleMask);
+
+            // If the ray hits nothing, the enemy can see the player clearly
+            if (hit.collider == null)
+            {
+                hasLineOfSight = true;
+            }
+        }
+
+        // Only attack or chase if they have a clear Line of Sight
+        if (distance <= _attackRadius && _attackTimer <= 0 && hasLineOfSight)
         {
             _currentState = State.Attack;
         }
-        else if (distance <= _detectionRadius)
+        else if (distance <= _detectionRadius && hasLineOfSight)
         {
             _currentState = State.Chase;
         }
         else if (_currentState != State.Wander)
         {
+            // Go back to wandering if player hides behind a wall/blocker
             _currentState = State.Wander;
             _changeDirectionTimer = 0;
         }

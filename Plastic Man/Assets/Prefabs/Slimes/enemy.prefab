@@ -116,6 +116,9 @@ MonoBehaviour:
   _changeDirectionTime: 2
   _randomMoveDistance: 3
   _player: {fileID: 0}
+  _obstacleMask:
+    serializedVersion: 2
+    m_Bits: 128
   _hitbox: {fileID: 4835974537303376605}
 --- !u!195 &7607774394451779696
 NavMeshAgent:

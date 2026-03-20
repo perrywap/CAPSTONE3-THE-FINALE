@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (NPCDialogue.IsTalking) return;
+
         if (animator != null)
         {
             float angle = PlayerLookAt.Instance.angle;
