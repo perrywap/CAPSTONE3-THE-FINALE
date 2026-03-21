@@ -5,20 +5,12 @@ public class PlayerFootSteps : MonoBehaviour
 {
     public AudioClip[] footStepSfx;
     [SerializeField] private float footStepsVolume = 0.005f;
-    private PlayerController player;
     private Coroutine footstepRoutine;
 
-    void Start()
-    {
-        player = GetComponent<PlayerController>();
-    }
+    public bool isMoving;
 
     void Update()
     {
-        if (player == null) return;
-
-        bool isMoving = player.movement.magnitude > 0.1f;
-
         if (isMoving && footstepRoutine == null)
         {
             footstepRoutine = StartCoroutine(PlayFootsteps());

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(AudioSource))]
 public class EnemyAI : MonoBehaviour
 {
     [Header("Settings")]
@@ -15,22 +16,30 @@ public class EnemyAI : MonoBehaviour
     [Header("Combat")]
     [SerializeField] private GameObject _hitbox;
 
+    [Header("Audio Clips")]
+    [SerializeField] private AudioClip wanderClip;
+    [SerializeField] private AudioClip chaseClip;
+    [SerializeField] private AudioClip attackClip;
+
     private NavMeshAgent _agent;
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
+    private AudioSource _audioSource;
+
     private float _changeDirectionTimer;
     private float _attackTimer;
     private string _currentTrigger;
     private bool _isAttacking;
+    private State _currentState;
 
     private enum State { Wander, Chase, Attack }
-    private State _currentState;
 
     void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _audioSource = GetComponent<AudioSource>();
 
         _agent.speed = _movementSpeed;
         _agent.stoppingDistance = 1.2f;
@@ -38,14 +47,16 @@ public class EnemyAI : MonoBehaviour
         _agent.updateUpAxis = false;
 
         if (_player == null)
-        {
             _player = GameObject.FindGameObjectWithTag("Player");
-        }
 
         _currentState = State.Wander;
         SetNewRandomPosition();
 
-        if (_hitbox != null) _hitbox.SetActive(false);
+        if (_hitbox != null)
+            _hitbox.SetActive(false);
+
+        // Start initial audio loop
+        PlayStateAudio(_currentState);
     }
 
     void Update()
@@ -72,22 +83,42 @@ public class EnemyAI : MonoBehaviour
     {
         if (_player == null) return;
 
-        Vector2 enemyPos2D = new Vector2(transform.position.x, transform.position.y);
-        Vector2 playerPos2D = new Vector2(_player.transform.position.x, _player.transform.position.y);
-        float distance = Vector2.Distance(enemyPos2D, playerPos2D);
+        float distance = Vector2.Distance(transform.position, _player.transform.position);
+        State previousState = _currentState;
 
         if (distance <= _attackRadius && _attackTimer <= 0)
-        {
             _currentState = State.Attack;
-        }
         else if (distance <= _detectionRadius)
-        {
             _currentState = State.Chase;
-        }
-        else if (_currentState != State.Wander)
-        {
+        else
             _currentState = State.Wander;
-            _changeDirectionTimer = 0;
+
+        if (previousState != _currentState)
+            PlayStateAudio(_currentState);
+    }
+
+    private void PlayStateAudio(State state)
+    {
+        if (_audioSource == null) return;
+
+        switch (state)
+        {
+            case State.Wander:
+                _audioSource.clip = wanderClip;
+                break;
+            case State.Chase:
+                _audioSource.clip = chaseClip;
+                break;
+            case State.Attack:
+                _audioSource.clip = attackClip;
+                break;
+        }
+
+        if (_audioSource.clip != null)
+        {
+            _audioSource.loop = (state != State.Attack); // Loop for Wander & Chase, play once for Attack
+            if (!_audioSource.isPlaying || _audioSource.clip != attackClip) // prevent restarting loop unnecessarily
+                _audioSource.Play();
         }
     }
 
@@ -98,6 +129,12 @@ public class EnemyAI : MonoBehaviour
         _agent.isStopped = true;
         _agent.velocity = Vector3.zero;
         _animator.SetTrigger("AttackSlime");
+
+        // Play attack once
+        if (attackClip != null)
+        {
+            _audioSource.PlayOneShot(attackClip);
+        }
     }
 
     public void EnableHitbox() => _hitbox?.SetActive(true);
@@ -114,6 +151,7 @@ public class EnemyAI : MonoBehaviour
         {
             _currentState = State.Chase;
             ForceMoveToDestination(_player.transform.position);
+            PlayStateAudio(_currentState);
         }
     }
 
@@ -176,7 +214,7 @@ public class EnemyAI : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.yellow;
+        Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, _detectionRadius);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, _attackRadius);
