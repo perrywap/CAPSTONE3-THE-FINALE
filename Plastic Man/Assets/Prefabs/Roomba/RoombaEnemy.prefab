@@ -240,6 +240,9 @@ MonoBehaviour:
   _changeDirectionTime: 3
   _randomMoveDistance: 5
   _player: {fileID: 0}
+  _obstacleMask:
+    serializedVersion: 2
+    m_Bits: 128
   _bulletPrefab: {fileID: 1249969211058463525, guid: 63fe232fd8938c342a8e2fdccc0251d4, type: 3}
   _firePoint: {fileID: 5526502758115998716}
   _bulletSpeed: 10

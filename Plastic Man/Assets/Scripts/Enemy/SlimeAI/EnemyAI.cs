@@ -12,6 +12,8 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float _randomMoveDistance = 4f;
     [SerializeField] private GameObject _player;
 
+    [SerializeField] private LayerMask _obstacleMask;
+
     [Header("Combat")]
     [SerializeField] private GameObject _hitbox;
 
@@ -76,11 +78,23 @@ public class EnemyAI : MonoBehaviour
         Vector2 playerPos2D = new Vector2(_player.transform.position.x, _player.transform.position.y);
         float distance = Vector2.Distance(enemyPos2D, playerPos2D);
 
-        if (distance <= _attackRadius && _attackTimer <= 0)
+        bool hasLineOfSight = false;
+        if (distance <= _detectionRadius)
+        {
+            Vector2 direction = (playerPos2D - enemyPos2D).normalized;
+            RaycastHit2D hit = Physics2D.Raycast(enemyPos2D, direction, distance, _obstacleMask);
+
+            if (hit.collider == null)
+            {
+                hasLineOfSight = true;
+            }
+        }
+
+        if (distance <= _attackRadius && _attackTimer <= 0 && hasLineOfSight)
         {
             _currentState = State.Attack;
         }
-        else if (distance <= _detectionRadius)
+        else if (distance <= _detectionRadius && hasLineOfSight)
         {
             _currentState = State.Chase;
         }

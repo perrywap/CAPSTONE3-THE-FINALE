@@ -33,6 +33,8 @@ public class WeaponManager : MonoBehaviour
 
     private void Update()
     {
+        if (NPCDialogue.IsTalking) return;
+
         WeaponChange();
     }
 
