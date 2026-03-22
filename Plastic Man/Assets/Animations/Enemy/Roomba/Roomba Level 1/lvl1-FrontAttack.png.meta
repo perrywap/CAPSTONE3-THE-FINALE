@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: fc6d2722c9b02e746b3a48f19c3c3923
+guid: a3330146f9a01d0498292cc96460ef23
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8461305982848919584
-    second: Level1-Roomba-SideView_0
+      213: 1902343844570732674
+    second: lvl1-FrontAttack_0
   - first:
-      213: -4542335693027851780
-    second: Level1-Roomba-SideView_1
+      213: 245686510875988866
+    second: lvl1-FrontAttack_1
   - first:
-      213: -7464212551051802108
-    second: Level1-Roomba-SideView_2
+      213: 7739003778333963171
+    second: lvl1-FrontAttack_2
   - first:
-      213: -8545150428281411998
-    second: Level1-Roomba-SideView_3
+      213: -8270677937400276716
+    second: lvl1-FrontAttack_3
   - first:
-      213: -5855917509484558901
-    second: Level1-Roomba-SideView_4
+      213: 6367801780560416850
+    second: lvl1-FrontAttack_4
   - first:
-      213: 2637738655235549223
-    second: Level1-Roomba-SideView_5
+      213: -8028113692769197031
+    second: lvl1-FrontAttack_5
   - first:
-      213: 3012738795879681587
-    second: Level1-Roomba-SideView_6
+      213: 1115450152141105265
+    second: lvl1-FrontAttack_6
   - first:
-      213: -609782715964577983
-    second: Level1-Roomba-SideView_7
+      213: -3106527618584050426
+    second: lvl1-FrontAttack_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Level1-Roomba-SideView_0
+      name: lvl1-FrontAttack_0
       rect:
         serializedVersion: 2
         x: 24
         y: 285
         width: 79
-        height: 71
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e7176cd907639a80800000000000000
-      internalID: -8461305982848919584
+      spriteID: 2881a48c5ab766a10800000000000000
+      internalID: 1902343844570732674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level1-Roomba-SideView_1
+      name: lvl1-FrontAttack_1
       rect:
         serializedVersion: 2
         x: 152
-        y: 282
+        y: 285
         width: 79
-        height: 71
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,86 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf14f76e0c166f0c0800000000000000
-      internalID: -4542335693027851780
+      spriteID: 2835ed6749ad86300800000000000000
+      internalID: 245686510875988866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level1-Roomba-SideView_2
-      rect:
-        serializedVersion: 2
-        x: 275
-        y: 280
-        width: 84
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 40a8b8e5b3ac96890800000000000000
-      internalID: -7464212551051802108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level1-Roomba-SideView_3
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 153
-        width: 79
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 266620aa5f6896980800000000000000
-      internalID: -8545150428281411998
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level1-Roomba-SideView_4
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 153
-        width: 81
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc5ce251d0a9bbea0800000000000000
-      internalID: -5855917509484558901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level1-Roomba-SideView_5
+      name: lvl1-FrontAttack_2
       rect:
         serializedVersion: 2
         x: 280
-        y: 152
+        y: 285
         width: 79
-        height: 72
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 728a1a3e4512b9420800000000000000
-      internalID: 2637738655235549223
+      spriteID: 3a37003fee6766b60800000000000000
+      internalID: 7739003778333963171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level1-Roomba-SideView_6
+      name: lvl1-FrontAttack_3
       rect:
         serializedVersion: 2
-        x: 19
-        y: 24
-        width: 84
-        height: 72
+        x: 24
+        y: 157
+        width: 79
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33e427109f56fc920800000000000000
-      internalID: 3012738795879681587
+      spriteID: 41998916c36a83d80800000000000000
+      internalID: -8270677937400276716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level1-Roomba-SideView_7
+      name: lvl1-FrontAttack_4
       rect:
         serializedVersion: 2
         x: 152
-        y: 26
+        y: 157
         width: 79
-        height: 71
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,8 +224,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14722c0c9dd9987f0800000000000000
-      internalID: -609782715964577983
+      spriteID: 250576a3bf9fe5850800000000000000
+      internalID: 6367801780560416850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lvl1-FrontAttack_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 157
+        width: 79
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914ea069129669090800000000000000
+      internalID: -8028113692769197031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lvl1-FrontAttack_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 29
+        width: 79
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178a603e000ea7f00800000000000000
+      internalID: 1115450152141105265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lvl1-FrontAttack_7
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 29
+        width: 79
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6058b59079563e4d0800000000000000
+      internalID: -3106527618584050426
       vertices: []
       indices: 
       edges: []
@@ -310,14 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Level1-Roomba-SideView_0: -8461305982848919584
-      Level1-Roomba-SideView_1: -4542335693027851780
-      Level1-Roomba-SideView_2: -7464212551051802108
-      Level1-Roomba-SideView_3: -8545150428281411998
-      Level1-Roomba-SideView_4: -5855917509484558901
-      Level1-Roomba-SideView_5: 2637738655235549223
-      Level1-Roomba-SideView_6: 3012738795879681587
-      Level1-Roomba-SideView_7: -609782715964577983
+      lvl1-FrontAttack_0: 1902343844570732674
+      lvl1-FrontAttack_1: 245686510875988866
+      lvl1-FrontAttack_2: 7739003778333963171
+      lvl1-FrontAttack_3: -8270677937400276716
+      lvl1-FrontAttack_4: 6367801780560416850
+      lvl1-FrontAttack_5: -8028113692769197031
+      lvl1-FrontAttack_6: 1115450152141105265
+      lvl1-FrontAttack_7: -3106527618584050426
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

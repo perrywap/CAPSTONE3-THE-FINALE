@@ -19,8 +19,10 @@ public class RoombaAI : MonoBehaviour
 
     private NavMeshAgent _agent;
     private SpriteRenderer _spriteRenderer;
+    private Animator _animator;
     private float _changeDirectionTimer;
     private float _attackTimer;
+    private bool _isAttacking;
 
     private enum State { Wander, Chase, Attack }
     private State _currentState;
@@ -29,6 +31,7 @@ public class RoombaAI : MonoBehaviour
     {
         _agent = GetComponent<NavMeshAgent>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _animator = GetComponent<Animator>();
 
         _agent.speed = _movementSpeed;
         _agent.stoppingDistance = _attackRadius - 1f;
@@ -46,6 +49,7 @@ public class RoombaAI : MonoBehaviour
         transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
 
         if (_attackTimer > 0) _attackTimer -= Time.deltaTime;
+        if (_isAttacking) return;
 
         DetectPlayer();
 
@@ -56,7 +60,7 @@ public class RoombaAI : MonoBehaviour
             case State.Attack: PerformAttack(); break;
         }
 
-        FlipSprite();
+        UpdateAnimations();
     }
 
     private void DetectPlayer()
@@ -82,13 +86,21 @@ public class RoombaAI : MonoBehaviour
 
     private void PerformAttack()
     {
+        _isAttacking = true;
         _agent.isStopped = true;
         _agent.velocity = Vector3.zero;
 
-        ShootBullet();
+        Vector2 dir = (_player.transform.position - transform.position).normalized;
 
-        _attackTimer = _attackCooldown;
-        _currentState = State.Chase; // Immediately go back to chasing
+        if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+        {
+            _animator.Play("RoombaAttackSide");
+            _spriteRenderer.flipX = dir.x < 0;
+        }
+        else
+        {
+            _animator.Play(dir.y > 0 ? "RoombaBackAttack" : "RoombaAttackFront");
+        }
     }
 
     public void ShootBullet()
@@ -99,19 +111,41 @@ public class RoombaAI : MonoBehaviour
         Vector2 direction = (_player.transform.position - _firePoint.position).normalized;
 
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        if (rb != null)
-        {
-            rb.linearVelocity = direction * _bulletSpeed;
-        }
+        if (rb != null) rb.linearVelocity = direction * _bulletSpeed;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         bullet.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
-    private void FlipSprite()
+    public void OnAttackFinished()
     {
-        if (_agent.velocity.x > 0.1f) _spriteRenderer.flipX = false;
-        else if (_agent.velocity.x < -0.1f) _spriteRenderer.flipX = true;
+        _isAttacking = false;
+        _agent.isStopped = false;
+        _attackTimer = _attackCooldown;
+        _currentState = State.Chase;
+    }
+
+    private void UpdateAnimations()
+    {
+        Vector2 velocity = _agent.velocity;
+
+        if (velocity.magnitude < 0.1f)
+        {
+            _animator.speed = 0; 
+            return;
+        }
+
+        _animator.speed = 1;
+
+        if (Mathf.Abs(velocity.y) > Mathf.Abs(velocity.x))
+        {
+            _animator.Play(velocity.y > 0 ? "RoombaMoveUp" : "RoombaMoveDown");
+        }
+        else // Horizontal movement
+        {
+            _animator.Play("RoombaMoveSide");
+            _spriteRenderer.flipX = velocity.x < 0;
+        }
     }
 
     private void Wander()
