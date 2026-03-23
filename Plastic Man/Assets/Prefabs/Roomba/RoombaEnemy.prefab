@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a32a3d184abd2ba468cb1fe2791aa793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  _maxHealth: 50
+  _maxHealth: 40
 --- !u!95 &1326149701389960139
 Animator:
   serializedVersion: 7
@@ -234,8 +234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoombaAI
   _movementSpeed: 2
-  _detectionRadius: 5
-  _attackRadius: 4
+  _detectionRadius: 8
+  _attackRadius: 5
   _attackCooldown: 1.5
   _changeDirectionTime: 3
   _randomMoveDistance: 5

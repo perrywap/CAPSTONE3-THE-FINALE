@@ -23,6 +23,7 @@ public class RoombaAI : MonoBehaviour
     private float _changeDirectionTimer;
     private float _attackTimer;
     private bool _isAttacking;
+    private float _attackSafetyTimer;
 
     private enum State { Wander, Chase, Attack }
     private State _currentState;
@@ -49,7 +50,15 @@ public class RoombaAI : MonoBehaviour
         transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
 
         if (_attackTimer > 0) _attackTimer -= Time.deltaTime;
-        if (_isAttacking) return;
+
+        if (_isAttacking)
+        {
+            _attackSafetyTimer += Time.deltaTime;
+            if (_attackSafetyTimer > 2.5f) OnAttackFinished();
+
+            _animator.speed = 1;
+            return;
+        }
 
         DetectPlayer();
 
@@ -86,20 +95,23 @@ public class RoombaAI : MonoBehaviour
 
     private void PerformAttack()
     {
+        if (_player == null) return;
+
         _isAttacking = true;
+        _attackSafetyTimer = 0f;
         _agent.isStopped = true;
         _agent.velocity = Vector3.zero;
 
-        Vector2 dir = (_player.transform.position - transform.position).normalized;
+        Vector2 dir = ((Vector2)_player.transform.position - (Vector2)transform.position).normalized;
 
         if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
         {
-            _animator.Play("RoombaAttackSide");
+            _animator.Play("RoombaAttackSide", 0, 0);
             _spriteRenderer.flipX = dir.x < 0;
         }
         else
         {
-            _animator.Play(dir.y > 0 ? "RoombaBackAttack" : "RoombaAttackFront");
+            _animator.Play(dir.y > 0 ? "RoombaBackAttack" : "RoombaAttackFront", 0, 0);
         }
     }
 
@@ -108,7 +120,7 @@ public class RoombaAI : MonoBehaviour
         if (_player == null || _bulletPrefab == null || _firePoint == null) return;
 
         GameObject bullet = Instantiate(_bulletPrefab, _firePoint.position, Quaternion.identity);
-        Vector2 direction = (_player.transform.position - _firePoint.position).normalized;
+        Vector2 direction = ((Vector2)_player.transform.position - (Vector2)_firePoint.position).normalized;
 
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         if (rb != null) rb.linearVelocity = direction * _bulletSpeed;
@@ -127,11 +139,13 @@ public class RoombaAI : MonoBehaviour
 
     private void UpdateAnimations()
     {
+        if (_isAttacking) return;
+
         Vector2 velocity = _agent.velocity;
 
         if (velocity.magnitude < 0.1f)
         {
-            _animator.speed = 0; 
+            _animator.speed = 0;
             return;
         }
 
@@ -141,7 +155,7 @@ public class RoombaAI : MonoBehaviour
         {
             _animator.Play(velocity.y > 0 ? "RoombaMoveUp" : "RoombaMoveDown");
         }
-        else // Horizontal movement
+        else
         {
             _animator.Play("RoombaMoveSide");
             _spriteRenderer.flipX = velocity.x < 0;
