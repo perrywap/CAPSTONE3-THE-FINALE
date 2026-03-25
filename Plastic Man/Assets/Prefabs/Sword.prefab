@@ -111,6 +111,8 @@ MonoBehaviour:
   hitLayer:
     serializedVersion: 2
     m_Bits: 64
+  swingSfx: {fileID: 8300000, guid: 7da724ca8c156fe4bbd483171265ec57, type: 3}
+  swingVolume: 0.5
 --- !u!95 &6016597500034344761
 Animator:
   serializedVersion: 7
