@@ -10,14 +10,11 @@ public class PlayerHealth : MonoBehaviour
 
     [Header("UI References")]
     [SerializeField] private Image _healthBarFill;
+    [SerializeField] private GameObject _gameOverPanel; 
 
     [Header("Blink Settings")]
     [SerializeField] private int _blinkCount = 3;
     [SerializeField] private float _blinkSpeed = 0.1f;
-
-    [Header("Audio Settings")]
-    [SerializeField] private AudioClip damageSfx; 
-    [SerializeField] private float damageVolume = 0.1f;
 
     private SpriteRenderer _spriteRenderer;
     private Color _originalColor;
@@ -29,6 +26,8 @@ public class PlayerHealth : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         if (_spriteRenderer != null) _originalColor = _spriteRenderer.color;
 
+        if (_gameOverPanel != null) _gameOverPanel.SetActive(false);
+
         UpdateHealthBar();
     }
 
@@ -38,13 +37,7 @@ public class PlayerHealth : MonoBehaviour
         _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth);
         UpdateHealthBar();
 
-       
-        if (damageSfx != null)
-        {
-            SfxManager.instance.PlaySFX(damageSfx, damageVolume);
-        }
-
-        if (!_isBlinking)
+        if (!_isBlinking && _currentHealth > 0)
         {
             StartCoroutine(BlinkRed());
         }
@@ -58,7 +51,6 @@ public class PlayerHealth : MonoBehaviour
     private IEnumerator BlinkRed()
     {
         _isBlinking = true;
-
         for (int i = 0; i < _blinkCount; i++)
         {
             _spriteRenderer.color = Color.red;
@@ -66,7 +58,6 @@ public class PlayerHealth : MonoBehaviour
             _spriteRenderer.color = _originalColor;
             yield return new WaitForSeconds(_blinkSpeed);
         }
-
         _isBlinking = false;
     }
 
@@ -81,6 +72,14 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player Destroyed!");
-        Destroy(gameObject);
+
+        if (_gameOverPanel != null)
+        {
+            _gameOverPanel.SetActive(true);
+            Time.timeScale = 0f; 
+        }
+
+        _spriteRenderer.enabled = false;
+        this.enabled = false;
     }
 }
