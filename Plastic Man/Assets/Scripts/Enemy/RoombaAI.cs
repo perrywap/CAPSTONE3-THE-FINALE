@@ -1,13 +1,12 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(AudioSource))]
 public class RoombaAI : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] private float _movementSpeed = 2f;
     [SerializeField] private float _detectionRadius = 10f;
-    [SerializeField] private float _attackRadius = 2f;
+    [SerializeField] private float _attackRadius = 6f;
     [SerializeField] private float _attackCooldown = 3f;
     [SerializeField] private float _changeDirectionTime = 3f;
     [SerializeField] private float _randomMoveDistance = 5f;
@@ -18,17 +17,13 @@ public class RoombaAI : MonoBehaviour
     [SerializeField] private Transform _firePoint;
     [SerializeField] private float _bulletSpeed = 10f;
 
-    [Header("Audio")]
-    [SerializeField] private AudioClip wanderLoop;
-    [SerializeField] private AudioClip chaseLoop;
-    [SerializeField] private AudioClip attackSfx;
-
     private NavMeshAgent _agent;
     private SpriteRenderer _spriteRenderer;
-    private AudioSource _audioSource;
-
+    private Animator _animator;
     private float _changeDirectionTimer;
     private float _attackTimer;
+    private bool _isAttacking;
+    private float _attackSafetyTimer;
 
     private enum State { Wander, Chase, Attack }
     private State _currentState;
@@ -37,20 +32,17 @@ public class RoombaAI : MonoBehaviour
     {
         _agent = GetComponent<NavMeshAgent>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        _audioSource = GetComponent<AudioSource>();
+        _animator = GetComponent<Animator>();
 
         _agent.speed = _movementSpeed;
         _agent.stoppingDistance = _attackRadius - 1f;
         _agent.updateRotation = false;
         _agent.updateUpAxis = false;
 
-        if (_player == null)
-            _player = GameObject.FindGameObjectWithTag("Player");
+        if (_player == null) _player = GameObject.FindGameObjectWithTag("Player");
 
         _currentState = State.Wander;
         SetNewRandomPosition();
-
-        PlayLoop(wanderLoop);
     }
 
     void Update()
@@ -59,26 +51,25 @@ public class RoombaAI : MonoBehaviour
 
         if (_attackTimer > 0) _attackTimer -= Time.deltaTime;
 
+        if (_isAttacking)
+        {
+            _attackSafetyTimer += Time.deltaTime;
+            if (_attackSafetyTimer > 2.5f) OnAttackFinished();
+
+            _animator.speed = 1;
+            return;
+        }
+
         DetectPlayer();
 
         switch (_currentState)
         {
-            case State.Wander:
-                Wander();
-                PlayLoop(wanderLoop);
-                break;
-
-            case State.Chase:
-                ChasePlayer();
-                PlayLoop(chaseLoop);
-                break;
-
-            case State.Attack:
-                PerformAttack();
-                break;
+            case State.Wander: Wander(); break;
+            case State.Chase: ChasePlayer(); break;
+            case State.Attack: PerformAttack(); break;
         }
 
-        FlipSprite();
+        UpdateAnimations();
     }
 
     private void DetectPlayer()
@@ -88,38 +79,40 @@ public class RoombaAI : MonoBehaviour
         float distance = Vector2.Distance(transform.position, _player.transform.position);
 
         if (distance <= _attackRadius && _attackTimer <= 0)
+        {
             _currentState = State.Attack;
+        }
         else if (distance <= _detectionRadius)
+        {
             _currentState = State.Chase;
-        else
+        }
+        else if (_currentState != State.Wander)
+        {
             _currentState = State.Wander;
+            _changeDirectionTimer = 0;
+        }
     }
 
     private void PerformAttack()
     {
+        if (_player == null) return;
+
+        _isAttacking = true;
+        _attackSafetyTimer = 0f;
         _agent.isStopped = true;
         _agent.velocity = Vector3.zero;
 
-        if (attackSfx != null)
-            _audioSource.PlayOneShot(attackSfx);
+        Vector2 dir = ((Vector2)_player.transform.position - (Vector2)transform.position).normalized;
 
-        ShootBullet();
-
-        _attackTimer = _attackCooldown;
-        _currentState = State.Chase;
-
-        PlayLoop(chaseLoop);
-    }
-
-    private void PlayLoop(AudioClip clip)
-    {
-        if (_audioSource == null || clip == null) return;
-
-        if (_audioSource.clip == clip && _audioSource.isPlaying) return;
-
-        _audioSource.clip = clip;
-        _audioSource.loop = true;
-        _audioSource.Play();
+        if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+        {
+            _animator.Play("RoombaAttackSide", 0, 0);
+            _spriteRenderer.flipX = dir.x < 0;
+        }
+        else
+        {
+            _animator.Play(dir.y > 0 ? "RoombaBackAttack" : "RoombaAttackFront", 0, 0);
+        }
     }
 
     public void ShootBullet()
@@ -127,20 +120,46 @@ public class RoombaAI : MonoBehaviour
         if (_player == null || _bulletPrefab == null || _firePoint == null) return;
 
         GameObject bullet = Instantiate(_bulletPrefab, _firePoint.position, Quaternion.identity);
-        Vector2 direction = (_player.transform.position - _firePoint.position).normalized;
+        Vector2 direction = ((Vector2)_player.transform.position - (Vector2)_firePoint.position).normalized;
 
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        if (rb != null)
-            rb.linearVelocity = direction * _bulletSpeed;
+        if (rb != null) rb.linearVelocity = direction * _bulletSpeed;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         bullet.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
-    private void FlipSprite()
+    public void OnAttackFinished()
     {
-        if (_agent.velocity.x > 0.1f) _spriteRenderer.flipX = false;
-        else if (_agent.velocity.x < -0.1f) _spriteRenderer.flipX = true;
+        _isAttacking = false;
+        _agent.isStopped = false;
+        _attackTimer = _attackCooldown;
+        _currentState = State.Chase;
+    }
+
+    private void UpdateAnimations()
+    {
+        if (_isAttacking) return;
+
+        Vector2 velocity = _agent.velocity;
+
+        if (velocity.magnitude < 0.1f)
+        {
+            _animator.speed = 0;
+            return;
+        }
+
+        _animator.speed = 1;
+
+        if (Mathf.Abs(velocity.y) > Mathf.Abs(velocity.x))
+        {
+            _animator.Play(velocity.y > 0 ? "RoombaMoveUp" : "RoombaMoveDown");
+        }
+        else
+        {
+            _animator.Play("RoombaMoveSide");
+            _spriteRenderer.flipX = velocity.x < 0;
+        }
     }
 
     private void Wander()
@@ -176,5 +195,13 @@ public class RoombaAI : MonoBehaviour
             _agent.isStopped = false;
             _agent.SetDestination(new Vector3(target.x, target.y, 0f));
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, _detectionRadius);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, _attackRadius);
     }
 }
