@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashSpeed = 15f;
     [SerializeField] private float dashDuration = 0.2f;
     [SerializeField] private float dashCooldown = 4f;
+    [SerializeField] private AudioClip dashSfx;
+    [SerializeField] private float dashVolume = 0.5f;
+
 
     [Header("After Image Settings")]
     public GameObject afterImagePrefab;
@@ -96,6 +99,11 @@ public class PlayerController : MonoBehaviour
         isDashing = true;
         dashTimer = dashDuration;
         cooldownTimer = dashCooldown;
+        if (dashSfx != null)
+        {
+            SfxManager.instance.PlaySFX(dashSfx, dashVolume);
+        }
+
     }
 
     private void HandleDash()

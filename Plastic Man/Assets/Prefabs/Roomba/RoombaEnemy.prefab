@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 6052203116062483216}
   - component: {fileID: 1326149701389960139}
   - component: {fileID: 3485852412664511347}
+  - component: {fileID: 892946137019242798}
   m_Layer: 6
   m_Name: RoombaEnemy
   m_TagString: Untagged
@@ -199,6 +200,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 50
+  damageSfx: {fileID: 8300000, guid: 5fc7eda0235ffee4f8776339649f9eb3, type: 3}
+  deathSfx: {fileID: 8300000, guid: 3ba3279ec07539d42a36475f86de9447, type: 3}
+  damageVolume: 0.05
+  deathVolume: 0.07
 --- !u!95 &1326149701389960139
 Animator:
   serializedVersion: 7
@@ -246,3 +251,103 @@ MonoBehaviour:
   _bulletPrefab: {fileID: 1249969211058463525, guid: 63fe232fd8938c342a8e2fdccc0251d4, type: 3}
   _firePoint: {fileID: 5526502758115998716}
   _bulletSpeed: 10
+  wanderLoop: {fileID: 8300000, guid: 34db2ebaad8e72248b4195b9db5514c3, type: 3}
+  chaseLoop: {fileID: 8300000, guid: f562bac2827cb3545b846a797914c7fc, type: 3}
+  attackSfx: {fileID: 8300000, guid: 04828b007d620e44f959c1fc2ee3d29e, type: 3}
+--- !u!82 &892946137019242798
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8356992654301642009}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 0.65
+  MaxDistance: 13.5
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
