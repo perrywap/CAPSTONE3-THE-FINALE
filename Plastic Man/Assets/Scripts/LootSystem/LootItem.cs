@@ -8,6 +8,10 @@ public class LootItem : MonoBehaviour
     public PlasticType type;
     [SerializeField] private int _value = 1;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip pickupSfx; 
+    [SerializeField] private float pickupVolume = 0.7f;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -21,8 +25,21 @@ public class LootItem : MonoBehaviour
             }
             else
             {
-              
                 Debug.LogError("FAIL: Inventory.Instance is NULL!");
+            }
+
+         
+            if (pickupSfx != null)
+            {
+             
+                if (SfxManager.instance != null)
+                {
+                    SfxManager.instance.PlaySFX(pickupSfx, pickupVolume);
+                }
+                else
+                {            
+                    AudioSource.PlayClipAtPoint(pickupSfx, transform.position, pickupVolume);
+                }
             }
 
             Destroy(gameObject);

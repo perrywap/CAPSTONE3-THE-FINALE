@@ -6,6 +6,12 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private float _maxHealth = 50f;
     private float _currentHealth;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip damageSfx; // sound when hit
+    [SerializeField] private AudioClip deathSfx;  // sound when dying
+    [SerializeField] private float damageVolume = 0.5f;
+    [SerializeField] private float deathVolume = 0.7f;
+
     void Start()
     {
         _currentHealth = _maxHealth;
@@ -14,6 +20,12 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         _currentHealth -= damage;
+
+        // Play damage sound
+        if (damageSfx != null)
+        {
+            SfxManager.instance.PlaySFX(damageSfx, damageVolume);
+        }
 
         Debug.Log($"<color=green>Enemy Hit!</color> Remaining HP: {_currentHealth}");
 
@@ -25,8 +37,13 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
-        LootSpawner lootSpawner = Object.FindFirstObjectByType<LootSpawner>();
+        // Play death sound
+        if (deathSfx != null)
+        {
+            SfxManager.instance.PlaySFX(deathSfx, deathVolume);
+        }
 
+        LootSpawner lootSpawner = Object.FindFirstObjectByType<LootSpawner>();
         if (lootSpawner != null)
         {
             lootSpawner.DropLoot(transform.position);

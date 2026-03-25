@@ -176,7 +176,7 @@ MonoBehaviour:
   muzzleFlashPrefab: {fileID: 5505631384929673268, guid: b285acb567c094a429b6bc2ce71ba6a5, type: 3}
   muzzleFlashPos: {fileID: 7594810898364789697}
   shootSfx: {fileID: 8300000, guid: 04828b007d620e44f959c1fc2ee3d29e, type: 3}
-  shootVolume: 0.03
+  shootVolume: 0.5
 --- !u!95 &3383843249903623237
 Animator:
   serializedVersion: 7
