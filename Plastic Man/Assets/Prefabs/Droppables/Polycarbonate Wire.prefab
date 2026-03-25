@@ -154,6 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LootItem
   type: 2
   _value: 1
+  pickupSfx: {fileID: 8300000, guid: 233159cdd67eeba4199860cc9a6bce39, type: 3}
+  pickupVolume: 0.05
 --- !u!50 &-2029647963869786834
 Rigidbody2D:
   serializedVersion: 5
