@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: bd48a86f8e76cf146bf6335dceefbf4b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2907674519961841562
+    second: Boss Sword Atk Spritesheet (160 x 144)_0
+  - first:
+      213: 8761442048821001759
+    second: Boss Sword Atk Spritesheet (160 x 144)_1
+  - first:
+      213: -8804926832230117463
+    second: Boss Sword Atk Spritesheet (160 x 144)_2
+  - first:
+      213: 4002216825917196116
+    second: Boss Sword Atk Spritesheet (160 x 144)_3
+  - first:
+      213: 4403796789902857176
+    second: Boss Sword Atk Spritesheet (160 x 144)_4
+  - first:
+      213: 5876586149618325658
+    second: Boss Sword Atk Spritesheet (160 x 144)_5
+  - first:
+      213: -3537640775525724061
+    second: Boss Sword Atk Spritesheet (160 x 144)_6
+  - first:
+      213: -3356334438037441560
+    second: Boss Sword Atk Spritesheet (160 x 144)_7
+  - first:
+      213: -5411271520287351279
+    second: Boss Sword Atk Spritesheet (160 x 144)_8
+  - first:
+      213: 1740384215824170150
+    second: Boss Sword Atk Spritesheet (160 x 144)_9
+  - first:
+      213: 1957713064697831705
+    second: Boss Sword Atk Spritesheet (160 x 144)_10
+  - first:
+      213: 980530519793616986
+    second: Boss Sword Atk Spritesheet (160 x 144)_11
+  - first:
+      213: 193507921559417686
+    second: Boss Sword Atk Spritesheet (160 x 144)_12
+  - first:
+      213: 8828849204386771432
+    second: Boss Sword Atk Spritesheet (160 x 144)_13
+  - first:
+      213: 7249508306149641136
+    second: Boss Sword Atk Spritesheet (160 x 144)_14
+  - first:
+      213: -8075953273760847392
+    second: Boss Sword Atk Spritesheet (160 x 144)_15
+  - first:
+      213: 2831148709665185690
+    second: Boss Sword Atk Spritesheet (160 x 144)_16
+  - first:
+      213: 5189428316275666804
+    second: Boss Sword Atk Spritesheet (160 x 144)_17
+  - first:
+      213: 677497463677616009
+    second: Boss Sword Atk Spritesheet (160 x 144)_18
+  - first:
+      213: -5880616076296166947
+    second: Boss Sword Atk Spritesheet (160 x 144)_19
+  - first:
+      213: 1981502265697649468
+    second: Boss Sword Atk Spritesheet (160 x 144)_20
+  - first:
+      213: 549878744072183336
+    second: Boss Sword Atk Spritesheet (160 x 144)_21
+  - first:
+      213: 4867470535278238247
+    second: Boss Sword Atk Spritesheet (160 x 144)_22
+  - first:
+      213: 3378150779439266250
+    second: Boss Sword Atk Spritesheet (160 x 144)_23
+  - first:
+      213: 1577195073393916238
+    second: Boss Sword Atk Spritesheet (160 x 144)_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 591
+        width: 59
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660583bfd6dd5a7d0800000000000000
+      internalID: -2907674519961841562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 590
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e75209f15e69970800000000000000
+      internalID: 8761442048821001759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_2
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 589
+        width: 66
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af4e9352bd9ec580800000000000000
+      internalID: -8804926832230117463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_3
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 589
+        width: 67
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457c2ee9ffaba8730800000000000000
+      internalID: 4002216825917196116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_4
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 590
+        width: 68
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d35a2d19dd6d1d30800000000000000
+      internalID: 4403796789902857176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_5
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 446
+        width: 75
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a981bf3b7f3dd8150800000000000000
+      internalID: 5876586149618325658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_6
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 445
+        width: 84
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3601ad73576c7eec0800000000000000
+      internalID: -3537640775525724061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_7
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 446
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e33e597c97eb61d0800000000000000
+      internalID: -3356334438037441560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_8
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 446
+        width: 92
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e9512f83d47e4b0800000000000000
+      internalID: -5411271520287351279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_9
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 446
+        width: 65
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac75ec2936172810800000000000000
+      internalID: 1740384215824170150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 302
+        width: 60
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911a471f8a13b2b10800000000000000
+      internalID: 1957713064697831705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_11
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 301
+        width: 62
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a584abb005b8b9d00800000000000000
+      internalID: 980530519793616986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_12
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 301
+        width: 62
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653f5cded6a7fa200800000000000000
+      internalID: 193507921559417686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_13
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 301
+        width: 62
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1b6faf29f568a70800000000000000
+      internalID: 8828849204386771432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_14
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 298
+        width: 101
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb0b48156d6b9460800000000000000
+      internalID: 7249508306149641136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_15
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 154
+        width: 138
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e9e4d629437cef80800000000000000
+      internalID: -8075953273760847392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_16
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 155
+        width: 130
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f16e950c24a4720800000000000000
+      internalID: 2831148709665185690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_17
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 155
+        width: 124
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47fe6f21f8d840840800000000000000
+      internalID: 5189428316275666804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_18
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 158
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f7bba8a54f66900800000000000000
+      internalID: 677497463677616009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_19
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 155
+        width: 108
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd16aefd5dad36ea0800000000000000
+      internalID: -5880616076296166947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_20
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 13
+        width: 104
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c334a8cefc5bf7b10800000000000000
+      internalID: 1981502265697649468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_21
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 16
+        width: 103
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ed5f9edcf81a700800000000000000
+      internalID: 549878744072183336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_22
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 16
+        width: 90
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a90f1b9aabc8340800000000000000
+      internalID: 4867470535278238247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_23
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 15
+        width: 78
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9bf265c3a91ee20800000000000000
+      internalID: 3378150779439266250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Sword Atk Spritesheet (160 x 144)_24
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 15
+        width: 59
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49f32b109253e510800000000000000
+      internalID: 1577195073393916238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Boss Sword Atk Spritesheet (160 x 144)_0: -2907674519961841562
+      Boss Sword Atk Spritesheet (160 x 144)_1: 8761442048821001759
+      Boss Sword Atk Spritesheet (160 x 144)_10: 1957713064697831705
+      Boss Sword Atk Spritesheet (160 x 144)_11: 980530519793616986
+      Boss Sword Atk Spritesheet (160 x 144)_12: 193507921559417686
+      Boss Sword Atk Spritesheet (160 x 144)_13: 8828849204386771432
+      Boss Sword Atk Spritesheet (160 x 144)_14: 7249508306149641136
+      Boss Sword Atk Spritesheet (160 x 144)_15: -8075953273760847392
+      Boss Sword Atk Spritesheet (160 x 144)_16: 2831148709665185690
+      Boss Sword Atk Spritesheet (160 x 144)_17: 5189428316275666804
+      Boss Sword Atk Spritesheet (160 x 144)_18: 677497463677616009
+      Boss Sword Atk Spritesheet (160 x 144)_19: -5880616076296166947
+      Boss Sword Atk Spritesheet (160 x 144)_2: -8804926832230117463
+      Boss Sword Atk Spritesheet (160 x 144)_20: 1981502265697649468
+      Boss Sword Atk Spritesheet (160 x 144)_21: 549878744072183336
+      Boss Sword Atk Spritesheet (160 x 144)_22: 4867470535278238247
+      Boss Sword Atk Spritesheet (160 x 144)_23: 3378150779439266250
+      Boss Sword Atk Spritesheet (160 x 144)_24: 1577195073393916238
+      Boss Sword Atk Spritesheet (160 x 144)_3: 4002216825917196116
+      Boss Sword Atk Spritesheet (160 x 144)_4: 4403796789902857176
+      Boss Sword Atk Spritesheet (160 x 144)_5: 5876586149618325658
+      Boss Sword Atk Spritesheet (160 x 144)_6: -3537640775525724061
+      Boss Sword Atk Spritesheet (160 x 144)_7: -3356334438037441560
+      Boss Sword Atk Spritesheet (160 x 144)_8: -5411271520287351279
+      Boss Sword Atk Spritesheet (160 x 144)_9: 1740384215824170150
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
