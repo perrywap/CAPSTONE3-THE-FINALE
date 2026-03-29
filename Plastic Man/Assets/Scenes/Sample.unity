@@ -3416,10 +3416,9 @@ GameObject:
   - component: {fileID: 700520487}
   - component: {fileID: 700520493}
   - component: {fileID: 700520492}
-  - component: {fileID: 700520491}
   m_Layer: 0
   m_Name: BossEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3492,8 +3491,8 @@ Transform:
   m_GameObject: {fileID: 700520484}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.72, y: -2.08, z: 0}
-  m_LocalScale: {x: 1.6129179, y: 1.6129179, z: 1.6129179}
+  m_LocalPosition: {x: -43.72, y: -2.06, z: 0}
+  m_LocalScale: {x: 1.8127689, y: 1.6294553, z: 1.6294553}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1049001741}
@@ -3513,6 +3512,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde96e6c3e31cbd419ecfe4623fd6869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossAI
+  maxHealth: 500
+  currentHealth: 0
+  damageSfx: {fileID: 0}
+  deathSfx: {fileID: 0}
+  damageVolume: 0.5
+  deathVolume: 0.7
+  movementSpeed: 3.5
+  detectionRange: 15
+  attackRange: 5
+  bulletPrefab: {fileID: 6116170434199357846, guid: a2dac4ac648fdf949b2793e53432a2fb, type: 3}
+  grenadePrefab: {fileID: 6116170434199357846, guid: a2dac4ac648fdf949b2793e53432a2fb, type: 3}
+  firePoint: {fileID: 1660818504}
+  swordHitbox: {fileID: 598111234}
+  attackCooldown: 3
+  dashSpeed: 15
+  dashDuration: 0.3
 --- !u!82 &700520488
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3662,7 +3677,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -3678,23 +3693,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.4609375, y: 0.7734375}
   m_EdgeRadius: 0
---- !u!114 &700520491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700520484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a3d184abd2ba468cb1fe2791aa793, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  _maxHealth: 450
-  damageSfx: {fileID: 0}
-  deathSfx: {fileID: 0}
-  damageVolume: 0.5
-  deathVolume: 0.7
 --- !u!114 &700520492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3707,7 +3705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a50c7e9781ed8f45a6e40eb1e34023c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
-  _damage: 10
+  _damage: 15
 --- !u!195 &700520493
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19202,7 +19200,7 @@ Transform:
   m_GameObject: {fileID: 1660818503}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.021, y: 0.008, z: 0}
+  m_LocalPosition: {x: 0.136, y: 0.056, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
