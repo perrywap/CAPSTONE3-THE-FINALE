@@ -16,6 +16,7 @@ public class PlayerCombat : MonoBehaviour
     private void Update()
     {
         if (NPCDialogue.IsTalking) return;
+        if(PlayerHealth.Instance.isDead ) return;
 
         if (equippedWeapon == null)
             return;

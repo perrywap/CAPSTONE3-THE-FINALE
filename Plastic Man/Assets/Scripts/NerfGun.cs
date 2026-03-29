@@ -13,7 +13,7 @@ public class NerfGun : WeaponBase
 
     private void Update()
     {
-        animator.SetBool("isFiring", false);
+        //animator.SetBool("isFiring", false);
     }
 
     protected override void Fire(Vector3 origin, Vector3 direction)
