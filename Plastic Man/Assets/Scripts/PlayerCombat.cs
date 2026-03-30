@@ -16,6 +16,7 @@ public class PlayerCombat : MonoBehaviour
     private void Update()
     {
         if (NPCDialogue.IsTalking) return;
+        if(PlayerHealth.Instance.isDead ) return;
 
         if (equippedWeapon == null)
             return;
@@ -42,7 +43,7 @@ public class PlayerCombat : MonoBehaviour
             equippedWeapon.GetComponent<SpriteRenderer>().sortingOrder = 5;
     }
 
-    private void HandleShooting()
+    private void HandleShooting2()
     {
         if (Input.GetMouseButton(0))
         {
@@ -51,13 +52,23 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
+    private void HandleShooting()
+    {
+        Vector3 mousePosition = GetMouseWorldPosition();
+        equippedWeapon.GetComponent<WeaponBase>().HandleInput(mousePosition);
+    }
+
     public void ChangeWeapon(GameObject weap)
     {
         if (equippedWeapon != null)
             Destroy(equippedWeapon.gameObject);
 
-        equippedWeapon = Instantiate(weap, aimTransform);
-        equippedWeapon.transform.parent = aimTransform;
+        if(weap != null)
+        {
+            equippedWeapon = Instantiate(weap, aimTransform);
+            equippedWeapon.transform.parent = aimTransform;
+        }
+        
     }
 
     #region MouseWorldPosition

@@ -13,6 +13,11 @@ public class PlayerLookAt : MonoBehaviour
 
     private void Update()
     {
+        if (PlayerHealth.Instance.isDead)
+        {
+            angle = 0;
+            return;
+        }
         HandleLookDirection();
     }
 

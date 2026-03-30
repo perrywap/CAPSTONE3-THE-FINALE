@@ -4,9 +4,12 @@ using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public static PlayerHealth Instance { get; private set; }
+
     [Header("Health Settings")]
     [SerializeField] private float _maxHealth = 100f;
     private float _currentHealth;
+    public bool isDead;
 
     [Header("UI References")]
     [SerializeField] private Image _healthBarFill;
@@ -19,6 +22,11 @@ public class PlayerHealth : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Color _originalColor;
     private bool _isBlinking = false;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
@@ -44,20 +52,34 @@ public class PlayerHealth : MonoBehaviour
 
         if (_currentHealth <= 0)
         {
-            Die();
+            isDead = true;
         }
     }
 
     private IEnumerator BlinkRed()
     {
         _isBlinking = true;
+
+        SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
+
         for (int i = 0; i < _blinkCount; i++)
         {
-            _spriteRenderer.color = Color.red;
+            foreach (var spr in sprites)
+            {
+                if(spr != null)
+                    spr.color = Color.red; 
+            }
+
             yield return new WaitForSeconds(_blinkSpeed);
-            _spriteRenderer.color = _originalColor;
+
+            foreach (var spr in sprites)
+            {
+                spr.color = _originalColor;
+            }
+
             yield return new WaitForSeconds(_blinkSpeed);
         }
+
         _isBlinking = false;
     }
 
@@ -76,7 +98,7 @@ public class PlayerHealth : MonoBehaviour
         if (_gameOverPanel != null)
         {
             _gameOverPanel.SetActive(true);
-            Time.timeScale = 0f; 
+            Time.timeScale = 0f;
         }
 
         _spriteRenderer.enabled = false;

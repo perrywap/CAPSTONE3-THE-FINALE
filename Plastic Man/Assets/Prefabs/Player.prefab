@@ -58,12 +58,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3188626055079443679}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2912846576692131108}
+  m_Father: {fileID: 1871546582162279677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4004858380419148051
 SpriteRenderer:
@@ -198,7 +198,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7082206033476926472}
-  - {fileID: 5168488491101596805}
   m_Father: {fileID: 3900678631590910362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7434095380101191975
@@ -229,7 +228,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5168488491101596805}
   m_Father: {fileID: 3900678631590910362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7778651085268212264
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerFootSteps
   footStepSfx:
   - {fileID: 8300000, guid: 58a77480e5766b444acb68fc6c3dfcbd, type: 3}
-  footStepsVolume: 0.005
+  footStepsVolume: 0.1
   isMoving: 0
 --- !u!1001 &8028799964923280161
 PrefabInstance:
