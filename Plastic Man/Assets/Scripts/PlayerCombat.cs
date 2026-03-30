@@ -43,15 +43,6 @@ public class PlayerCombat : MonoBehaviour
             equippedWeapon.GetComponent<SpriteRenderer>().sortingOrder = 5;
     }
 
-    private void HandleShooting2()
-    {
-        if (Input.GetMouseButton(0))
-        {
-            Vector3 mousePosition = GetMouseWorldPosition();
-            equippedWeapon.GetComponent<WeaponBase>().TryFire(mousePosition);
-        }
-    }
-
     private void HandleShooting()
     {
         Vector3 mousePosition = GetMouseWorldPosition();

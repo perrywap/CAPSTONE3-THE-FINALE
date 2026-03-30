@@ -86,7 +86,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 11
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2178820601126446020, guid: e094814c390f1dd4f83d5d4aac0b961e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -117,9 +117,6 @@ MonoBehaviour:
   _changeDirectionTime: 2
   _randomMoveDistance: 3
   _player: {fileID: 0}
-  _obstacleMask:
-    serializedVersion: 2
-    m_Bits: 128
   _hitbox: {fileID: 4835974537303376605}
   wanderClip: {fileID: 8300000, guid: 79f824e640614cb4a8de1babe6379f56, type: 3}
   chaseClip: {fileID: 8300000, guid: 12efb8d614dcd17419a55f3513bc7dff, type: 3}

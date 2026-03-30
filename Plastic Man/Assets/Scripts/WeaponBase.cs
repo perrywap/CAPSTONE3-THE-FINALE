@@ -22,11 +22,13 @@ public abstract class WeaponBase : MonoBehaviour
     {
         if (isAutomatic)
         {
+            //if (Input.GetMouseButton(0) && !CursorManager.Instance.isUsingDefaultCursor)
             if (Input.GetMouseButton(0))
                 TryFire(mousePosition);
         }
         else
         {
+            //if (Input.GetMouseButtonDown(0) && !CursorManager.Instance.isUsingDefaultCursor)
             if (Input.GetMouseButtonDown(0))
                 TryFire(mousePosition);
         }

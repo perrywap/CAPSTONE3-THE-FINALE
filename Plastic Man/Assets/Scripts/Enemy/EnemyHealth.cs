@@ -57,4 +57,22 @@ public class EnemyHealth : MonoBehaviour
 
         Destroy(gameObject);
     }
+
+    private void OnEnable()
+    {
+        // Add to list when spawned or enabled
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.RegisterEnemy(this.gameObject);
+        }
+    }
+
+    private void OnDisable()
+    {
+        // Remove from list when destroyed or disabled
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.UnregisterEnemy(this.gameObject);
+        }
+    }
 }

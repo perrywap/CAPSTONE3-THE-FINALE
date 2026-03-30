@@ -1,0 +1,883 @@
+fileFormatVersion: 2
+guid: 6f2be5d8e3cf6d4499d3299b22ee208e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 468809913536060596
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_0
+  - first:
+      213: 6740426903308023564
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_1
+  - first:
+      213: 9215807488482945801
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_2
+  - first:
+      213: 2311285843079188130
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_3
+  - first:
+      213: -1559172533147658149
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_4
+  - first:
+      213: -4051815102162158506
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_5
+  - first:
+      213: 8712143828218199803
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_6
+  - first:
+      213: 2656060191714628643
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_7
+  - first:
+      213: -7045878842110319469
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_8
+  - first:
+      213: 5553419437438065575
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_9
+  - first:
+      213: 467038664659155425
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_10
+  - first:
+      213: 6832176137279527739
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_11
+  - first:
+      213: -451604572262825136
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_12
+  - first:
+      213: -760415355641253564
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_13
+  - first:
+      213: 3269812730618854745
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_14
+  - first:
+      213: 4499870019831191542
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_15
+  - first:
+      213: -1148215379829390292
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_16
+  - first:
+      213: -1136595969870774149
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_17
+  - first:
+      213: -6581451358907307123
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_18
+  - first:
+      213: 5217034792594486951
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_19
+  - first:
+      213: -7677212391609129242
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_20
+  - first:
+      213: -1286257175073280663
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_21
+  - first:
+      213: 5493191200862466262
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_22
+  - first:
+      213: -342503421947783107
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_23
+  - first:
+      213: 8007102494103541997
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_24
+  - first:
+      213: 6597498401021930767
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_25
+  - first:
+      213: -1601855526772553283
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_26
+  - first:
+      213: 1236263630154738569
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_27
+  - first:
+      213: 4949156483135358036
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_28
+  - first:
+      213: 6578351177793182851
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_29
+  - first:
+      213: -4583530040512642083
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_30
+  - first:
+      213: -8938131195486813558
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_31
+  - first:
+      213: 3618216060360519584
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_32
+  - first:
+      213: 7163561660919964394
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_33
+  - first:
+      213: 5763277439264940156
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_34
+  - first:
+      213: -5753377995471421425
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_35
+  - first:
+      213: 3984124178676826501
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_36
+  - first:
+      213: -6292611039859506760
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_37
+  - first:
+      213: 7395059227346120908
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_38
+  - first:
+      213: -5386173100344728246
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_39
+  - first:
+      213: -3543112944163269952
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_40
+  - first:
+      213: -369531073062920168
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_41
+  - first:
+      213: 6331962351105319846
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_42
+  - first:
+      213: -3328473547527628366
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_43
+  - first:
+      213: 8474059000695600673
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_44
+  - first:
+      213: -2178796226878671901
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_45
+  - first:
+      213: 5690903857758873637
+    second: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+      Arm & Smoke) Spritesheet (128x128)_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc9f7be12c818600800000000000000
+      internalID: 468809913536060596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0739266e8eca8d50800000000000000
+      internalID: 6740426903308023564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b2965551025ef70800000000000000
+      internalID: 9215807488482945801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aecf138a36531020800000000000000
+      internalID: 2311285843079188130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58103a87d4bc5ae0800000000000000
+      internalID: -1559172533147658149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65cbf0cc1af05c7c0800000000000000
+      internalID: -4051815102162158506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfebe0127a0c7e870800000000000000
+      internalID: 8712143828218199803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324d4350ca83cd420800000000000000
+      internalID: 2656060191714628643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394e2951682083e90800000000000000
+      internalID: -7045878842110319469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7abde391e85b11d40800000000000000
+      internalID: 5553419437438065575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9b167e0314b7600800000000000000
+      internalID: 467038664659155425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b52799ff3c0de50800000000000000
+      internalID: 6832176137279527739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0530553c8049bb9f0800000000000000
+      internalID: -451604572262825136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441304d43467275f0800000000000000
+      internalID: -760415355641253564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d3692ba55b06d20800000000000000
+      internalID: 3269812730618854745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7d77311ffb27e30800000000000000
+      internalID: 4499870019831191542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2401af0238b010f0800000000000000
+      internalID: -1148215379829390292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7046b2ccfff930f0800000000000000
+      internalID: -1136595969870774149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b61ddebdcf9a4a0800000000000000
+      internalID: -6581451358907307123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6b279b081a66840800000000000000
+      internalID: 5217034792594486951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e629e46100157590800000000000000
+      internalID: -7677212391609129242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96da5f50aeb462ee0800000000000000
+      internalID: -1286257175073280663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d075b20b4cbb3c40800000000000000
+      internalID: 5493191200862466262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer
+        Arm & Smoke) Spritesheet (128x128)_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d385270d3fe2f3bf0800000000000000
+      internalID: -342503421947783107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0c053a80b512e744a98fd643cd0043e7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":6.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_0: 468809913536060596
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_1: 6740426903308023564
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_10: 467038664659155425
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_11: 6832176137279527739
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_12: -451604572262825136
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_13: -760415355641253564
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_14: 3269812730618854745
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_15: 4499870019831191542
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_16: -1148215379829390292
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_17: -1136595969870774149
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_18: -6581451358907307123
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_19: 5217034792594486951
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_2: 9215807488482945801
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_20: -7677212391609129242
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_21: -1286257175073280663
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_22: 5493191200862466262
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_23: -342503421947783107
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_3: 2311285843079188130
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_4: -1559172533147658149
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_5: -4051815102162158506
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_6: 8712143828218199803
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_7: 2656060191714628643
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_8: -7045878842110319469
+      3D Printer Corrupted Attack Spawn Front Layer (Transparent, With Printer Arm & Smoke) Spritesheet (128x128)_9: 5553419437438065575
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

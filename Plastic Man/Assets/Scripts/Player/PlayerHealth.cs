@@ -74,7 +74,8 @@ public class PlayerHealth : MonoBehaviour
 
             foreach (var spr in sprites)
             {
-                spr.color = _originalColor;
+                if (spr != null)
+                    spr.color = _originalColor;
             }
 
             yield return new WaitForSeconds(_blinkSpeed);

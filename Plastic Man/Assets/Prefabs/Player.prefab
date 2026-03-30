@@ -249,7 +249,6 @@ GameObject:
   - component: {fileID: 2905312680002106179}
   - component: {fileID: 1748852602615044287}
   - component: {fileID: 3585979852734191622}
-  - component: {fileID: 5532568950797069975}
   - component: {fileID: 3260932154076827769}
   - component: {fileID: 3140495259404842674}
   m_Layer: 0
@@ -480,6 +479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   _maxHealth: 100
+  isDead: 0
   _healthBarFill: {fileID: 0}
   _gameOverPanel: {fileID: 0}
   _blinkCount: 3
@@ -498,21 +498,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerLookAt
   angle: 0
   isLookingLeft: 0
---- !u!114 &5532568950797069975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7778651085268212264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98bf36359c1b43f48a32d23cfa8362c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LootInventory
-  polyethyleneCount: 0
-  acrylicCount: 0
-  polycarbonateCount: 0
 --- !u!114 &3260932154076827769
 MonoBehaviour:
   m_ObjectHideFlags: 0

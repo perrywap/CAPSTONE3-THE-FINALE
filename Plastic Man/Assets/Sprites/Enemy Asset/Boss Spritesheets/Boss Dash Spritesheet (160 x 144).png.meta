@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 9a35369c158d9d541999ea23ed4bc270
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4689329967531688724
+    second: Boss Dash Spritesheet (160 x 144)_0
+  - first:
+      213: 5613195099819327294
+    second: Boss Dash Spritesheet (160 x 144)_1
+  - first:
+      213: -1652508407007962752
+    second: Boss Dash Spritesheet (160 x 144)_2
+  - first:
+      213: -6384368607319846933
+    second: Boss Dash Spritesheet (160 x 144)_3
+  - first:
+      213: -4748786786629146374
+    second: Boss Dash Spritesheet (160 x 144)_4
+  - first:
+      213: 522264097398130315
+    second: Boss Dash Spritesheet (160 x 144)_5
+  - first:
+      213: 6506848191790263555
+    second: Boss Dash Spritesheet (160 x 144)_6
+  - first:
+      213: 5607068468514650418
+    second: Boss Dash Spritesheet (160 x 144)_7
+  - first:
+      213: 844050031287029797
+    second: Boss Dash Spritesheet (160 x 144)_8
+  - first:
+      213: 92941107752234734
+    second: Boss Dash Spritesheet (160 x 144)_9
+  - first:
+      213: -5841066438963189762
+    second: Boss Dash Spritesheet (160 x 144)_10
+  - first:
+      213: -4448168255203778831
+    second: Boss Dash Spritesheet (160 x 144)_11
+  - first:
+      213: -527169263969397323
+    second: Boss Dash Spritesheet (160 x 144)_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss Dash Spritesheet (160 x 144)_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 303
+        width: 59
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecfdaa5d372ceeb0800000000000000
+      internalID: -4689329967531688724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Dash Spritesheet (160 x 144)_1
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 303
+        width: 56
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fb1bb043316ed40800000000000000
+      internalID: 5613195099819327294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Dash Spritesheet (160 x 144)_2
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 303
+        width: 54
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08991f3fb5c1119e0800000000000000
+      internalID: -1652508407007962752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Dash Spritesheet (160 x 144)_3
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 303
+        width: 56
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef8b85d39a2667a0800000000000000
+      internalID: -6384368607319846933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Dash Spritesheet (160 x 144)_4
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 302
+        width: 59
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8a6e4e39be81eb0800000000000000
+      internalID: -4748786786629146374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Dash Spritesheet (160 x 144)_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 156
+        width: 81
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b860b54fd647f3700800000000000000
+      internalID: 522264097398130315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Dash Spritesheet (160 x 144)_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 156
+        width: 85
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d2d07a4f7fc4a50800000000000000
+      internalID: 6506848191790263555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Dash Spritesheet (160 x 144)_7
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 157
+        width: 83
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239fb19801f40dd40800000000000000
+      internalID: 5607068468514650418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Dash Spritesheet (160 x 144)_8
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 157
+        width: 77
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520558f080ba6bb00800000000000000
+      internalID: 844050031287029797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Dash Spritesheet (160 x 144)_9
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 159
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee6a90f1713a4100800000000000000
+      internalID: 92941107752234734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Dash Spritesheet (160 x 144)_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 15
+        width: 58
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7a424650d50fea0800000000000000
+      internalID: -5841066438963189762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Dash Spritesheet (160 x 144)_11
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 15
+        width: 58
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fed86f0a8ee442c0800000000000000
+      internalID: -4448168255203778831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Dash Spritesheet (160 x 144)_12
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 15
+        width: 59
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b59994f85e1fa8f0800000000000000
+      internalID: -527169263969397323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Boss Dash Spritesheet (160 x 144)_0: -4689329967531688724
+      Boss Dash Spritesheet (160 x 144)_1: 5613195099819327294
+      Boss Dash Spritesheet (160 x 144)_10: -5841066438963189762
+      Boss Dash Spritesheet (160 x 144)_11: -4448168255203778831
+      Boss Dash Spritesheet (160 x 144)_12: -527169263969397323
+      Boss Dash Spritesheet (160 x 144)_2: -1652508407007962752
+      Boss Dash Spritesheet (160 x 144)_3: -6384368607319846933
+      Boss Dash Spritesheet (160 x 144)_4: -4748786786629146374
+      Boss Dash Spritesheet (160 x 144)_5: 522264097398130315
+      Boss Dash Spritesheet (160 x 144)_6: 6506848191790263555
+      Boss Dash Spritesheet (160 x 144)_7: 5607068468514650418
+      Boss Dash Spritesheet (160 x 144)_8: 844050031287029797
+      Boss Dash Spritesheet (160 x 144)_9: 92941107752234734
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
