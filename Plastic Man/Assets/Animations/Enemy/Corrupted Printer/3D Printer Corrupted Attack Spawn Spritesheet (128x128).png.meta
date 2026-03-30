@@ -1,0 +1,1339 @@
+fileFormatVersion: 2
+guid: 7397f8495ba3ad046af10da72a268559
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9169751489281137980
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_0
+  - first:
+      213: -731553073769965702
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_1
+  - first:
+      213: 3610620947473420854
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_2
+  - first:
+      213: 7305817748616467047
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_3
+  - first:
+      213: -7847045386852051741
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_4
+  - first:
+      213: 834007495663500858
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_5
+  - first:
+      213: 6627918335010869650
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_6
+  - first:
+      213: 1843103238448064517
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_7
+  - first:
+      213: -3148135707770287494
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_8
+  - first:
+      213: 5889652198854608182
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_9
+  - first:
+      213: 412286452526744210
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_10
+  - first:
+      213: 5017106689954474570
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_11
+  - first:
+      213: -6642857438308576577
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_12
+  - first:
+      213: -580609038507122942
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_13
+  - first:
+      213: -1308822304882198595
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_14
+  - first:
+      213: 7843103504075674339
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_15
+  - first:
+      213: 3029314147933690648
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_16
+  - first:
+      213: 5592851248499725813
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_17
+  - first:
+      213: 2632134520659024990
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_18
+  - first:
+      213: -6966330128372580038
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_19
+  - first:
+      213: -7595579476332093555
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_20
+  - first:
+      213: 5271412892429414894
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_21
+  - first:
+      213: 7940820597696471651
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_22
+  - first:
+      213: 6333037323412874703
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_23
+  - first:
+      213: -5157998710277355413
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_24
+  - first:
+      213: -394970335059210621
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_25
+  - first:
+      213: 7892785609678526001
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_26
+  - first:
+      213: 4877871555784653586
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_27
+  - first:
+      213: -9033121367202398721
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_28
+  - first:
+      213: 2613943616178140346
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_29
+  - first:
+      213: 333665637924537827
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_30
+  - first:
+      213: 4637795433036986141
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_31
+  - first:
+      213: 5551934183065357918
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_32
+  - first:
+      213: -5985954591673866295
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_33
+  - first:
+      213: -3159295964045657501
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_34
+  - first:
+      213: -7245278043486839841
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_35
+  - first:
+      213: 2638481199291924709
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_36
+  - first:
+      213: -1042920862009285069
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_37
+  - first:
+      213: -3187285868642442033
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_38
+  - first:
+      213: 1802157649069824694
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_39
+  - first:
+      213: -945944705414842167
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_40
+  - first:
+      213: 3968120025501927589
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_41
+  - first:
+      213: -2695629460130954175
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_42
+  - first:
+      213: 885661007172809507
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_43
+  - first:
+      213: 7759350249717914134
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_44
+  - first:
+      213: -817354844619014210
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_45
+  - first:
+      213: 4668376420307589308
+    second: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 682
+        width: 73
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d16356560814f70800000000000000
+      internalID: 9169751489281137980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 682
+        width: 74
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a779897fa5009d5f0800000000000000
+      internalID: -731553073769965702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 682
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 632dcb03f908b1230800000000000000
+      internalID: 3610620947473420854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_3
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 682
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7625704d88a736560800000000000000
+      internalID: 7305817748616467047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_4
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 656
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4d05ccbc1b91390800000000000000
+      internalID: -7847045386852051741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_5
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 656
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e3907066df29b00800000000000000
+      internalID: 834007495663500858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 656
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2911f960c981bfb50800000000000000
+      internalID: 6627918335010869650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_7
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 656
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508a11451a4049910800000000000000
+      internalID: 1843103238448064517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_8
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 554
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a01a9d0439f44d0800000000000000
+      internalID: -3148135707770287494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_9
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 554
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635c35b587f3cb150800000000000000
+      internalID: 5889652198854608182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_10
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 554
+        width: 72
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292009c185cb8b500800000000000000
+      internalID: 412286452526744210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_11
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 551
+        width: 70
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ae8f6e3f750a540800000000000000
+      internalID: 5017106689954474570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_12
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 528
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb25e00fa54dfc3a0800000000000000
+      internalID: -6642857438308576577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_13
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 528
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20fd66ad72341f7f0800000000000000
+      internalID: -580609038507122942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_14
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 528
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db773635c0126dde0800000000000000
+      internalID: -1308822304882198595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_15
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 528
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e25d09151d48dc60800000000000000
+      internalID: 7843103504075674339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_16
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 421
+        width: 69
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b17a4ea294a0a20800000000000000
+      internalID: 3029314147933690648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_17
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 400
+        width: 69
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f51d6c049ccd9d40800000000000000
+      internalID: 5592851248499725813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_18
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 417
+        width: 75
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c9ce0a668378420800000000000000
+      internalID: 2632134520659024990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_19
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 426
+        width: 71
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31404e48af925f90800000000000000
+      internalID: -6966330128372580038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_20
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 400
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f5af995b4179690800000000000000
+      internalID: -7595579476332093555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_21
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 400
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee17ba5b812d72940800000000000000
+      internalID: 5271412892429414894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_22
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 400
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362adc6e246733e60800000000000000
+      internalID: 7940820597696471651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_23
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 298
+        width: 73
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5a05b44e773e750800000000000000
+      internalID: 6333037323412874703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_24
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 298
+        width: 74
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68cef1508b1b68b0800000000000000
+      internalID: -5157998710277355413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_25
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 298
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e8af9a298c48af0800000000000000
+      internalID: -394970335059210621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_26
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 298
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1361439b1bec88d60800000000000000
+      internalID: 7892785609678526001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_27
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 272
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21bb68ef55ea1b340800000000000000
+      internalID: 4877871555784653586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_28
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 272
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffdf8eed9f7e3a280800000000000000
+      internalID: -9033121367202398721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_29
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 272
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4b231aed7964420800000000000000
+      internalID: 2613943616178140346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_30
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 272
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e50f3e312b61a400800000000000000
+      internalID: 333665637924537827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_31
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 170
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17391fcf52cc5040800000000000000
+      internalID: 4637795433036986141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_32
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 170
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e85fd59be6c0d40800000000000000
+      internalID: 5551934183065357918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_33
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 170
+        width: 72
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c729a9830e9deca0800000000000000
+      internalID: -5985954591673866295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_34
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 170
+        width: 70
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36abbb23f0de724d0800000000000000
+      internalID: -3159295964045657501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_35
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 144
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb970fa10a937b90800000000000000
+      internalID: -7245278043486839841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_36
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 144
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e08756eba4cd9420800000000000000
+      internalID: 2638481199291924709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_37
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 144
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336a71b600dc681f0800000000000000
+      internalID: -1042920862009285069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_38
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 144
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4e1f1b36c74c3d0800000000000000
+      internalID: -3187285868642442033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_39
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 42
+        width: 69
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba5f0665dc820910800000000000000
+      internalID: 1802157649069824694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_40
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 42
+        width: 68
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c836906d445fd2f0800000000000000
+      internalID: -945944705414842167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_41
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 42
+        width: 69
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a80822a328911730800000000000000
+      internalID: 3968120025501927589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_42
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 42
+        width: 71
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14401deb943379ad0800000000000000
+      internalID: -2695629460130954175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_43
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 16
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32333fb5eff7a4c00800000000000000
+      internalID: 885661007172809507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_44
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 16
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a564af0ffbeab60800000000000000
+      internalID: 7759350249717914134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_45
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 16
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebff90f691c28a4f0800000000000000
+      internalID: -817354844619014210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Spritesheet (128x128)_46
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 16
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb85e32ce9769c040800000000000000
+      internalID: 4668376420307589308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_0: 9169751489281137980
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_1: -731553073769965702
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_10: 412286452526744210
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_11: 5017106689954474570
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_12: -6642857438308576577
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_13: -580609038507122942
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_14: -1308822304882198595
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_15: 7843103504075674339
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_16: 3029314147933690648
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_17: 5592851248499725813
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_18: 2632134520659024990
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_19: -6966330128372580038
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_2: 3610620947473420854
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_20: -7595579476332093555
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_21: 5271412892429414894
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_22: 7940820597696471651
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_23: 6333037323412874703
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_24: -5157998710277355413
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_25: -394970335059210621
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_26: 7892785609678526001
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_27: 4877871555784653586
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_28: -9033121367202398721
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_29: 2613943616178140346
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_3: 7305817748616467047
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_30: 333665637924537827
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_31: 4637795433036986141
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_32: 5551934183065357918
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_33: -5985954591673866295
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_34: -3159295964045657501
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_35: -7245278043486839841
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_36: 2638481199291924709
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_37: -1042920862009285069
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_38: -3187285868642442033
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_39: 1802157649069824694
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_4: -7847045386852051741
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_40: -945944705414842167
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_41: 3968120025501927589
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_42: -2695629460130954175
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_43: 885661007172809507
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_44: 7759350249717914134
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_45: -817354844619014210
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_46: 4668376420307589308
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_5: 834007495663500858
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_6: 6627918335010869650
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_7: 1843103238448064517
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_8: -3148135707770287494
+      3D Printer Corrupted Attack Spawn Spritesheet (128x128)_9: 5889652198854608182
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
