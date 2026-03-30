@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: b38ba9c3ecafcf347a98688991a43c84
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4321294692236954205
+    second: LEVEL5-ATTACK_0
+  - first:
+      213: 721322970324216170
+    second: LEVEL5-ATTACK_1
+  - first:
+      213: 7175148263191944985
+    second: LEVEL5-ATTACK_2
+  - first:
+      213: -5688646960580166891
+    second: LEVEL5-ATTACK_3
+  - first:
+      213: -8599360049204753023
+    second: LEVEL5-ATTACK_4
+  - first:
+      213: -241108049930386350
+    second: LEVEL5-ATTACK_5
+  - first:
+      213: 4399905347734789901
+    second: LEVEL5-ATTACK_6
+  - first:
+      213: -663505349982411288
+    second: LEVEL5-ATTACK_7
+  - first:
+      213: 1340942296439056715
+    second: LEVEL5-ATTACK_8
+  - first:
+      213: -3534459532333619339
+    second: LEVEL5-ATTACK_9
+  - first:
+      213: 4820169044043139000
+    second: LEVEL5-ATTACK_10
+  - first:
+      213: 1512944587488659867
+    second: LEVEL5-ATTACK_11
+  - first:
+      213: 369455801755056004
+    second: LEVEL5-ATTACK_12
+  - first:
+      213: 311020589281087427
+    second: LEVEL5-ATTACK_13
+  - first:
+      213: 9103256582211276779
+    second: LEVEL5-ATTACK_14
+  - first:
+      213: -4062725575452768429
+    second: LEVEL5-ATTACK_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1311
+        width: 148
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a809c90a258fb30800000000000000
+      internalID: 4321294692236954205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_1
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1311
+        width: 130
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6921867b67a20a00800000000000000
+      internalID: 721322970324216170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_2
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1313
+        width: 122
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f115e645f339360800000000000000
+      internalID: 7175148263191944985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1059
+        width: 122
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b7306aabddd01b0800000000000000
+      internalID: -5688646960580166891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_4
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1057
+        width: 122
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d077bb89fe8a880800000000000000
+      internalID: -8599360049204753023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_5
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1055
+        width: 130
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254896b818967acf0800000000000000
+      internalID: -241108049930386350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 799
+        width: 148
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0fd2112a9a9f0d30800000000000000
+      internalID: 4399905347734789901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_7
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 799
+        width: 146
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e52abb4661cac6f0800000000000000
+      internalID: -663505349982411288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_8
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 801
+        width: 162
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49eb8bf9ebfb9210800000000000000
+      internalID: 1340942296439056715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_9
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 545
+        width: 178
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577e24e18c313fec0800000000000000
+      internalID: -3534459532333619339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_10
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 545
+        width: 264
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b7868b053ea4e240800000000000000
+      internalID: 4820169044043139000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_11
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 545
+        width: 332
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b998c1e161f0ff410800000000000000
+      internalID: 1512944587488659867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_12
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 289
+        width: 264
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48731df1812902500800000000000000
+      internalID: 369455801755056004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_13
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 289
+        width: 122
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf8eedf397f05400800000000000000
+      internalID: 311020589281087427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_14
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 287
+        width: 130
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef80f161a3455e70800000000000000
+      internalID: 9103256582211276779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEVEL5-ATTACK_15
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 31
+        width: 148
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3574e374d9c4e97c0800000000000000
+      internalID: -4062725575452768429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LEVEL5-ATTACK_0: 4321294692236954205
+      LEVEL5-ATTACK_1: 721322970324216170
+      LEVEL5-ATTACK_10: 4820169044043139000
+      LEVEL5-ATTACK_11: 1512944587488659867
+      LEVEL5-ATTACK_12: 369455801755056004
+      LEVEL5-ATTACK_13: 311020589281087427
+      LEVEL5-ATTACK_14: 9103256582211276779
+      LEVEL5-ATTACK_15: -4062725575452768429
+      LEVEL5-ATTACK_2: 7175148263191944985
+      LEVEL5-ATTACK_3: -5688646960580166891
+      LEVEL5-ATTACK_4: -8599360049204753023
+      LEVEL5-ATTACK_5: -241108049930386350
+      LEVEL5-ATTACK_6: 4399905347734789901
+      LEVEL5-ATTACK_7: -663505349982411288
+      LEVEL5-ATTACK_8: 1340942296439056715
+      LEVEL5-ATTACK_9: -3534459532333619339
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

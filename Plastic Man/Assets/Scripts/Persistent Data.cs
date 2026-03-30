@@ -17,4 +17,9 @@ public class PersistentData : MonoBehaviour
     {
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(nextScene);
     }
+
+    public void LoadGame()
+    {
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(nextScene);
+    }
 }

@@ -17,8 +17,6 @@ public class Sword : WeaponBase
             SfxManager.instance.PlaySFX(swingSfx, swingVolume);
         }
 
-        animator.SetTrigger("swing");
-
         Vector3 hitPosition = origin + direction.normalized * range / 2f;
         float hitRadius = range / 2f;
 

@@ -1,19 +1,3 @@
-//using UnityEngine;
-//using UnityEngine.EventSystems;
-
-//public class CursorManager : MonoBehaviour
-//{
-//    [SerializeField] private Texture2D cursorTexture;
-
-//    private Vector2 cursorHotspot;
-
-//    private void Start()
-//    {
-//        cursorHotspot = new Vector2(cursorTexture.width /  2, cursorTexture.height / 2);
-//        Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
-//    }
-//}
-
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -22,96 +6,113 @@ using System.Collections.Generic;
 
 public class CursorManager : MonoBehaviour
 {
+    public static CursorManager Instance { get; private set; }
+
     [Header("Cursor Textures")]
-    [SerializeField] private Texture2D crosshairCursor;
     [SerializeField] private Texture2D defaultCursor;
+    [SerializeField] private Texture2D crosshairCursor;
+    [SerializeField] private Texture2D pressedCursor;
 
-    [Header("Cursor Settings")]
-    [SerializeField] private Vector2 crosshairHotspot = new Vector2(16, 16);
-    [SerializeField] private Vector2 defaultHotspot = Vector2.zero;
+    [Header("Hotspots")]
+    [SerializeField] private Vector2 defaultHotspot;
+    [SerializeField] private Vector2 crosshairHotspot;
+    [SerializeField] private Vector2 pressedHotspot;
 
-    [Header("UI Raycast")]
-    [SerializeField] private Canvas canvas; // Assign your main Canvas here
+    private Camera cam;
     private GraphicRaycaster raycaster;
     private PointerEventData pointerData;
 
+    private bool isOverUI;
+    private bool isOverWorld;
+    private bool isPressed;
+
     private void Awake()
     {
-        if (canvas == null)
-            canvas = FindObjectOfType<Canvas>();
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
 
-        raycaster = canvas.GetComponent<GraphicRaycaster>();
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
         pointerData = new PointerEventData(EventSystem.current);
-    }
-
-    private void Start()
-    {
-        SetCrosshairCursor();
+        crosshairHotspot = new Vector2(crosshairCursor.width / 2f, crosshairCursor.height / 2f);
+        SetCursor(defaultCursor, defaultHotspot);
     }
 
     private void Update()
     {
-        HandleCursor();
-        //DebugPointerHit();
+        RefreshReferences();
+        DetectTargets();
+        ApplyCursor();
     }
 
-    private void HandleCursor()
+    private void RefreshReferences()
     {
-        bool overUI = false;
+        if (cam == null)
+            cam = Camera.main ?? FindFirstObjectByType<Camera>();
 
-        if (Pointer.current != null)
+        if (raycaster == null)
         {
-            pointerData.position = Pointer.current.position.ReadValue();
+            Canvas canvas = FindFirstObjectByType<Canvas>();
+            if (canvas != null)
+                raycaster = canvas.GetComponent<GraphicRaycaster>();
+        }
+    }
 
-            // Raycast UI
+    private void DetectTargets()
+    {
+        isOverUI = false;
+        isOverWorld = false;
+        isPressed = Mouse.current != null && Mouse.current.leftButton.isPressed;
+
+        if (EventSystem.current != null && raycaster != null && Mouse.current != null)
+        {
+            pointerData.position = Mouse.current.position.ReadValue();
+
             List<RaycastResult> results = new List<RaycastResult>();
             raycaster.Raycast(pointerData, results);
 
             if (results.Count > 0)
-                overUI = true;
+                isOverUI = true;
         }
 
-        if (overUI)
-            SetDefaultCursor();
-        else
-            SetCrosshairCursor();
-    }
-
-    private void SetCrosshairCursor()
-    {
-        Cursor.SetCursor(crosshairCursor, crosshairHotspot, CursorMode.Auto);
-    }
-
-    private void SetDefaultCursor()
-    {
-        Cursor.SetCursor(defaultCursor, defaultHotspot, CursorMode.Auto);
-    }
-
-    private void DebugPointerHit()
-    {
-        Vector2 mousePos = Pointer.current.position.ReadValue();
-
-        // First check UI
-        pointerData.position = mousePos;
-        List<RaycastResult> uiResults = new List<RaycastResult>();
-        raycaster.Raycast(pointerData, uiResults);
-
-        if (uiResults.Count > 0)
+        if (!isOverUI && cam != null && Mouse.current != null)
         {
-            Debug.Log("Pointer over UI: " + uiResults[0].gameObject.name);
+            Vector2 mousePos = cam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+
+            if (hit.collider != null)
+                isOverWorld = true;
+        }
+    }
+
+    private void ApplyCursor()
+    {
+        if (isOverUI)
+        {
+            if (isPressed)
+                SetCursor(pressedCursor, pressedHotspot);
+            else
+                SetCursor(defaultCursor, defaultHotspot);
+
             return;
         }
 
-        // If not UI, check 2D world
-        Vector2 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
-        Collider2D hit = Physics2D.OverlapPoint(worldPos);
-        if (hit != null)
+        if (isOverWorld)
         {
-            Debug.Log("Pointer over World Object: " + hit.gameObject.name);
+            SetCursor(crosshairCursor, crosshairHotspot);
+            return;
         }
-        else
-        {
-            Debug.Log("Pointer over nothing");
-        }
+
+        SetCursor(defaultCursor, defaultHotspot);
+    }
+
+    private void SetCursor(Texture2D texture, Vector2 hotspot)
+    {
+        if (texture == null) return;
+        Cursor.SetCursor(texture, hotspot, CursorMode.Auto);
     }
 }

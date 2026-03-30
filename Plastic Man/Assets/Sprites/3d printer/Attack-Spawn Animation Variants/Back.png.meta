@@ -1,0 +1,887 @@
+fileFormatVersion: 2
+guid: 0d592b4153b446c4ca728c93d48d36ef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2935541129955836642
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_0
+  - first:
+      213: -6512371942673815624
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_1
+  - first:
+      213: 3619058323422551630
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_2
+  - first:
+      213: -9064788792285464782
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_3
+  - first:
+      213: 1624417424202223294
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_4
+  - first:
+      213: 175314273320941584
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_5
+  - first:
+      213: 8199369247850759643
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_6
+  - first:
+      213: -6517357721629208288
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_7
+  - first:
+      213: -6012569974061086079
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_8
+  - first:
+      213: -7793624990393446035
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_9
+  - first:
+      213: -7920612623913170984
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_10
+  - first:
+      213: 2425530973020589147
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_11
+  - first:
+      213: 874362092138081915
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_12
+  - first:
+      213: 1623965663550578435
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_13
+  - first:
+      213: 3099944593696522175
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_14
+  - first:
+      213: -8041360948071741682
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_15
+  - first:
+      213: -5968606552824321554
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_16
+  - first:
+      213: -7875922950341600521
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_17
+  - first:
+      213: -2591097366934413216
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_18
+  - first:
+      213: -7944492861683613583
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_19
+  - first:
+      213: 5322189110262393406
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_20
+  - first:
+      213: 8380577824785731483
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_21
+  - first:
+      213: -8111339465668962499
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_22
+  - first:
+      213: 8662649361588254656
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_23
+  - first:
+      213: -140669920011302573
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_24
+  - first:
+      213: -3100515221921499861
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_25
+  - first:
+      213: 3202074730983875036
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_26
+  - first:
+      213: 3808949044251709217
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_27
+  - first:
+      213: -2073579252169775217
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_28
+  - first:
+      213: 7118240381690006488
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_29
+  - first:
+      213: 8683763348905382696
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_30
+  - first:
+      213: 499626756916844513
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_31
+  - first:
+      213: 4775479199050537419
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_32
+  - first:
+      213: 3664876864152340837
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_33
+  - first:
+      213: 6809493242172995798
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_34
+  - first:
+      213: -3490895947769086883
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_35
+  - first:
+      213: 8888519859750303911
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_36
+  - first:
+      213: 1763125195382561984
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_37
+  - first:
+      213: -2299370998431333543
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_38
+  - first:
+      213: -1152719768920573273
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_39
+  - first:
+      213: 5906685602880491788
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_40
+  - first:
+      213: -6833426070642953001
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_41
+  - first:
+      213: 5457447066499951285
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_42
+  - first:
+      213: -4716230058618736702
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_43
+  - first:
+      213: -6406466919341224132
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_44
+  - first:
+      213: -7525277171636350773
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_45
+  - first:
+      213: 5851849214337285946
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_46
+  - first:
+      213: 7969890990106255783
+    second: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+      (128x128)_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e20192ca132db820800000000000000
+      internalID: 2935541129955836642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b7e4bfd8386f95a0800000000000000
+      internalID: -6512371942673815624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e950dde5a793230800000000000000
+      internalID: 3619058323422551630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237f1e7ee96633280800000000000000
+      internalID: -9064788792285464782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe47807a071b8610800000000000000
+      internalID: 1624417424202223294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018b9591767de6200800000000000000
+      internalID: 175314273320941584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5086883e20ac170800000000000000
+      internalID: 8199369247850759643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0215420cea1bd85a0800000000000000
+      internalID: -6517357721629208288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ac8ece67f0f8ca0800000000000000
+      internalID: -6012569974061086079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61ddf61d5b77d390800000000000000
+      internalID: -7793624990393446035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d74e24a8c4541290800000000000000
+      internalID: -7920612623913170984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c8996a19739a120800000000000000
+      internalID: 2425530973020589147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e25f2b0bb522c00800000000000000
+      internalID: 874362092138081915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f1d57ba2c798610800000000000000
+      internalID: 1623965663550578435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf7caa0f27350b20800000000000000
+      internalID: 3099944593696522175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e074c7b92d8576090800000000000000
+      internalID: -8041360948071741682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee966d696ff3b2da0800000000000000
+      internalID: -5968606552824321554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fada8a1ec913b290800000000000000
+      internalID: -7875922950341600521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060ac694ca29a0cd0800000000000000
+      internalID: -2591097366934413216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170c8b285dd7fb190800000000000000
+      internalID: -7944492861683613583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a64a03cc63cd940800000000000000
+      internalID: 5322189110262393406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f8ed2212bcd4470800000000000000
+      internalID: 8380577824785731483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37d1305bbbbe6f80800000000000000
+      internalID: -8111339465668962499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet
+        (128x128)_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c77b3b92b9e73870800000000000000
+      internalID: 8662649361588254656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 49435e88f996299489b7c9eab2163d67
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":6.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_0: 2935541129955836642
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_1: -6512371942673815624
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_10: -7920612623913170984
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_11: 2425530973020589147
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_12: 874362092138081915
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_13: 1623965663550578435
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_14: 3099944593696522175
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_15: -8041360948071741682
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_16: -5968606552824321554
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_17: -7875922950341600521
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_18: -2591097366934413216
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_19: -7944492861683613583
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_2: 3619058323422551630
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_20: 5322189110262393406
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_21: 8380577824785731483
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_22: -8111339465668962499
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_23: 8662649361588254656
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_3: -9064788792285464782
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_4: 1624417424202223294
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_5: 175314273320941584
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_6: 8199369247850759643
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_7: -6517357721629208288
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_8: -6012569974061086079
+      3D Printer Corrupted Attack Spawn Back Layer (No Doors & Arm) Spritesheet (128x128)_9: -7793624990393446035
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

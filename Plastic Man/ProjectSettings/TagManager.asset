@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Aim
   - Environment
+  - Enemy
   layers:
   - Default
   - TransparentFX
