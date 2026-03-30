@@ -52,7 +52,7 @@ public class CursorManager : MonoBehaviour
     private void Update()
     {
         HandleCursor();
-        DebugPointerHit();
+        //DebugPointerHit();
     }
 
     private void HandleCursor()

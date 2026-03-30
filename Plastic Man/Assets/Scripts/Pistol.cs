@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NerfGun : WeaponBase
+public class Pistol : WeaponBase
 {
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private Transform muzzle;
@@ -8,13 +8,8 @@ public class NerfGun : WeaponBase
     [SerializeField] private Transform muzzleFlashPos;
 
     [Header("Audio")]
-    [SerializeField] private AudioClip shootSfx; 
+    [SerializeField] private AudioClip shootSfx;
     [SerializeField] private float shootVolume = 0.5f;
-
-    private void Update()
-    {
-        //animator.SetBool("isFiring", false);
-    }
 
     protected override void Fire(Vector3 origin, Vector3 direction)
     {
