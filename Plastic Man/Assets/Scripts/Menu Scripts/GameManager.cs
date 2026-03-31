@@ -15,9 +15,13 @@ public class GameManager : MonoBehaviour
     [Header("Enemy Tracker")]
     [SerializeField] private List<GameObject> _enemies = new List<GameObject>();
 
+   
+
     private bool _isPaused = false;
     private bool _isGameOver = false;
     private bool _isGameCleared = false;
+
+    public bool IsGameCleared { get { return _isGameCleared; } }
 
     private void Awake()
     {
