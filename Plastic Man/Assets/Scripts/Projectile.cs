@@ -10,7 +10,7 @@ public class Projectile2D : MonoBehaviour
     public float lifetime = 3f;
 
     [Header("Damage")]
-    public float damage = 20f; 
+    public float damage = 20f;
 
     private Rigidbody2D rb;
 
@@ -32,23 +32,33 @@ public class Projectile2D : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         EnemyHealth enemyHealth = collision.GetComponent<EnemyHealth>();
-
         if (enemyHealth != null)
         {
             enemyHealth.TakeDamage(damage);
+            HandleImpact();
+            return; // Exit so we don't trigger twice
+        }
 
-            if (vfx != null)
-            {
-                Instantiate(vfx, transform.position, Quaternion.identity);
-            }
-
-            Destroy(gameObject);
+        BossEnemy boss = collision.GetComponent<BossEnemy>();
+        if (boss != null)
+        {
+            boss.TakeDamage(damage);
+            HandleImpact();
+            return;
         }
 
         if (collision.CompareTag("Environment"))
         {
-            if (vfx != null) Instantiate(vfx, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            HandleImpact();
         }
+    }
+
+    private void HandleImpact()
+    {
+        if (vfx != null)
+        {
+            Instantiate(vfx, transform.position, Quaternion.identity);
+        }
+        Destroy(gameObject);
     }
 }

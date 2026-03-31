@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -23.903, y: -1.769, z: 0}
-  m_LocalScale: {x: 0.78787, y: 0.78787, z: 0.78787}
+  m_LocalScale: {x: 0.75, y: 1.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -154,6 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LootItem
   type: 1
   _value: 1
+  pickupSfx: {fileID: 8300000, guid: 233159cdd67eeba4199860cc9a6bce39, type: 3}
+  pickupVolume: 0.05
 --- !u!50 &158664532590789844
 Rigidbody2D:
   serializedVersion: 5

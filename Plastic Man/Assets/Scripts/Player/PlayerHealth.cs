@@ -4,30 +4,37 @@ using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public static PlayerHealth Instance { get; private set; }
+
     [Header("Health Settings")]
     [SerializeField] private float _maxHealth = 100f;
     private float _currentHealth;
+    public bool isDead;
 
     [Header("UI References")]
     [SerializeField] private Image _healthBarFill;
+    [SerializeField] private GameObject _gameOverPanel; 
 
     [Header("Blink Settings")]
     [SerializeField] private int _blinkCount = 3;
     [SerializeField] private float _blinkSpeed = 0.1f;
 
-    [Header("Audio Settings")]
-    [SerializeField] private AudioClip damageSfx; 
-    [SerializeField] private float damageVolume = 0.1f;
-
     private SpriteRenderer _spriteRenderer;
     private Color _originalColor;
     private bool _isBlinking = false;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
         _currentHealth = _maxHealth;
         _spriteRenderer = GetComponent<SpriteRenderer>();
         if (_spriteRenderer != null) _originalColor = _spriteRenderer.color;
+
+        if (_gameOverPanel != null) _gameOverPanel.SetActive(false);
 
         UpdateHealthBar();
     }
@@ -38,20 +45,14 @@ public class PlayerHealth : MonoBehaviour
         _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth);
         UpdateHealthBar();
 
-       
-        if (damageSfx != null)
-        {
-            SfxManager.instance.PlaySFX(damageSfx, damageVolume);
-        }
-
-        if (!_isBlinking)
+        if (!_isBlinking && _currentHealth > 0)
         {
             StartCoroutine(BlinkRed());
         }
 
         if (_currentHealth <= 0)
         {
-            Die();
+            isDead = true;
         }
     }
 
@@ -59,11 +60,24 @@ public class PlayerHealth : MonoBehaviour
     {
         _isBlinking = true;
 
+        SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
+
         for (int i = 0; i < _blinkCount; i++)
         {
-            _spriteRenderer.color = Color.red;
+            foreach (var spr in sprites)
+            {
+                if(spr != null)
+                    spr.color = Color.red; 
+            }
+
             yield return new WaitForSeconds(_blinkSpeed);
-            _spriteRenderer.color = _originalColor;
+
+            foreach (var spr in sprites)
+            {
+                if (spr != null)
+                    spr.color = _originalColor;
+            }
+
             yield return new WaitForSeconds(_blinkSpeed);
         }
 
@@ -81,6 +95,14 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player Destroyed!");
-        Destroy(gameObject);
+
+        if (_gameOverPanel != null)
+        {
+            _gameOverPanel.SetActive(true);
+            Time.timeScale = 0f;
+        }
+
+        _spriteRenderer.enabled = false;
+        this.enabled = false;
     }
 }
