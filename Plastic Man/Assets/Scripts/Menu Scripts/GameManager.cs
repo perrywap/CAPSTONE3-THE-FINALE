@@ -44,7 +44,6 @@ public class GameManager : MonoBehaviour
         {
             _isGameCleared = true;
 
-            // NEW: Start the complete end-of-level sequence!
             StartCoroutine(ShowWinSequence());
         }
     }
@@ -109,19 +108,14 @@ public class GameManager : MonoBehaviour
         _pausePanel.SetActive(false);
     }
 
-    // NEW: Handles the Win Panel first, THEN plays the cutscene!
     private IEnumerator ShowWinSequence()
     {
-        // 1. Show the Win Panel
         _winPanel.SetActive(true);
 
-        // 2. Wait for 3 seconds
         yield return new WaitForSeconds(3f);
 
-        // 3. Hide the Win Panel
         _winPanel.SetActive(false);
 
-        // 4. If we have a cutscene attached, play it now!
         if (_endLevelCutscene != null)
         {
             _endLevelCutscene.PlayFromGameManager();

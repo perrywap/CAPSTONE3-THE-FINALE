@@ -38,7 +38,6 @@ public class CutsceneTrigger : MonoBehaviour
         if (_mainCamera == null) _mainCamera = Camera.main;
     }
 
-    // Standard Physical Trigger (Walking into the box)
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!_hasTriggered && collision.CompareTag("Player"))
@@ -56,14 +55,12 @@ public class CutsceneTrigger : MonoBehaviour
         }
     }
 
-    // Triggered remotely by the GameManager
     public void PlayFromGameManager()
     {
         if (!_hasTriggered)
         {
             _hasTriggered = true;
 
-            // Find the player automatically since they didn't touch a physical trigger box
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
             {
@@ -81,19 +78,15 @@ public class CutsceneTrigger : MonoBehaviour
 
     private IEnumerator PlayCutscene(Transform playerTransform)
     {
-        // 1. FREEZE THE GAME 
         NPCDialogue.IsTalking = true;
         Time.timeScale = 0f;
 
-        // 2. TURN OFF CAMERA FOLLOW 
         if (_cameraFollowScript != null) _cameraFollowScript.enabled = false;
 
-        // 3. WAIT BEFORE PANNING 
         yield return new WaitForSecondsRealtime(_initialDelay);
 
         Vector3 startPos = _mainCamera.transform.position;
 
-        // 4. LOOP THROUGH ALL TARGET LOCATIONS
         if (_targetLocations != null && _targetLocations.Length > 0)
         {
             for (int i = 0; i < _targetLocations.Length; i++)
@@ -103,20 +96,17 @@ public class CutsceneTrigger : MonoBehaviour
 
                 Vector3 targetPos = new Vector3(currentTarget.position.x, currentTarget.position.y, startPos.z);
 
-                // Pan to current target
                 while (Vector3.Distance(_mainCamera.transform.position, targetPos) > 0.1f)
                 {
                     _mainCamera.transform.position = Vector3.MoveTowards(_mainCamera.transform.position, targetPos, _panSpeed * Time.unscaledDeltaTime);
                     yield return null;
                 }
-                _mainCamera.transform.position = targetPos; // Snap it perfectly into place
+                _mainCamera.transform.position = targetPos;
 
-                // Wait at this specific target
                 yield return new WaitForSecondsRealtime(_viewWaitTime);
             }
         }
 
-        // 5. SHOW DIALOGUE (Plays while looking at the final target)
         if (_dialogueSequences != null && _dialogueSequences.Length > 0)
         {
             if (_dialogueCanvas != null) _dialogueCanvas.SetActive(true);
@@ -131,7 +121,6 @@ public class CutsceneTrigger : MonoBehaviour
             if (_dialogueCanvas != null) _dialogueCanvas.SetActive(false);
         }
 
-        // 6. PAN CAMERA BACK TO PLAYER
         Vector3 playerPos = new Vector3(playerTransform.position.x, playerTransform.position.y, startPos.z);
         while (Vector3.Distance(_mainCamera.transform.position, playerPos) > 0.1f)
         {
@@ -139,7 +128,6 @@ public class CutsceneTrigger : MonoBehaviour
             yield return null;
         }
 
-        // 7. UNFREEZE AND RESTORE
         if (_cameraFollowScript != null) _cameraFollowScript.enabled = true;
         Time.timeScale = 1f;
         NPCDialogue.IsTalking = false;
@@ -147,7 +135,6 @@ public class CutsceneTrigger : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // --- Dialogue Logic ---
     private IEnumerator PlayDialogueSequence()
     {
         _dialogueText.text = _dialogueSequences[_currentSequenceIndex];
