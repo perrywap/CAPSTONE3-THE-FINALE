@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
@@ -7,6 +6,7 @@ using System.Collections;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+
     [Header("UI Panels")]
     [SerializeField] private GameObject _pausePanel;
     [SerializeField] private GameObject _gameOverPanel;
@@ -15,7 +15,9 @@ public class GameManager : MonoBehaviour
     [Header("Enemy Tracker")]
     [SerializeField] private List<GameObject> _enemies = new List<GameObject>();
 
-   
+    [Header("End Level Cutscene")]
+    [Tooltip("Drag your final CutsceneTrigger here. It will play immediately after the Win Panel finishes.")]
+    [SerializeField] private CutsceneTrigger _endLevelCutscene;
 
     private bool _isPaused = false;
     private bool _isGameOver = false;
@@ -41,7 +43,9 @@ public class GameManager : MonoBehaviour
         if (_enemies.Count <= 0)
         {
             _isGameCleared = true;
-            StartCoroutine(ShowWinPanel());
+
+            // NEW: Start the complete end-of-level sequence!
+            StartCoroutine(ShowWinSequence());
         }
     }
 
@@ -105,10 +109,22 @@ public class GameManager : MonoBehaviour
         _pausePanel.SetActive(false);
     }
 
-    private IEnumerator ShowWinPanel()
+    // NEW: Handles the Win Panel first, THEN plays the cutscene!
+    private IEnumerator ShowWinSequence()
     {
+        // 1. Show the Win Panel
         _winPanel.SetActive(true);
+
+        // 2. Wait for 3 seconds
         yield return new WaitForSeconds(3f);
+
+        // 3. Hide the Win Panel
         _winPanel.SetActive(false);
+
+        // 4. If we have a cutscene attached, play it now!
+        if (_endLevelCutscene != null)
+        {
+            _endLevelCutscene.PlayFromGameManager();
+        }
     }
 }

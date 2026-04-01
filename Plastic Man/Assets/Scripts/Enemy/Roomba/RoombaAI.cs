@@ -12,6 +12,8 @@ public class RoombaAI : MonoBehaviour
     [SerializeField] private float _randomMoveDistance = 5f;
     [SerializeField] private GameObject _player;
 
+    [SerializeField] private LayerMask _obstacleMask;
+
     [Header("Ranged Combat")]
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private Transform _firePoint;
@@ -78,11 +80,23 @@ public class RoombaAI : MonoBehaviour
 
         float distance = Vector2.Distance(transform.position, _player.transform.position);
 
-        if (distance <= _attackRadius && _attackTimer <= 0)
+        bool hasLineOfSight = false;
+        if (distance <= _detectionRadius)
+        {
+            Vector2 direction = (_player.transform.position - transform.position).normalized;
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, _obstacleMask);
+
+            if (hit.collider == null)
+            {
+                hasLineOfSight = true;
+            }
+        }
+
+        if (distance <= _attackRadius && _attackTimer <= 0 && hasLineOfSight)
         {
             _currentState = State.Attack;
         }
-        else if (distance <= _detectionRadius)
+        else if (distance <= _detectionRadius && hasLineOfSight)
         {
             _currentState = State.Chase;
         }
