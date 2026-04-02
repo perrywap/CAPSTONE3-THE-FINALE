@@ -21,8 +21,12 @@ public class PlayerCombat : MonoBehaviour
         if (equippedWeapon == null)
             return;
 
-        HandleAiming();
-        HandleShooting();
+        if (equippedWeapon.GetComponent<WeaponBase>() != null)
+        {
+            HandleAiming();
+            HandleShooting();
+        }
+
     }
 
     private void HandleAiming()
