@@ -742,7 +742,7 @@ SpriteRenderer:
   m_Size: {x: 1.3333334, y: 1.3333334}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &343240627 stripped
 Transform:
@@ -833,7 +833,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
   equippedWeapon: {fileID: 0}
-  weaponAttach: {fileID: 2114229515}
   aimTransform: {fileID: 2114229515}
 --- !u!114 &346994270
 MonoBehaviour:
@@ -848,6 +847,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 5
+  dashSpeed: 15
+  dashDuration: 0.2
+  dashCooldown: 4
+  dashSfx: {fileID: 0}
+  dashVolume: 0.5
+  afterImagePrefab: {fileID: 0}
+  afterImageSpacing: 0.05
 --- !u!195 &346994271
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1247,7 +1253,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2275,6 +2281,7 @@ GameObject:
   - component: {fileID: 1209424651}
   - component: {fileID: 1209424654}
   - component: {fileID: 1209424655}
+  - component: {fileID: 1209424656}
   m_Layer: 6
   m_Name: enemy
   m_TagString: Untagged
@@ -2416,9 +2423,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
   _movementSpeed: 2
   _detectionRadius: 3
+  _attackRadius: 1.8
+  _attackCooldown: 2
   _changeDirectionTime: 2
   _randomMoveDistance: 3
   _player: {fileID: 1845819920}
+  _obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _hitbox: {fileID: 0}
+  wanderClip: {fileID: 0}
+  chaseClip: {fileID: 0}
+  attackClip: {fileID: 0}
 --- !u!195 &1209424655
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2441,6 +2457,103 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!82 &1209424656
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209424650}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1216811879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2708508648669539474, guid: 2172433ea46c1944d8ce9542b4efca8c, type: 3}
@@ -2505,6 +2618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 812ff8fe5d892b847b7b06b5336ec812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponUI
+  defaultWeapon: {fileID: 0}
   weapons:
   - {fileID: 4208481742703032022, guid: 9eb1972074313464ca36e25958ad800d, type: 3}
   - {fileID: 3781831577641711289, guid: b25d2467c085a65498b8613a98c248e4, type: 3}
@@ -2682,7 +2796,7 @@ SpriteRenderer:
   m_Size: {x: 0.5729167, y: 0.6875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1328982634
 Transform:
@@ -2775,7 +2889,7 @@ SpriteRenderer:
   m_Size: {x: 1.3333334, y: 1.3333334}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1407147306
 Animator:
@@ -3008,7 +3122,7 @@ SpriteRenderer:
   m_Size: {x: 1.5, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1488409163
 Animator:
@@ -5475,10 +5589,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   _spawnAreas:
   - {fileID: 1682175533}
+  _enemyPrefab: {fileID: 0}
   _timeBetweenSpawns: 3
-  _enemyPrefab: {fileID: 1209424654}
-  _maxEnemiesAtOnce: 1
   _maxEnemiesAlive: 20
+  _minSpawnDistance: 10
+  _maxSpawnDistance: 25
 --- !u!61 &1682175537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5787,6 +5902,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 5
+  dashSpeed: 15
+  dashDuration: 0.2
+  dashCooldown: 4
+  dashSfx: {fileID: 0}
+  dashVolume: 0.5
+  afterImagePrefab: {fileID: 0}
+  afterImageSpacing: 0.05
 --- !u!195 &1845819924
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5822,7 +5944,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
   equippedWeapon: {fileID: 0}
-  weaponAttach: {fileID: 1693148326}
   aimTransform: {fileID: 1293488338}
 --- !u!114 &1845819926
 MonoBehaviour:
