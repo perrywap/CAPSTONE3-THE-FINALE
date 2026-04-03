@@ -120,11 +120,11 @@ GameObject:
   - component: {fileID: 6109194982712948880}
   - component: {fileID: 7170211281481358237}
   - component: {fileID: 6354352280375288470}
-  - component: {fileID: 2247482574242739254}
   - component: {fileID: 9051449062607133440}
   - component: {fileID: 2728265206295449993}
   - component: {fileID: 2189566063133629420}
   - component: {fileID: 954224604674973199}
+  - component: {fileID: -5746543693188174616}
   m_Layer: 0
   m_Name: BossEnemy
   m_TagString: Enemy
@@ -255,28 +255,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.4609375, y: 0.7734375}
   m_EdgeRadius: 0
---- !u!95 &2247482574242739254
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2488567477021945018}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c18121139d400bd4ea25f2615807f975, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!82 &9051449062607133440
 AudioSource:
   m_ObjectHideFlags: 0
@@ -398,12 +376,15 @@ MonoBehaviour:
   detectionRange: 15
   attackRange: 5
   bulletPrefab: {fileID: 6116170434199357846, guid: a2dac4ac648fdf949b2793e53432a2fb, type: 3}
-  grenadePrefab: {fileID: 6116170434199357846, guid: a2dac4ac648fdf949b2793e53432a2fb, type: 3}
+  grenadePrefab: {fileID: 1710860951202350425, guid: 85d3e333c817adc40a77a7378abea7be, type: 3}
   firePoint: {fileID: 7890882975455008405}
   swordHitbox: {fileID: 265090907456174662}
   attackCooldown: 3
   dashSpeed: 15
   dashDuration: 0.3
+  dashTime: 0.2
+  stopTime: 0.3
+  dashSpeedMultiplier: 3
 --- !u!195 &2189566063133629420
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -439,6 +420,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
   _damage: 15
+--- !u!95 &-5746543693188174616
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2488567477021945018}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c18121139d400bd4ea25f2615807f975, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7838703410679039670
 GameObject:
   m_ObjectHideFlags: 0
