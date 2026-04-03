@@ -6,14 +6,11 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private float _maxHealth = 50f;
     private float _currentHealth;
 
-
     [Header("Audio")]
-    [SerializeField] private AudioClip damageSfx; // sound when hit
-    [SerializeField] private AudioClip deathSfx;  // sound when dying
+    [SerializeField] private AudioClip damageSfx;
     [SerializeField] private float damageVolume = 0.5f;
-    [SerializeField] private float deathVolume = 0.7f;
 
-    public float CurrentHealth {  get { return _currentHealth; } }
+    public float CurrentHealth { get { return _currentHealth; } }
     public float MaxHealth { get { return _maxHealth; } }
 
     void Start()
@@ -23,11 +20,13 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-    
-        _currentHealth -= damage;
-        this.GetComponentInChildren<HpBarComponent>().OnDamaged();
+        if (_currentHealth <= 0) return; 
 
-        // Play damage sound
+        _currentHealth -= damage;
+
+        var hpBar = GetComponentInChildren<HpBarComponent>();
+        if (hpBar != null) hpBar.OnDamaged();
+
         if (damageSfx != null)
         {
             SfxManager.instance.PlaySFX(damageSfx, damageVolume);
@@ -37,48 +36,38 @@ public class EnemyHealth : MonoBehaviour
 
         if (_currentHealth <= 0)
         {
-            Die();
+            HandleDeath();
         }
     }
 
-    private void Die()
+    private void HandleDeath()
     {
-        // Play death sound
-        if (deathSfx != null)
-        {
-            SfxManager.instance.PlaySFX(deathSfx, deathVolume);
-        }
+        EnemyAI slimeAI = GetComponent<EnemyAI>();
+        RoombaAI roombaAI = GetComponent<RoombaAI>();
 
-        LootSpawner lootSpawner = Object.FindFirstObjectByType<LootSpawner>();
-        if (lootSpawner != null)
+        if (slimeAI != null)
         {
-            lootSpawner.DropLoot(transform.position);
+            slimeAI.Die();
         }
-
-        EnemySpawner spawner = Object.FindFirstObjectByType<EnemySpawner>();
-        if (spawner != null)
+        else if (roombaAI != null)
         {
-            spawner.RemoveEnemyFromList(gameObject);
+            roombaAI.Die();
         }
-
-        Destroy(gameObject);
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnEnable()
     {
-        // Add to list when spawned or enabled
         if (GameManager.Instance != null)
-        {
             GameManager.Instance.RegisterEnemy(this.gameObject);
-        }
     }
 
     private void OnDisable()
     {
-        // Remove from list when destroyed or disabled
         if (GameManager.Instance != null)
-        {
             GameManager.Instance.UnregisterEnemy(this.gameObject);
-        }
     }
 }
