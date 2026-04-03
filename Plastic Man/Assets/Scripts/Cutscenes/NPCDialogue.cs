@@ -11,6 +11,9 @@ public class NPCDialogue : MonoBehaviour
     [SerializeField] private TMP_Text _dialogueText;
     [SerializeField] private GameObject _interactPrompt;
 
+    // NEW: The "!" GameObject
+    [SerializeField] private GameObject _questIndicator;
+
     [Header("Dialogue Settings")]
     [TextArea(3, 5)]
     [SerializeField] private string[] _dialogueSequences;
@@ -41,6 +44,9 @@ public class NPCDialogue : MonoBehaviour
 
         if (_speechBubbleCanvas != null) _speechBubbleCanvas.SetActive(false);
         if (_interactPrompt != null) _interactPrompt.SetActive(false);
+
+        // NEW: Ensure the "!" is visible when the level starts!
+        if (_questIndicator != null) _questIndicator.SetActive(true);
 
         IsTalking = false;
     }
@@ -105,6 +111,9 @@ public class NPCDialogue : MonoBehaviour
         {
             Time.timeScale = 0f;
             IsTalking = true;
+
+            // NEW: Hide the "!" indicator forever once the conversation starts
+            if (_questIndicator != null) _questIndicator.SetActive(false);
         }
 
         if (_interactPrompt != null) _interactPrompt.SetActive(false);
