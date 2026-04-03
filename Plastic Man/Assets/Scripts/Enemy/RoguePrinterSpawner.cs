@@ -12,6 +12,8 @@ public class RoguePrinterSpawner : MonoBehaviour
 
     [Header("Spawn Settings")]
     [SerializeField] private float spawnInterval = 3f;
+    [SerializeField] private int spawnCount;
+    [SerializeField] private int maxSpawnCount;
 
     [Header("Generator")]
     [SerializeField] private List<GameObject> generators;
@@ -32,11 +34,14 @@ public class RoguePrinterSpawner : MonoBehaviour
 
         timer -= Time.deltaTime;
 
-        if (timer <= 0f)
+        if(spawnCount != maxSpawnCount)
         {
-            frontSprite.sortingOrder = 11;
-            animator.SetTrigger("spawn");
-            timer = spawnInterval;
+            if (timer <= 0f)
+            {
+                frontSprite.sortingOrder = 11;
+                animator.SetTrigger("spawn");
+                timer = spawnInterval;
+            }
         }
 
         for (int i = generators.Count - 1; i >= 0; i--)
@@ -55,6 +60,7 @@ public class RoguePrinterSpawner : MonoBehaviour
     }
     public void Spawn()
     {
+        spawnCount++;
         frontSprite.sortingOrder = 1;
         int index = Random.Range(0, spawnableEnemies.Length);
         GameObject enemyGO = Instantiate(spawnableEnemies[index], spawnArea.position, Quaternion.identity);

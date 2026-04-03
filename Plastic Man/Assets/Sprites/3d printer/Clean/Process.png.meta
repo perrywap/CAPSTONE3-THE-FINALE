@@ -1,46 +1,73 @@
 fileFormatVersion: 2
-guid: f5df41d74e08b4b4b935bbfc7eef594d
+guid: 66108bb509fc3f146a9cc0149edccaa2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1949965640792844370
-    second: Grenade Atk Spritesheet (128x128)_0
+      213: 2711498623329298179
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_0
   - first:
-      213: 7508477795982911897
-    second: Grenade Atk Spritesheet (128x128)_1
+      213: 7409913766810523625
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_1
   - first:
-      213: 5748487591892873861
-    second: Grenade Atk Spritesheet (128x128)_2
+      213: -218529279777405631
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_2
   - first:
-      213: -3422306929867519790
-    second: Grenade Atk Spritesheet (128x128)_3
+      213: 2909292181224561135
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_3
   - first:
-      213: -8202858815633196267
-    second: Grenade Atk Spritesheet (128x128)_4
+      213: 3150729532882983269
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_4
   - first:
-      213: -7637765971431906537
-    second: Grenade Atk Spritesheet (128x128)_5
+      213: -3359890686910725941
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_5
   - first:
-      213: -1105849799639590791
-    second: Grenade Atk Spritesheet (128x128)_6
+      213: 8027220435249051936
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_6
   - first:
-      213: -8866464543418130915
-    second: Grenade Atk Spritesheet (128x128)_7
+      213: -7953131337590377291
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_7
   - first:
-      213: 1745979381922468038
-    second: Grenade Atk Spritesheet (128x128)_8
+      213: -3228325536911195518
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_8
   - first:
-      213: 8608612984846127061
-    second: Grenade Atk Spritesheet (128x128)_9
+      213: -5055265636588358314
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_9
   - first:
-      213: -4416554910254373153
-    second: Grenade Atk Spritesheet (128x128)_10
+      213: 5528872186925395842
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_10
   - first:
-      213: -3554184246514870492
-    second: Grenade Atk Spritesheet (128x128)_11
+      213: 3044138063599513485
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_11
   - first:
-      213: 6395524629666081916
-    second: Grenade Atk Spritesheet (128x128)_12
+      213: 3549728252470782206
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_12
+  - first:
+      213: 6226026137168299294
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_13
+  - first:
+      213: -6698604885337073859
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_14
+  - first:
+      213: 8716513042185166675
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_15
+  - first:
+      213: -2046663374698096780
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_16
+  - first:
+      213: 5935804542678708384
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_17
+  - first:
+      213: 2461987088999481177
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_18
+  - first:
+      213: 8445372598068778824
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_19
+  - first:
+      213: 2378759806505599613
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_20
+  - first:
+      213: -7541329632562479193
+    second: 3D Printer Clean Printing State Spritesheet (128x128)_21
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -87,7 +114,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 96
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -136,7 +163,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grenade Atk Spritesheet (128x128)_0
+      name: 3D Printer Clean Printing State Spritesheet (128x128)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -151,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ea75350c49450f4e0800000000000000
-      internalID: -1949965640792844370
+      spriteID: 307e08cb1ad21a520800000000000000
+      internalID: 2711498623329298179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grenade Atk Spritesheet (128x128)_1
+      name: 3D Printer Clean Printing State Spritesheet (128x128)_1
       rect:
         serializedVersion: 2
         x: 128
@@ -173,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 999287916c8733860800000000000000
-      internalID: 7508477795982911897
+      spriteID: 9e7940fbf4d45d660800000000000000
+      internalID: 7409913766810523625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grenade Atk Spritesheet (128x128)_2
+      name: 3D Printer Clean Printing State Spritesheet (128x128)_2
       rect:
         serializedVersion: 2
         x: 256
@@ -195,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 582f38e020bb6cf40800000000000000
-      internalID: 5748487591892873861
+      spriteID: 14588d127c0a7fcf0800000000000000
+      internalID: -218529279777405631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grenade Atk Spritesheet (128x128)_3
+      name: 3D Printer Clean Printing State Spritesheet (128x128)_3
       rect:
         serializedVersion: 2
         x: 384
@@ -217,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d883ecbaf58180d0800000000000000
-      internalID: -3422306929867519790
+      spriteID: fe916b123d1ef5820800000000000000
+      internalID: 2909292181224561135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grenade Atk Spritesheet (128x128)_4
+      name: 3D Printer Clean Printing State Spritesheet (128x128)_4
       rect:
         serializedVersion: 2
         x: 0
@@ -239,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51b70872e57992e80800000000000000
-      internalID: -8202858815633196267
+      spriteID: 56992de11d3a9bb20800000000000000
+      internalID: 3150729532882983269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grenade Atk Spritesheet (128x128)_5
+      name: 3D Printer Clean Printing State Spritesheet (128x128)_5
       rect:
         serializedVersion: 2
         x: 128
@@ -261,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7132c3bc054310690800000000000000
-      internalID: -7637765971431906537
+      spriteID: bc00b82c8354f51d0800000000000000
+      internalID: -3359890686910725941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grenade Atk Spritesheet (128x128)_6
+      name: 3D Printer Clean Printing State Spritesheet (128x128)_6
       rect:
         serializedVersion: 2
         x: 256
@@ -283,14 +310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9789b8d577b37a0f0800000000000000
-      internalID: -1105849799639590791
+      spriteID: 029b6c0b47a666f60800000000000000
+      internalID: 8027220435249051936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grenade Atk Spritesheet (128x128)_7
+      name: 3D Printer Clean Printing State Spritesheet (128x128)_7
       rect:
         serializedVersion: 2
         x: 384
@@ -305,14 +332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1e57fb697df3f480800000000000000
-      internalID: -8866464543418130915
+      spriteID: 5b4f5ea9f2dc0a190800000000000000
+      internalID: -7953131337590377291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grenade Atk Spritesheet (128x128)_8
+      name: 3D Printer Clean Printing State Spritesheet (128x128)_8
       rect:
         serializedVersion: 2
         x: 0
@@ -327,14 +354,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c015ac4ff6fa3810800000000000000
-      internalID: 1745979381922468038
+      spriteID: 2820611570fa233d0800000000000000
+      internalID: -3228325536911195518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grenade Atk Spritesheet (128x128)_9
+      name: 3D Printer Clean Printing State Spritesheet (128x128)_9
       rect:
         serializedVersion: 2
         x: 128
@@ -349,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5df819a36efe77770800000000000000
-      internalID: 8608612984846127061
+      spriteID: 65579edffa618d9b0800000000000000
+      internalID: -5055265636588358314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grenade Atk Spritesheet (128x128)_10
+      name: 3D Printer Clean Printing State Spritesheet (128x128)_10
       rect:
         serializedVersion: 2
         x: 256
@@ -371,8 +398,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd6e74385be35b2c0800000000000000
-      internalID: -4416554910254373153
+      spriteID: 28fa936f5ff7abc40800000000000000
+      internalID: 5528872186925395842
       vertices: []
       indices: 
       edges: []
@@ -381,7 +408,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 91ef129053c06114ba73db5d47f9c4f5
+    spriteID: 7fdd9ff9754f3c0449213ab4272a9836
     internalID: 0
     vertices: []
     indices: 
@@ -393,17 +420,17 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":3.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Grenade Atk Spritesheet (128x128)_0: -1949965640792844370
-      Grenade Atk Spritesheet (128x128)_1: 7508477795982911897
-      Grenade Atk Spritesheet (128x128)_10: -4416554910254373153
-      Grenade Atk Spritesheet (128x128)_2: 5748487591892873861
-      Grenade Atk Spritesheet (128x128)_3: -3422306929867519790
-      Grenade Atk Spritesheet (128x128)_4: -8202858815633196267
-      Grenade Atk Spritesheet (128x128)_5: -7637765971431906537
-      Grenade Atk Spritesheet (128x128)_6: -1105849799639590791
-      Grenade Atk Spritesheet (128x128)_7: -8866464543418130915
-      Grenade Atk Spritesheet (128x128)_8: 1745979381922468038
-      Grenade Atk Spritesheet (128x128)_9: 8608612984846127061
+      3D Printer Clean Printing State Spritesheet (128x128)_0: 2711498623329298179
+      3D Printer Clean Printing State Spritesheet (128x128)_1: 7409913766810523625
+      3D Printer Clean Printing State Spritesheet (128x128)_10: 5528872186925395842
+      3D Printer Clean Printing State Spritesheet (128x128)_2: -218529279777405631
+      3D Printer Clean Printing State Spritesheet (128x128)_3: 2909292181224561135
+      3D Printer Clean Printing State Spritesheet (128x128)_4: 3150729532882983269
+      3D Printer Clean Printing State Spritesheet (128x128)_5: -3359890686910725941
+      3D Printer Clean Printing State Spritesheet (128x128)_6: 8027220435249051936
+      3D Printer Clean Printing State Spritesheet (128x128)_7: -7953131337590377291
+      3D Printer Clean Printing State Spritesheet (128x128)_8: -3228325536911195518
+      3D Printer Clean Printing State Spritesheet (128x128)_9: -5055265636588358314
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
