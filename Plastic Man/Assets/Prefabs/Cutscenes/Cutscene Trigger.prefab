@@ -93,7 +93,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CutsceneTrigger
   _mainCamera: {fileID: 0}
   _cameraFollowScript: {fileID: 0}
-  _targetLocations: []
+  _targetLocations:
+  - {fileID: 0}
   _initialDelay: 0.5
   _panSpeed: 10
   _viewWaitTime: 3
