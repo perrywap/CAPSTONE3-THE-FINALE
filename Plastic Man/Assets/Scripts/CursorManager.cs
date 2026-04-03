@@ -19,8 +19,8 @@ public class CursorManager : MonoBehaviour
     [SerializeField] private Vector2 pressedHotspot;
 
     private Camera cam;
-    private GraphicRaycaster raycaster;
     private PointerEventData pointerData;
+    private GraphicRaycaster[] raycasters;
 
     private bool isOverUI;
     private bool isOverWorld;
@@ -37,8 +37,12 @@ public class CursorManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        pointerData = new PointerEventData(EventSystem.current);
-        crosshairHotspot = new Vector2(crosshairCursor.width / 2f, crosshairCursor.height / 2f);
+        if (EventSystem.current != null)
+            pointerData = new PointerEventData(EventSystem.current);
+
+        if (crosshairCursor != null)
+            crosshairHotspot = new Vector2(crosshairCursor.width / 2f, crosshairCursor.height / 2f);
+
         SetCursor(defaultCursor, defaultHotspot);
     }
 
@@ -47,6 +51,7 @@ public class CursorManager : MonoBehaviour
         RefreshReferences();
         DetectTargets();
         ApplyCursor();
+        //DebugHoveredObject();
     }
 
     private void RefreshReferences()
@@ -54,12 +59,10 @@ public class CursorManager : MonoBehaviour
         if (cam == null)
             cam = Camera.main ?? FindFirstObjectByType<Camera>();
 
-        if (raycaster == null)
-        {
-            Canvas canvas = FindFirstObjectByType<Canvas>();
-            if (canvas != null)
-                raycaster = canvas.GetComponent<GraphicRaycaster>();
-        }
+        if (EventSystem.current != null && pointerData == null)
+            pointerData = new PointerEventData(EventSystem.current);
+
+        raycasters = FindObjectsByType<GraphicRaycaster>(FindObjectsSortMode.None);
     }
 
     private void DetectTargets()
@@ -68,18 +71,36 @@ public class CursorManager : MonoBehaviour
         isOverWorld = false;
         isPressed = Mouse.current != null && Mouse.current.leftButton.isPressed;
 
-        if (EventSystem.current != null && raycaster != null && Mouse.current != null)
+        if (Mouse.current == null || pointerData == null)
+            return;
+
+        pointerData.position = Mouse.current.position.ReadValue();
+
+        // UI CHECK
+        List<RaycastResult> uiResults = new List<RaycastResult>();
+
+        for (int i = 0; i < raycasters.Length; i++)
         {
-            pointerData.position = Mouse.current.position.ReadValue();
+            if (raycasters[i] == null || !raycasters[i].isActiveAndEnabled)
+                continue;
 
-            List<RaycastResult> results = new List<RaycastResult>();
-            raycaster.Raycast(pointerData, results);
+            List<RaycastResult> tempResults = new List<RaycastResult>();
+            raycasters[i].Raycast(pointerData, tempResults);
 
-            if (results.Count > 0)
-                isOverUI = true;
+            if (tempResults.Count > 0)
+            {
+                uiResults.AddRange(tempResults);
+            }
         }
 
-        if (!isOverUI && cam != null && Mouse.current != null)
+        if (uiResults.Count > 0)
+        {
+            isOverUI = true;
+            return;
+        }
+
+        // WORLD CHECK
+        if (cam != null)
         {
             Vector2 mousePos = cam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
@@ -108,6 +129,45 @@ public class CursorManager : MonoBehaviour
         }
 
         SetCursor(defaultCursor, defaultHotspot);
+    }
+
+    private void DebugHoveredObject()
+    {
+        if (Mouse.current == null || pointerData == null)
+            return;
+
+        pointerData.position = Mouse.current.position.ReadValue();
+
+        // UI DEBUG
+        for (int i = 0; i < raycasters.Length; i++)
+        {
+            if (raycasters[i] == null || !raycasters[i].isActiveAndEnabled)
+                continue;
+
+            List<RaycastResult> results = new List<RaycastResult>();
+            raycasters[i].Raycast(pointerData, results);
+
+            if (results.Count > 0)
+            {
+                Debug.Log("[UI] " + results[0].gameObject.name);
+                return;
+            }
+        }
+
+        // WORLD DEBUG
+        if (cam != null)
+        {
+            Vector2 mousePos = cam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+
+            if (hit.collider != null)
+            {
+                Debug.Log("[WORLD] " + hit.collider.gameObject.name);
+                return;
+            }
+        }
+
+        Debug.Log("[NONE]");
     }
 
     private void SetCursor(Texture2D texture, Vector2 hotspot)

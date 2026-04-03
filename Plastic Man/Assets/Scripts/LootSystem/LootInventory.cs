@@ -21,17 +21,17 @@ public class LootInventory : MonoBehaviour
         }
     }
 
-    public void AddPlastic(LootItem.PlasticType type, int amount)
+    public void AddPlastic(PlasticType type, int amount)
     {
         switch (type)
         {
-            case LootItem.PlasticType.Polyethylene:
+            case PlasticType.Polyethylene:
                 polyethyleneCount += amount;
                 break;
-            case LootItem.PlasticType.Acrylic:
+            case PlasticType.Acrylic:
                 acrylicCount += amount;
                 break;
-            case LootItem.PlasticType.Polycarbonate:
+            case PlasticType.Polycarbonate:
                 polycarbonateCount += amount;
                 break;
         }

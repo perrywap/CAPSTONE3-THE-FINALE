@@ -4,6 +4,8 @@ public enum PlasticType { Polyethylene, Acrylic, Polycarbonate }
 
 public class LootItem : MonoBehaviour
 {
+
+
     [Header("Item Info")]
     public PlasticType type;
     [SerializeField] private int _value = 1;

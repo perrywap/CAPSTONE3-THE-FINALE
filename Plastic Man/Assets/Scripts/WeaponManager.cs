@@ -6,7 +6,7 @@ public class WeaponManager : MonoBehaviour
     public static WeaponManager Instance { get; private set; }
 
     [Header("References")]
-    [SerializeField] private GameObject defaultWeapon;
+    //[SerializeField] private GameObject defaultWeapon;
     [SerializeField] private GameObject[] weapons;
     [SerializeField] private Transform[] slots;
     [SerializeField] private Image[] weaponIcons;
@@ -27,7 +27,7 @@ public class WeaponManager : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        PlayerCombat.Instance.ChangeWeapon(defaultWeapon);
+        //PlayerCombat.Instance.ChangeWeapon(defaultWeapon);
 
         originalPositions = new Vector3[slots.Length];
         for (int i = 0; i < slots.Length; i++)
@@ -96,7 +96,7 @@ public class WeaponManager : MonoBehaviour
         if (index >= weapons.Length)
         {
             Debug.LogWarning($"Weapon index {index} is out of bounds.");
-            PlayerCombat.Instance.ChangeWeapon(defaultWeapon);
+            //PlayerCombat.Instance.ChangeWeapon(defaultWeapon);
             activeIndex = -1;
             return;
         }
@@ -108,7 +108,7 @@ public class WeaponManager : MonoBehaviour
         }
         else
         {
-            PlayerCombat.Instance.ChangeWeapon(defaultWeapon);
+            //PlayerCombat.Instance.ChangeWeapon(defaultWeapon);
             Debug.LogWarning($"No weapon assigned on weapons index {index}");
             activeIndex = -1;
         }
