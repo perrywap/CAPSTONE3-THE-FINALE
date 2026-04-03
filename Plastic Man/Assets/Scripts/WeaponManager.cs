@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WeaponManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class WeaponManager : MonoBehaviour
     [SerializeField] private GameObject defaultWeapon;
     [SerializeField] private GameObject[] weapons;
     [SerializeField] private Transform[] slots;
+    [SerializeField] private Image[] weaponIcons;
     [SerializeField] private Player player;
 
     [Header("Attributes")]
@@ -40,8 +42,23 @@ public class WeaponManager : MonoBehaviour
     {
         if (NPCDialogue.IsTalking) return;
 
+
         WeaponChange();
         HandleWeaponSlot();
+        HandleWeaponIcons();
+    }
+
+    private void HandleWeaponIcons()
+    {
+        if (weapons == null || weapons.Length == 0) return;
+
+        for (int i = 0; i < weaponIcons.Length; i++)
+        {
+            if (weapons[i] != null)
+            {
+                weaponIcons[i].sprite = weapons[i].GetComponent<SpriteRenderer>().sprite;
+            }
+        }
     }
 
     private void HandleWeaponSlot()
