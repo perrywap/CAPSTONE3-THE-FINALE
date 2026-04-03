@@ -16,6 +16,10 @@ public class CutsceneTrigger : MonoBehaviour
     [SerializeField] private float _panSpeed = 15f;
     [SerializeField] private float _viewWaitTime = 3f;
 
+    [Header("Enemy Label Settings")]
+    [Tooltip("Drag the 'Rogue Printer' Name Canvas/Object here.")]
+    [SerializeField] private GameObject _enemyNameLabel;
+
     [Header("Dialogue UI")]
     [SerializeField] private GameObject _dialogueCanvas;
     [SerializeField] private TMP_Text _dialogueText;
@@ -36,6 +40,9 @@ public class CutsceneTrigger : MonoBehaviour
     {
         if (_dialogueCanvas != null) _dialogueCanvas.SetActive(false);
         if (_mainCamera == null) _mainCamera = Camera.main;
+
+        // Ensure the enemy label is hidden at the start
+        if (_enemyNameLabel != null) _enemyNameLabel.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -96,6 +103,7 @@ public class CutsceneTrigger : MonoBehaviour
 
                 Vector3 targetPos = new Vector3(currentTarget.position.x, currentTarget.position.y, startPos.z);
 
+                // Pan to the target
                 while (Vector3.Distance(_mainCamera.transform.position, targetPos) > 0.1f)
                 {
                     _mainCamera.transform.position = Vector3.MoveTowards(_mainCamera.transform.position, targetPos, _panSpeed * Time.unscaledDeltaTime);
@@ -103,10 +111,16 @@ public class CutsceneTrigger : MonoBehaviour
                 }
                 _mainCamera.transform.position = targetPos;
 
+                // --- NEW: SHOW ENEMY LABEL ---
+                // We show the label once the camera arrives at the target
+                if (_enemyNameLabel != null) _enemyNameLabel.SetActive(true);
+
+                // Wait the 3 seconds while looking at the target
                 yield return new WaitForSecondsRealtime(_viewWaitTime);
             }
         }
 
+        // --- DIALOGUE SECTION ---
         if (_dialogueSequences != null && _dialogueSequences.Length > 0)
         {
             if (_dialogueCanvas != null) _dialogueCanvas.SetActive(true);
@@ -121,12 +135,17 @@ public class CutsceneTrigger : MonoBehaviour
             if (_dialogueCanvas != null) _dialogueCanvas.SetActive(false);
         }
 
+        // Return camera to player
         Vector3 playerPos = new Vector3(playerTransform.position.x, playerTransform.position.y, startPos.z);
         while (Vector3.Distance(_mainCamera.transform.position, playerPos) > 0.1f)
         {
             _mainCamera.transform.position = Vector3.MoveTowards(_mainCamera.transform.position, playerPos, _panSpeed * Time.unscaledDeltaTime);
             yield return null;
         }
+
+        // --- CLEAN UP ---
+        // Hide the enemy label now that the cutscene is over
+        if (_enemyNameLabel != null) _enemyNameLabel.SetActive(false);
 
         if (_cameraFollowScript != null) _cameraFollowScript.enabled = true;
         Time.timeScale = 1f;
@@ -150,7 +169,6 @@ public class CutsceneTrigger : MonoBehaviour
 
             while (_waitingForInput)
             {
-                // NEW: Only accept the Spacebar if the game is NOT paused
                 if (Input.GetKeyDown(KeyCode.Space) && (GameManager.Instance == null || !GameManager.Instance.IsPaused))
                 {
                     if (_isTyping)
@@ -189,7 +207,6 @@ public class CutsceneTrigger : MonoBehaviour
 
         for (int i = firstChar; i <= lastChar; i++)
         {
-            // NEW: If the game gets paused mid-sentence, wait right here!
             while (GameManager.Instance != null && GameManager.Instance.IsPaused)
             {
                 yield return null;
