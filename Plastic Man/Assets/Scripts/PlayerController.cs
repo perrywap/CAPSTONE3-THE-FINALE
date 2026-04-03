@@ -45,8 +45,16 @@ public class PlayerController : MonoBehaviour
 
         if (animator != null)
         {
-            float angle = PlayerLookAt.Instance.angle;
-            animator.SetFloat("angle", angle);
+            if (this.GetComponent<PlayerHealth>().isDead)
+            {
+                animator.SetTrigger("Die");
+                return;
+            }
+            else
+            {
+                float angle = PlayerLookAt.Instance.angle;
+                animator.SetFloat("angle", angle);
+            }    
         }
 
         if (cooldownTimer > 0)

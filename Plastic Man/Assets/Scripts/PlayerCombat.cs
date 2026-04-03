@@ -16,12 +16,17 @@ public class PlayerCombat : MonoBehaviour
     private void Update()
     {
         if (NPCDialogue.IsTalking) return;
+        if(PlayerHealth.Instance.isDead ) return;
 
         if (equippedWeapon == null)
             return;
 
-        HandleAiming();
-        HandleShooting();
+        if (equippedWeapon.GetComponent<WeaponBase>() != null)
+        {
+            HandleAiming();
+            HandleShooting();
+        }
+
     }
 
     private void HandleAiming()
@@ -44,11 +49,8 @@ public class PlayerCombat : MonoBehaviour
 
     private void HandleShooting()
     {
-        if (Input.GetMouseButton(0))
-        {
-            Vector3 mousePosition = GetMouseWorldPosition();
-            equippedWeapon.GetComponent<WeaponBase>().TryFire(mousePosition);
-        }
+        Vector3 mousePosition = GetMouseWorldPosition();
+        equippedWeapon.GetComponent<WeaponBase>().HandleInput(mousePosition);
     }
 
     public void ChangeWeapon(GameObject weap)
@@ -56,8 +58,12 @@ public class PlayerCombat : MonoBehaviour
         if (equippedWeapon != null)
             Destroy(equippedWeapon.gameObject);
 
-        equippedWeapon = Instantiate(weap, aimTransform);
-        equippedWeapon.transform.parent = aimTransform;
+        if(weap != null)
+        {
+            equippedWeapon = Instantiate(weap, aimTransform);
+            equippedWeapon.transform.parent = aimTransform;
+        }
+        
     }
 
     #region MouseWorldPosition

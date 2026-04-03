@@ -9,40 +9,44 @@ public class LootItem : MonoBehaviour
     [SerializeField] private int _value = 1;
 
     [Header("Audio")]
-    [SerializeField] private AudioClip pickupSfx; 
+    [SerializeField] private AudioClip pickupSfx;
     [SerializeField] private float pickupVolume = 0.7f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Player touched loot. Checking Inventory...");
+            LootInventory inventory = LootInventory.Instance;
 
-            if (LootInventory.Instance != null)
+            if (inventory == null)
             {
-                LootInventory.Instance.AddPlastic(type, _value);
-                Debug.Log("Success: Inventory found and updated.");
+                inventory = Object.FindFirstObjectByType<LootInventory>();
+            }
+
+            if (inventory != null)
+            {
+                inventory.AddPlastic(type, _value);
+                PlayPickupSound();
+                Destroy(gameObject);
             }
             else
             {
-                Debug.LogError("FAIL: Inventory.Instance is NULL!");
+                Debug.LogError("FAIL: No LootInventory found in scene!");
             }
+        }
+    }
 
-         
-            if (pickupSfx != null)
-            {
-             
-                if (SfxManager.instance != null)
-                {
-                    SfxManager.instance.PlaySFX(pickupSfx, pickupVolume);
-                }
-                else
-                {            
-                    AudioSource.PlayClipAtPoint(pickupSfx, transform.position, pickupVolume);
-                }
-            }
+    private void PlayPickupSound()
+    {
+        if (pickupSfx == null) return;
 
-            Destroy(gameObject);
+        if (SfxManager.instance != null)
+        {
+            SfxManager.instance.PlaySFX(pickupSfx, pickupVolume);
+        }
+        else
+        {
+            AudioSource.PlayClipAtPoint(pickupSfx, transform.position, pickupVolume);
         }
     }
 }
