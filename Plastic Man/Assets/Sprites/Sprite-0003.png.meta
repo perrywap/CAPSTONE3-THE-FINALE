@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 925f1c9cb2b036c49bef5d9060c8fd34
+guid: 3568571c51365804cb85baefd43eeb63
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -760761581663632337
-    second: Roomba-Bullet copy_0
+      213: -5643105228771564274
+    second: Sprite-0003_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Roomba-Bullet copy_0
+      name: Sprite-0003_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 19
-        width: 52
-        height: 28
+        x: 0
+        y: 0
+        width: 128
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f24cc264f5b3175f0800000000000000
-      internalID: -760761581663632337
+      spriteID: e05ebe061b9afa1b0800000000000000
+      internalID: -5643105228771564274
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e777fedb19f3eed479188c45ad31897e
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +133,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Roomba-Bullet copy_0: -760761581663632337
+      Sprite-0003_0: -5643105228771564274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -22,10 +22,21 @@ public class Sword : WeaponBase
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(hitPosition, hitRadius, hitLayer);
 
+        //foreach (Collider2D hit in hits)
+        //{
+        //    hit.GetComponent<EnemyHealth>().TakeDamage(damage);
+        //    Debug.Log("Slashed");
+        //}
+
         foreach (Collider2D hit in hits)
         {
-            hit.GetComponent<EnemyHealth>().TakeDamage(damage);
-            Debug.Log("Slashed");
+            EnemyHealth enemy = hit.GetComponentInParent<EnemyHealth>();
+
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+                Debug.Log("Slashed");
+            }
         }
 
         Debug.DrawLine(origin, origin + direction.normalized * range, Color.red, 0.5f);
