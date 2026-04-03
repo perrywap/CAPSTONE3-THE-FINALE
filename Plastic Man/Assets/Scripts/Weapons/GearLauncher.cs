@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NerfGun : WeaponBase
+public class GearLauncher : WeaponBase
 {
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private Transform muzzle;
@@ -8,27 +8,23 @@ public class NerfGun : WeaponBase
     [SerializeField] private Transform muzzleFlashPos;
 
     [Header("Audio")]
-    [SerializeField] private AudioClip shootSfx; 
+    [SerializeField] private AudioClip shootSfx;
     [SerializeField] private float shootVolume = 0.5f;
 
     protected override void Fire(Vector3 origin, Vector3 direction)
     {
-        CameraShake.Instance.RifleShake();
-
-        // Play shooting sound
         if (shootSfx != null)
-        {
             SfxManager.instance.PlaySFX(shootSfx, shootVolume);
+
+        if (muzzleFlashPrefab != null && muzzleFlashPos != null)
+        {
+            GameObject flash = Instantiate(muzzleFlashPrefab, muzzleFlashPos.position, muzzleFlashPos.rotation);
+            Destroy(flash, 0.05f);
         }
 
-        // Muzzle flash
-        GameObject flash = Instantiate(muzzleFlashPrefab, muzzleFlashPos.position, muzzleFlashPos.rotation);
-        Destroy(flash, 0.05f);
+        GameObject gear = Instantiate(projectilePrefab, muzzle.position, muzzle.rotation);
 
-        // Spawn projectile
-        GameObject bullet = Instantiate(projectilePrefab, muzzle.position, muzzle.rotation);
-
-        Projectile2D projectile = bullet.GetComponent<Projectile2D>();
+        Projectile2D projectile = gear.GetComponent<Projectile2D>();
         if (projectile != null)
         {
             projectile.damage = damage;
