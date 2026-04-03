@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
 public class EnemyAI : MonoBehaviour
@@ -14,6 +15,10 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private GameObject _player;
 
     [SerializeField] private LayerMask _obstacleMask;
+
+    [Header("Lunge Settings")]
+    [SerializeField] private float _lungeForce = 12f;
+    [SerializeField] private float _lungeDuration = 0.25f;
 
     [Header("Combat")]
     [SerializeField] private GameObject _hitbox;
@@ -57,7 +62,6 @@ public class EnemyAI : MonoBehaviour
         if (_hitbox != null)
             _hitbox.SetActive(false);
 
-        // Start initial audio loop
         PlayStateAudio(_currentState);
     }
 
@@ -130,8 +134,8 @@ public class EnemyAI : MonoBehaviour
 
         if (_audioSource.clip != null)
         {
-            _audioSource.loop = (state != State.Attack); // Loop for Wander & Chase, play once for Attack
-            if (!_audioSource.isPlaying || _audioSource.clip != attackClip) // prevent restarting loop unnecessarily
+            _audioSource.loop = (state != State.Attack);
+            if (!_audioSource.isPlaying || _audioSource.clip != attackClip)
                 _audioSource.Play();
         }
     }
@@ -142,12 +146,29 @@ public class EnemyAI : MonoBehaviour
         _attackTimer = _attackCooldown;
         _agent.isStopped = true;
         _agent.velocity = Vector3.zero;
+
         _animator.SetTrigger("AttackSlime");
 
-        // Play attack once
         if (attackClip != null)
         {
             _audioSource.PlayOneShot(attackClip);
+        }
+
+        StartCoroutine(LungeRoutine());
+    }
+
+    private IEnumerator LungeRoutine()
+    {
+        if (_player == null) yield break;
+
+        Vector3 lungeDir = (_player.transform.position - transform.position).normalized;
+        float elapsed = 0f;
+
+        while (elapsed < _lungeDuration)
+        {
+            transform.position += lungeDir * _lungeForce * Time.deltaTime;
+            elapsed += Time.deltaTime;
+            yield return null;
         }
     }
 
@@ -178,6 +199,7 @@ public class EnemyAI : MonoBehaviour
 
     private void FlipSprite()
     {
+        if (_isAttacking) return;
         if (_agent.velocity.x > 0.1f) _spriteRenderer.flipX = false;
         else if (_agent.velocity.x < -0.1f) _spriteRenderer.flipX = true;
     }
