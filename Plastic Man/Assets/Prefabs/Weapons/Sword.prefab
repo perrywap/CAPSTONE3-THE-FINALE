@@ -105,8 +105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98511c2a1b17fb40ba3c9b9232f2182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sword
-  fireRate: 0.2
-  damage: 1000
+  fireRate: 0.5
+  damage: 20
+  isAutomatic: 0
   range: 1.5
   hitLayer:
     serializedVersion: 2

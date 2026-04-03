@@ -175,12 +175,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 591
-        width: 59
-        height: 99
+        x: 0
+        y: 576
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_1
       rect:
         serializedVersion: 2
-        x: 180
-        y: 590
-        width: 57
-        height: 97
+        x: 160
+        y: 576
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_2
       rect:
         serializedVersion: 2
-        x: 342
-        y: 589
-        width: 66
-        height: 97
+        x: 320
+        y: 576
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_3
       rect:
         serializedVersion: 2
-        x: 504
-        y: 589
-        width: 67
-        height: 96
+        x: 480
+        y: 576
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,12 +263,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_4
       rect:
         serializedVersion: 2
-        x: 665
-        y: 590
-        width: 68
-        height: 95
+        x: 640
+        y: 576
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -285,12 +285,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_5
       rect:
         serializedVersion: 2
-        x: 26
-        y: 446
-        width: 75
-        height: 95
+        x: 0
+        y: 432
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -307,12 +307,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_6
       rect:
         serializedVersion: 2
-        x: 186
-        y: 445
-        width: 84
-        height: 96
+        x: 160
+        y: 432
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -329,12 +329,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_7
       rect:
         serializedVersion: 2
-        x: 345
-        y: 446
-        width: 88
-        height: 95
+        x: 320
+        y: 432
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -351,12 +351,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_8
       rect:
         serializedVersion: 2
-        x: 505
-        y: 446
-        width: 92
-        height: 95
+        x: 480
+        y: 432
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -373,12 +373,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_9
       rect:
         serializedVersion: 2
-        x: 666
-        y: 446
-        width: 65
-        height: 94
+        x: 640
+        y: 432
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -395,12 +395,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_10
       rect:
         serializedVersion: 2
-        x: 25
-        y: 302
-        width: 60
-        height: 94
+        x: 0
+        y: 288
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -417,12 +417,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_11
       rect:
         serializedVersion: 2
-        x: 184
-        y: 301
-        width: 62
-        height: 96
+        x: 160
+        y: 288
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -439,12 +439,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_12
       rect:
         serializedVersion: 2
-        x: 344
-        y: 301
-        width: 62
-        height: 96
+        x: 320
+        y: 288
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -461,12 +461,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_13
       rect:
         serializedVersion: 2
-        x: 504
-        y: 301
-        width: 62
-        height: 96
+        x: 480
+        y: 288
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -483,12 +483,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_14
       rect:
         serializedVersion: 2
-        x: 656
-        y: 298
-        width: 101
-        height: 100
+        x: 640
+        y: 288
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -505,12 +505,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_15
       rect:
         serializedVersion: 2
-        x: 22
-        y: 154
-        width: 138
-        height: 98
+        x: 0
+        y: 144
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -527,12 +527,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_16
       rect:
         serializedVersion: 2
-        x: 190
-        y: 155
-        width: 130
-        height: 98
+        x: 160
+        y: 144
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -549,12 +549,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_17
       rect:
         serializedVersion: 2
-        x: 355
-        y: 155
-        width: 124
-        height: 98
+        x: 320
+        y: 144
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -571,12 +571,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_18
       rect:
         serializedVersion: 2
-        x: 541
-        y: 158
-        width: 94
-        height: 94
+        x: 480
+        y: 144
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -593,12 +593,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_19
       rect:
         serializedVersion: 2
-        x: 688
-        y: 155
-        width: 108
-        height: 102
+        x: 640
+        y: 144
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -615,12 +615,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_20
       rect:
         serializedVersion: 2
-        x: 38
-        y: 13
-        width: 104
-        height: 101
+        x: 0
+        y: 0
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -637,12 +637,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_21
       rect:
         serializedVersion: 2
-        x: 190
-        y: 16
-        width: 103
-        height: 102
+        x: 160
+        y: 0
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -659,12 +659,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_22
       rect:
         serializedVersion: 2
-        x: 348
-        y: 16
-        width: 90
-        height: 103
+        x: 320
+        y: 0
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -681,12 +681,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_23
       rect:
         serializedVersion: 2
-        x: 505
-        y: 15
-        width: 78
-        height: 97
+        x: 480
+        y: 0
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -703,12 +703,12 @@ TextureImporter:
       name: Boss Sword Atk Spritesheet (160 x 144)_24
       rect:
         serializedVersion: 2
-        x: 660
-        y: 15
-        width: 59
-        height: 99
+        x: 640
+        y: 0
+        width: 160
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -725,7 +725,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1a45f5579cd90e24bb1c69e766f8a62a
     internalID: 0
     vertices: []
     indices: 
@@ -733,7 +733,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":160.0,"y":144.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Boss Sword Atk Spritesheet (160 x 144)_0: -2907674519961841562
       Boss Sword Atk Spritesheet (160 x 144)_1: 8761442048821001759

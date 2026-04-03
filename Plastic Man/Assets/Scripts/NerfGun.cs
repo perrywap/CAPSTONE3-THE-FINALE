@@ -11,11 +11,6 @@ public class NerfGun : WeaponBase
     [SerializeField] private AudioClip shootSfx; 
     [SerializeField] private float shootVolume = 0.5f;
 
-    private void Update()
-    {
-        //animator.SetBool("isFiring", false);
-    }
-
     protected override void Fire(Vector3 origin, Vector3 direction)
     {
         CameraShake.Instance.RifleShake();

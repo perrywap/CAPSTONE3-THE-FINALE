@@ -29,7 +29,6 @@ public class NPCDialogue : MonoBehaviour
     private Coroutine _typingCoroutine;
     private Transform _playerTransform;
 
-    // NEW: Keeps track of whether this is the first conversation
     private bool _hasTalkedBefore = false;
 
     private void Start()
@@ -55,8 +54,6 @@ public class NPCDialogue : MonoBehaviour
                 _interactPrompt.SetActive(false);
             }
 
-            // If we are NOT frozen (meaning this is the 2nd+ conversation),
-            // we should allow the player to walk away and close the dialogue.
             if (_hasTalkedBefore && _playerTransform != null)
             {
                 float distance = Vector2.Distance(transform.position, _playerTransform.position);
@@ -104,7 +101,6 @@ public class NPCDialogue : MonoBehaviour
 
     private void StartDialogueSequence()
     {
-        // NEW: Only freeze the game if this is the FIRST time talking
         if (!_hasTalkedBefore)
         {
             Time.timeScale = 0f;
@@ -190,12 +186,11 @@ public class NPCDialogue : MonoBehaviour
         if (_speechBubbleCanvas != null) _speechBubbleCanvas.SetActive(false);
         _isDialogueActive = false;
 
-        // NEW: Only unfreeze the game and remove the blocker if this was the FIRST conversation
         if (!_hasTalkedBefore)
         {
             Time.timeScale = 1f;
             IsTalking = false;
-            _hasTalkedBefore = true; // Mark that we have finished the first conversation!
+            _hasTalkedBefore = true;
 
             if (_invisibleBlocker != null)
             {

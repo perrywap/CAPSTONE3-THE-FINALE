@@ -14,7 +14,6 @@ public class LootInventory : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            
         }
         else if (Instance != this)
         {
@@ -37,6 +36,6 @@ public class LootInventory : MonoBehaviour
                 break;
         }
 
-        Debug.Log($"Inventory added {amount} of {type}. New total: {polyethyleneCount}");
+        Debug.Log($"Inventory added {amount} of {type}. PE: {polyethyleneCount}, AC: {acrylicCount}, PC: {polycarbonateCount}");
     }
 }
