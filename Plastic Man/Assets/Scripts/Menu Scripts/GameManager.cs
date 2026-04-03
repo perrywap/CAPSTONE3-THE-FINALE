@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CutsceneTrigger _endLevelCutscene;
 
     private bool _isPaused = false;
+    public bool IsPaused { get { return _isPaused; } }
     private bool _isGameOver = false;
     private bool _isGameCleared = false;
 
@@ -75,7 +76,11 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Time.timeScale = 1f;
+            if (!NPCDialogue.IsTalking)
+            {
+                Time.timeScale = 1f;
+            }
+
             _pausePanel.SetActive(false);
         }
     }
@@ -104,7 +109,12 @@ public class GameManager : MonoBehaviour
     public void ResumeGame()
     {
         _isPaused = false;
-        Time.timeScale = 1f;
+
+        if (!NPCDialogue.IsTalking)
+        {
+            Time.timeScale = 1f;
+        }
+
         _pausePanel.SetActive(false);
     }
 

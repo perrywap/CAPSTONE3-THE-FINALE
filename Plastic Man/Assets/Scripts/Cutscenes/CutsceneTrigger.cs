@@ -150,7 +150,8 @@ public class CutsceneTrigger : MonoBehaviour
 
             while (_waitingForInput)
             {
-                if (Input.GetKeyDown(KeyCode.Space))
+                // NEW: Only accept the Spacebar if the game is NOT paused
+                if (Input.GetKeyDown(KeyCode.Space) && (GameManager.Instance == null || !GameManager.Instance.IsPaused))
                 {
                     if (_isTyping)
                     {
@@ -188,6 +189,12 @@ public class CutsceneTrigger : MonoBehaviour
 
         for (int i = firstChar; i <= lastChar; i++)
         {
+            // NEW: If the game gets paused mid-sentence, wait right here!
+            while (GameManager.Instance != null && GameManager.Instance.IsPaused)
+            {
+                yield return null;
+            }
+
             _dialogueText.maxVisibleCharacters = i + 1;
             yield return new WaitForSecondsRealtime(_typingSpeed);
         }
