@@ -7,14 +7,15 @@ public class EnemySpawner : MonoBehaviour
 {
     [Header("Spawner Settings")]
     [SerializeField] private GameObject[] _spawnAreas;
-    [SerializeField] private float _timeBetweenSpawns = 2f;
     [SerializeField] private GameObject _enemyPrefab;
-    [SerializeField] private int _maxEnemiesAtOnce = 5;
-    [SerializeField] private int _maxEnemiesAlive = 20;
+    [SerializeField] private float _timeBetweenSpawns = 2f;
+    [SerializeField] private int _maxEnemiesAlive = 15;
 
-    [Header("NavMesh Settings")]
-    [SerializeField] private float _navMeshCheckRadius = 2f;
+    [Header("Proximity Settings")]
+    [SerializeField] private float _minSpawnDistance = 10f;
+    [SerializeField] private float _maxSpawnDistance = 25f;
 
+    private Transform _playerTransform;
     private Camera _mainCamera;
     private float _lastSpawnTime;
     private List<GameObject> _activeEnemies = new List<GameObject>();
@@ -22,6 +23,8 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         _mainCamera = Camera.main;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null) _playerTransform = player.transform;
     }
 
     void Update()
@@ -31,63 +34,61 @@ public class EnemySpawner : MonoBehaviour
         if (_activeEnemies.Count < _maxEnemiesAlive && Time.time > _lastSpawnTime + _timeBetweenSpawns)
         {
             _lastSpawnTime = Time.time;
-            SpawnEnemies();
+            SpawnSingleEnemy();
         }
     }
 
-    private void SpawnEnemies()
+    private void SpawnSingleEnemy()
     {
-        int spaceLeft = _maxEnemiesAlive - _activeEnemies.Count;
-        int enemiesToSpawn = Mathf.Min(Random.Range(1, _maxEnemiesAtOnce + 1), spaceLeft);
+        if (_playerTransform == null) return;
 
-        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(_mainCamera);
+        Vector3 spawnPos = GetValidPointFromBoxes();
 
-        for (int i = 0; i < enemiesToSpawn; i++)
+        if (spawnPos != Vector3.zero)
         {
-            Vector3 spawnPosition = GetValidOffScreenPoint(planes);
-
-            if (spawnPosition != Vector3.right * 9999f)
-            {
-                GameObject enemy = Instantiate(_enemyPrefab, spawnPosition, Quaternion.identity);
-                _activeEnemies.Add(enemy);
-            }
+            GameObject enemy = Instantiate(_enemyPrefab, spawnPos, Quaternion.identity);
+            _activeEnemies.Add(enemy);
         }
     }
 
-    private Vector3 GetValidOffScreenPoint(Plane[] planes)
+    private Vector3 GetValidPointFromBoxes()
     {
-        for (int attempt = 0; attempt < 10; attempt++)
+        for (int i = 0; i < 10; i++)
         {
-            GameObject areaToUse = _spawnAreas[Random.Range(0, _spawnAreas.Length)];
-            Collider2D areaCollider = areaToUse.GetComponent<Collider2D>();
-            Bounds bounds = areaCollider.bounds;
+            GameObject randomArea = _spawnAreas[Random.Range(0, _spawnAreas.Length)];
+            Collider2D col = randomArea.GetComponent<Collider2D>();
 
+            if (col == null) continue;
+
+            Bounds b = col.bounds;
             Vector3 randomPoint = new Vector3(
-                Random.Range(bounds.min.x, bounds.max.x),
-                Random.Range(bounds.min.y, bounds.max.y),
+                Random.Range(b.min.x, b.max.x),
+                Random.Range(b.min.y, b.max.y),
                 0f
             );
 
-            if (!GeometryUtility.TestPlanesAABB(planes, new Bounds(randomPoint, Vector3.one)))
+            float distToPlayer = Vector2.Distance(randomPoint, _playerTransform.position);
+
+            if (distToPlayer >= _minSpawnDistance && distToPlayer <= _maxSpawnDistance)
             {
-                NavMeshHit hit;
-                if (NavMesh.SamplePosition(randomPoint, out hit, _navMeshCheckRadius, NavMesh.AllAreas))
+                Vector3 screenPoint = _mainCamera.WorldToViewportPoint(randomPoint);
+                bool isOffScreen = screenPoint.x < 0 || screenPoint.x > 1 || screenPoint.y < 0 || screenPoint.y > 1;
+
+                if (isOffScreen)
                 {
-                    Vector3 finalPos = hit.position;
-                    finalPos.z = 0f;
-                    return finalPos;
+                    NavMeshHit hit;
+                    if (NavMesh.SamplePosition(randomPoint, out hit, 2f, NavMesh.AllAreas))
+                    {
+                        return hit.position;
+                    }
                 }
             }
         }
-
-        return Vector3.right * 9999f;
+        return Vector3.zero;
     }
 
     public void RemoveEnemyFromList(GameObject enemy)
     {
-        if (_activeEnemies.Contains(enemy))
-        {
-            _activeEnemies.Remove(enemy);
-        }
+        if (_activeEnemies.Contains(enemy)) _activeEnemies.Remove(enemy);
     }
 }

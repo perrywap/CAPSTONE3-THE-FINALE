@@ -17,17 +17,26 @@ public class Sword : WeaponBase
             SfxManager.instance.PlaySFX(swingSfx, swingVolume);
         }
 
-        animator.SetTrigger("swing");
-
         Vector3 hitPosition = origin + direction.normalized * range / 2f;
         float hitRadius = range / 2f;
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(hitPosition, hitRadius, hitLayer);
 
+        //foreach (Collider2D hit in hits)
+        //{
+        //    hit.GetComponent<EnemyHealth>().TakeDamage(damage);
+        //    Debug.Log("Slashed");
+        //}
+
         foreach (Collider2D hit in hits)
         {
-            hit.GetComponent<EnemyHealth>().TakeDamage(damage);
-            Debug.Log("Slashed");
+            EnemyHealth enemy = hit.GetComponentInParent<EnemyHealth>();
+
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+                Debug.Log("Slashed");
+            }
         }
 
         Debug.DrawLine(origin, origin + direction.normalized * range, Color.red, 0.5f);

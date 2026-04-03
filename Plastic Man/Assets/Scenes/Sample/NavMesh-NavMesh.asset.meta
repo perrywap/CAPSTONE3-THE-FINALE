@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Plastic Man/Assets/Scenes/Level2/NavMesh-NavMesh.asset.meta
+guid: dd96abead3ec17042a94c1766830cf51
+========
 guid: d49327b3fbd550e488fd5bcd2620f817
+>>>>>>>> dev-perry:Plastic Man/Assets/Scenes/Sample/NavMesh-NavMesh.asset.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 23800000
