@@ -28472,6 +28472,10 @@ PrefabInstance:
       propertyPath: _healthBarFill
       value: 
       objectReference: {fileID: 785014179}
+    - target: {fileID: 3260932154076827769, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
+      propertyPath: dashSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 8b48abd89bd7eec47bc05cdc51841a31, type: 3}
     - target: {fileID: 3900678631590910362, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: m_LocalPosition.x
       value: -56.14
@@ -28512,45 +28516,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4014709433439507730, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7534939533880897903, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7778651085268212264, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 2792519503782355388, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
-    - {fileID: 3188626055079443679, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7778651085268212264, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
-      insertIndex: 6
-      addedObject: {fileID: 1165001037540766434}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
---- !u!1 &1165001037540766433 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7778651085268212264, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
-  m_PrefabInstance: {fileID: 1165001037540766432}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1165001037540766434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165001037540766433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8bf78d020ee445449be1de42a7ae331, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player
 --- !u!1001 &4772693535415152735
 PrefabInstance:
   m_ObjectHideFlags: 0
