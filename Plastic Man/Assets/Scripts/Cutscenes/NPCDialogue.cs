@@ -237,29 +237,20 @@ public class NPCDialogue : MonoBehaviour
                 StartCoroutine(DyingLightEffect());
             }
 
-            // --- BULLETPROOF ANIMATED BLOCKER LOGIC ---
+            // --- UNIFIED DOOR CONTROLLER LOGIC ---
             if (_invisibleBlocker != null)
             {
-                Animator blockerAnim = _invisibleBlocker.GetComponent<Animator>();
+                // Look for our new DoorController script on the blocker
+                DoorController door = _invisibleBlocker.GetComponent<DoorController>();
 
-                if (blockerAnim != null)
+                if (door != null)
                 {
-                    blockerAnim.SetTrigger("OpenGate");
-
-                    Collider2D[] allColliders = _invisibleBlocker.GetComponentsInChildren<Collider2D>();
-                    foreach (Collider2D col in allColliders)
-                    {
-                        col.enabled = false;
-                    }
-
-                    UnityEngine.AI.NavMeshObstacle navObstacle = _invisibleBlocker.GetComponentInChildren<UnityEngine.AI.NavMeshObstacle>();
-                    if (navObstacle != null)
-                    {
-                        navObstacle.enabled = false;
-                    }
+                    // Tell the door to open itself!
+                    door.OpenDoor();
                 }
                 else
                 {
+                    // Fallback just in case you forgot to attach the DoorController script
                     _invisibleBlocker.SetActive(false);
                 }
             }

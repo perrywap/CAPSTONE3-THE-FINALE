@@ -1,48 +1,71 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
+
+[System.Serializable]
+public struct CutsceneStop
+{
+    [Header("Where to look")]
+    public Transform TargetLocation;
+
+    [Header("Timing")]
+    [Tooltip("How many seconds to look at this target BEFORE showing dialogue.")]
+    public float ViewWaitTime;
+
+    [Header("Optional Target Label")]
+    public GameObject TargetNameLabel;
+
+    [Header("Local Speech Bubble")]
+    public GameObject LocalDialogueCanvas;
+    public TMP_Text LocalDialogueText;
+
+    [Header("Dialogue for this Stop")]
+    [TextArea(3, 5)]
+    public string[] DialogueLines;
+
+    [Header("Cutscene Events")]
+    [Tooltip("What should happen right AFTER the dialogue finishes at this stop?")]
+    public UnityEvent OnDialogueFinished;
+
+    [Tooltip("How many seconds to wait AFTER the event triggers before moving the camera away?")]
+    public float WaitAfterEvent; // <-- NEW: Lets you watch the door open!
+}
 
 public class CutsceneTrigger : MonoBehaviour
 {
     [Header("Camera Pan Settings")]
     [SerializeField] private Camera _mainCamera;
-    [Tooltip("Drag the script that usually makes your camera follow the player in here so we can turn it off temporarily!")]
     [SerializeField] private MonoBehaviour _cameraFollowScript;
-
-    [Tooltip("Add as many targets as you want! The camera will visit them in order.")]
-    [SerializeField] private Transform[] _targetLocations;
-
     [SerializeField] private float _initialDelay = 0.5f;
     [SerializeField] private float _panSpeed = 15f;
-    [SerializeField] private float _viewWaitTime = 3f;
 
-    [Header("Enemy Label Settings")]
-    [Tooltip("Drag the 'Rogue Printer' Name Canvas/Object here.")]
-    [SerializeField] private GameObject _enemyNameLabel;
+    [Header("The Cutscene Timeline")]
+    [SerializeField] private CutsceneStop[] _cutsceneStops;
 
-    [Header("Dialogue UI")]
-    [SerializeField] private GameObject _dialogueCanvas;
-    [SerializeField] private TMP_Text _dialogueText;
-
-    [Header("Dialogue Text")]
-    [TextArea(3, 5)]
-    [SerializeField] private string[] _dialogueSequences;
+    [Header("Dialogue Settings")]
     [SerializeField] private float _typingSpeed = 0.05f;
 
     private bool _hasTriggered = false;
     private bool _isTyping = false;
     private bool _waitingForInput = false;
-    private int _currentSequenceIndex = 0;
     private int _currentTMPPage = 1;
     private Coroutine _typingCoroutine;
 
+    private TMP_Text _activeDialogueText;
+
     private void Start()
     {
-        if (_dialogueCanvas != null) _dialogueCanvas.SetActive(false);
         if (_mainCamera == null) _mainCamera = Camera.main;
 
-        // Ensure the enemy label is hidden at the start
-        if (_enemyNameLabel != null) _enemyNameLabel.SetActive(false);
+        if (_cutsceneStops != null)
+        {
+            foreach (CutsceneStop stop in _cutsceneStops)
+            {
+                if (stop.TargetNameLabel != null) stop.TargetNameLabel.SetActive(false);
+                if (stop.LocalDialogueCanvas != null) stop.LocalDialogueCanvas.SetActive(false);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -94,58 +117,63 @@ public class CutsceneTrigger : MonoBehaviour
 
         Vector3 startPos = _mainCamera.transform.position;
 
-        if (_targetLocations != null && _targetLocations.Length > 0)
+        if (_cutsceneStops != null && _cutsceneStops.Length > 0)
         {
-            for (int i = 0; i < _targetLocations.Length; i++)
+            for (int i = 0; i < _cutsceneStops.Length; i++)
             {
-                Transform currentTarget = _targetLocations[i];
-                if (currentTarget == null) continue;
+                CutsceneStop currentStop = _cutsceneStops[i];
 
-                Vector3 targetPos = new Vector3(currentTarget.position.x, currentTarget.position.y, startPos.z);
-
-                // Pan to the target
-                while (Vector3.Distance(_mainCamera.transform.position, targetPos) > 0.1f)
+                // 1. Pan to the target
+                if (currentStop.TargetLocation != null)
                 {
-                    _mainCamera.transform.position = Vector3.MoveTowards(_mainCamera.transform.position, targetPos, _panSpeed * Time.unscaledDeltaTime);
-                    yield return null;
+                    Vector3 targetPos = new Vector3(currentStop.TargetLocation.position.x, currentStop.TargetLocation.position.y, startPos.z);
+                    while (Vector3.Distance(_mainCamera.transform.position, targetPos) > 0.1f)
+                    {
+                        _mainCamera.transform.position = Vector3.MoveTowards(_mainCamera.transform.position, targetPos, _panSpeed * Time.unscaledDeltaTime);
+                        yield return null;
+                    }
+                    _mainCamera.transform.position = targetPos;
                 }
-                _mainCamera.transform.position = targetPos;
 
-                // --- NEW: SHOW ENEMY LABEL ---
-                // We show the label once the camera arrives at the target
-                if (_enemyNameLabel != null) _enemyNameLabel.SetActive(true);
+                if (currentStop.TargetNameLabel != null) currentStop.TargetNameLabel.SetActive(true);
 
-                // Wait the 3 seconds while looking at the target
-                yield return new WaitForSecondsRealtime(_viewWaitTime);
+                // Wait BEFORE dialogue
+                yield return new WaitForSecondsRealtime(currentStop.ViewWaitTime);
+
+                // 2. Play Dialogue
+                if (currentStop.DialogueLines != null && currentStop.DialogueLines.Length > 0 && currentStop.LocalDialogueText != null)
+                {
+                    _activeDialogueText = currentStop.LocalDialogueText;
+
+                    if (currentStop.LocalDialogueCanvas != null) currentStop.LocalDialogueCanvas.SetActive(true);
+
+                    for (int j = 0; j < currentStop.DialogueLines.Length; j++)
+                    {
+                        yield return StartCoroutine(PlayDialogueSequence(currentStop.DialogueLines[j]));
+                    }
+
+                    if (currentStop.LocalDialogueCanvas != null) currentStop.LocalDialogueCanvas.SetActive(false);
+                }
+
+                if (currentStop.TargetNameLabel != null) currentStop.TargetNameLabel.SetActive(false);
+
+                // 3. Trigger the Door
+                currentStop.OnDialogueFinished?.Invoke();
+
+                // --- NEW: Wait so the player can watch the door open! ---
+                if (currentStop.WaitAfterEvent > 0f)
+                {
+                    yield return new WaitForSecondsRealtime(currentStop.WaitAfterEvent);
+                }
             }
         }
 
-        // --- DIALOGUE SECTION ---
-        if (_dialogueSequences != null && _dialogueSequences.Length > 0)
-        {
-            if (_dialogueCanvas != null) _dialogueCanvas.SetActive(true);
-            _currentSequenceIndex = 0;
-
-            while (_currentSequenceIndex < _dialogueSequences.Length)
-            {
-                yield return StartCoroutine(PlayDialogueSequence());
-                _currentSequenceIndex++;
-            }
-
-            if (_dialogueCanvas != null) _dialogueCanvas.SetActive(false);
-        }
-
-        // Return camera to player
         Vector3 playerPos = new Vector3(playerTransform.position.x, playerTransform.position.y, startPos.z);
         while (Vector3.Distance(_mainCamera.transform.position, playerPos) > 0.1f)
         {
             _mainCamera.transform.position = Vector3.MoveTowards(_mainCamera.transform.position, playerPos, _panSpeed * Time.unscaledDeltaTime);
             yield return null;
         }
-
-        // --- CLEAN UP ---
-        // Hide the enemy label now that the cutscene is over
-        if (_enemyNameLabel != null) _enemyNameLabel.SetActive(false);
 
         if (_cameraFollowScript != null) _cameraFollowScript.enabled = true;
         Time.timeScale = 1f;
@@ -154,10 +182,10 @@ public class CutsceneTrigger : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private IEnumerator PlayDialogueSequence()
+    private IEnumerator PlayDialogueSequence(string dialogueToPlay)
     {
-        _dialogueText.text = _dialogueSequences[_currentSequenceIndex];
-        _dialogueText.ForceMeshUpdate();
+        _activeDialogueText.text = dialogueToPlay;
+        _activeDialogueText.ForceMeshUpdate();
         _currentTMPPage = 1;
 
         bool sequenceFinished = false;
@@ -177,7 +205,7 @@ public class CutsceneTrigger : MonoBehaviour
                     }
                     else
                     {
-                        if (_currentTMPPage < _dialogueText.textInfo.pageCount)
+                        if (_currentTMPPage < _activeDialogueText.textInfo.pageCount)
                         {
                             _currentTMPPage++;
                             _typingCoroutine = StartCoroutine(TypeCurrentPage());
@@ -197,13 +225,13 @@ public class CutsceneTrigger : MonoBehaviour
     private IEnumerator TypeCurrentPage()
     {
         _isTyping = true;
-        _dialogueText.pageToDisplay = _currentTMPPage;
+        _activeDialogueText.pageToDisplay = _currentTMPPage;
 
         int pageIndex = _currentTMPPage - 1;
-        int firstChar = _dialogueText.textInfo.pageInfo[pageIndex].firstCharacterIndex;
-        int lastChar = _dialogueText.textInfo.pageInfo[pageIndex].lastCharacterIndex;
+        int firstChar = _activeDialogueText.textInfo.pageInfo[pageIndex].firstCharacterIndex;
+        int lastChar = _activeDialogueText.textInfo.pageInfo[pageIndex].lastCharacterIndex;
 
-        _dialogueText.maxVisibleCharacters = firstChar;
+        _activeDialogueText.maxVisibleCharacters = firstChar;
 
         for (int i = firstChar; i <= lastChar; i++)
         {
@@ -212,7 +240,7 @@ public class CutsceneTrigger : MonoBehaviour
                 yield return null;
             }
 
-            _dialogueText.maxVisibleCharacters = i + 1;
+            _activeDialogueText.maxVisibleCharacters = i + 1;
             yield return new WaitForSecondsRealtime(_typingSpeed);
         }
 
@@ -223,7 +251,7 @@ public class CutsceneTrigger : MonoBehaviour
     {
         if (_typingCoroutine != null) StopCoroutine(_typingCoroutine);
         int pageIndex = _currentTMPPage - 1;
-        _dialogueText.maxVisibleCharacters = _dialogueText.textInfo.pageInfo[pageIndex].lastCharacterIndex + 1;
+        _activeDialogueText.maxVisibleCharacters = _activeDialogueText.textInfo.pageInfo[pageIndex].lastCharacterIndex + 1;
         _isTyping = false;
     }
 }
