@@ -1,39 +1,3 @@
-//using System.Collections.Generic;
-//using UnityEngine;
-//using UnityEngine.UI;
-
-//public class PrinterManager : MonoBehaviour
-//{
-
-//    [SerializeField] private Transform printedSlot;
-//    [SerializeField] private Transform moduleSlot;
-//    [SerializeField] private Transform filamentSlot;
-
-//    [SerializeField] private SpriteRenderer bpSprite;
-//    [SerializeField] private List<FilamentCost> costs;
-//    [SerializeField] private GameObject weapPrefab;
-
-//    private Animator animator;
-
-//    private void Start()
-//    {
-//        animator = GetComponent<Animator>();
-//    }
-
-//    public void Print()
-//    {
-//        // this should check LootInventory
-//    }
-
-//    public void OnBlueprintClicked(ModuleData data)
-//    {
-//        bpSprite.sprite = data.bpSprite;
-//        costs = new List<FilamentCost>();
-//        costs = data.FilamentCosts;
-//        weapPrefab = data.PrintedPrefab;
-//    }
-//}
-
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
