@@ -1,0 +1,1521 @@
+fileFormatVersion: 2
+guid: 34e2f18aed83ecf4d91c1a3b673691e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1276222512448329917
+    second: Worldlvl04_Stalls_0
+  - first:
+      213: 921200540517462619
+    second: Worldlvl04_Stalls_1
+  - first:
+      213: 6624249846726718856
+    second: Worldlvl04_Stalls_2
+  - first:
+      213: -7821208599872439333
+    second: Worldlvl04_Stalls_3
+  - first:
+      213: -4096254898306797989
+    second: Worldlvl04_Stalls_4
+  - first:
+      213: -5927896616105769514
+    second: Worldlvl04_Stalls_5
+  - first:
+      213: -1129122973787860800
+    second: Worldlvl04_Stalls_6
+  - first:
+      213: 5164510259240470272
+    second: Worldlvl04_Stalls_7
+  - first:
+      213: 4901906834267093049
+    second: Worldlvl04_Stalls_8
+  - first:
+      213: 9052238548687035033
+    second: Worldlvl04_Stalls_9
+  - first:
+      213: -2766587295475956698
+    second: Worldlvl04_Stalls_10
+  - first:
+      213: -1072194658648551472
+    second: Worldlvl04_Stalls_11
+  - first:
+      213: 3478745877536154321
+    second: Worldlvl04_Stalls_12
+  - first:
+      213: -7657774993255786368
+    second: Worldlvl04_Stalls_13
+  - first:
+      213: 2329041383713300776
+    second: Worldlvl04_Stalls_14
+  - first:
+      213: -2202991216132068634
+    second: Worldlvl04_Stalls_15
+  - first:
+      213: 6268519771395681150
+    second: Worldlvl04_Stalls_16
+  - first:
+      213: -1339723278006534513
+    second: Worldlvl04_Stalls_17
+  - first:
+      213: 5087350396386992342
+    second: Worldlvl04_Stalls_18
+  - first:
+      213: 3788960636419549263
+    second: Worldlvl04_Stalls_19
+  - first:
+      213: 5469299338603190529
+    second: Worldlvl04_Stalls_20
+  - first:
+      213: 2946812834932907658
+    second: Worldlvl04_Stalls_21
+  - first:
+      213: -3697322080981689330
+    second: Worldlvl04_Stalls_22
+  - first:
+      213: -27572056255240638
+    second: Worldlvl04_Stalls_23
+  - first:
+      213: 3282338047009565752
+    second: Worldlvl04_Stalls_24
+  - first:
+      213: 2169809550065568678
+    second: Worldlvl04_Stalls_25
+  - first:
+      213: -6708845918196513549
+    second: Worldlvl04_Stalls_26
+  - first:
+      213: 1775291614701410372
+    second: Worldlvl04_Stalls_27
+  - first:
+      213: -3064360938894038383
+    second: Worldlvl04_Stalls_28
+  - first:
+      213: -6018489702956171646
+    second: Worldlvl04_Stalls_29
+  - first:
+      213: 875705194539355410
+    second: Worldlvl04_Stalls_30
+  - first:
+      213: 1986476926749982766
+    second: Worldlvl04_Stalls_31
+  - first:
+      213: 5832521594535573423
+    second: Worldlvl04_Stalls_32
+  - first:
+      213: -5455387687415195878
+    second: Worldlvl04_Stalls_33
+  - first:
+      213: -4757718006054692767
+    second: Worldlvl04_Stalls_34
+  - first:
+      213: 4783210447600201296
+    second: Worldlvl04_Stalls_35
+  - first:
+      213: 4292152307055928990
+    second: Worldlvl04_Stalls_36
+  - first:
+      213: -5692782216323574016
+    second: Worldlvl04_Stalls_37
+  - first:
+      213: 5451503001367833547
+    second: Worldlvl04_Stalls_38
+  - first:
+      213: -8574061925004680521
+    second: Worldlvl04_Stalls_39
+  - first:
+      213: -2518376633072899250
+    second: Worldlvl04_Stalls_40
+  - first:
+      213: 3483142615828484882
+    second: Worldlvl04_Stalls_41
+  - first:
+      213: 397437248841902498
+    second: Worldlvl04_Stalls_42
+  - first:
+      213: -1875624905598586036
+    second: Worldlvl04_Stalls_43
+  - first:
+      213: -5567257992800804789
+    second: Worldlvl04_Stalls_44
+  - first:
+      213: -4847319240982059385
+    second: Worldlvl04_Stalls_45
+  - first:
+      213: 3839718040826602076
+    second: Worldlvl04_Stalls_46
+  - first:
+      213: -7848762958054936686
+    second: Worldlvl04_Stalls_47
+  - first:
+      213: -1554085133066904463
+    second: Worldlvl04_Stalls_48
+  - first:
+      213: -2033736408645496064
+    second: Worldlvl04_Stalls_49
+  - first:
+      213: 238179758344428912
+    second: Worldlvl04_Stalls_50
+  - first:
+      213: -8231715281940716038
+    second: Worldlvl04_Stalls_51
+  - first:
+      213: -6319285199912755265
+    second: Worldlvl04_Stalls_52
+  - first:
+      213: -8789435848904632304
+    second: Worldlvl04_Stalls_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 847
+        width: 118
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347292bf262f94ee0800000000000000
+      internalID: -1276222512448329917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 847
+        width: 118
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52f078c203c8cc00800000000000000
+      internalID: 921200540517462619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_2
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 847
+        width: 118
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885f49983201eeb50800000000000000
+      internalID: 6624249846726718856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_3
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 847
+        width: 118
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb7f5a873c757390800000000000000
+      internalID: -7821208599872439333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_4
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 847
+        width: 118
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e28f47fdd2727c0800000000000000
+      internalID: -4096254898306797989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_5
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 735
+        width: 108
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d586cb5f61ebbda0800000000000000
+      internalID: -5927896616105769514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 738
+        width: 7
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c054af33ac8450f0800000000000000
+      internalID: -1129122973787860800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_7
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 735
+        width: 108
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00783e0d7b60ca740800000000000000
+      internalID: 5164510259240470272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_8
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 738
+        width: 7
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 938bc8a5b42170440800000000000000
+      internalID: 4901906834267093049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_9
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 735
+        width: 108
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a969ccff200ad70800000000000000
+      internalID: 9052238548687035033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_10
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 738
+        width: 7
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6240c05438b1b99d0800000000000000
+      internalID: -2766587295475956698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_11
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 738
+        width: 9
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df8e2183acce11f0800000000000000
+      internalID: -1072194658648551472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_12
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 735
+        width: 100
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2a566c1fcf64030800000000000000
+      internalID: 3478745877536154321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_13
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 738
+        width: 7
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0889e1d573e1ab590800000000000000
+      internalID: -7657774993255786368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_14
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 738
+        width: 9
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8216a677cca625020800000000000000
+      internalID: 2329041383713300776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_15
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 735
+        width: 100
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea642f29276d61e0800000000000000
+      internalID: -2202991216132068634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_16
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 738
+        width: 7
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b6d8125814ef650800000000000000
+      internalID: 6268519771395681150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_17
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 672
+        width: 118
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e391dd6c8586de0800000000000000
+      internalID: -1339723278006534513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_18
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 672
+        width: 118
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0e6984b36e99640800000000000000
+      internalID: 5087350396386992342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_19
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 672
+        width: 118
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f48a9b1cf97159430800000000000000
+      internalID: 3788960636419549263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_20
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 672
+        width: 118
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109d8b755cad6eb40800000000000000
+      internalID: 5469299338603190529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_21
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 672
+        width: 118
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8edcb519ae25e820800000000000000
+      internalID: 2946812834932907658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_22
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 506
+        width: 100
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0cd0e6182970bcc0800000000000000
+      internalID: -3697322080981689330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_23
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 508
+        width: 101
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246ed256c5b0e9ff0800000000000000
+      internalID: -27572056255240638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_24
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 506
+        width: 100
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c21cc20153d8d20800000000000000
+      internalID: 3282338047009565752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_25
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 508
+        width: 101
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab88e52a46bc1e10800000000000000
+      internalID: 2169809550065568678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_26
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 508
+        width: 101
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f44111be2465e2a0800000000000000
+      internalID: -6708845918196513549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_27
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 506
+        width: 100
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448d103515a13a810800000000000000
+      internalID: 1775291614701410372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_28
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 508
+        width: 101
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a63a536f33975d0800000000000000
+      internalID: -3064360938894038383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_29
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 506
+        width: 100
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e73f2a0870a7ca0800000000000000
+      internalID: -6018489702956171646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_30
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 410
+        width: 100
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d8b781c31272c00800000000000000
+      internalID: 875705194539355410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_31
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 412
+        width: 18
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2041757d32619b10800000000000000
+      internalID: 1986476926749982766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_32
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 410
+        width: 100
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7761bfc7741f050800000000000000
+      internalID: 5832521594535573423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_33
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 412
+        width: 18
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17d39b5dc19a44b0800000000000000
+      internalID: -5455387687415195878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_34
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 412
+        width: 18
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16851a35ea039fdb0800000000000000
+      internalID: -4757718006054692767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_35
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 410
+        width: 100
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ea52f3f80616240800000000000000
+      internalID: 4783210447600201296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_36
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 412
+        width: 18
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9621ff48c9c09b30800000000000000
+      internalID: 4292152307055928990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_37
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 410
+        width: 100
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0075f546cbc2ff0b0800000000000000
+      internalID: -5692782216323574016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_38
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 327
+        width: 101
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb6180b811a7ab40800000000000000
+      internalID: 5451503001367833547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_39
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 327
+        width: 101
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b2e4e54b10d20980800000000000000
+      internalID: -8574061925004680521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_40
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 330
+        width: 101
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bab0f8bcdec0dd0800000000000000
+      internalID: -2518376633072899250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_41
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 330
+        width: 101
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2135b7e21cb965030800000000000000
+      internalID: 3483142615828484882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_42
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 201
+        width: 100
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a9eab5721bf38500800000000000000
+      internalID: 397437248841902498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_43
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 201
+        width: 100
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43bbe9f51178f5e0800000000000000
+      internalID: -1875624905598586036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_44
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 201
+        width: 100
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4067262a502db2b0800000000000000
+      internalID: -5567257992800804789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_45
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 201
+        width: 100
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786295025dcdabcb0800000000000000
+      internalID: -4847319240982059385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_46
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 105
+        width: 100
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52e025e63b694530800000000000000
+      internalID: 3839718040826602076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_47
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 105
+        width: 100
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f24e69ca7931390800000000000000
+      internalID: -7848762958054936686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_48
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 105
+        width: 100
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17cd4dc2ec7ce6ae0800000000000000
+      internalID: -1554085133066904463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_49
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 105
+        width: 100
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00318e3f287b6c3e0800000000000000
+      internalID: -2033736408645496064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_50
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 32
+        width: 100
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ddec07a3f2e4300800000000000000
+      internalID: 238179758344428912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_51
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 32
+        width: 100
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5e4c7809213cd80800000000000000
+      internalID: -8231715281940716038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_52
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 35
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf11d877936d48a0800000000000000
+      internalID: -6319285199912755265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldlvl04_Stalls_53
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 35
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01894f1f9a6a50680800000000000000
+      internalID: -8789435848904632304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Worldlvl04_Stalls_0: -1276222512448329917
+      Worldlvl04_Stalls_1: 921200540517462619
+      Worldlvl04_Stalls_10: -2766587295475956698
+      Worldlvl04_Stalls_11: -1072194658648551472
+      Worldlvl04_Stalls_12: 3478745877536154321
+      Worldlvl04_Stalls_13: -7657774993255786368
+      Worldlvl04_Stalls_14: 2329041383713300776
+      Worldlvl04_Stalls_15: -2202991216132068634
+      Worldlvl04_Stalls_16: 6268519771395681150
+      Worldlvl04_Stalls_17: -1339723278006534513
+      Worldlvl04_Stalls_18: 5087350396386992342
+      Worldlvl04_Stalls_19: 3788960636419549263
+      Worldlvl04_Stalls_2: 6624249846726718856
+      Worldlvl04_Stalls_20: 5469299338603190529
+      Worldlvl04_Stalls_21: 2946812834932907658
+      Worldlvl04_Stalls_22: -3697322080981689330
+      Worldlvl04_Stalls_23: -27572056255240638
+      Worldlvl04_Stalls_24: 3282338047009565752
+      Worldlvl04_Stalls_25: 2169809550065568678
+      Worldlvl04_Stalls_26: -6708845918196513549
+      Worldlvl04_Stalls_27: 1775291614701410372
+      Worldlvl04_Stalls_28: -3064360938894038383
+      Worldlvl04_Stalls_29: -6018489702956171646
+      Worldlvl04_Stalls_3: -7821208599872439333
+      Worldlvl04_Stalls_30: 875705194539355410
+      Worldlvl04_Stalls_31: 1986476926749982766
+      Worldlvl04_Stalls_32: 5832521594535573423
+      Worldlvl04_Stalls_33: -5455387687415195878
+      Worldlvl04_Stalls_34: -4757718006054692767
+      Worldlvl04_Stalls_35: 4783210447600201296
+      Worldlvl04_Stalls_36: 4292152307055928990
+      Worldlvl04_Stalls_37: -5692782216323574016
+      Worldlvl04_Stalls_38: 5451503001367833547
+      Worldlvl04_Stalls_39: -8574061925004680521
+      Worldlvl04_Stalls_4: -4096254898306797989
+      Worldlvl04_Stalls_40: -2518376633072899250
+      Worldlvl04_Stalls_41: 3483142615828484882
+      Worldlvl04_Stalls_42: 397437248841902498
+      Worldlvl04_Stalls_43: -1875624905598586036
+      Worldlvl04_Stalls_44: -5567257992800804789
+      Worldlvl04_Stalls_45: -4847319240982059385
+      Worldlvl04_Stalls_46: 3839718040826602076
+      Worldlvl04_Stalls_47: -7848762958054936686
+      Worldlvl04_Stalls_48: -1554085133066904463
+      Worldlvl04_Stalls_49: -2033736408645496064
+      Worldlvl04_Stalls_5: -5927896616105769514
+      Worldlvl04_Stalls_50: 238179758344428912
+      Worldlvl04_Stalls_51: -8231715281940716038
+      Worldlvl04_Stalls_52: -6319285199912755265
+      Worldlvl04_Stalls_53: -8789435848904632304
+      Worldlvl04_Stalls_6: -1129122973787860800
+      Worldlvl04_Stalls_7: 5164510259240470272
+      Worldlvl04_Stalls_8: 4901906834267093049
+      Worldlvl04_Stalls_9: 9052238548687035033
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
