@@ -133,11 +133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 631099412033835654, guid: c9956b267258eda4c9f78cdbf710d4b8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.59
+      value: 24.83
       objectReference: {fileID: 0}
     - target: {fileID: 631099412033835654, guid: c9956b267258eda4c9f78cdbf710d4b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.29
+      value: -4.45
       objectReference: {fileID: 0}
     - target: {fileID: 631099412033835654, guid: c9956b267258eda4c9f78cdbf710d4b8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -187,6 +187,10 @@ PrefabInstance:
     - target: {fileID: 7997699962136279959, guid: e55f3c0ba8015d94bad9a52fa22d8224, type: 3}
       propertyPath: m_Name
       value: TheMakerBlocker
+      objectReference: {fileID: 0}
+    - target: {fileID: 7997699962136279959, guid: e55f3c0ba8015d94bad9a52fa22d8224, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8202337856746867816, guid: e55f3c0ba8015d94bad9a52fa22d8224, type: 3}
       propertyPath: m_LocalPosition.x
@@ -386,12 +390,16 @@ PrefabInstance:
       value: LevelBlocker
       objectReference: {fileID: 0}
     - target: {fileID: 8202337856746867816, guid: e55f3c0ba8015d94bad9a52fa22d8224, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.9124999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202337856746867816, guid: e55f3c0ba8015d94bad9a52fa22d8224, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.23
+      value: 61.51
       objectReference: {fileID: 0}
     - target: {fileID: 8202337856746867816, guid: e55f3c0ba8015d94bad9a52fa22d8224, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.07
+      value: -5.65
       objectReference: {fileID: 0}
     - target: {fileID: 8202337856746867816, guid: e55f3c0ba8015d94bad9a52fa22d8224, type: 3}
       propertyPath: m_LocalPosition.z
@@ -516,7 +524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -763, y: -325}
+  m_AnchoredPosition: {x: 1721, y: -1673}
   m_SizeDelta: {x: 1366, y: 768}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &111430076
@@ -727,7 +735,7 @@ MonoBehaviour:
   m_BuildHeightMesh: 0
   m_MinRegionArea: 0
   m_HideEditorLogs: 0
-  m_NavMeshData: {fileID: 23800000, guid: 6cc21e71746d84c469f1da74d3370178, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 78acad1aa19fce64fa547a5731dffcd3, type: 2}
 --- !u!4 &166521046
 Transform:
   m_ObjectHideFlags: 0
@@ -944,6 +952,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead_LevelCleared
       objectReference: {fileID: 0}
+    - target: {fileID: 5468382359616583909, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _panSpeed
       value: 10
@@ -962,7 +974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[0].ViewWaitTime
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[1].ViewWaitTime
@@ -974,7 +986,7 @@ PrefabInstance:
       objectReference: {fileID: 857342762}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[0].WaitAfterEvent
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[1].TargetLocation
@@ -1238,8 +1250,8 @@ Transform:
   m_GameObject: {fileID: 444317274}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -34.27, y: -2.07, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -50.283, y: -1.71, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.0591404, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 948658857}
@@ -1528,7 +1540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &490577514
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1745,7 +1757,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.67, y: -1.29, z: -10}
+  m_LocalPosition: {x: -52.79, y: -4.08, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1868,7 +1880,7 @@ Transform:
   m_GameObject: {fileID: 552036900}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.67, y: -1.29, z: -10}
+  m_LocalPosition: {x: -52.79, y: -4.08, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2560,11 +2572,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 631099412033835654, guid: c9956b267258eda4c9f78cdbf710d4b8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.53442
+      value: 7.28
       objectReference: {fileID: 0}
     - target: {fileID: 631099412033835654, guid: c9956b267258eda4c9f78cdbf710d4b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.15196
+      value: -4.91
       objectReference: {fileID: 0}
     - target: {fileID: 631099412033835654, guid: c9956b267258eda4c9f78cdbf710d4b8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3121,6 +3133,10 @@ PrefabInstance:
     - target: {fileID: 1338779924364466712, guid: f9228a159f8cd2343871337a8f284cc3, type: 3}
       propertyPath: m_Name
       value: TheMaker
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338779924364466712, guid: f9228a159f8cd2343871337a8f284cc3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5741670125278792858, guid: f9228a159f8cd2343871337a8f284cc3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11059,7 +11075,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1275011007
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11179,7 +11195,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -763, y: -31}
+  m_AnchoredPosition: {x: 526, y: -1656}
   m_SizeDelta: {x: 1366, y: 768}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1278736047
@@ -11315,6 +11331,10 @@ PrefabInstance:
     - target: {fileID: 3664365491805918091, guid: 407a05073581e034a9e7a7d05d8dbc1e, type: 3}
       propertyPath: m_Name
       value: PrintedSword
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664365491805918091, guid: 407a05073581e034a9e7a7d05d8dbc1e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3702882059890374632, guid: 407a05073581e034a9e7a7d05d8dbc1e, type: 3}
       propertyPath: m_Pivot.x
@@ -12077,7 +12097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1556805506
 Transform:
   m_ObjectHideFlags: 0
@@ -12301,6 +12321,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alive_LevelCleared
       objectReference: {fileID: 0}
+    - target: {fileID: 5468382359616583909, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _panSpeed
       value: 10
@@ -12323,7 +12347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[0].ViewWaitTime
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[1].ViewWaitTime
@@ -12352,14 +12376,14 @@ PrefabInstance:
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[0].LocalDialogueText
       value: 
-      objectReference: {fileID: 47073442}
+      objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[0].LocalDialogueCanvas
       value: 
-      objectReference: {fileID: 1275011006}
+      objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[0].DialogueLines.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: '_cutsceneStops.Array.data[0].DialogueLines.Array.data[0]'
@@ -13523,6 +13547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemiesAlive
       objectReference: {fileID: 0}
+    - target: {fileID: 5468382359616583909, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _panSpeed
       value: 10
@@ -13541,7 +13569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[0].ViewWaitTime
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[1].ViewWaitTime
@@ -13570,11 +13598,15 @@ PrefabInstance:
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[0].LocalDialogueText
       value: 
-      objectReference: {fileID: 2114941126}
+      objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[0].LocalDialogueCanvas
       value: 
-      objectReference: {fileID: 490577513}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
+      propertyPath: _cutsceneStops.Array.data[0].DialogueLines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: '_cutsceneStops.Array.data[0].DialogueLines.Array.data[0]'
       value: You have destroyed all the generators.
@@ -15915,11 +15947,11 @@ PrefabInstance:
       objectReference: {fileID: 9030596654868021397}
     - target: {fileID: 3900678631590910362, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -56.14
+      value: -72.26
       objectReference: {fileID: 0}
     - target: {fileID: 3900678631590910362, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.29
+      value: -4.08
       objectReference: {fileID: 0}
     - target: {fileID: 3900678631590910362, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19499,7 +19531,7 @@ Transform:
   m_GameObject: {fileID: 2614467745437624767}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.056, y: 0, z: 0}
+  m_LocalPosition: {x: 3.71, y: -8.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21326,6 +21358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemiesDead
       objectReference: {fileID: 0}
+    - target: {fileID: 5468382359616583909, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _panSpeed
       value: 10
@@ -21373,11 +21409,15 @@ PrefabInstance:
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[0].LocalDialogueText
       value: 
-      objectReference: {fileID: 2114941126}
+      objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: _cutsceneStops.Array.data[0].LocalDialogueCanvas
       value: 
-      objectReference: {fileID: 490577513}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
+      propertyPath: _cutsceneStops.Array.data[0].DialogueLines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7250822785980790473, guid: 42b517e2e0f1af9419d157ae633c7c4c, type: 3}
       propertyPath: '_cutsceneStops.Array.data[0].DialogueLines.Array.data[0]'
       value: You have destroyed all the generators and eliminated the enemies.
