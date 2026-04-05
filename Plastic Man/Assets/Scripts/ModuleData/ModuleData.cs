@@ -19,6 +19,6 @@ public class ModuleData : ScriptableObject
     [SerializeField] private List<FilamentCost> filamentCosts = new List<FilamentCost>();
 
     public GameObject PrintedPrefab => printedPrefab;
-    public Sprite ModuleIcon => moduleIcon;
+    public Sprite bpSprite => moduleIcon;
     public List<FilamentCost> FilamentCosts => filamentCosts;
 }
