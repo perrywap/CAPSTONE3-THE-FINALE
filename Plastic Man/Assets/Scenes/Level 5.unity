@@ -861,6 +861,7 @@ MonoBehaviour:
   _pausePanel: {fileID: 1770547693}
   _gameOverPanel: {fileID: 1941453366}
   _winPanel: {fileID: 1655968479}
+  _levelBoss: {fileID: 0}
   _enemies: []
   _endLevelCutscene: {fileID: 1607262778}
 --- !u!4 &201983834
@@ -1860,7 +1861,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.060001, y: -25.44, z: -10}
+  m_LocalPosition: {x: 5.999999, y: 24.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2126,7 +2127,7 @@ Transform:
   m_GameObject: {fileID: 552036900}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.060001, y: -25.44, z: -10}
+  m_LocalPosition: {x: 5.999999, y: 24.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3393,8 +3394,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -29.8, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1972442280}
   - {fileID: 250602659}
@@ -5082,6 +5083,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175493805}
   m_CullTransparentMesh: 1
+--- !u!1001 &1183796985
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2488567477021945018, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
+      propertyPath: m_Name
+      value: BossEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109194982712948880, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -30.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109194982712948880, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 24.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109194982712948880, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109194982712948880, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109194982712948880, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109194982712948880, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109194982712948880, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109194982712948880, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109194982712948880, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109194982712948880, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
 --- !u!1 &1257859614
 GameObject:
   m_ObjectHideFlags: 0
@@ -5136,7 +5194,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 812ff8fe5d892b847b7b06b5336ec812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponUI
-  defaultWeapon: {fileID: 3781831577641711289, guid: dd70dbc30269e2e46abd8cd914505794, type: 3}
   weapons:
   - {fileID: 4208481742703032022, guid: 9eb1972074313464ca36e25958ad800d, type: 3}
   - {fileID: 4208481742703032022, guid: f7cbf9e0f0e1fd8438522a48b3dd4584, type: 3}
@@ -5147,6 +5204,7 @@ MonoBehaviour:
   - {fileID: 141235448}
   - {fileID: 1028681421}
   - {fileID: 815513068}
+  weaponIcons: []
   player: {fileID: 0}
   popupValue: 20
 --- !u!114 &1257859617
@@ -14389,11 +14447,11 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 8b48abd89bd7eec47bc05cdc51841a31, type: 3}
     - target: {fileID: 3900678631590910362, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.53
+      value: -13.47
       objectReference: {fileID: 0}
     - target: {fileID: 3900678631590910362, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -25.44
+      value: 24.8
       objectReference: {fileID: 0}
     - target: {fileID: 3900678631590910362, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14655,3 +14713,4 @@ SceneRoots:
   - {fileID: 1165001037540766432}
   - {fileID: 521540542}
   - {fileID: 1502057774}
+  - {fileID: 1183796985}
