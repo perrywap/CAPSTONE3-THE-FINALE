@@ -4,10 +4,15 @@ using UnityEngine.UI;
 
 public class PrinterManager : MonoBehaviour
 {
+    [Header("UI Panel")]
+    [SerializeField] private GameObject printerCanvas; // Drag the main UI Panel here
+
+    [Header("Slots")]
     [SerializeField] private Transform printedSlot;
     [SerializeField] private Transform moduleSlot;
     [SerializeField] private Transform filamentSlot;
 
+    [Header("Settings")]
     [SerializeField] private SpriteRenderer bpSprite;
     [SerializeField] private List<FilamentCost> costs = new List<FilamentCost>();
     [SerializeField] private GameObject weapPrefab;
@@ -18,6 +23,17 @@ public class PrinterManager : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+    }
+
+    public void ClosePanel()
+    {
+        if (printerCanvas != null)
+        {
+            printerCanvas.SetActive(false);
+            Time.timeScale = 1f; // Ensure game unpauses if it was paused
+
+            // Optional: Re-enable player movement script here if you disabled it
+        }
     }
 
     public void Print()
@@ -46,10 +62,8 @@ public class PrinterManager : MonoBehaviour
             return;
         }
 
-
         if (animator != null)
             animator.SetTrigger("print");
-
     }
 
     public void PrintModule()
