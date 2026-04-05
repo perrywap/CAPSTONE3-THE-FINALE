@@ -44,16 +44,13 @@ public class GameManager : MonoBehaviour
     {
         if (_isGameCleared) return;
 
-        // --- THE NEW ESCAPE KEY LOGIC ---
         if (Input.GetKeyDown(KeyCode.Escape) && !_isGameOver)
         {
-            // If the printer is open, hitting Escape closes the printer!
             if (PrinterInteractable.IsInteracting)
             {
                 PrinterInteractable printer = Object.FindFirstObjectByType<PrinterInteractable>();
                 if (printer != null) printer.ClosePrinter();
             }
-            // If the printer is closed and no one is talking, toggle pause normally
             else if (!NPCDialogue.IsTalking)
             {
                 TogglePause();

@@ -11,7 +11,7 @@ public struct CutsceneStop
 
     [Header("Events (Before Dialogue)")]
     [Tooltip("How many seconds to wait after the camera arrives BEFORE triggering the event.")]
-    public float CameraSettleTime; // <-- NEW: Lets the camera breathe!
+    public float CameraSettleTime;
 
     [Tooltip("Fires after the settle time. (e.g., Trigger the Printer Explosion)")]
     public UnityEvent OnTargetReached;
@@ -130,7 +130,6 @@ public class CutsceneTrigger : MonoBehaviour
             {
                 CutsceneStop currentStop = _cutsceneStops[i];
 
-                // 1. Pan to the target
                 if (currentStop.TargetLocation != null)
                 {
                     Vector3 targetPos = new Vector3(currentStop.TargetLocation.position.x, currentStop.TargetLocation.position.y, startPos.z);
@@ -144,19 +143,15 @@ public class CutsceneTrigger : MonoBehaviour
 
                 if (currentStop.TargetNameLabel != null) currentStop.TargetNameLabel.SetActive(true);
 
-                // --- NEW: Let the camera settle for a moment ---
                 if (currentStop.CameraSettleTime > 0f)
                 {
                     yield return new WaitForSecondsRealtime(currentStop.CameraSettleTime);
                 }
 
-                // 2. Fire the explosion!
                 currentStop.OnTargetReached?.Invoke();
 
-                // 3. Wait while the explosion happens
                 yield return new WaitForSecondsRealtime(currentStop.ViewWaitTime);
 
-                // 4. Play Dialogue
                 if (currentStop.DialogueLines != null && currentStop.DialogueLines.Length > 0 && currentStop.LocalDialogueText != null)
                 {
                     _activeDialogueText = currentStop.LocalDialogueText;
@@ -173,7 +168,6 @@ public class CutsceneTrigger : MonoBehaviour
 
                 if (currentStop.TargetNameLabel != null) currentStop.TargetNameLabel.SetActive(false);
 
-                // 5. Trigger Post-Dialogue Events
                 currentStop.OnDialogueFinished?.Invoke();
 
                 if (currentStop.WaitAfterEvent > 0f)
@@ -183,7 +177,6 @@ public class CutsceneTrigger : MonoBehaviour
             }
         }
 
-        // Return to player
         Vector3 playerPos = new Vector3(playerTransform.position.x, playerTransform.position.y, startPos.z);
         while (Vector3.Distance(_mainCamera.transform.position, playerPos) > 0.1f)
         {

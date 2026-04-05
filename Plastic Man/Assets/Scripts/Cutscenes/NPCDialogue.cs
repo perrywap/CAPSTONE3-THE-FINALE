@@ -1,14 +1,13 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
-using UnityEngine.Events; // <-- Required for the queued event!
+using UnityEngine.Events;
 
 public class NPCDialogue : MonoBehaviour
 {
     public static bool IsTalking = false;
     public static bool HasStartedFirstConversation = false;
 
-    // --- NEW: THE QUEUE SYSTEM FOR THE DOOR ---
     public static bool TutorialWeaponEquippedDuringDialogue = false;
     public static UnityEvent PendingDoorEvent;
 
@@ -101,14 +100,12 @@ public class NPCDialogue : MonoBehaviour
 
     private void StartDialogueSequence()
     {
-        // --- FIX: Only freeze the player if it's the FIRST conversation! ---
         if (!_hasTalkedBefore)
         {
             IsTalking = true;
             Time.timeScale = 0f;
             if (_questIndicator != null) _questIndicator.SetActive(false);
 
-            // Unlock the weapon immediately!
             HasStartedFirstConversation = true;
         }
 
@@ -190,10 +187,8 @@ public class NPCDialogue : MonoBehaviour
         _isDialogueActive = false;
         if (_speechBubbleCanvas != null) _speechBubbleCanvas.SetActive(false);
 
-        // It is perfectly safe to set this to false every time we close dialogue
         IsTalking = false;
 
-        // --- NEW: FIRE THE QUEUED DOOR EVENT ---
         if (TutorialWeaponEquippedDuringDialogue && PendingDoorEvent != null)
         {
             PendingDoorEvent.Invoke();

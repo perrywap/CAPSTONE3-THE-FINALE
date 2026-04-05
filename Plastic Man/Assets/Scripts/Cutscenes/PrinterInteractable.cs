@@ -13,6 +13,9 @@ public class PrinterInteractable : MonoBehaviour
     [Header("Interaction Settings")]
     [SerializeField] private float _interactRadius = 2f;
 
+    [Tooltip("If false, the printer is completely locked until UnlockPrinter() is called.")]
+    [SerializeField] private bool _isUnlocked = false;
+
     [Header("Camera Zoom Settings")]
     [SerializeField] private Camera _mainCamera;
     [SerializeField] private MonoBehaviour _cameraFollowScript;
@@ -43,17 +46,23 @@ public class PrinterInteractable : MonoBehaviour
     private void Update()
     {
         if (GameManager.Instance != null && GameManager.Instance.IsPaused) return;
-
         if (IsInteracting) return;
 
-        // --- NEW: THE ENEMY LOCK ---
-        // If there are still enemies alive, hide the prompt and completely ignore the rest of the code!
+        if (NPCDialogue.IsTalking)
+        {
+            if (_interactPrompt != null && _interactPrompt.activeSelf) _interactPrompt.SetActive(false);
+            return;
+        }
+
         if (GameManager.Instance != null && GameManager.Instance.ActiveEnemyCount > 0)
         {
-            if (_interactPrompt != null && _interactPrompt.activeSelf)
-            {
-                _interactPrompt.SetActive(false);
-            }
+            if (_interactPrompt != null && _interactPrompt.activeSelf) _interactPrompt.SetActive(false);
+            return;
+        }
+
+        if (!_isUnlocked)
+        {
+            if (_interactPrompt != null && _interactPrompt.activeSelf) _interactPrompt.SetActive(false);
             return;
         }
 
@@ -78,12 +87,15 @@ public class PrinterInteractable : MonoBehaviour
         }
     }
 
+    public void UnlockPrinter()
+    {
+        _isUnlocked = true;
+    }
+
     private IEnumerator OpenPrinterSequence()
     {
         IsInteracting = true;
-
         NPCDialogue.IsTalking = true;
-
         Time.timeScale = 0f;
 
         if (_interactPrompt != null) _interactPrompt.SetActive(false);
@@ -133,7 +145,6 @@ public class PrinterInteractable : MonoBehaviour
 
         Time.timeScale = 1f;
         IsInteracting = false;
-
         NPCDialogue.IsTalking = false;
     }
 

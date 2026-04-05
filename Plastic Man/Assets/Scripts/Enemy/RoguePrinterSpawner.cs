@@ -59,12 +59,10 @@ public class RoguePrinterSpawner : MonoBehaviour
 
             if (GameManager.Instance != null && GameManager.Instance.ActiveEnemyCount > 0)
             {
-                // Scenario A: Enemies alive! Play cutscene directly.
                 if (_enemiesAliveCutscene != null) _enemiesAliveCutscene.PlayFromGameManager();
             }
             else
             {
-                // Scenario B: Boss dies last! Tell GameManager to show Win Panel FIRST, then play cutscene!
                 if (GameManager.Instance != null && _enemiesDeadCutscene != null)
                 {
                     GameManager.Instance.TriggerWinSequence(_enemiesDeadCutscene);

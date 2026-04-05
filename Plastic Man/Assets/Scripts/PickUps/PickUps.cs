@@ -28,7 +28,7 @@ public class PickUps : MonoBehaviour, IPointerClickHandler, IPointerDownHandler,
 
     private void Awake()
     {
-        HasCompletedDragTutorial = false; // Reset on level load
+        HasCompletedDragTutorial = false;
         IsDraggingAnyPickup = false;
 
         cam = Camera.main;
@@ -44,17 +44,15 @@ public class PickUps : MonoBehaviour, IPointerClickHandler, IPointerDownHandler,
 
     private void Update()
     {
-        // --- FOOLPROOF LOCK ---
-        // If it's a tutorial item, and you haven't equipped it yet, we control the collider.
         if (_isTutorialItem && col != null && !HasCompletedDragTutorial)
         {
             if (!NPCDialogue.HasStartedFirstConversation)
             {
-                col.enabled = false; // Literally impossible to click!
+                col.enabled = false;
             }
             else if (!_isCurrentlyDraggingThis)
             {
-                col.enabled = true; // Safe to click now!
+                col.enabled = true;
             }
         }
     }
@@ -115,16 +113,13 @@ public class PickUps : MonoBehaviour, IPointerClickHandler, IPointerDownHandler,
                     if (_tutorialPrompt != null) _tutorialPrompt.SetActive(false);
                     HasCompletedDragTutorial = true;
 
-                    // --- NEW: THE DOOR QUEUE SYSTEM ---
                     if (NPCDialogue.IsTalking)
                     {
-                        // Player is currently talking! Hand the event to the NPC to fire later.
                         NPCDialogue.TutorialWeaponEquippedDuringDialogue = true;
                         NPCDialogue.PendingDoorEvent = _onTutorialEquipped;
                     }
                     else
                     {
-                        // Player has already finished talking. Fire it immediately!
                         _onTutorialEquipped?.Invoke();
                     }
                 }
