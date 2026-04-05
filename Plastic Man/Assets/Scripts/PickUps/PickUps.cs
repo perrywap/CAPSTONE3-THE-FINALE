@@ -1,44 +1,111 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PickUps : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class PickUps : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    public GameObject weaponPrefab;
+    public static bool IsDraggingAnyPickup { get; private set; }
 
-    private Canvas canvas;
-    private RectTransform rectTransform;
-    private CanvasGroup canvasGroup;
+    [SerializeField] private GameObject weaponPrefab;
+
+    private Camera cam;
+    private Vector3 offset;
+    private float zDepth;
     private Vector3 originalPosition;
-    private Transform originalParent;
 
-    void Awake()
+    private SpriteRenderer spriteRenderer;
+    private Collider2D col;
+
+    public GameObject WeaponPrefab => weaponPrefab;
+
+    private void Awake()
     {
-        rectTransform = GetComponent<RectTransform>();
-        canvasGroup = GetComponent<CanvasGroup>();
-        canvas = Object.FindFirstObjectByType<Canvas>();
+        cam = Camera.main;
+        originalPosition = transform.position;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        col = GetComponent<Collider2D>();
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (cam == null)
+            return;
+
+        IsDraggingAnyPickup = true;
         originalPosition = transform.position;
-        originalParent = transform.parent;
-        canvasGroup.blocksRaycasts = false;
-        transform.SetParent(canvas.transform);
+        zDepth = cam.WorldToScreenPoint(transform.position).z;
+        offset = transform.position - GetMouseWorld(eventData);
+
+        if (spriteRenderer != null)
+            spriteRenderer.enabled = false;
+
+        if (col != null)
+            col.enabled = false;
+
+        if (DragIconManager.Instance != null && spriteRenderer != null)
+            DragIconManager.Instance.Show(spriteRenderer.sprite);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        if (cam == null)
+            return;
+
+        transform.position = GetMouseWorld(eventData) + offset;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        canvasGroup.blocksRaycasts = true;
+        IsDraggingAnyPickup = false;
 
-        if (transform.parent == canvas.transform)
+        if (DragIconManager.Instance != null)
+            DragIconManager.Instance.Hide();
+
+        if (eventData.pointerEnter != null)
         {
-            transform.SetParent(originalParent);
-            transform.position = originalPosition;
+            WeaponSlot slot = eventData.pointerEnter.GetComponentInParent<WeaponSlot>();
+
+            if (slot != null)
+            {
+                slot.TrySetWeapon(this);
+                return;
+            }
         }
+
+        transform.position = originalPosition;
+
+        if (spriteRenderer != null)
+            spriteRenderer.enabled = true;
+
+        if (col != null)
+            col.enabled = true;
+    }
+
+    private void OnDisable()
+    {
+        IsDraggingAnyPickup = false;
+
+        if (DragIconManager.Instance != null)
+            DragIconManager.Instance.Hide();
+    }
+
+    public void RestorePickup()
+    {
+        transform.position = originalPosition;
+
+        if (spriteRenderer != null)
+            spriteRenderer.enabled = true;
+
+        if (col != null)
+            col.enabled = true;
+    }
+
+    private Vector3 GetMouseWorld(PointerEventData eventData)
+    {
+        Vector3 screen = new Vector3(eventData.position.x, eventData.position.y, zDepth);
+        return cam.ScreenToWorldPoint(screen);
     }
 }

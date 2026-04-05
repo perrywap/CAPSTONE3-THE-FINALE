@@ -51,7 +51,6 @@ public class CursorManager : MonoBehaviour
         RefreshReferences();
         DetectTargets();
         ApplyCursor();
-        //DebugHoveredObject();
     }
 
     private void RefreshReferences()
@@ -74,9 +73,14 @@ public class CursorManager : MonoBehaviour
         if (Mouse.current == null || pointerData == null)
             return;
 
+        if (PickUps.IsDraggingAnyPickup)
+        {
+            isOverUI = true;
+            return;
+        }
+
         pointerData.position = Mouse.current.position.ReadValue();
 
-        // UI CHECK
         List<RaycastResult> uiResults = new List<RaycastResult>();
 
         for (int i = 0; i < raycasters.Length; i++)
@@ -88,9 +92,7 @@ public class CursorManager : MonoBehaviour
             raycasters[i].Raycast(pointerData, tempResults);
 
             if (tempResults.Count > 0)
-            {
                 uiResults.AddRange(tempResults);
-            }
         }
 
         if (uiResults.Count > 0)
@@ -99,14 +101,39 @@ public class CursorManager : MonoBehaviour
             return;
         }
 
-        // WORLD CHECK
-        if (cam != null)
-        {
-            Vector2 mousePos = cam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+        if (cam == null)
+            return;
 
-            if (hit.collider != null)
-                isOverWorld = true;
+        Vector2 mousePos = cam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        RaycastHit2D[] hits = Physics2D.RaycastAll(mousePos, Vector2.zero);
+
+        bool foundPickup = false;
+        bool foundOtherWorld = false;
+
+        for (int i = 0; i < hits.Length; i++)
+        {
+            if (hits[i].collider == null)
+                continue;
+
+            if (hits[i].collider.GetComponentInParent<PickUps>() != null)
+            {
+                foundPickup = true;
+            }
+            else
+            {
+                foundOtherWorld = true;
+            }
+        }
+
+        if (foundPickup)
+        {
+            isOverUI = true;
+            return;
+        }
+
+        if (foundOtherWorld)
+        {
+            isOverWorld = true;
         }
     }
 
@@ -131,48 +158,11 @@ public class CursorManager : MonoBehaviour
         SetCursor(defaultCursor, defaultHotspot);
     }
 
-    private void DebugHoveredObject()
-    {
-        if (Mouse.current == null || pointerData == null)
-            return;
-
-        pointerData.position = Mouse.current.position.ReadValue();
-
-        // UI DEBUG
-        for (int i = 0; i < raycasters.Length; i++)
-        {
-            if (raycasters[i] == null || !raycasters[i].isActiveAndEnabled)
-                continue;
-
-            List<RaycastResult> results = new List<RaycastResult>();
-            raycasters[i].Raycast(pointerData, results);
-
-            if (results.Count > 0)
-            {
-                Debug.Log("[UI] " + results[0].gameObject.name);
-                return;
-            }
-        }
-
-        // WORLD DEBUG
-        if (cam != null)
-        {
-            Vector2 mousePos = cam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-
-            if (hit.collider != null)
-            {
-                Debug.Log("[WORLD] " + hit.collider.gameObject.name);
-                return;
-            }
-        }
-
-        Debug.Log("[NONE]");
-    }
-
     private void SetCursor(Texture2D texture, Vector2 hotspot)
     {
-        if (texture == null) return;
+        if (texture == null)
+            return;
+
         Cursor.SetCursor(texture, hotspot, CursorMode.Auto);
     }
 }

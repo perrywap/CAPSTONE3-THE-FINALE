@@ -6,7 +6,6 @@ public class WeaponManager : MonoBehaviour
     public static WeaponManager Instance { get; private set; }
 
     [Header("References")]
-    //[SerializeField] private GameObject defaultWeapon;
     [SerializeField] private GameObject[] weapons;
     [SerializeField] private Transform[] slots;
     [SerializeField] private Image[] weaponIcons;
@@ -27,7 +26,6 @@ public class WeaponManager : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        //PlayerCombat.Instance.ChangeWeapon(defaultWeapon);
 
         originalPositions = new Vector3[slots.Length];
         for (int i = 0; i < slots.Length; i++)
@@ -35,13 +33,12 @@ public class WeaponManager : MonoBehaviour
             originalPositions[i] = slots[i].position;
         }
 
-        UpdateSlotVisibility();
+        RefreshWeaponUI();
     }
 
     private void Update()
     {
         if (NPCDialogue.IsTalking) return;
-
 
         WeaponChange();
         HandleWeaponSlot();
@@ -50,13 +47,22 @@ public class WeaponManager : MonoBehaviour
 
     private void HandleWeaponIcons()
     {
-        if (weapons == null || weapons.Length == 0) return;
-
         for (int i = 0; i < weaponIcons.Length; i++)
         {
-            if (weapons[i] != null)
+            if (i < weapons.Length && weapons[i] != null)
             {
-                weaponIcons[i].sprite = weapons[i].GetComponent<SpriteRenderer>().sprite;
+                SpriteRenderer sr = weapons[i].GetComponent<SpriteRenderer>();
+
+                if (sr != null)
+                {
+                    weaponIcons[i].sprite = sr.sprite;
+                    weaponIcons[i].color = Color.white;
+                }
+            }
+            else
+            {
+                weaponIcons[i].sprite = null;
+                weaponIcons[i].color = new Color(1f, 1f, 1f, 0f);
             }
         }
     }
@@ -71,9 +77,7 @@ public class WeaponManager : MonoBehaviour
         }
 
         if (activeIndex != -1 &&
-            activeIndex < slots.Length &&
-            activeIndex < weapons.Length &&
-            weapons[activeIndex] != null)
+            activeIndex < slots.Length)
         {
             slots[activeIndex].position += new Vector3(0, popupValue, 0);
         }
@@ -95,33 +99,49 @@ public class WeaponManager : MonoBehaviour
     {
         if (index >= weapons.Length)
         {
-            Debug.LogWarning($"Weapon index {index} is out of bounds.");
-            //PlayerCombat.Instance.ChangeWeapon(defaultWeapon);
             activeIndex = -1;
+            PlayerCombat.Instance.ChangeWeapon(null);
+            RefreshWeaponUI();
             return;
         }
+
+        activeIndex = index;
 
         if (weapons[index] != null)
         {
             PlayerCombat.Instance.ChangeWeapon(weapons[index]);
-            activeIndex = index;
         }
         else
         {
-            //PlayerCombat.Instance.ChangeWeapon(defaultWeapon);
-            Debug.LogWarning($"No weapon assigned on weapons index {index}");
-            activeIndex = -1;
+            PlayerCombat.Instance.ChangeWeapon(null);
         }
 
-        UpdateSlotVisibility();
+        RefreshWeaponUI();
     }
 
     private void UpdateSlotVisibility()
     {
         for (int i = 0; i < slots.Length; i++)
         {
-            bool hasWeapon = (i < weapons.Length && weapons[i] != null);
-            slots[i].gameObject.SetActive(hasWeapon);
+            slots[i].gameObject.SetActive(true);
         }
+    }
+
+    private void RefreshWeaponUI()
+    {
+        UpdateSlotVisibility();
+        HandleWeaponIcons();
+        HandleWeaponSlot();
+    }
+
+    public void SetWeaponToSlot(int index, GameObject weapon)
+    {
+        if (index < 0 || index >= weapons.Length)
+            return;
+
+        weapons[index] = weapon;
+        UpdateSlotVisibility();
+        HandleWeaponIcons();
+        HandleWeaponSlot();
     }
 }
