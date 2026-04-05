@@ -73,7 +73,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -87,7 +87,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 96
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -139,12 +139,12 @@ TextureImporter:
       name: Grenade Atk Spritesheet (128x128)_0
       rect:
         serializedVersion: 2
-        x: 57
-        y: 312
-        width: 14
-        height: 16
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: Grenade Atk Spritesheet (128x128)_1
       rect:
         serializedVersion: 2
-        x: 175
-        y: 303
-        width: 34
-        height: 34
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -183,12 +183,12 @@ TextureImporter:
       name: Grenade Atk Spritesheet (128x128)_2
       rect:
         serializedVersion: 2
-        x: 297
-        y: 298
-        width: 46
-        height: 45
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -205,12 +205,12 @@ TextureImporter:
       name: Grenade Atk Spritesheet (128x128)_3
       rect:
         serializedVersion: 2
-        x: 417
-        y: 293
-        width: 61
-        height: 55
+        x: 384
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -227,12 +227,12 @@ TextureImporter:
       name: Grenade Atk Spritesheet (128x128)_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 161
-        width: 59
-        height: 63
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -249,12 +249,12 @@ TextureImporter:
       name: Grenade Atk Spritesheet (128x128)_5
       rect:
         serializedVersion: 2
-        x: 165
-        y: 166
-        width: 54
-        height: 51
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -271,12 +271,12 @@ TextureImporter:
       name: Grenade Atk Spritesheet (128x128)_6
       rect:
         serializedVersion: 2
-        x: 298
-        y: 169
-        width: 41
-        height: 40
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -293,12 +293,12 @@ TextureImporter:
       name: Grenade Atk Spritesheet (128x128)_7
       rect:
         serializedVersion: 2
-        x: 437
-        y: 186
-        width: 22
-        height: 23
+        x: 384
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -315,12 +315,12 @@ TextureImporter:
       name: Grenade Atk Spritesheet (128x128)_8
       rect:
         serializedVersion: 2
-        x: 443
-        y: 205
-        width: 6
-        height: 7
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -337,12 +337,12 @@ TextureImporter:
       name: Grenade Atk Spritesheet (128x128)_9
       rect:
         serializedVersion: 2
-        x: 56
-        y: 64
-        width: 14
-        height: 22
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -359,12 +359,12 @@ TextureImporter:
       name: Grenade Atk Spritesheet (128x128)_10
       rect:
         serializedVersion: 2
-        x: 185
-        y: 67
-        width: 14
-        height: 21
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -377,55 +377,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Grenade Atk Spritesheet (128x128)_11
-      rect:
-        serializedVersion: 2
-        x: 314
-        y: 80
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 427113832400daec0800000000000000
-      internalID: -3554184246514870492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grenade Atk Spritesheet (128x128)_12
-      rect:
-        serializedVersion: 2
-        x: 316
-        y: 76
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c7c228704c771c850800000000000000
-      internalID: 6395524629666081916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 91ef129053c06114ba73db5d47f9c4f5
     internalID: 0
     vertices: []
     indices: 
@@ -433,13 +389,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":3.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Grenade Atk Spritesheet (128x128)_0: -1949965640792844370
       Grenade Atk Spritesheet (128x128)_1: 7508477795982911897
       Grenade Atk Spritesheet (128x128)_10: -4416554910254373153
-      Grenade Atk Spritesheet (128x128)_11: -3554184246514870492
-      Grenade Atk Spritesheet (128x128)_12: 6395524629666081916
       Grenade Atk Spritesheet (128x128)_2: 5748487591892873861
       Grenade Atk Spritesheet (128x128)_3: -3422306929867519790
       Grenade Atk Spritesheet (128x128)_4: -8202858815633196267

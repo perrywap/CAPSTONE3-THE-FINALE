@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 142191355881588694}
   - component: {fileID: 4712606178281509930}
   - component: {fileID: 4014709433439507730}
-  - component: {fileID: 3813467881165778138}
+  - component: {fileID: 9028222351235090787}
   - component: {fileID: 2905312680002106179}
   - component: {fileID: 1748852602615044287}
   - component: {fileID: 3585979852734191622}
@@ -314,7 +314,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5, y: 0.8374275}
   m_EdgeRadius: 0
---- !u!114 &3813467881165778138
+--- !u!114 &9028222351235090787
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -388,7 +388,7 @@ MonoBehaviour:
   dashSpeed: 15
   dashDuration: 0.2
   dashCooldown: 4
-  dashSfx: {fileID: 8300000, guid: c81c4c4e4d92e4f4db61c9851cbae144, type: 3}
+  dashSfx: {fileID: 0}
   dashVolume: 0.5
   afterImagePrefab: {fileID: 8045429306492461762, guid: f3094a468da3154498c1792bd95a788d, type: 3}
   afterImageSpacing: 0.05

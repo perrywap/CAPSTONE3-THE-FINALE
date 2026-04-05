@@ -1,55 +1,134 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PrinterManager : MonoBehaviour
 {
-    public static PrinterManager Instance { get; private set; }
+    [SerializeField] private Transform printedSlot;
+    [SerializeField] private Transform moduleSlot;
+    [SerializeField] private Transform filamentSlot;
 
-    [SerializeField] private Transform movingPart;
-    [SerializeField] private Transform startPos, endPos;
-    [SerializeField] private Image moduleToPrint;
-
-    private float moduleFill = 0f;
+    [SerializeField] private SpriteRenderer bpSprite;
+    [SerializeField] private List<FilamentCost> costs = new List<FilamentCost>();
+    [SerializeField] private GameObject weapPrefab;
 
     private Animator animator;
-
-
-    private void Awake()
-    {
-        Instance = this;
-    }
+    private GameObject currentPrintedWeapon;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        animator.SetBool("isMoving", true);
-        moduleToPrint.fillAmount = moduleFill;
-    }
-
-    private void Update()
-    {
-        if (movingPart != null)
-        {
-            moduleToPrint.fillAmount = moduleFill   ;
-        }
-    }
-
-    public void OnPrintBtnClicked()
-    {
-
     }
 
     public void Print()
     {
-        if (movingPart.position.y >= endPos.position.y)
+        if (weapPrefab == null)
         {
-            animator.SetBool("isMoving", false);
+            Debug.LogWarning("No weapon prefab selected to print.");
             return;
         }
-            
 
-        //float posY = movingPart.position.y + 27.5f;
-        moduleFill += .1f;
-        movingPart.position += new Vector3(0f, 27.5f * 1.5f, 0f);
+        if (costs == null || costs.Count == 0)
+        {
+            Debug.LogWarning("No filament costs assigned for this module.");
+            return;
+        }
+
+        if (LootInventory.Instance == null)
+        {
+            Debug.LogWarning("LootInventory instance not found.");
+            return;
+        }
+
+        if (!HasEnoughFilament())
+        {
+            Debug.Log("Not enough filament to print this module.");
+            return;
+        }
+
+
+        if (animator != null)
+            animator.SetTrigger("print");
+
+    }
+
+    public void PrintModule()
+    {
+        ConsumeFilament();
+        SpawnPrintedWeapon();
+    }
+
+    public void OnBlueprintClicked(ModuleData data)
+    {
+        if (data == null)
+            return;
+
+        bpSprite.sprite = data.bpSprite;
+        costs = new List<FilamentCost>(data.FilamentCosts);
+        weapPrefab = data.PrintedPrefab;
+    }
+
+    private bool HasEnoughFilament()
+    {
+        foreach (FilamentCost cost in costs)
+        {
+            int currentAmount = GetPlasticAmount(cost.plasticType);
+
+            if (currentAmount < cost.amount)
+                return false;
+        }
+
+        return true;
+    }
+
+    private void ConsumeFilament()
+    {
+        foreach (FilamentCost cost in costs)
+        {
+            RemovePlastic(cost.plasticType, cost.amount);
+        }
+    }
+
+    private void SpawnPrintedWeapon()
+    {
+        if (currentPrintedWeapon != null)
+            Destroy(currentPrintedWeapon);
+
+        currentPrintedWeapon = Instantiate(weapPrefab, printedSlot.position, Quaternion.identity, printedSlot);
+    }
+
+    private int GetPlasticAmount(PlasticType type)
+    {
+        switch (type)
+        {
+            case PlasticType.Polyethylene:
+                return LootInventory.Instance.polyethyleneCount;
+
+            case PlasticType.Acrylic:
+                return LootInventory.Instance.acrylicCount;
+
+            case PlasticType.Polycarbonate:
+                return LootInventory.Instance.polycarbonateCount;
+        }
+
+        return 0;
+    }
+
+    private void RemovePlastic(PlasticType type, int amount)
+    {
+        switch (type)
+        {
+            case PlasticType.Polyethylene:
+                LootInventory.Instance.polyethyleneCount -= amount;
+                break;
+
+            case PlasticType.Acrylic:
+                LootInventory.Instance.acrylicCount -= amount;
+                break;
+
+            case PlasticType.Polycarbonate:
+                LootInventory.Instance.polycarbonateCount -= amount;
+                break;
+        }
     }
 }

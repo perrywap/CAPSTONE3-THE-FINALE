@@ -1,9 +1,9 @@
 using UnityEngine;
 
+public enum PlasticType { Polyethylene, Acrylic, Polycarbonate }
+
 public class LootItem : MonoBehaviour
 {
-    public enum PlasticType { Polyethylene, Acrylic, Polycarbonate }
-
     [Header("Item Info")]
     public PlasticType type;
     [SerializeField] private int _value = 1;
@@ -31,7 +31,7 @@ public class LootItem : MonoBehaviour
             }
             else
             {
-                Debug.LogError("FAIL: No LootInventory found in scene!");
+                Debug.LogError("FAIL: No LootInventory found in scene! Check if it's on a Manager object.");
             }
         }
     }

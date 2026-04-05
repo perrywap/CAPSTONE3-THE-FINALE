@@ -28,6 +28,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.74
       objectReference: {fileID: 0}
+    - target: {fileID: 4372808345410459547, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+      propertyPath: _canLunge
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4835974537303376605, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -36,6 +40,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: 25aad3fe024ea574788c1f9f081fee8a, type: 2}
+    - target: {fileID: 7033358090210405455, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+      propertyPath: _maxHealth
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 7620837613927415655, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
