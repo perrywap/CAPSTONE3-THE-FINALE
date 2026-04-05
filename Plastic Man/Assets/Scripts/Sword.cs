@@ -3,20 +3,40 @@ using UnityEngine;
 public class Sword : WeaponBase
 {
     [SerializeField] private float range = 1.5f;
-    //[SerializeField] private int damage = 10;
     [SerializeField] private LayerMask hitLayer;
+
+    [Header("Audio")]
+    [SerializeField] private AudioClip swingSfx; 
+    [SerializeField] private float swingVolume = 0.5f;
 
     protected override void Fire(Vector3 origin, Vector3 direction)
     {
-        animator.SetTrigger("swing");
+   
+        if (swingSfx != null)
+        {
+            SfxManager.instance.PlaySFX(swingSfx, swingVolume);
+        }
+
         Vector3 hitPosition = origin + direction.normalized * range / 2f;
         float hitRadius = range / 2f;
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(hitPosition, hitRadius, hitLayer);
 
+        //foreach (Collider2D hit in hits)
+        //{
+        //    hit.GetComponent<EnemyHealth>().TakeDamage(damage);
+        //    Debug.Log("Slashed");
+        //}
+
         foreach (Collider2D hit in hits)
         {
-            Debug.Log("Slash!");
+            EnemyHealth enemy = hit.GetComponentInParent<EnemyHealth>();
+
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+                Debug.Log("Slashed");
+            }
         }
 
         Debug.DrawLine(origin, origin + direction.normalized * range, Color.red, 0.5f);

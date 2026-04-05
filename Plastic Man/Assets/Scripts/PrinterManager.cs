@@ -1,22 +1,19 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PrinterManager : MonoBehaviour
 {
-    public static PrinterManager Instance { get; private set; }
 
-    [SerializeField] private float fillamentAmount;
-    [SerializeField] private Transform fillamentSlot;
+    [SerializeField] private Transform printedSlot;
+    [SerializeField] private Transform moduleSlot;
+    [SerializeField] private Transform filamentSlot;
 
+    private Animator animator;
 
-    private void Awake()
+    private void Start()
     {
-        Instance = this;
+        animator = GetComponent<Animator>();
     }
 
 
-
-    public void OnPrintBtnClicked()
-    {
-
-    }
 }

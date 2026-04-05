@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 532cea5e8bc47fc43a6afbd5d7bf5484
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6595967362931651375
+    second: WorldLvl02_Tileset(Fixed)_0
+  - first:
+      213: 6804890926843869387
+    second: WorldLvl02_Tileset(Fixed)_1
+  - first:
+      213: -3265793493420520952
+    second: WorldLvl02_Tileset(Fixed)_2
+  - first:
+      213: 4884250328774714270
+    second: WorldLvl02_Tileset(Fixed)_3
+  - first:
+      213: -6779071799734667918
+    second: WorldLvl02_Tileset(Fixed)_4
+  - first:
+      213: -4560847267092079192
+    second: WorldLvl02_Tileset(Fixed)_5
+  - first:
+      213: -7942620657138041518
+    second: WorldLvl02_Tileset(Fixed)_6
+  - first:
+      213: 4428629245406201922
+    second: WorldLvl02_Tileset(Fixed)_7
+  - first:
+      213: 2141905045956193363
+    second: WorldLvl02_Tileset(Fixed)_8
+  - first:
+      213: 3379967210931957602
+    second: WorldLvl02_Tileset(Fixed)_9
+  - first:
+      213: 8423130120819841979
+    second: WorldLvl02_Tileset(Fixed)_10
+  - first:
+      213: 4856133469413012624
+    second: WorldLvl02_Tileset(Fixed)_11
+  - first:
+      213: 8311812690991837115
+    second: WorldLvl02_Tileset(Fixed)_12
+  - first:
+      213: -374609859972650470
+    second: WorldLvl02_Tileset(Fixed)_13
+  - first:
+      213: -5242641159221632264
+    second: WorldLvl02_Tileset(Fixed)_14
+  - first:
+      213: -1770293486856358851
+    second: WorldLvl02_Tileset(Fixed)_15
+  - first:
+      213: 6153253207529630290
+    second: WorldLvl02_Tileset(Fixed)_16
+  - first:
+      213: 5827939635868352858
+    second: WorldLvl02_Tileset(Fixed)_17
+  - first:
+      213: -2715439212674239104
+    second: WorldLvl02_Tileset(Fixed)_18
+  - first:
+      213: -688033293209651549
+    second: WorldLvl02_Tileset(Fixed)_19
+  - first:
+      213: 2293863667902375552
+    second: WorldLvl02_Tileset(Fixed)_20
+  - first:
+      213: -3165480151367980540
+    second: WorldLvl02_Tileset(Fixed)_21
+  - first:
+      213: 2215719350980957140
+    second: WorldLvl02_Tileset(Fixed)_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 479
+        width: 354
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f237c91ae55998b50800000000000000
+      internalID: 6595967362931651375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_1
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 511
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8becd7e34df6e50800000000000000
+      internalID: 6804890926843869387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_2
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 479
+        width: 130
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a43e2ee129da2d0800000000000000
+      internalID: -3265793493420520952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_3
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 479
+        width: 194
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93a3b0dbc758c340800000000000000
+      internalID: 4884250328774714270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_4
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 351
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27572fd7d16ebe1a0800000000000000
+      internalID: -6779071799734667918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_5
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 351
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad5a22339d94b0c0800000000000000
+      internalID: -4560847267092079192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d7b99189426c190800000000000000
+      internalID: -7942620657138041518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_7
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 351
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248c756b5d6a57d30800000000000000
+      internalID: 4428629245406201922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_8
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 351
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ce5de7a4399bd10800000000000000
+      internalID: 2141905045956193363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_9
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 351
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f2110454e08ee20800000000000000
+      internalID: 3379967210931957602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_10
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 351
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb1c5c9738f4e470800000000000000
+      internalID: 8423130120819841979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_11
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 223
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0947f3a59a3746340800000000000000
+      internalID: 4856133469413012624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_12
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 223
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfe626ca9d795370800000000000000
+      internalID: 8311812690991837115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_13
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 223
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1aa8fe215e1dcaf0800000000000000
+      internalID: -374609859972650470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_14
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 223
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2a0c374a56e37b0800000000000000
+      internalID: -5242641159221632264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_15
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 223
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d343dbff377ae67e0800000000000000
+      internalID: -1770293486856358851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_16
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 223
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a26dfd03fb46550800000000000000
+      internalID: 6153253207529630290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_17
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 95
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a514a58983001e050800000000000000
+      internalID: 5827939635868352858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_18
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 95
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085b26f4c62d05ad0800000000000000
+      internalID: -2715439212674239104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_19
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 112
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6b89c7d5d9376f0800000000000000
+      internalID: -688033293209651549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_20
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 95
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086ee704ad075df10800000000000000
+      internalID: 2293863667902375552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_21
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 127
+        width: 194
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a6922e294f114d0800000000000000
+      internalID: -3165480151367980540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl02_Tileset(Fixed)_22
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 31
+        width: 95
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3dd25a201dfbe10800000000000000
+      internalID: 2215719350980957140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WorldLvl02_Tileset(Fixed)_0: 6595967362931651375
+      WorldLvl02_Tileset(Fixed)_1: 6804890926843869387
+      WorldLvl02_Tileset(Fixed)_10: 8423130120819841979
+      WorldLvl02_Tileset(Fixed)_11: 4856133469413012624
+      WorldLvl02_Tileset(Fixed)_12: 8311812690991837115
+      WorldLvl02_Tileset(Fixed)_13: -374609859972650470
+      WorldLvl02_Tileset(Fixed)_14: -5242641159221632264
+      WorldLvl02_Tileset(Fixed)_15: -1770293486856358851
+      WorldLvl02_Tileset(Fixed)_16: 6153253207529630290
+      WorldLvl02_Tileset(Fixed)_17: 5827939635868352858
+      WorldLvl02_Tileset(Fixed)_18: -2715439212674239104
+      WorldLvl02_Tileset(Fixed)_19: -688033293209651549
+      WorldLvl02_Tileset(Fixed)_2: -3265793493420520952
+      WorldLvl02_Tileset(Fixed)_20: 2293863667902375552
+      WorldLvl02_Tileset(Fixed)_21: -3165480151367980540
+      WorldLvl02_Tileset(Fixed)_22: 2215719350980957140
+      WorldLvl02_Tileset(Fixed)_3: 4884250328774714270
+      WorldLvl02_Tileset(Fixed)_4: -6779071799734667918
+      WorldLvl02_Tileset(Fixed)_5: -4560847267092079192
+      WorldLvl02_Tileset(Fixed)_6: -7942620657138041518
+      WorldLvl02_Tileset(Fixed)_7: 4428629245406201922
+      WorldLvl02_Tileset(Fixed)_8: 2141905045956193363
+      WorldLvl02_Tileset(Fixed)_9: 3379967210931957602
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

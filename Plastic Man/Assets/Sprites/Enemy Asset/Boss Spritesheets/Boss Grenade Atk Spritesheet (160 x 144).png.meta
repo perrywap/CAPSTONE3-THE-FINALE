@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 3a54b3a53bc17d4499862674e8471b1e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8945679793077497427
+    second: Boss Grenade Atk Spritesheet (160 x 144)_0
+  - first:
+      213: -6047679966265027720
+    second: Boss Grenade Atk Spritesheet (160 x 144)_1
+  - first:
+      213: -8164395022057914912
+    second: Boss Grenade Atk Spritesheet (160 x 144)_2
+  - first:
+      213: -4978124392120951549
+    second: Boss Grenade Atk Spritesheet (160 x 144)_3
+  - first:
+      213: -4375002386035688249
+    second: Boss Grenade Atk Spritesheet (160 x 144)_4
+  - first:
+      213: 991315503941039585
+    second: Boss Grenade Atk Spritesheet (160 x 144)_5
+  - first:
+      213: 1123361123820254256
+    second: Boss Grenade Atk Spritesheet (160 x 144)_6
+  - first:
+      213: -2679752099299843611
+    second: Boss Grenade Atk Spritesheet (160 x 144)_7
+  - first:
+      213: -6258354248649777819
+    second: Boss Grenade Atk Spritesheet (160 x 144)_8
+  - first:
+      213: -3358788832808480989
+    second: Boss Grenade Atk Spritesheet (160 x 144)_9
+  - first:
+      213: 3118675245878962387
+    second: Boss Grenade Atk Spritesheet (160 x 144)_10
+  - first:
+      213: 5574010296376432481
+    second: Boss Grenade Atk Spritesheet (160 x 144)_11
+  - first:
+      213: -2442331484201333787
+    second: Boss Grenade Atk Spritesheet (160 x 144)_12
+  - first:
+      213: -4572560675344964095
+    second: Boss Grenade Atk Spritesheet (160 x 144)_13
+  - first:
+      213: 7425097519604592547
+    second: Boss Grenade Atk Spritesheet (160 x 144)_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 303
+        width: 59
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e26c42060752c70800000000000000
+      internalID: 8945679793077497427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_1
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 303
+        width: 56
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873d687dc13521ca0800000000000000
+      internalID: -6047679966265027720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_2
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 303
+        width: 52
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed3548fbfd32be80800000000000000
+      internalID: -8164395022057914912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_3
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 302
+        width: 50
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d5ce79d362aeab0800000000000000
+      internalID: -4978124392120951549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_4
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 303
+        width: 52
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc3bd8728ed843c0800000000000000
+      internalID: -4375002386035688249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_5
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 158
+        width: 52
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e53eb8d23cd1cd00800000000000000
+      internalID: 991315503941039585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_6
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 159
+        width: 52
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0343ac38dfaf69f00800000000000000
+      internalID: 1123361123820254256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_7
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 158
+        width: 50
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e12023e9ab9fcad0800000000000000
+      internalID: -2679752099299843611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_8
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 158
+        width: 52
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d5ca218fbd529a0800000000000000
+      internalID: -6258354248649777819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_9
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 159
+        width: 52
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32fc6e82a5f2361d0800000000000000
+      internalID: -3358788832808480989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_10
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 14
+        width: 52
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d86b68dc92c74b20800000000000000
+      internalID: 3118675245878962387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 15
+        width: 50
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16713e905dcda5d40800000000000000
+      internalID: 5574010296376432481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_12
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 15
+        width: 52
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb4d6484781b1ed0800000000000000
+      internalID: -2442331484201333787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_13
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 15
+        width: 56
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 106a420da400b80c0800000000000000
+      internalID: -4572560675344964095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Grenade Atk Spritesheet (160 x 144)_14
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 15
+        width: 59
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af6aaeaade3b0760800000000000000
+      internalID: 7425097519604592547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Boss Grenade Atk Spritesheet (160 x 144)_0: 8945679793077497427
+      Boss Grenade Atk Spritesheet (160 x 144)_1: -6047679966265027720
+      Boss Grenade Atk Spritesheet (160 x 144)_10: 3118675245878962387
+      Boss Grenade Atk Spritesheet (160 x 144)_11: 5574010296376432481
+      Boss Grenade Atk Spritesheet (160 x 144)_12: -2442331484201333787
+      Boss Grenade Atk Spritesheet (160 x 144)_13: -4572560675344964095
+      Boss Grenade Atk Spritesheet (160 x 144)_14: 7425097519604592547
+      Boss Grenade Atk Spritesheet (160 x 144)_2: -8164395022057914912
+      Boss Grenade Atk Spritesheet (160 x 144)_3: -4978124392120951549
+      Boss Grenade Atk Spritesheet (160 x 144)_4: -4375002386035688249
+      Boss Grenade Atk Spritesheet (160 x 144)_5: 991315503941039585
+      Boss Grenade Atk Spritesheet (160 x 144)_6: 1123361123820254256
+      Boss Grenade Atk Spritesheet (160 x 144)_7: -2679752099299843611
+      Boss Grenade Atk Spritesheet (160 x 144)_8: -6258354248649777819
+      Boss Grenade Atk Spritesheet (160 x 144)_9: -3358788832808480989
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

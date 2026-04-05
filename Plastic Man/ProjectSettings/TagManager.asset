@@ -5,15 +5,17 @@ TagManager:
   serializedVersion: 3
   tags:
   - Aim
+  - Environment
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Granade
   - Water
   - UI
   - Enemy
-  - 
+  - Blocker
   - 
   - 
   - 
