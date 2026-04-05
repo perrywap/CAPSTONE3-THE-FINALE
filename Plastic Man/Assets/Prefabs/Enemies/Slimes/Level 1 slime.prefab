@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d052cce941cfac04e839e13a2ae6db20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
+  _canLunge: 0
   _movementSpeed: 2
   _detectionRadius: 5
   _attackRadius: 2
@@ -153,10 +154,13 @@ MonoBehaviour:
   _obstacleMask:
     serializedVersion: 2
     m_Bits: 128
+  _lungeForce: 12
+  _lungeDuration: 0.25
   _hitbox: {fileID: 4835974537303376605}
   wanderClip: {fileID: 8300000, guid: 79f824e640614cb4a8de1babe6379f56, type: 3}
   chaseClip: {fileID: 8300000, guid: 12efb8d614dcd17419a55f3513bc7dff, type: 3}
   attackClip: {fileID: 8300000, guid: 4a66b2d02e069494cac988ceac5acfcc, type: 3}
+  deathClip: {fileID: 0}
 --- !u!195 &7607774394451779696
 NavMeshAgent:
   m_ObjectHideFlags: 0

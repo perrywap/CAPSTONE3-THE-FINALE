@@ -6,6 +6,7 @@ using System.Collections;
 public class EnemyAI : MonoBehaviour
 {
     [Header("Settings")]
+    [SerializeField] private bool _canLunge = true;
     [SerializeField] private float _movementSpeed = 2.5f;
     [SerializeField] private float _detectionRadius = 8f;
     [SerializeField] private float _attackRadius = 1.8f;
@@ -184,7 +185,10 @@ public class EnemyAI : MonoBehaviour
         if (attackClip != null)
             _audioSource.PlayOneShot(attackClip);
 
-        StartCoroutine(LungeRoutine());
+        if (_canLunge)
+        {
+            StartCoroutine(LungeRoutine());
+        }
     }
 
     private IEnumerator LungeRoutine()

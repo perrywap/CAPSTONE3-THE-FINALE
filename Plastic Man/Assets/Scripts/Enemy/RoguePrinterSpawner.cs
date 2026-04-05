@@ -1,6 +1,5 @@
-using NUnit.Framework;
+using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class RoguePrinterSpawner : MonoBehaviour
@@ -15,8 +14,12 @@ public class RoguePrinterSpawner : MonoBehaviour
     [SerializeField] private int spawnCount;
     [SerializeField] private int maxSpawnCount;
 
-    [Header("Generator")]
+    [Header("Generator & Sequence Settings")]
     [SerializeField] private List<GameObject> generators;
+    [SerializeField] private CutsceneTrigger _enemiesAliveCutscene;
+    [SerializeField] private CutsceneTrigger _enemiesDeadCutscene;
+    [SerializeField] private GameObject cleanPrinter;
+    [SerializeField] private float animationDuration = 2f;
 
     public bool isDefeated;
     private float timer;
@@ -26,15 +29,16 @@ public class RoguePrinterSpawner : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         timer = spawnInterval;
+        if (cleanPrinter != null) cleanPrinter.SetActive(false);
     }
+
     private void Update()
     {
-        if (isDefeated)
-            return;
+        if (isDefeated) return;
 
         timer -= Time.deltaTime;
 
-        if(spawnCount != maxSpawnCount)
+        if (spawnCount != maxSpawnCount)
         {
             if (timer <= 0f)
             {
@@ -46,23 +50,45 @@ public class RoguePrinterSpawner : MonoBehaviour
 
         for (int i = generators.Count - 1; i >= 0; i--)
         {
-            if (generators[i] == null)
-            {
-                generators.RemoveAt(i);
-            }
+            if (generators[i] == null) generators.RemoveAt(i);
         }
 
         if (generators.Count <= 0)
         {
             isDefeated = true;
-            animator.SetTrigger("destroyed");
+
+            if (GameManager.Instance != null && GameManager.Instance.ActiveEnemyCount > 0)
+            {
+                if (_enemiesAliveCutscene != null) _enemiesAliveCutscene.PlayFromGameManager();
+            }
+            else
+            {
+                if (GameManager.Instance != null && _enemiesDeadCutscene != null)
+                {
+                    GameManager.Instance.TriggerWinSequence(_enemiesDeadCutscene);
+                }
+            }
         }
     }
+
     public void Spawn()
     {
         spawnCount++;
         frontSprite.sortingOrder = 1;
         int index = Random.Range(0, spawnableEnemies.Length);
-        GameObject enemyGO = Instantiate(spawnableEnemies[index], spawnArea.position, Quaternion.identity);
+        Instantiate(spawnableEnemies[index], spawnArea.position, Quaternion.identity);
+    }
+
+    public void TriggerExplosionAndSwap()
+    {
+        StartCoroutine(ExplosionSequence());
+    }
+
+    private IEnumerator ExplosionSequence()
+    {
+        if (animator != null) animator.SetTrigger("destroyed");
+        yield return new WaitForSecondsRealtime(animationDuration);
+        if (cleanPrinter != null) cleanPrinter.SetActive(true);
+        gameObject.SetActive(false);
     }
 }
