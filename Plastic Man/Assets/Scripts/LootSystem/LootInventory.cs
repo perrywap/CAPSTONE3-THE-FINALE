@@ -36,6 +36,6 @@ public class LootInventory : MonoBehaviour
                 break;
         }
 
-        Debug.Log($"Inventory added {amount} of {type}. PE: {polyethyleneCount}, AC: {acrylicCount}, PC: {polycarbonateCount}");
+        Debug.Log($"Inventory added {amount} of {type}. Total PE: {polyethyleneCount}, AC: {acrylicCount}, PC: {polycarbonateCount}");
     }
 }

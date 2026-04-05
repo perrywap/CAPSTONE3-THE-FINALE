@@ -19,12 +19,18 @@ public class RoombaAI : MonoBehaviour
     [SerializeField] private Transform _firePoint;
     [SerializeField] private float _bulletSpeed = 10f;
 
+    [Header("Death Settings")]
+    [SerializeField] private AudioClip _deathClip; // Assign in Inspector
+
     private NavMeshAgent _agent;
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
+    private AudioSource _audioSource;
+
     private float _changeDirectionTimer;
     private float _attackTimer;
     private bool _isAttacking;
+    private bool _isDead; // Blocks all logic
     private float _attackSafetyTimer;
 
     private enum State { Wander, Chase, Attack }
@@ -35,6 +41,7 @@ public class RoombaAI : MonoBehaviour
         _agent = GetComponent<NavMeshAgent>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
 
         _agent.speed = _movementSpeed;
         _agent.stoppingDistance = _attackRadius - 1f;
@@ -49,6 +56,9 @@ public class RoombaAI : MonoBehaviour
 
     void Update()
     {
+        // Prevent all logic if the Roomba is dead
+        if (_isDead) return;
+
         transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
 
         if (_attackTimer > 0) _attackTimer -= Time.deltaTime;
@@ -74,6 +84,57 @@ public class RoombaAI : MonoBehaviour
         UpdateAnimations();
     }
 
+    // --- DEATH LOGIC ---
+    public void Die()
+    {
+        if (_isDead) return;
+
+        _isDead = true;
+
+        // Stop movement immediately
+        if (_agent.isOnNavMesh)
+        {
+            _agent.isStopped = true;
+            _agent.velocity = Vector3.zero;
+        }
+
+        // Play Death Animation
+        _animator.speed = 1;
+        _animator.Play("RoombaDeath"); // Ensure this matches your clip name exactly
+
+        // Play Death Sound
+        if (_deathClip != null && _audioSource != null)
+            _audioSource.PlayOneShot(_deathClip);
+
+        // Disable Collision so player can walk through it while it's dying
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
+
+        Debug.Log("Roomba " + gameObject.name + " is performing death sequence.");
+    }
+
+    // IMPORTANT: Call this via Animation Event at the very last frame of RoombaDeath clip
+    public void DestroyAfterDeath()
+    {
+        // 1. Drop Loot
+        LootSpawner lootSpawner = Object.FindFirstObjectByType<LootSpawner>();
+        if (lootSpawner != null)
+        {
+            lootSpawner.DropLoot(transform.position);
+        }
+
+        // 2. Notify Spawner
+        EnemySpawner spawner = Object.FindFirstObjectByType<EnemySpawner>();
+        if (spawner != null)
+        {
+            spawner.RemoveEnemyFromList(gameObject);
+        }
+
+        // 3. Final Destruction
+        Destroy(gameObject);
+    }
+
+    // --- AI LOGIC ---
     private void DetectPlayer()
     {
         if (_player == null) return;
@@ -145,6 +206,7 @@ public class RoombaAI : MonoBehaviour
 
     public void OnAttackFinished()
     {
+        if (_isDead) return;
         _isAttacking = false;
         _agent.isStopped = false;
         _attackTimer = _attackCooldown;
@@ -153,7 +215,8 @@ public class RoombaAI : MonoBehaviour
 
     private void UpdateAnimations()
     {
-        if (_isAttacking) return;
+        // Don't update movement animations if attacking or dead
+        if (_isAttacking || _isDead) return;
 
         Vector2 velocity = _agent.velocity;
 
@@ -204,7 +267,7 @@ public class RoombaAI : MonoBehaviour
 
     private void ForceMoveToDestination(Vector3 target)
     {
-        if (_agent.isOnNavMesh)
+        if (_agent.isOnNavMesh && !_isDead)
         {
             _agent.isStopped = false;
             _agent.SetDestination(new Vector3(target.x, target.y, 0f));
