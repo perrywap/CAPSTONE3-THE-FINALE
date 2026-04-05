@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: b84f0fd7ed18d574d9aa8153d8672cb1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4574107422315217397
+    second: WorldLvl05_Assets_0
+  - first:
+      213: -2764034991825988627
+    second: WorldLvl05_Assets_1
+  - first:
+      213: 8974721883995067266
+    second: WorldLvl05_Assets_2
+  - first:
+      213: -3622950797623361192
+    second: WorldLvl05_Assets_3
+  - first:
+      213: 3903040168897181670
+    second: WorldLvl05_Assets_4
+  - first:
+      213: 5689051371205631515
+    second: WorldLvl05_Assets_5
+  - first:
+      213: -6055051352040223069
+    second: WorldLvl05_Assets_6
+  - first:
+      213: 4005108334348021411
+    second: WorldLvl05_Assets_7
+  - first:
+      213: 5311202435421181906
+    second: WorldLvl05_Assets_8
+  - first:
+      213: 51266521846755778
+    second: WorldLvl05_Assets_9
+  - first:
+      213: 8777389095671423886
+    second: WorldLvl05_Assets_10
+  - first:
+      213: -8667708521120326854
+    second: WorldLvl05_Assets_11
+  - first:
+      213: -7124619233506569995
+    second: WorldLvl05_Assets_12
+  - first:
+      213: -2890888710925941813
+    second: WorldLvl05_Assets_13
+  - first:
+      213: -1461696472182756086
+    second: WorldLvl05_Assets_14
+  - first:
+      213: -7022676441578666662
+    second: WorldLvl05_Assets_15
+  - first:
+      213: -663907089577033192
+    second: WorldLvl05_Assets_16
+  - first:
+      213: -609230269183249129
+    second: WorldLvl05_Assets_17
+  - first:
+      213: 3671603586288113588
+    second: WorldLvl05_Assets_18
+  - first:
+      213: 7488425417235780194
+    second: WorldLvl05_Assets_19
+  - first:
+      213: -2236243832027421799
+    second: WorldLvl05_Assets_20
+  - first:
+      213: 8184072615392952485
+    second: WorldLvl05_Assets_21
+  - first:
+      213: 7975702624483264872
+    second: WorldLvl05_Assets_22
+  - first:
+      213: -5989264140895649859
+    second: WorldLvl05_Assets_23
+  - first:
+      213: -3247827697148078178
+    second: WorldLvl05_Assets_24
+  - first:
+      213: -2191706734412379715
+    second: WorldLvl05_Assets_25
+  - first:
+      213: 568218444946769210
+    second: WorldLvl05_Assets_26
+  - first:
+      213: 3287103899491125125
+    second: WorldLvl05_Assets_27
+  - first:
+      213: -3407452716196357967
+    second: WorldLvl05_Assets_28
+  - first:
+      213: 1986807664723469651
+    second: WorldLvl05_Assets_29
+  - first:
+      213: -1729454252549874576
+    second: WorldLvl05_Assets_30
+  - first:
+      213: 1454683810615775520
+    second: WorldLvl05_Assets_31
+  - first:
+      213: 2016576310965003598
+    second: WorldLvl05_Assets_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 187
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 611
+        width: 94
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f18397477e7a7f30800000000000000
+      internalID: 4574107422315217397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 612
+        width: 38
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de35675c1dc24a9d0800000000000000
+      internalID: -2764034991825988627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_2
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 610
+        width: 67
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283537dd00e9c8c70800000000000000
+      internalID: 8974721883995067266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_3
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 610
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85101fcd171b8bdc0800000000000000
+      internalID: -3622950797623361192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_4
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 618
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7723bba526a2630800000000000000
+      internalID: 3903040168897181670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_5
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 610
+        width: 126
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e19a9841293fe40800000000000000
+      internalID: 5689051371205631515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_6
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 615
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aec4e850e228fba0800000000000000
+      internalID: -6055051352040223069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_7
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 614
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae25c36fc0059730800000000000000
+      internalID: 4005108334348021411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_8
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 610
+        width: 67
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7187d997e25b940800000000000000
+      internalID: 5311202435421181906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_9
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 614
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1bb8741a226b000800000000000000
+      internalID: 51266521846755778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 515
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83e1eeb0ec8fc970800000000000000
+      internalID: 8777389095671423886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_11
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 515
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b1ff5060d16b780800000000000000
+      internalID: -8667708521120326854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_12
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 394
+        width: 52
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0dce21e84402d90800000000000000
+      internalID: -7124619233506569995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_13
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 394
+        width: 52
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc38214b80081e7d0800000000000000
+      internalID: -2890888710925941813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_14
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 394
+        width: 53
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0dea1e8dc207bbe0800000000000000
+      internalID: -1461696472182756086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_15
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 394
+        width: 52
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55033febf07a8e90800000000000000
+      internalID: -7022676441578666662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_16
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 394
+        width: 52
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812c5e1050459c6f0800000000000000
+      internalID: -663907089577033192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_17
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 419
+        width: 162
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715baea4c449b87f0800000000000000
+      internalID: -609230269183249129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_18
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 355
+        width: 35
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7d0cc320824f230800000000000000
+      internalID: 3671603586288113588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_19
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 195
+        width: 162
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2625859dd3b3ce760800000000000000
+      internalID: 7488425417235780194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_20
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 195
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993e8d8351447f0e0800000000000000
+      internalID: -2236243832027421799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_21
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 241
+        width: 100
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0cf70ceaaa39170800000000000000
+      internalID: 8184072615392952485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_22
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 241
+        width: 100
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869c976a7436fae60800000000000000
+      internalID: 7975702624483264872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_23
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 241
+        width: 100
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbffdef0ffbd1eca0800000000000000
+      internalID: -5989264140895649859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_24
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 241
+        width: 100
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9750dbcae56de2d0800000000000000
+      internalID: -3247827697148078178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_25
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 145
+        width: 100
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9c483565e7591e0800000000000000
+      internalID: -2191706734412379715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_26
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 145
+        width: 100
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3580e54aa7b2e700800000000000000
+      internalID: 568218444946769210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_27
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 145
+        width: 100
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58748fca4932e9d20800000000000000
+      internalID: 3287103899491125125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_28
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 145
+        width: 100
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b81d2edecb46b0d0800000000000000
+      internalID: -3407452716196357967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_29
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 72
+        width: 100
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355add46b0f829b10800000000000000
+      internalID: 1986807664723469651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_30
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 72
+        width: 100
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07cd975358ebff7e0800000000000000
+      internalID: -1729454252549874576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_31
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 75
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021d340f733103410800000000000000
+      internalID: 1454683810615775520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldLvl05_Assets_32
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 75
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45698578715cfb10800000000000000
+      internalID: 2016576310965003598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WorldLvl05_Assets_0: 4574107422315217397
+      WorldLvl05_Assets_1: -2764034991825988627
+      WorldLvl05_Assets_10: 8777389095671423886
+      WorldLvl05_Assets_11: -8667708521120326854
+      WorldLvl05_Assets_12: -7124619233506569995
+      WorldLvl05_Assets_13: -2890888710925941813
+      WorldLvl05_Assets_14: -1461696472182756086
+      WorldLvl05_Assets_15: -7022676441578666662
+      WorldLvl05_Assets_16: -663907089577033192
+      WorldLvl05_Assets_17: -609230269183249129
+      WorldLvl05_Assets_18: 3671603586288113588
+      WorldLvl05_Assets_19: 7488425417235780194
+      WorldLvl05_Assets_2: 8974721883995067266
+      WorldLvl05_Assets_20: -2236243832027421799
+      WorldLvl05_Assets_21: 8184072615392952485
+      WorldLvl05_Assets_22: 7975702624483264872
+      WorldLvl05_Assets_23: -5989264140895649859
+      WorldLvl05_Assets_24: -3247827697148078178
+      WorldLvl05_Assets_25: -2191706734412379715
+      WorldLvl05_Assets_26: 568218444946769210
+      WorldLvl05_Assets_27: 3287103899491125125
+      WorldLvl05_Assets_28: -3407452716196357967
+      WorldLvl05_Assets_29: 1986807664723469651
+      WorldLvl05_Assets_3: -3622950797623361192
+      WorldLvl05_Assets_30: -1729454252549874576
+      WorldLvl05_Assets_31: 1454683810615775520
+      WorldLvl05_Assets_32: 2016576310965003598
+      WorldLvl05_Assets_4: 3903040168897181670
+      WorldLvl05_Assets_5: 5689051371205631515
+      WorldLvl05_Assets_6: -6055051352040223069
+      WorldLvl05_Assets_7: 4005108334348021411
+      WorldLvl05_Assets_8: 5311202435421181906
+      WorldLvl05_Assets_9: 51266521846755778
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
