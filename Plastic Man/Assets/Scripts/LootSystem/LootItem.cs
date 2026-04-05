@@ -31,7 +31,7 @@ public class LootItem : MonoBehaviour
             }
             else
             {
-                Debug.LogError("FAIL: No LootInventory found in scene!");
+                Debug.LogError("FAIL: No LootInventory found in scene! Check if it's on a Manager object.");
             }
         }
     }
