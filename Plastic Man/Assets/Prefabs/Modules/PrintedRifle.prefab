@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6514909106731548128}
   - component: {fileID: 2423037942276545621}
   m_Layer: 0
-  m_Name: PrintedPistol
+  m_Name: PrintedRifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 12
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3667559674425435724, guid: 815de6dbd96968842a04f07abf824e95, type: 3}
+  m_Sprite: {fileID: 5417780847300892640, guid: c40a020edbfe8ad4cb0785963958f3da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1bae241f2b8734f951f727acbf9ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickUps
-  weaponPrefab: {fileID: 4208481742703032022, guid: f7cbf9e0f0e1fd8438522a48b3dd4584, type: 3}
+  weaponPrefab: {fileID: 4208481742703032022, guid: 9eb1972074313464ca36e25958ad800d, type: 3}
   _isTutorialItem: 0
   _tutorialPrompt: {fileID: 0}
   _onTutorialEquipped:
@@ -152,7 +152,7 @@ BoxCollider2D:
   m_Offset: {x: 0.178257, y: 0.27889302}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.3, y: 0.5}
+    pivot: {x: 0.4, y: 0.5}
     oldSize: {x: 2, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
