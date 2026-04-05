@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioClip dashSfx;
     [SerializeField] private float dashVolume = 0.5f;
 
+    [Header("Dash UI")]
+    [Tooltip("Drag your Dash UI object that has the DashCooldownUI script here")]
+    [SerializeField] private DashCooldownUI dashUI; // <-- NEW UI REFERENCE
 
     [Header("After Image Settings")]
     public GameObject afterImagePrefab;
@@ -54,7 +57,7 @@ public class PlayerController : MonoBehaviour
             {
                 float angle = PlayerLookAt.Instance.angle;
                 animator.SetFloat("angle", angle);
-            }    
+            }
         }
 
         if (cooldownTimer > 0)
@@ -94,7 +97,8 @@ public class PlayerController : MonoBehaviour
         }
 
         // Toggle footsteps sfx
-        this.gameObject.GetComponent<PlayerFootSteps>().isMoving = animator.GetBool("isMoving");
+        if (this.gameObject.GetComponent<PlayerFootSteps>() != null)
+            this.gameObject.GetComponent<PlayerFootSteps>().isMoving = animator.GetBool("isMoving");
 
         if (Module.Instance != null)
             Module.Instance.HandleFrame(animator.GetBool("isMoving"));
@@ -107,11 +111,18 @@ public class PlayerController : MonoBehaviour
         isDashing = true;
         dashTimer = dashDuration;
         cooldownTimer = dashCooldown;
+
         if (dashSfx != null)
         {
             SfxManager.instance.PlaySFX(dashSfx, dashVolume);
         }
 
+        // --- NEW: TRIGGER UI COOLDOWN ---
+        if (dashUI != null)
+        {
+            dashUI.StartCooldown(dashCooldown);
+        }
+        // --------------------------------
     }
 
     private void HandleDash()

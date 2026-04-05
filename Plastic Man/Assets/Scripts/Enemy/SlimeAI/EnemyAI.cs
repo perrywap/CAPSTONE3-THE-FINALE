@@ -13,7 +13,6 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float _changeDirectionTime = 3f;
     [SerializeField] private float _randomMoveDistance = 4f;
     [SerializeField] private GameObject _player;
-
     [SerializeField] private LayerMask _obstacleMask;
 
     [Header("Lunge Settings")]
@@ -27,6 +26,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private AudioClip wanderClip;
     [SerializeField] private AudioClip chaseClip;
     [SerializeField] private AudioClip attackClip;
+    [SerializeField] private AudioClip deathClip;
 
     private NavMeshAgent _agent;
     private Animator _animator;
@@ -37,6 +37,7 @@ public class EnemyAI : MonoBehaviour
     private float _attackTimer;
     private string _currentTrigger;
     private bool _isAttacking;
+    private bool _isDead;
     private State _currentState;
 
     private enum State { Wander, Chase, Attack }
@@ -67,6 +68,8 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        if (_isDead) return;
+
         transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
 
         if (_attackTimer > 0) _attackTimer -= Time.deltaTime;
@@ -85,6 +88,43 @@ public class EnemyAI : MonoBehaviour
         FlipSprite();
     }
 
+    public void Die()
+    {
+        if (_isDead) return;
+        _isDead = true;
+
+        if (_agent.isOnNavMesh)
+        {
+            _agent.isStopped = true;
+            _agent.velocity = Vector3.zero;
+        }
+
+        SafeSetTrigger("SlimeDeath");
+
+        if (deathClip != null)
+            _audioSource.PlayOneShot(deathClip);
+
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
+    }
+
+    public void DestroyAfterDeath()
+    {
+        LootSpawner lootSpawner = Object.FindFirstObjectByType<LootSpawner>();
+        if (lootSpawner != null)
+        {
+            lootSpawner.DropLoot(transform.position);
+        }
+
+        EnemySpawner spawner = Object.FindFirstObjectByType<EnemySpawner>();
+        if (spawner != null)
+        {
+            spawner.RemoveEnemyFromList(gameObject);
+        }
+
+        Destroy(gameObject);
+    }
+
     private void DetectPlayer()
     {
         if (_player == null) return;
@@ -99,9 +139,7 @@ public class EnemyAI : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, _obstacleMask);
 
             if (hit.collider == null)
-            {
                 hasLineOfSight = true;
-            }
         }
 
         if (distance <= _attackRadius && _attackTimer <= 0 && hasLineOfSight)
@@ -117,19 +155,13 @@ public class EnemyAI : MonoBehaviour
 
     private void PlayStateAudio(State state)
     {
-        if (_audioSource == null) return;
+        if (_audioSource == null || _isDead) return;
 
         switch (state)
         {
-            case State.Wander:
-                _audioSource.clip = wanderClip;
-                break;
-            case State.Chase:
-                _audioSource.clip = chaseClip;
-                break;
-            case State.Attack:
-                _audioSource.clip = attackClip;
-                break;
+            case State.Wander: _audioSource.clip = wanderClip; break;
+            case State.Chase: _audioSource.clip = chaseClip; break;
+            case State.Attack: _audioSource.clip = attackClip; break;
         }
 
         if (_audioSource.clip != null)
@@ -147,12 +179,10 @@ public class EnemyAI : MonoBehaviour
         _agent.isStopped = true;
         _agent.velocity = Vector3.zero;
 
-        _animator.SetTrigger("AttackSlime");
+        SafeSetTrigger("AttackSlime");
 
         if (attackClip != null)
-        {
             _audioSource.PlayOneShot(attackClip);
-        }
 
         StartCoroutine(LungeRoutine());
     }
@@ -166,6 +196,7 @@ public class EnemyAI : MonoBehaviour
 
         while (elapsed < _lungeDuration)
         {
+            if (_isDead) yield break;
             transform.position += lungeDir * _lungeForce * Time.deltaTime;
             elapsed += Time.deltaTime;
             yield return null;
@@ -177,6 +208,8 @@ public class EnemyAI : MonoBehaviour
 
     public void OnAttackAnimationFinished()
     {
+        if (_isDead) return;
+
         _isAttacking = false;
         _agent.isStopped = false;
         _currentTrigger = "";
@@ -192,14 +225,14 @@ public class EnemyAI : MonoBehaviour
 
     private void UpdateAnimation()
     {
-        if (_isAttacking) return;
+        if (_isAttacking || _isDead) return;
         float speed = _agent.velocity.magnitude;
         SafeSetTrigger(speed > 0.1f ? "MoveSlime" : "IdleSlime");
     }
 
     private void FlipSprite()
     {
-        if (_isAttacking) return;
+        if (_isAttacking || _isDead) return;
         if (_agent.velocity.x > 0.1f) _spriteRenderer.flipX = false;
         else if (_agent.velocity.x < -0.1f) _spriteRenderer.flipX = true;
     }
@@ -207,8 +240,12 @@ public class EnemyAI : MonoBehaviour
     private void SafeSetTrigger(string triggerName)
     {
         if (_currentTrigger == triggerName) return;
+
         _animator.ResetTrigger("IdleSlime");
         _animator.ResetTrigger("MoveSlime");
+        _animator.ResetTrigger("AttackSlime");
+        _animator.ResetTrigger("SlimeDeath");
+
         _animator.SetTrigger(triggerName);
         _currentTrigger = triggerName;
     }
@@ -241,7 +278,7 @@ public class EnemyAI : MonoBehaviour
 
     private void ForceMoveToDestination(Vector3 target)
     {
-        if (_agent.isOnNavMesh)
+        if (_agent.isOnNavMesh && !_isDead)
         {
             _agent.isStopped = false;
             _agent.SetDestination(new Vector3(target.x, target.y, 0f));

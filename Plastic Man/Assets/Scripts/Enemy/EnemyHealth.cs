@@ -6,26 +6,34 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private float _maxHealth = 50f;
     private float _currentHealth;
 
-
     [Header("Audio")]
     [SerializeField] private AudioClip damageSfx; // sound when hit
     [SerializeField] private AudioClip deathSfx;  // sound when dying
     [SerializeField] private float damageVolume = 0.5f;
     [SerializeField] private float deathVolume = 0.7f;
 
-    public float CurrentHealth {  get { return _currentHealth; } }
+    public float CurrentHealth { get { return _currentHealth; } }
     public float MaxHealth { get { return _maxHealth; } }
 
-    void Start()
+    private void Start()
     {
         _currentHealth = _maxHealth;
+
+        // FIX: Register in Start() so we guarantee the GameManager is awake!
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.RegisterEnemy(this.gameObject);
+        }
     }
 
     public void TakeDamage(float damage)
     {
-    
         _currentHealth -= damage;
-        this.GetComponentInChildren<HpBarComponent>().OnDamaged();
+
+        if (this.GetComponentInChildren<HpBarComponent>() != null)
+        {
+            this.GetComponentInChildren<HpBarComponent>().OnDamaged();
+        }
 
         // Play damage sound
         if (damageSfx != null)
@@ -64,18 +72,9 @@ public class EnemyHealth : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnEnable()
+    // FIX: Unregister when the enemy is fully destroyed, rather than just disabled
+    private void OnDestroy()
     {
-        // Add to list when spawned or enabled
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.RegisterEnemy(this.gameObject);
-        }
-    }
-
-    private void OnDisable()
-    {
-        // Remove from list when destroyed or disabled
         if (GameManager.Instance != null)
         {
             GameManager.Instance.UnregisterEnemy(this.gameObject);

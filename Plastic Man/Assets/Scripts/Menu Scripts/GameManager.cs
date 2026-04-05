@@ -41,10 +41,13 @@ public class GameManager : MonoBehaviour
             TogglePause();
         }
 
+        // Clean up the list to prevent errors if an enemy gets destroyed unexpectedly
+        _enemies.RemoveAll(item => item == null);
+
+        // Win Condition: All registered enemies are gone
         if (_enemies.Count <= 0)
         {
             _isGameCleared = true;
-
             StartCoroutine(ShowWinSequence());
         }
     }
@@ -122,7 +125,7 @@ public class GameManager : MonoBehaviour
     {
         _winPanel.SetActive(true);
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSecondsRealtime(3f); // Using Realtime so it works if timescale is altered
 
         _winPanel.SetActive(false);
 
