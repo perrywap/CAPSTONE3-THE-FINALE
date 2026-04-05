@@ -12,44 +12,78 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _gameOverPanel;
     [SerializeField] private GameObject _winPanel;
 
+    [Header("Level Boss (Optional)")]
+    [SerializeField] private RoguePrinterSpawner _levelBoss;
+
     [Header("Enemy Tracker")]
     [SerializeField] private List<GameObject> _enemies = new List<GameObject>();
 
     [Header("End Level Cutscene")]
-    [Tooltip("Drag your final CutsceneTrigger here. It will play immediately after the Win Panel finishes.")]
     [SerializeField] private CutsceneTrigger _endLevelCutscene;
 
     private bool _isPaused = false;
     public bool IsPaused { get { return _isPaused; } }
     private bool _isGameOver = false;
     private bool _isGameCleared = false;
-
     public bool IsGameCleared { get { return _isGameCleared; } }
+
+    private bool _hasStartedTracking = false;
+    public int ActiveEnemyCount => _enemies.Count;
 
     private void Awake()
     {
         Instance = this;
     }
 
+    private void Start()
+    {
+        if (_enemies.Count > 0) _hasStartedTracking = true;
+    }
+
     void Update()
     {
-        if (_isGameCleared)
-            return;
+        if (_isGameCleared) return;
 
+        // --- THE NEW ESCAPE KEY LOGIC ---
         if (Input.GetKeyDown(KeyCode.Escape) && !_isGameOver)
         {
-            TogglePause();
+            // If the printer is open, hitting Escape closes the printer!
+            if (PrinterInteractable.IsInteracting)
+            {
+                PrinterInteractable printer = Object.FindFirstObjectByType<PrinterInteractable>();
+                if (printer != null) printer.ClosePrinter();
+            }
+            // If the printer is closed and no one is talking, toggle pause normally
+            else if (!NPCDialogue.IsTalking)
+            {
+                TogglePause();
+            }
         }
 
-        // Clean up the list to prevent errors if an enemy gets destroyed unexpectedly
         _enemies.RemoveAll(item => item == null);
 
-        // Win Condition: All registered enemies are gone
-        if (_enemies.Count <= 0)
+        bool bossDefeated = _levelBoss == null || _levelBoss.isDefeated;
+
+        if (_hasStartedTracking && _enemies.Count <= 0 && bossDefeated)
         {
-            _isGameCleared = true;
-            StartCoroutine(ShowWinSequence());
+            TriggerWinSequence(_endLevelCutscene);
         }
+    }
+
+    public void TriggerWinSequence(CutsceneTrigger cutsceneToPlay)
+    {
+        if (_isGameCleared) return;
+        _isGameCleared = true;
+        StartCoroutine(ShowWinSequence(cutsceneToPlay));
+    }
+
+    private IEnumerator ShowWinSequence(CutsceneTrigger cutsceneToPlay)
+    {
+        _winPanel.SetActive(true);
+        yield return new WaitForSecondsRealtime(3f);
+        _winPanel.SetActive(false);
+
+        if (cutsceneToPlay != null) cutsceneToPlay.PlayFromGameManager();
     }
 
     public void RegisterEnemy(GameObject enemy)
@@ -57,21 +91,18 @@ public class GameManager : MonoBehaviour
         if (!_enemies.Contains(enemy))
         {
             _enemies.Add(enemy);
+            _hasStartedTracking = true;
         }
     }
 
     public void UnregisterEnemy(GameObject enemy)
     {
-        if (_enemies.Contains(enemy))
-        {
-            _enemies.Remove(enemy);
-        }
+        if (_enemies.Contains(enemy)) _enemies.Remove(enemy);
     }
 
     public void TogglePause()
     {
         _isPaused = !_isPaused;
-
         if (_isPaused)
         {
             Time.timeScale = 0f;
@@ -79,11 +110,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if (!NPCDialogue.IsTalking)
-            {
-                Time.timeScale = 1f;
-            }
-
+            if (!NPCDialogue.IsTalking && !PrinterInteractable.IsInteracting) Time.timeScale = 1f;
             _pausePanel.SetActive(false);
         }
     }
@@ -93,7 +120,6 @@ public class GameManager : MonoBehaviour
         _isGameOver = true;
         Time.timeScale = 0f;
         _gameOverPanel.SetActive(true);
-
         if (_pausePanel != null) _pausePanel.SetActive(false);
     }
 
@@ -112,26 +138,7 @@ public class GameManager : MonoBehaviour
     public void ResumeGame()
     {
         _isPaused = false;
-
-        if (!NPCDialogue.IsTalking)
-        {
-            Time.timeScale = 1f;
-        }
-
+        if (!NPCDialogue.IsTalking && !PrinterInteractable.IsInteracting) Time.timeScale = 1f;
         _pausePanel.SetActive(false);
-    }
-
-    private IEnumerator ShowWinSequence()
-    {
-        _winPanel.SetActive(true);
-
-        yield return new WaitForSecondsRealtime(3f); // Using Realtime so it works if timescale is altered
-
-        _winPanel.SetActive(false);
-
-        if (_endLevelCutscene != null)
-        {
-            _endLevelCutscene.PlayFromGameManager();
-        }
     }
 }

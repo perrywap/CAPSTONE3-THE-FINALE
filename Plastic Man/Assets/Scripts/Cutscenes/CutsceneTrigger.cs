@@ -9,8 +9,15 @@ public struct CutsceneStop
     [Header("Where to look")]
     public Transform TargetLocation;
 
+    [Header("Events (Before Dialogue)")]
+    [Tooltip("How many seconds to wait after the camera arrives BEFORE triggering the event.")]
+    public float CameraSettleTime; // <-- NEW: Lets the camera breathe!
+
+    [Tooltip("Fires after the settle time. (e.g., Trigger the Printer Explosion)")]
+    public UnityEvent OnTargetReached;
+
     [Header("Timing")]
-    [Tooltip("How many seconds to look at this target BEFORE showing dialogue.")]
+    [Tooltip("How many seconds to watch the target AFTER the event fires, before showing dialogue.")]
     public float ViewWaitTime;
 
     [Header("Optional Target Label")]
@@ -24,12 +31,12 @@ public struct CutsceneStop
     [TextArea(3, 5)]
     public string[] DialogueLines;
 
-    [Header("Cutscene Events")]
+    [Header("Events (After Dialogue)")]
     [Tooltip("What should happen right AFTER the dialogue finishes at this stop?")]
     public UnityEvent OnDialogueFinished;
 
     [Tooltip("How many seconds to wait AFTER the event triggers before moving the camera away?")]
-    public float WaitAfterEvent; // <-- NEW: Lets you watch the door open!
+    public float WaitAfterEvent;
 }
 
 public class CutsceneTrigger : MonoBehaviour
@@ -137,10 +144,19 @@ public class CutsceneTrigger : MonoBehaviour
 
                 if (currentStop.TargetNameLabel != null) currentStop.TargetNameLabel.SetActive(true);
 
-                // Wait BEFORE dialogue
+                // --- NEW: Let the camera settle for a moment ---
+                if (currentStop.CameraSettleTime > 0f)
+                {
+                    yield return new WaitForSecondsRealtime(currentStop.CameraSettleTime);
+                }
+
+                // 2. Fire the explosion!
+                currentStop.OnTargetReached?.Invoke();
+
+                // 3. Wait while the explosion happens
                 yield return new WaitForSecondsRealtime(currentStop.ViewWaitTime);
 
-                // 2. Play Dialogue
+                // 4. Play Dialogue
                 if (currentStop.DialogueLines != null && currentStop.DialogueLines.Length > 0 && currentStop.LocalDialogueText != null)
                 {
                     _activeDialogueText = currentStop.LocalDialogueText;
@@ -157,10 +173,9 @@ public class CutsceneTrigger : MonoBehaviour
 
                 if (currentStop.TargetNameLabel != null) currentStop.TargetNameLabel.SetActive(false);
 
-                // 3. Trigger the Door
+                // 5. Trigger Post-Dialogue Events
                 currentStop.OnDialogueFinished?.Invoke();
 
-                // --- NEW: Wait so the player can watch the door open! ---
                 if (currentStop.WaitAfterEvent > 0f)
                 {
                     yield return new WaitForSecondsRealtime(currentStop.WaitAfterEvent);
@@ -168,6 +183,7 @@ public class CutsceneTrigger : MonoBehaviour
             }
         }
 
+        // Return to player
         Vector3 playerPos = new Vector3(playerTransform.position.x, playerTransform.position.y, startPos.z);
         while (Vector3.Distance(_mainCamera.transform.position, playerPos) > 0.1f)
         {
