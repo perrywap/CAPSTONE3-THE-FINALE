@@ -861,6 +861,7 @@ MonoBehaviour:
   _pausePanel: {fileID: 1770547693}
   _gameOverPanel: {fileID: 1941453366}
   _winPanel: {fileID: 1655968479}
+  _levelBoss: {fileID: 0}
   _enemies: []
   _endLevelCutscene: {fileID: 1607262778}
 --- !u!4 &201983834
@@ -5136,7 +5137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 812ff8fe5d892b847b7b06b5336ec812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponUI
-  defaultWeapon: {fileID: 3781831577641711289, guid: dd70dbc30269e2e46abd8cd914505794, type: 3}
   weapons:
   - {fileID: 4208481742703032022, guid: 9eb1972074313464ca36e25958ad800d, type: 3}
   - {fileID: 4208481742703032022, guid: f7cbf9e0f0e1fd8438522a48b3dd4584, type: 3}
@@ -5147,6 +5147,7 @@ MonoBehaviour:
   - {fileID: 141235448}
   - {fileID: 1028681421}
   - {fileID: 815513068}
+  weaponIcons: []
   player: {fileID: 0}
   popupValue: 20
 --- !u!114 &1257859617
