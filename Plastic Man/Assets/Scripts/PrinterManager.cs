@@ -12,6 +12,9 @@ public class PrinterManager : MonoBehaviour
     [SerializeField] private List<FilamentCost> costs = new List<FilamentCost>();
     [SerializeField] private GameObject weapPrefab;
 
+    [SerializeField] private GameObject interactPanel;
+
+
     private Animator animator;
     private GameObject currentPrintedWeapon;
 
