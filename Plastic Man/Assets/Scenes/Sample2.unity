@@ -13295,7 +13295,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.075208664}
+  m_Offset: {x: 1.6260519, y: 0.08321893}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -13305,7 +13305,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.16, y: 1.2823439}
+  m_Size: {x: 3.4121037, y: 2.8363054}
   m_EdgeRadius: 0
 --- !u!4 &1944246647
 Transform:
@@ -13316,7 +13316,7 @@ Transform:
   m_GameObject: {fileID: 1944246644}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.262999, y: 3.321, z: 0}
+  m_LocalPosition: {x: 36.55, y: -4.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17605,7 +17605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
   damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
-  deathSfx: {fileID: 0}
+  deathSfx: {fileID: 8300000, guid: 261a539dded9fe84daab22408046b41d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!224 &922673325535053055
@@ -38124,8 +38124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
-  damageSfx: {fileID: 0}
-  deathSfx: {fileID: 0}
+  damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
+  deathSfx: {fileID: 8300000, guid: 261a539dded9fe84daab22408046b41d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!4 &7405905234522360094
@@ -38796,8 +38796,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
-  damageSfx: {fileID: 0}
-  deathSfx: {fileID: 0}
+  damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
+  deathSfx: {fileID: 8300000, guid: 261a539dded9fe84daab22408046b41d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!224 &7656227263329484224

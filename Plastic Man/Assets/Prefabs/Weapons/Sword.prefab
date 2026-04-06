@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sword
   fireRate: 0.5
-  damage: 20
+  damage: 1000
   isAutomatic: 1
   maxEnergy: 100
   currentEnergy: 0
