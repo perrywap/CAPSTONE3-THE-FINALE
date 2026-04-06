@@ -8,6 +8,8 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private GameObject equippedWeapon;
     [SerializeField] private Transform aimTransform;
 
+    public GameObject EquippedWeapon { get { return equippedWeapon; } }
+
     private void Awake()
     { 
         Instance = this;
