@@ -2695,6 +2695,7 @@ MonoBehaviour:
   _mainCamera: {fileID: 519420031}
   _cameraFollowScript: {fileID: 519420034}
   _panSpeed: 10
+  _bubbleVerticalOffset: 1.3
   _winPanel: {fileID: 1668383448206784496}
   _winPanelText: {fileID: 200062383283864196}
   _finalStatusText: 'Status: Imperfect.
@@ -2710,7 +2711,8 @@ MonoBehaviour:
     - I gave this world a mirror's sheen.
     - Without me... the entropy returns.
     - The rust... the rot... the chaos...
-    DelayAfterBlock: 0.5
+    BossAnimationTrigger: Destroyed
+    DelayAfterBlock: 2
   - DialogueCanvas: {fileID: 973361477}
     DialogueTextComponent: {fileID: 40957256}
     DialogueLines:
@@ -2723,6 +2725,7 @@ MonoBehaviour:
     - You look... absolutely beautiful.
     - "Now, let the rain fall. Let the weeds grow. Let\u2019s make a mess of this
       place."
+    BossAnimationTrigger: 
     DelayAfterBlock: 0.5
 --- !u!4 &444901955
 Transform:
@@ -3346,7 +3349,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.220001, y: -37.48, z: -10}
+  m_LocalPosition: {x: -10.220001, y: 22.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3549,7 +3552,7 @@ Transform:
   m_GameObject: {fileID: 552036900}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.220001, y: -37.48, z: -10}
+  m_LocalPosition: {x: -10.220001, y: 22.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4538,7 +4541,7 @@ PrefabInstance:
     - target: {fileID: 7830637841572960674, guid: 8779e0e22c0a633488745cee865b7113, type: 3}
       propertyPath: _cameraFollowScript
       value: 
-      objectReference: {fileID: 519420034}
+      objectReference: {fileID: 552036903}
     - target: {fileID: 7830637841572960674, guid: 8779e0e22c0a633488745cee865b7113, type: 3}
       propertyPath: _dialogueSequences.Array.size
       value: 7
@@ -15821,6 +15824,7 @@ MonoBehaviour:
   _cameraFollowScript: {fileID: 519420034}
   _initialDelay: 0.5
   _panSpeed: 5
+  _finalDelay: 0.5
   _cutsceneStops:
   - OnStopStart:
       m_PersistentCalls:
@@ -16054,7 +16058,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 0.38, y: 0.52}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -19616,7 +19620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3900678631590910362, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -37.48
+      value: 22.5
       objectReference: {fileID: 0}
     - target: {fileID: 3900678631590910362, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: m_LocalPosition.z

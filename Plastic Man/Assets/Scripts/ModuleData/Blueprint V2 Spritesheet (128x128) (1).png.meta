@@ -1,55 +1,52 @@
 fileFormatVersion: 2
-guid: 1667b09065a10864293780d6a5c84e70
+guid: e94f405bace0ae74f832a8d760c9ad04
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1185070894712921725
-    second: LEVEL3-ATTACK_0
+      213: -2324380925083525003
+    second: Blueprint V2 Spritesheet (128x128) (1)_0
   - first:
-      213: 8297080591643646113
-    second: LEVEL3-ATTACK_1
+      213: 6194277985304604814
+    second: Blueprint V2 Spritesheet (128x128) (1)_1
   - first:
-      213: 633625507404195670
-    second: LEVEL3-ATTACK_2
+      213: 7749757934710043013
+    second: Blueprint V2 Spritesheet (128x128) (1)_2
   - first:
-      213: -8623549776995756287
-    second: LEVEL3-ATTACK_3
+      213: 9207333203521035116
+    second: Blueprint V2 Spritesheet (128x128) (1)_3
   - first:
-      213: 4685468190597209498
-    second: LEVEL3-ATTACK_4
+      213: 328322047167047715
+    second: Blueprint V2 Spritesheet (128x128) (1)_4
   - first:
-      213: 8290303600627882361
-    second: LEVEL3-ATTACK_5
+      213: 1931792521944161549
+    second: Blueprint V2 Spritesheet (128x128) (1)_5
   - first:
-      213: -2160288873372223403
-    second: LEVEL3-ATTACK_6
+      213: 4562398589891589140
+    second: Blueprint V2 Spritesheet (128x128) (1)_6
   - first:
-      213: -5377957837706749973
-    second: LEVEL3-ATTACK_7
+      213: -4810319025706996653
+    second: Blueprint V2 Spritesheet (128x128) (1)_7
   - first:
-      213: 5519709710092607557
-    second: LEVEL3-ATTACK_8
+      213: -4532363545448865820
+    second: Blueprint V2 Spritesheet (128x128) (1)_8
   - first:
-      213: -1379911003522446206
-    second: LEVEL3-ATTACK_9
+      213: 7364987324181757064
+    second: Blueprint V2 Spritesheet (128x128) (1)_9
   - first:
-      213: 2831852338715058152
-    second: LEVEL3-ATTACK_10
+      213: -4534949282974460100
+    second: Blueprint V2 Spritesheet (128x128) (1)_10
   - first:
-      213: -6693361121767380271
-    second: LEVEL3-ATTACK_11
+      213: -2864697077534182132
+    second: Blueprint V2 Spritesheet (128x128) (1)_11
   - first:
-      213: -8617837425374165984
-    second: LEVEL3-ATTACK_12
+      213: 2166560945207778467
+    second: Blueprint V2 Spritesheet (128x128) (1)_12
   - first:
-      213: -2603393146707049732
-    second: LEVEL3-ATTACK_13
+      213: -1268460313152369796
+    second: Blueprint V2 Spritesheet (128x128) (1)_13
   - first:
-      213: -6697129403688063785
-    second: LEVEL3-ATTACK_14
-  - first:
-      213: -1753974434412057838
-    second: LEVEL3-ATTACK_15
+      213: -83837982313776128
+    second: Blueprint V2 Spritesheet (128x128) (1)_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -82,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,7 +117,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -141,370 +138,335 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_0
+      name: Blueprint V2 Spritesheet (128x128) (1)_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 657
-        width: 75
-        height: 77
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3816bfecc48cd8fe0800000000000000
-      internalID: -1185070894712921725
+      spriteID: 570e3bd1dd32ebfd0800000000000000
+      internalID: -2324380925083525003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_1
+      name: Blueprint V2 Spritesheet (128x128) (1)_1
       rect:
         serializedVersion: 2
-        x: 224
-        y: 657
-        width: 70
-        height: 83
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a815b996d6252370800000000000000
-      internalID: 8297080591643646113
+      spriteID: e807a1a420f76f550800000000000000
+      internalID: 6194277985304604814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_2
+      name: Blueprint V2 Spritesheet (128x128) (1)_2
       rect:
         serializedVersion: 2
-        x: 404
-        y: 657
-        width: 63
-        height: 84
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6572479ba071bc800800000000000000
-      internalID: 633625507404195670
+      spriteID: 58138a918cbac8b60800000000000000
+      internalID: 7749757934710043013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_3
+      name: Blueprint V2 Spritesheet (128x128) (1)_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 529
-        width: 69
-        height: 93
+        x: 384
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 107d447da2ff25880800000000000000
-      internalID: -8623549776995756287
+      spriteID: c6bd78c14c407cf70800000000000000
+      internalID: 9207333203521035116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_4
+      name: Blueprint V2 Spritesheet (128x128) (1)_4
       rect:
         serializedVersion: 2
-        x: 229
-        y: 529
-        width: 63
-        height: 84
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9d50f2ae70260140800000000000000
-      internalID: 4685468190597209498
+      spriteID: 3282251992f6e8400800000000000000
+      internalID: 328322047167047715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_5
+      name: Blueprint V2 Spritesheet (128x128) (1)_5
       rect:
         serializedVersion: 2
-        x: 398
-        y: 529
-        width: 75
-        height: 77
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 979119b63331d0370800000000000000
-      internalID: 8290303600627882361
+      spriteID: d0ddc3a401b1fca10800000000000000
+      internalID: 1931792521944161549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_6
+      name: Blueprint V2 Spritesheet (128x128) (1)_6
       rect:
         serializedVersion: 2
-        x: 49
-        y: 402
-        width: 75
-        height: 80
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5587b6227bc1502e0800000000000000
-      internalID: -2160288873372223403
+      spriteID: 4143b3a4855e05f30800000000000000
+      internalID: 4562398589891589140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_7
+      name: Blueprint V2 Spritesheet (128x128) (1)_7
       rect:
         serializedVersion: 2
-        x: 224
-        y: 402
-        width: 75
-        height: 75
+        x: 384
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be7167a17d7ad55b0800000000000000
-      internalID: -5377957837706749973
+      spriteID: 35c6e6015505e3db0800000000000000
+      internalID: -4810319025706996653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_8
+      name: Blueprint V2 Spritesheet (128x128) (1)_8
       rect:
         serializedVersion: 2
-        x: 398
-        y: 402
-        width: 77
-        height: 70
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54028559cb2f99c40800000000000000
-      internalID: 5519709710092607557
+      spriteID: 4ef17907e5fc911c0800000000000000
+      internalID: -4532363545448865820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_9
+      name: Blueprint V2 Spritesheet (128x128) (1)_9
       rect:
         serializedVersion: 2
-        x: 46
-        y: 274
-        width: 83
-        height: 63
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28c446dd04299dce0800000000000000
-      internalID: -1379911003522446206
+      spriteID: 88cbb1133f0b53660800000000000000
+      internalID: 7364987324181757064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_10
+      name: Blueprint V2 Spritesheet (128x128) (1)_10
       rect:
         serializedVersion: 2
-        x: 196
-        y: 274
-        width: 133
-        height: 76
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ef5871c2b2cc4720800000000000000
-      internalID: 2831852338715058152
+      spriteID: c3715e187af9011c0800000000000000
+      internalID: -4534949282974460100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_11
+      name: Blueprint V2 Spritesheet (128x128) (1)_11
       rect:
         serializedVersion: 2
-        x: 354
-        y: 275
-        width: 167
-        height: 90
+        x: 384
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1da25afc5876c13a0800000000000000
-      internalID: -6693361121767380271
+      spriteID: c05b9709f2d8e38d0800000000000000
+      internalID: -2864697077534182132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_12
+      name: Blueprint V2 Spritesheet (128x128) (1)_12
       rect:
         serializedVersion: 2
-        x: 21
-        y: 146
-        width: 133
-        height: 76
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0248188558a476880800000000000000
-      internalID: -8617837425374165984
+      spriteID: 3ac185363bb211e10800000000000000
+      internalID: 2166560945207778467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_13
+      name: Blueprint V2 Spritesheet (128x128) (1)_13
       rect:
         serializedVersion: 2
-        x: 229
-        y: 145
-        width: 63
-        height: 84
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf207d7f9b3eedbd0800000000000000
-      internalID: -2603393146707049732
+      spriteID: c7b4fd6d016856ee0800000000000000
+      internalID: -1268460313152369796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEVEL3-ATTACK_14
+      name: Blueprint V2 Spritesheet (128x128) (1)_14
       rect:
         serializedVersion: 2
-        x: 399
-        y: 145
-        width: 70
-        height: 83
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7dc695e4a440f03a0800000000000000
-      internalID: -6697129403688063785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LEVEL3-ATTACK_15
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 17
-        width: 75
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 21ba0cb7b81a8a7e0800000000000000
-      internalID: -1753974434412057838
+      spriteID: 00c708d9cc526def0800000000000000
+      internalID: -83837982313776128
       vertices: []
       indices: 
       edges: []
@@ -513,7 +475,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a4715ebc446f98c4e85f29e2d8c2d904
     internalID: 0
     vertices: []
     indices: 
@@ -521,24 +483,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      LEVEL3-ATTACK_0: -1185070894712921725
-      LEVEL3-ATTACK_1: 8297080591643646113
-      LEVEL3-ATTACK_10: 2831852338715058152
-      LEVEL3-ATTACK_11: -6693361121767380271
-      LEVEL3-ATTACK_12: -8617837425374165984
-      LEVEL3-ATTACK_13: -2603393146707049732
-      LEVEL3-ATTACK_14: -6697129403688063785
-      LEVEL3-ATTACK_15: -1753974434412057838
-      LEVEL3-ATTACK_2: 633625507404195670
-      LEVEL3-ATTACK_3: -8623549776995756287
-      LEVEL3-ATTACK_4: 4685468190597209498
-      LEVEL3-ATTACK_5: 8290303600627882361
-      LEVEL3-ATTACK_6: -2160288873372223403
-      LEVEL3-ATTACK_7: -5377957837706749973
-      LEVEL3-ATTACK_8: 5519709710092607557
-      LEVEL3-ATTACK_9: -1379911003522446206
+      Blueprint V2 Spritesheet (128x128) (1)_0: -2324380925083525003
+      Blueprint V2 Spritesheet (128x128) (1)_1: 6194277985304604814
+      Blueprint V2 Spritesheet (128x128) (1)_10: -4534949282974460100
+      Blueprint V2 Spritesheet (128x128) (1)_11: -2864697077534182132
+      Blueprint V2 Spritesheet (128x128) (1)_12: 2166560945207778467
+      Blueprint V2 Spritesheet (128x128) (1)_13: -1268460313152369796
+      Blueprint V2 Spritesheet (128x128) (1)_14: -83837982313776128
+      Blueprint V2 Spritesheet (128x128) (1)_2: 7749757934710043013
+      Blueprint V2 Spritesheet (128x128) (1)_3: 9207333203521035116
+      Blueprint V2 Spritesheet (128x128) (1)_4: 328322047167047715
+      Blueprint V2 Spritesheet (128x128) (1)_5: 1931792521944161549
+      Blueprint V2 Spritesheet (128x128) (1)_6: 4562398589891589140
+      Blueprint V2 Spritesheet (128x128) (1)_7: -4810319025706996653
+      Blueprint V2 Spritesheet (128x128) (1)_8: -4532363545448865820
+      Blueprint V2 Spritesheet (128x128) (1)_9: 7364987324181757064
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

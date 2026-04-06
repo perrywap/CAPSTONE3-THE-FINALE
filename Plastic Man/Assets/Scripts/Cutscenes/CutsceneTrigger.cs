@@ -57,7 +57,6 @@ public class CutsceneTrigger : MonoBehaviour
         }
     }
 
-    // --- NEW: Allows scripts to dynamically attach a second cutscene! ---
     public void SetNextCutscene(CutsceneTrigger nextCutscene)
     {
         _nextCutscene = nextCutscene;
@@ -162,11 +161,36 @@ public class CutsceneTrigger : MonoBehaviour
             yield break;
         }
 
-        Vector3 playerPos = new Vector3(playerTransform.position.x, playerTransform.position.y, startPos.z);
-        while (Vector3.Distance(_mainCamera.transform.position, playerPos) > 0.1f)
+        // --- THE CINEMACHINE SYNC FIX (No Delay) ---
+        if (playerTransform != null)
         {
-            _mainCamera.transform.position = Vector3.MoveTowards(_mainCamera.transform.position, playerPos, _panSpeed * Time.unscaledDeltaTime);
-            yield return null;
+            CameraMouseOffset mouseOffsetScript = Object.FindFirstObjectByType<CameraMouseOffset>();
+
+            while (true)
+            {
+                Vector3 offset = Vector3.zero;
+
+                if (mouseOffsetScript != null)
+                {
+                    Vector3 mouseWorld = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
+                    mouseWorld.z = 0;
+                    Vector3 direction = mouseWorld - playerTransform.position;
+                    // Uses the exact math from your CameraMouseOffset.cs
+                    offset = Vector3.ClampMagnitude(direction * 0.3f, mouseOffsetScript.maxOffset);
+                }
+
+                Vector3 targetPos = new Vector3(playerTransform.position.x + offset.x, playerTransform.position.y + offset.y, startPos.z);
+
+                _mainCamera.transform.position = Vector3.MoveTowards(_mainCamera.transform.position, targetPos, _panSpeed * Time.unscaledDeltaTime);
+
+                // Break the loop and return control instantly once we arrive
+                if (Vector3.Distance(_mainCamera.transform.position, targetPos) <= 0.01f)
+                {
+                    break;
+                }
+
+                yield return null;
+            }
         }
 
         if (_cameraFollowScript != null) _cameraFollowScript.enabled = true;
