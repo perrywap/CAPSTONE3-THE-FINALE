@@ -5333,9 +5333,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0198a4bfd99f6834fb9db596218078ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HudLoot
-  _peText: {fileID: 4837044608626417574}
-  _acText: {fileID: 7331717531289597153}
-  _pcText: {fileID: 3302198633255714372}
+  _peText: {fileID: 2780520256787427931}
+  _acText: {fileID: 9021728916983664480}
+  _pcText: {fileID: 2412858110554374886}
 --- !u!4 &771075555 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3436620114335720009, guid: 7a6aa2879ab7d2341b214d77d3c79b81, type: 3}
@@ -32819,7 +32819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03773f656132f14aac30f2f1add5cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragIconManager
-  dragIcon: {fileID: 769155360337919267}
+  dragIcon: {fileID: 7901108938210119897}
 --- !u!212 &1879279431481503436
 SpriteRenderer:
   serializedVersion: 2

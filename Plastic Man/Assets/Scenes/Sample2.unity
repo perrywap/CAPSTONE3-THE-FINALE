@@ -2971,9 +2971,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0198a4bfd99f6834fb9db596218078ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HudLoot
-  _peText: {fileID: 4837044608626417574}
-  _acText: {fileID: 7331717531289597153}
-  _pcText: {fileID: 3302198633255714372}
+  _peText: {fileID: 8259551162074410540}
+  _acText: {fileID: 2970731790163366679}
+  _pcText: {fileID: 8463820464983645841}
 --- !u!1 &781699003
 GameObject:
   m_ObjectHideFlags: 0
@@ -20554,7 +20554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03773f656132f14aac30f2f1add5cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragIconManager
-  dragIcon: {fileID: 769155360337919267}
+  dragIcon: {fileID: 4156777117962865838}
 --- !u!114 &1897962796309019120
 MonoBehaviour:
   m_ObjectHideFlags: 0
