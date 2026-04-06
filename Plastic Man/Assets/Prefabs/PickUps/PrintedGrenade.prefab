@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1bae241f2b8734f951f727acbf9ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickUps
-  weaponPrefab: {fileID: 3664365491805918091}
+  weaponPrefab: {fileID: 1710860951202350425, guid: e32c0fec66c2e914ebe3e1b1a0278c06, type: 3}
   _isTutorialItem: 0
   _tutorialPrompt: {fileID: 0}
   _onTutorialEquipped:
