@@ -29125,6 +29125,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1748852602615044287, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
+      propertyPath: damagedSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 230bb46d523a03c4799fbf6a8fdff2ce, type: 3}
+    - target: {fileID: 1748852602615044287, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: _gameOverPanel
       value: 
       objectReference: {fileID: 3550791510690172849}
@@ -34607,7 +34611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
   damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
-  deathSfx: {fileID: 8300000, guid: 6a51dc2b61181ce46a98653796e9f04d, type: 3}
+  deathSfx: {fileID: 0}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!1 &6082569315147038871
@@ -37489,7 +37493,6 @@ MonoBehaviour:
   _panSpeed: 5
   _zoomSize: 3
   _zoomSpeed: 5
-  printerFinishedPrintingSfx: {fileID: 8300000, guid: 54becf5d95efd1e439ed8eeba6f6ef27, type: 3}
 --- !u!222 &8430623291906330761
 CanvasRenderer:
   m_ObjectHideFlags: 0
