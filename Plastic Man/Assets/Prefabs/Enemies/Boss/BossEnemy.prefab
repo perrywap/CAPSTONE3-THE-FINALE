@@ -382,6 +382,7 @@ MonoBehaviour:
   attackCooldown: 3
   dashSpeed: 15
   dashDuration: 0.3
+  deadBossSprite: {fileID: -5712444473150110338, guid: 90187d1d0fc996d4793a02946df83b6f, type: 3}
   dashTime: 0.2
   stopTime: 0.3
   dashSpeedMultiplier: 3

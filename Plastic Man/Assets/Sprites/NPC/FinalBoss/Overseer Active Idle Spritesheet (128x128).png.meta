@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: a78e68eb198561d468d7706612a6fea8
+guid: d1d27492c83061a409653fc38de3836b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6461870672703577044
-    second: WorldLvl04_Tileset_0
+      213: -1943628842735730249
+    second: Overseer Active Idle Spritesheet (128x128)_0
   - first:
-      213: -4365815887610434527
-    second: WorldLvl04_Tileset_1
+      213: 4845020503920765377
+    second: Overseer Active Idle Spritesheet (128x128)_1
   - first:
-      213: -2121107414012083035
-    second: WorldLvl04_Tileset_2
+      213: 6896755891015640885
+    second: Overseer Active Idle Spritesheet (128x128)_2
   - first:
-      213: 2112869657132594562
-    second: WorldLvl04_Tileset_3
-  - first:
-      213: 2875434828498587164
-    second: WorldLvl04_Tileset_4
+      213: -9157532490768422410
+    second: Overseer Active Idle Spritesheet (128x128)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 187
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,10 +81,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,115 +105,106 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WorldLvl04_Tileset_0
+      name: Overseer Active Idle Spritesheet (128x128)_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 127
-        width: 449
-        height: 386
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c242df01cd2d256a0800000000000000
-      internalID: -6461870672703577044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WorldLvl04_Tileset_1
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 30
-        width: 42
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 12c2930d4918963c0800000000000000
-      internalID: -4365815887610434527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WorldLvl04_Tileset_2
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 30
-        width: 67
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a4cc598b005092e0800000000000000
-      internalID: -2121107414012083035
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WorldLvl04_Tileset_3
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 30
-        width: 94
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 285f61a32cb625d10800000000000000
-      internalID: 2112869657132594562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WorldLvl04_Tileset_4
-      rect:
-        serializedVersion: 2
-        x: 308
+        x: 45
         y: 29
-        width: 52
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 38
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c1ec177edb897e720800000000000000
-      internalID: 2875434828498587164
+      spriteID: 7b188858dd7d605e0800000000000000
+      internalID: -1943628842735730249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overseer Active Idle Spritesheet (128x128)_1
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 29
+        width: 38
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c96ea17a78fc3340800000000000000
+      internalID: 4845020503920765377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overseer Active Idle Spritesheet (128x128)_2
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 29
+        width: 38
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537e19a31f236bf50800000000000000
+      internalID: 6896755891015640885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overseer Active Idle Spritesheet (128x128)_3
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 29
+        width: 38
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f966a4e7b8e9e080800000000000000
+      internalID: -9157532490768422410
       vertices: []
       indices: 
       edges: []
@@ -225,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d1b5edec5c4d06646a7bed1be8ec6596
     internalID: 0
     vertices: []
     indices: 
@@ -235,11 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      WorldLvl04_Tileset_0: -6461870672703577044
-      WorldLvl04_Tileset_1: -4365815887610434527
-      WorldLvl04_Tileset_2: -2121107414012083035
-      WorldLvl04_Tileset_3: 2112869657132594562
-      WorldLvl04_Tileset_4: 2875434828498587164
+      Overseer Active Idle Spritesheet (128x128)_0: -1943628842735730249
+      Overseer Active Idle Spritesheet (128x128)_1: 4845020503920765377
+      Overseer Active Idle Spritesheet (128x128)_2: 6896755891015640885
+      Overseer Active Idle Spritesheet (128x128)_3: -9157532490768422410
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
