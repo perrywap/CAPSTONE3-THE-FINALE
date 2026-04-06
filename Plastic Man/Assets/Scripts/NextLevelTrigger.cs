@@ -25,7 +25,7 @@ public class NextLevelTrigger : MonoBehaviour
 
         if(player != null )
         {
-            Debug.Log("next level");
+            SceneManager.LoadScene(nextScene);
         }
     }
 }

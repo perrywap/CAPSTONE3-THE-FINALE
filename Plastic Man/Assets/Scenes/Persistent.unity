@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 1509753275}
   - component: {fileID: 1509753277}
   - component: {fileID: 1509753276}
+  - component: {fileID: 1509753278}
   m_Layer: 0
   m_Name: Persistent Data
   m_TagString: Untagged
@@ -317,6 +318,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PersistentData
   nextScene: MainMenu
+--- !u!114 &1509753278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509753273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3be326631675fd4ba587a2a46960905, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Loadout
+  headModule: {fileID: 0}
+  bodyModule: {fileID: 0}
+  weapons: []
+  weaponEnergy:
+  - 0
+  - 0
+  - 0
+  - 0
+  activeWeaponIndex: -1
 --- !u!1 &1910436376
 GameObject:
   m_ObjectHideFlags: 0

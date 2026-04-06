@@ -6,6 +6,7 @@ using UnityEngine.Events;
 [System.Serializable]
 public struct CutsceneStop
 {
+    public UnityEvent OnStopStart;
     public Transform TargetLocation;
     public float CameraSettleTime;
     public UnityEvent OnTargetReached;
@@ -33,7 +34,6 @@ public class CutsceneTrigger : MonoBehaviour
     [SerializeField] private float _typingSpeed = 0.05f;
 
     [Header("Chain Cutscenes (Optional)")]
-    [Tooltip("Drag another cutscene here to play it instantly after this one finishes!")]
     [SerializeField] private CutsceneTrigger _nextCutscene;
 
     private bool _hasTriggered = false;
@@ -55,6 +55,12 @@ public class CutsceneTrigger : MonoBehaviour
                 if (stop.LocalDialogueCanvas != null) stop.LocalDialogueCanvas.SetActive(false);
             }
         }
+    }
+
+    // --- NEW: Allows scripts to dynamically attach a second cutscene! ---
+    public void SetNextCutscene(CutsceneTrigger nextCutscene)
+    {
+        _nextCutscene = nextCutscene;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -107,6 +113,8 @@ public class CutsceneTrigger : MonoBehaviour
             {
                 CutsceneStop currentStop = _cutsceneStops[i];
 
+                currentStop.OnStopStart?.Invoke();
+
                 if (currentStop.TargetLocation != null)
                 {
                     Vector3 targetPos = new Vector3(currentStop.TargetLocation.position.x, currentStop.TargetLocation.position.y, startPos.z);
@@ -147,8 +155,6 @@ public class CutsceneTrigger : MonoBehaviour
             }
         }
 
-        // --- NEW: THE RELAY HANDOFF ---
-        // If there is another cutscene chained, play it and completely STOP this script!
         if (_nextCutscene != null)
         {
             _nextCutscene.PlayFromGameManager();
@@ -156,7 +162,6 @@ public class CutsceneTrigger : MonoBehaviour
             yield break;
         }
 
-        // Return to player (Only happens if this is the absolute final cutscene)
         Vector3 playerPos = new Vector3(playerTransform.position.x, playerTransform.position.y, startPos.z);
         while (Vector3.Distance(_mainCamera.transform.position, playerPos) > 0.1f)
         {

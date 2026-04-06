@@ -30,12 +30,35 @@ public class DragIconManager : MonoBehaviour
         }
     }
 
-    public void Show(Sprite sprite)
+    public void Show2(Sprite sprite)
     {
         if (dragIcon == null)
             return;
 
         dragIcon.sprite = sprite;
+        dragIcon.gameObject.SetActive(true);
+    }
+
+    public void Show(Sprite sprite)
+    {
+        if (dragIcon == null || sprite == null)
+            return;
+
+        dragIcon.sprite = sprite;
+        dragIcon.preserveAspect = true;
+
+        RectTransform rt = dragIcon.rectTransform;
+
+        float baseSize = 120f; // tweak this once only
+
+        float width = sprite.rect.width;
+        float height = sprite.rect.height;
+
+        float max = Mathf.Max(width, height);
+        float scale = baseSize / max;
+
+        rt.sizeDelta = new Vector2(width * scale, height * scale);
+
         dragIcon.gameObject.SetActive(true);
     }
 

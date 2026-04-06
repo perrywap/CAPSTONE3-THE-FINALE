@@ -51,14 +51,13 @@ public class PrinterInteractable : MonoBehaviour
 
         if (GameManager.Instance != null)
         {
-            if (GameManager.Instance.ActiveEnemyCount > 0) isLocked = true; // 1. Enemies still alive
-            if (!GameManager.Instance.IsGameCleared) isLocked = true;       // 2. Generators still alive
-            if (GameManager.Instance.IsWinPanelActive) isLocked = true;     // 3. Win Panel is currently showing
+            if (GameManager.Instance.ActiveEnemyCount > 0) isLocked = true;
+            if (!GameManager.Instance.IsGameCleared) isLocked = true;
+            if (GameManager.Instance.IsWinPanelActive) isLocked = true;
         }
 
-        if (NPCDialogue.IsTalking) isLocked = true; // 4. Cutscene is currently playing/panning
+        if (NPCDialogue.IsTalking) isLocked = true;
 
-        // If ANY of the 4 rules above are true, completely lock the printer and hide the prompt
         if (isLocked)
         {
             if (_interactPrompt != null && _interactPrompt.activeSelf) _interactPrompt.SetActive(false);
@@ -91,20 +90,18 @@ public class PrinterInteractable : MonoBehaviour
     {
         IsInteracting = true;
 
-        // --- THE TRICK: Borrow the NPC Dialogue Lock to freeze player rotation! ---
+        // Tells your rotation script to freeze (just like The Maker!)
         NPCDialogue.IsTalking = true;
-
         Time.timeScale = 0f;
 
-        // Stop physical sliding
+        // Cache the player's exact spot to lock them down
+        Vector3 lockedPlayerPos = Vector3.zero;
+        Rigidbody2D playerRb = null;
+
         if (_playerTransform != null)
         {
-            Rigidbody2D rb = _playerTransform.GetComponent<Rigidbody2D>();
-            if (rb != null)
-            {
-                rb.linearVelocity = Vector2.zero;
-                rb.angularVelocity = 0f;
-            }
+            lockedPlayerPos = _playerTransform.position;
+            playerRb = _playerTransform.GetComponent<Rigidbody2D>();
         }
 
         if (_interactPrompt != null) _interactPrompt.SetActive(false);
@@ -117,10 +114,21 @@ public class PrinterInteractable : MonoBehaviour
 
             Vector3 targetPos = new Vector3(transform.position.x, transform.position.y, _originalCameraPosition.z);
 
-            // Safety timeout to prevent infinite camera loops
             float timeout = 0f;
             while ((Vector3.Distance(_mainCamera.transform.position, targetPos) > 0.01f || Mathf.Abs(_mainCamera.orthographicSize - _zoomSize) > 0.01f) && timeout < 1.5f)
             {
+                // --- THE ULTIMATE PHYSICAL FREEZE ---
+                // Forces the player to stay glued to their exact coordinates during the entire zoom
+                if (_playerTransform != null)
+                {
+                    _playerTransform.position = lockedPlayerPos;
+                    if (playerRb != null)
+                    {
+                        playerRb.linearVelocity = Vector2.zero;
+                        playerRb.angularVelocity = 0f;
+                    }
+                }
+
                 _mainCamera.transform.position = Vector3.MoveTowards(_mainCamera.transform.position, targetPos, _panSpeed * Time.unscaledDeltaTime);
                 _mainCamera.orthographicSize = Mathf.MoveTowards(_mainCamera.orthographicSize, _zoomSize, _zoomSpeed * Time.unscaledDeltaTime);
                 timeout += Time.unscaledDeltaTime;
@@ -128,7 +136,7 @@ public class PrinterInteractable : MonoBehaviour
             }
         }
 
-        // Camera is done, show the panel (and now your mouse can actually click it!)
+        // Camera finishes, UI opens, and your mouse can interact with it safely!
         if (_printerPanel != null) _printerPanel.SetActive(true);
     }
 
@@ -142,14 +150,34 @@ public class PrinterInteractable : MonoBehaviour
     {
         if (_printerPanel != null) _printerPanel.SetActive(false);
 
+        // Cache the player's spot so they can't run away while the camera is zooming OUT
+        Vector3 lockedPlayerPos = Vector3.zero;
+        Rigidbody2D playerRb = null;
+
+        if (_playerTransform != null)
+        {
+            lockedPlayerPos = _playerTransform.position;
+            playerRb = _playerTransform.GetComponent<Rigidbody2D>();
+        }
+
         if (_mainCamera != null && _playerTransform != null)
         {
             Vector3 targetPos = new Vector3(_playerTransform.position.x, _playerTransform.position.y, _originalCameraPosition.z);
 
-            // Safety timeout to prevent infinite camera loops
             float timeout = 0f;
             while ((Vector3.Distance(_mainCamera.transform.position, targetPos) > 0.01f || Mathf.Abs(_mainCamera.orthographicSize - _originalOrthoSize) > 0.01f) && timeout < 1.5f)
             {
+                // --- THE ULTIMATE PHYSICAL FREEZE (ZOOM OUT) ---
+                if (_playerTransform != null)
+                {
+                    _playerTransform.position = lockedPlayerPos;
+                    if (playerRb != null)
+                    {
+                        playerRb.linearVelocity = Vector2.zero;
+                        playerRb.angularVelocity = 0f;
+                    }
+                }
+
                 _mainCamera.transform.position = Vector3.MoveTowards(_mainCamera.transform.position, targetPos, _panSpeed * Time.unscaledDeltaTime);
                 _mainCamera.orthographicSize = Mathf.MoveTowards(_mainCamera.orthographicSize, _originalOrthoSize, _zoomSpeed * Time.unscaledDeltaTime);
                 timeout += Time.unscaledDeltaTime;
@@ -161,8 +189,6 @@ public class PrinterInteractable : MonoBehaviour
 
         Time.timeScale = 1f;
         IsInteracting = false;
-
-        // --- Release the lock so you can move and rotate again! ---
         NPCDialogue.IsTalking = false;
     }
 

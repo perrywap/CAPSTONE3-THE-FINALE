@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: fea7057cc346d534f9def1c805c4c85e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1100784209178930394
+    second: Overseer Obelisk Deactivate Spritesheet (128x128)_0
+  - first:
+      213: 147795895975291864
+    second: Overseer Obelisk Deactivate Spritesheet (128x128)_1
+  - first:
+      213: 8939347952047261146
+    second: Overseer Obelisk Deactivate Spritesheet (128x128)_2
+  - first:
+      213: -7813364101817657293
+    second: Overseer Obelisk Deactivate Spritesheet (128x128)_3
+  - first:
+      213: 7024205565122138788
+    second: Overseer Obelisk Deactivate Spritesheet (128x128)_4
+  - first:
+      213: -2394662152835352957
+    second: Overseer Obelisk Deactivate Spritesheet (128x128)_5
+  - first:
+      213: 5095987602322062161
+    second: Overseer Obelisk Deactivate Spritesheet (128x128)_6
+  - first:
+      213: 236909252078477023
+    second: Overseer Obelisk Deactivate Spritesheet (128x128)_7
+  - first:
+      213: 8863760403551120429
+    second: Overseer Obelisk Deactivate Spritesheet (128x128)_8
+  - first:
+      213: -278489833955166623
+    second: Overseer Obelisk Deactivate Spritesheet (128x128)_9
+  - first:
+      213: -9209779411727237834
+    second: Overseer Obelisk Deactivate Spritesheet (128x128)_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Overseer Obelisk Deactivate Spritesheet (128x128)_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 285
+        width: 38
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc2872f765c64f00800000000000000
+      internalID: 1100784209178930394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overseer Obelisk Deactivate Spritesheet (128x128)_1
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 285
+        width: 38
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db2ed695931d0200800000000000000
+      internalID: 147795895975291864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overseer Obelisk Deactivate Spritesheet (128x128)_2
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 285
+        width: 38
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad584658991fe0c70800000000000000
+      internalID: 8939347952047261146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overseer Obelisk Deactivate Spritesheet (128x128)_3
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 285
+        width: 38
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3389e521fba519390800000000000000
+      internalID: -7813364101817657293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overseer Obelisk Deactivate Spritesheet (128x128)_4
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 157
+        width: 38
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a25d62eebdfa7160800000000000000
+      internalID: 7024205565122138788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overseer Obelisk Deactivate Spritesheet (128x128)_5
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 157
+        width: 38
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3863d2f957374ced0800000000000000
+      internalID: -2394662152835352957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overseer Obelisk Deactivate Spritesheet (128x128)_6
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 157
+        width: 38
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b733089b598b640800000000000000
+      internalID: 5095987602322062161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overseer Obelisk Deactivate Spritesheet (128x128)_7
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 157
+        width: 38
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde1426a5bba94300800000000000000
+      internalID: 236909252078477023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overseer Obelisk Deactivate Spritesheet (128x128)_8
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 29
+        width: 38
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c66d3ff17620b70800000000000000
+      internalID: 8863760403551120429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overseer Obelisk Deactivate Spritesheet (128x128)_9
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 29
+        width: 38
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1667b85b8fa922cf0800000000000000
+      internalID: -278489833955166623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overseer Obelisk Deactivate Spritesheet (128x128)_10
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 29
+        width: 38
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63dba48ab6a403080800000000000000
+      internalID: -9209779411727237834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f4a5fe2a1fa4eaa46871df0038b65a1c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Overseer Obelisk Deactivate Spritesheet (128x128)_0: 1100784209178930394
+      Overseer Obelisk Deactivate Spritesheet (128x128)_1: 147795895975291864
+      Overseer Obelisk Deactivate Spritesheet (128x128)_10: -9209779411727237834
+      Overseer Obelisk Deactivate Spritesheet (128x128)_2: 8939347952047261146
+      Overseer Obelisk Deactivate Spritesheet (128x128)_3: -7813364101817657293
+      Overseer Obelisk Deactivate Spritesheet (128x128)_4: 7024205565122138788
+      Overseer Obelisk Deactivate Spritesheet (128x128)_5: -2394662152835352957
+      Overseer Obelisk Deactivate Spritesheet (128x128)_6: 5095987602322062161
+      Overseer Obelisk Deactivate Spritesheet (128x128)_7: 236909252078477023
+      Overseer Obelisk Deactivate Spritesheet (128x128)_8: 8863760403551120429
+      Overseer Obelisk Deactivate Spritesheet (128x128)_9: -278489833955166623
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
