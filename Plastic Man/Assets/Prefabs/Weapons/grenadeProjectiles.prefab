@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6678776078463175857}
   - component: {fileID: 5612420677076773942}
-  - component: {fileID: 3373177318835533113}
+  - component: {fileID: 8734668159155672794}
   m_Layer: 0
-  m_Name: GranadeVisual
+  m_Name: grenadeProjectiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1949965640792844370, guid: f5df41d74e08b4b4b935bbfc7eef594d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -92,7 +92,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &3373177318835533113
+--- !u!114 &8734668159155672794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,12 +101,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1710860951202350425}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdbcca029aa3b8241aa67969c8e82799, type: 3}
+  m_Script: {fileID: 11500000, guid: 36037712fb20e0044abb7df40282d4f3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Granade
-  fireRate: 0.2
-  damage: 10
-  projectilePrefab: {fileID: 1710860951202350425, guid: a0192630e6ce3674ba8659a50a577b81, type: 3}
-  shootSfx: {fileID: 0}
-  shootVolume: 0.5
-  hideDuration: 2
+  m_EditorClassIdentifier: Assembly-CSharp::GranadeProjectile
+  travelTime: 0.6
+  arcHeight: 2
+  impactVFX: {fileID: 2787922036402406566, guid: 7766ddc90b8c7884f88ddf7890a95f9a, type: 3}
