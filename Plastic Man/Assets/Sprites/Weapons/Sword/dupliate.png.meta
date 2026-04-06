@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5c4b1eeac11db404cbd0692cf005d79d
+guid: 599ad4fa4a780394fb515c5c5136463f
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -117,28 +117,6 @@ TextureImporter:
   spriteSheet:
     serializedVersion: 2
     sprites:
-    - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eede558d75b323d30800000000000000
-      internalID: 4409652233626840558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Sword Atk Spritesheet (128x128)_1
       rect:
@@ -271,6 +249,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: dupliate_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 282
+        width: 72
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eaf6e0a78d15db498d470d8896ecf2c
+      internalID: 840329598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -294,6 +294,7 @@ TextureImporter:
       Sword Atk Spritesheet (128x128)_4: -4478189164859382506
       Sword Atk Spritesheet (128x128)_5: -3559898420385435465
       Sword Atk Spritesheet (128x128)_6: -6659421844987770167
+      dupliate_0: 840329598
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

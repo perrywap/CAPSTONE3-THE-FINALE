@@ -1,28 +1,31 @@
 fileFormatVersion: 2
-guid: 5c4b1eeac11db404cbd0692cf005d79d
+guid: ef1f3cbfb35f976408e0b8d704473612
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4409652233626840558
-    second: Sword Atk Spritesheet (128x128)_0
+      213: 3418069223108090467
+    second: MC Armor 3 Rotate Spritesheet (32x32)_0
   - first:
-      213: 5256477051923167005
-    second: Sword Atk Spritesheet (128x128)_1
+      213: 4011481358806831536
+    second: MC Armor 3 Rotate Spritesheet (32x32)_1
   - first:
-      213: 4983025964474579471
-    second: Sword Atk Spritesheet (128x128)_2
+      213: -5818806187870870279
+    second: MC Armor 3 Rotate Spritesheet (32x32)_2
   - first:
-      213: 1017242324157550207
-    second: Sword Atk Spritesheet (128x128)_3
+      213: 5251268510290488773
+    second: MC Armor 3 Rotate Spritesheet (32x32)_3
   - first:
-      213: -4478189164859382506
-    second: Sword Atk Spritesheet (128x128)_4
+      213: -2575629139745079866
+    second: MC Armor 3 Rotate Spritesheet (32x32)_4
   - first:
-      213: -3559898420385435465
-    second: Sword Atk Spritesheet (128x128)_5
+      213: 9114498920366217453
+    second: MC Armor 3 Rotate Spritesheet (32x32)_5
   - first:
-      213: -6659421844987770167
-    second: Sword Atk Spritesheet (128x128)_6
+      213: 8802701105146055249
+    second: MC Armor 3 Rotate Spritesheet (32x32)_6
+  - first:
+      213: 5620825961514627981
+    second: MC Armor 3 Rotate Spritesheet (32x32)_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -69,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_0
+      name: MC Armor 3 Rotate Spritesheet (32x32)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 128
-        height: 128
+        x: 9
+        y: 37
+        width: 14
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eede558d75b323d30800000000000000
-      internalID: 4409652233626840558
+      spriteID: 36a9d0549db6f6f20800000000000000
+      internalID: 3418069223108090467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_1
+      name: MC Armor 3 Rotate Spritesheet (32x32)_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 256
-        width: 128
-        height: 128
+        x: 42
+        y: 37
+        width: 11
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d177fd95702c2f840800000000000000
-      internalID: 5256477051923167005
+      spriteID: 0b158c6ca05aba730800000000000000
+      internalID: 4011481358806831536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_2
+      name: MC Armor 3 Rotate Spritesheet (32x32)_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 128
-        height: 128
+        x: 75
+        y: 37
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0a3e07a6b3472540800000000000000
-      internalID: 4983025964474579471
+      spriteID: 9f4ac1bf9927f3fa0800000000000000
+      internalID: -5818806187870870279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_3
+      name: MC Armor 3 Rotate Spritesheet (32x32)_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 128
-        height: 128
+        x: 107
+        y: 37
+        width: 11
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7e47e51188fd1e00800000000000000
-      internalID: 1017242324157550207
+      spriteID: 5cd2f0043e040e840800000000000000
+      internalID: 5251268510290488773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_4
+      name: MC Armor 3 Rotate Spritesheet (32x32)_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
+        x: 9
+        y: 5
+        width: 14
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 615ad875ea64ad1c0800000000000000
-      internalID: -4478189164859382506
+      spriteID: 6cd795491f6814cd0800000000000000
+      internalID: -2575629139745079866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_5
+      name: MC Armor 3 Rotate Spritesheet (32x32)_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
+        x: 42
+        y: 5
+        width: 11
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b0b3707f33b89ec0800000000000000
-      internalID: -3559898420385435465
+      spriteID: de81c163a743d7e70800000000000000
+      internalID: 9114498920366217453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_6
+      name: MC Armor 3 Rotate Spritesheet (32x32)_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
+        x: 76
+        y: 5
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,8 +268,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ca07087d1bf493a0800000000000000
-      internalID: -6659421844987770167
+      spriteID: 15a4b24340a792a70800000000000000
+      internalID: 8802701105146055249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Armor 3 Rotate Spritesheet (32x32)_7
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 5
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d837f5c7e6f210e40800000000000000
+      internalID: 5620825961514627981
       vertices: []
       indices: 
       edges: []
@@ -275,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a66091bcfe6107642ab18fb41afd8f62
+    spriteID: 344093b6bfae85a4681c030a490cbb80
     internalID: 0
     vertices: []
     indices: 
@@ -285,15 +310,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":3.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":2.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Sword Atk Spritesheet (128x128)_0: 4409652233626840558
-      Sword Atk Spritesheet (128x128)_1: 5256477051923167005
-      Sword Atk Spritesheet (128x128)_2: 4983025964474579471
-      Sword Atk Spritesheet (128x128)_3: 1017242324157550207
-      Sword Atk Spritesheet (128x128)_4: -4478189164859382506
-      Sword Atk Spritesheet (128x128)_5: -3559898420385435465
-      Sword Atk Spritesheet (128x128)_6: -6659421844987770167
+      MC Armor 3 Rotate Spritesheet (32x32)_0: 3418069223108090467
+      MC Armor 3 Rotate Spritesheet (32x32)_1: 4011481358806831536
+      MC Armor 3 Rotate Spritesheet (32x32)_2: -5818806187870870279
+      MC Armor 3 Rotate Spritesheet (32x32)_3: 5251268510290488773
+      MC Armor 3 Rotate Spritesheet (32x32)_4: -2575629139745079866
+      MC Armor 3 Rotate Spritesheet (32x32)_5: 9114498920366217453
+      MC Armor 3 Rotate Spritesheet (32x32)_6: 8802701105146055249
+      MC Armor 3 Rotate Spritesheet (32x32)_7: 5620825961514627981
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
