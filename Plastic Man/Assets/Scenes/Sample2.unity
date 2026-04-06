@@ -2971,9 +2971,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0198a4bfd99f6834fb9db596218078ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HudLoot
-  _peText: {fileID: 4837044608626417574}
-  _acText: {fileID: 7331717531289597153}
-  _pcText: {fileID: 3302198633255714372}
+  _peText: {fileID: 8259551162074410540}
+  _acText: {fileID: 2970731790163366679}
+  _pcText: {fileID: 8463820464983645841}
 --- !u!1 &781699003
 GameObject:
   m_ObjectHideFlags: 0
@@ -13295,7 +13295,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.075208664}
+  m_Offset: {x: 1.6260519, y: 0.08321893}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -13305,7 +13305,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.16, y: 1.2823439}
+  m_Size: {x: 3.4121037, y: 2.8363054}
   m_EdgeRadius: 0
 --- !u!4 &1944246647
 Transform:
@@ -13316,7 +13316,7 @@ Transform:
   m_GameObject: {fileID: 1944246644}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.262999, y: 3.321, z: 0}
+  m_LocalPosition: {x: 36.55, y: -4.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13334,7 +13334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32632c79571fbac489cabe127175d4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NextLevelTrigger
-  nextScene: Credits
+  nextScene: Sample3
   isLocked: 0
 --- !u!1 &1972442279
 GameObject:
@@ -17605,7 +17605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
   damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
-  deathSfx: {fileID: 0}
+  deathSfx: {fileID: 8300000, guid: 261a539dded9fe84daab22408046b41d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!224 &922673325535053055
@@ -20554,7 +20554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03773f656132f14aac30f2f1add5cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragIconManager
-  dragIcon: {fileID: 769155360337919267}
+  dragIcon: {fileID: 4156777117962865838}
 --- !u!114 &1897962796309019120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38124,8 +38124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
-  damageSfx: {fileID: 0}
-  deathSfx: {fileID: 0}
+  damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
+  deathSfx: {fileID: 8300000, guid: 261a539dded9fe84daab22408046b41d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!4 &7405905234522360094
@@ -38796,8 +38796,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
-  damageSfx: {fileID: 0}
-  deathSfx: {fileID: 0}
+  damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
+  deathSfx: {fileID: 8300000, guid: 261a539dded9fe84daab22408046b41d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!224 &7656227263329484224

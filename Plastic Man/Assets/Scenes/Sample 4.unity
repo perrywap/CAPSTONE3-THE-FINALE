@@ -5632,9 +5632,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0198a4bfd99f6834fb9db596218078ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HudLoot
-  _peText: {fileID: 4837044608626417574}
-  _acText: {fileID: 7331717531289597153}
-  _pcText: {fileID: 3302198633255714372}
+  _peText: {fileID: 7571399449450587362}
+  _acText: {fileID: 3654382444220439001}
+  _pcText: {fileID: 7996517673154581599}
 --- !u!4 &770792406 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3436620114335720009, guid: 992ac41e550bb64409ee63325f34b012, type: 3}
@@ -35077,7 +35077,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.075208664}
+  m_Offset: {x: -0.5187304, y: 1.0737628}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -35087,7 +35087,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.16, y: 1.2823439}
+  m_Size: {x: 9.030275, y: 3.2794516}
   m_EdgeRadius: 0
 --- !u!4 &1944246647
 Transform:
@@ -35098,7 +35098,7 @@ Transform:
   m_GameObject: {fileID: 1944246644}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.262999, y: 3.321, z: 0}
+  m_LocalPosition: {x: 24.39, y: 18.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35116,7 +35116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32632c79571fbac489cabe127175d4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NextLevelTrigger
-  nextScene: Credits
+  nextScene: Sample 5
   isLocked: 0
 --- !u!1001 &1944597377
 PrefabInstance:
@@ -42294,7 +42294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
   damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
-  deathSfx: {fileID: 0}
+  deathSfx: {fileID: 8300000, guid: 261a539dded9fe84daab22408046b41d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!224 &1701820822843441298
@@ -42955,7 +42955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03773f656132f14aac30f2f1add5cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragIconManager
-  dragIcon: {fileID: 769155360337919267}
+  dragIcon: {fileID: 2459817971446253152}
 --- !u!224 &1877161393727339519
 RectTransform:
   m_ObjectHideFlags: 0
@@ -63214,8 +63214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
-  damageSfx: {fileID: 0}
-  deathSfx: {fileID: 0}
+  damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
+  deathSfx: {fileID: 8300000, guid: 261a539dded9fe84daab22408046b41d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!222 &8196728565795074637
@@ -65951,8 +65951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
-  damageSfx: {fileID: 0}
-  deathSfx: {fileID: 0}
+  damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
+  deathSfx: {fileID: 8300000, guid: 261a539dded9fe84daab22408046b41d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!1 &9030596654868021396
