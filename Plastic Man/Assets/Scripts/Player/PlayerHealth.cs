@@ -19,6 +19,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private int _blinkCount = 3;
     [SerializeField] private float _blinkSpeed = 0.1f;
 
+    [SerializeField] private AudioClip damagedSfx;
+
     private SpriteRenderer _spriteRenderer;
     private Color _originalColor;
     private bool _isBlinking = false;
@@ -44,6 +46,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        SfxManager.instance.PlaySFX(damagedSfx, 0.5f);
         _currentHealth -= damage;
         _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth);
         UpdateHealthBar();

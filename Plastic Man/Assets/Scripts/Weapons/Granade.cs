@@ -4,7 +4,7 @@ using System.Collections;
 public class Granade : WeaponBase
 {
     [SerializeField] private GameObject projectilePrefab;
-
+    [SerializeField] private float maxThrowDistance = 5f;
     [Header("Audio")]
     [SerializeField] private AudioClip shootSfx;
     [SerializeField] private float shootVolume = 0.5f;
@@ -37,6 +37,15 @@ public class Granade : WeaponBase
 
         Vector3 worldPos = Camera.main.ScreenToWorldPoint(mouseScreen);
         worldPos.z = 0f;
+
+        // Clamp distance
+        Vector3 directionToMouse = worldPos - origin;
+        float distance = directionToMouse.magnitude;
+
+        if (distance > maxThrowDistance)
+        {
+            worldPos = origin + directionToMouse.normalized * maxThrowDistance;
+        }
 
         GameObject bullet = Instantiate(projectilePrefab, origin, Quaternion.identity);
 

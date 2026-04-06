@@ -15,6 +15,8 @@ public class BossEnemy : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioClip damageSfx;
     [SerializeField] private AudioClip deathSfx;
+    [SerializeField] private AudioClip dashSfx;
+    [SerializeField] private AudioClip swordSfx;
     [SerializeField] private float damageVolume = 0.5f;
     [SerializeField] private float deathVolume = 0.7f;
 
@@ -165,6 +167,7 @@ public class BossEnemy : MonoBehaviour
 
     IEnumerator ExecuteDash(bool includeSlice)
     {
+        SfxManager.instance.PlaySFX(swordSfx, 0.7f);
         anim.SetBool("SwordAttack", true);
         if (anim.GetBool("IsShooting") == true) yield return null;
 
@@ -249,6 +252,7 @@ public class BossEnemy : MonoBehaviour
 
     IEnumerator DashChase()
     {
+        SfxManager.instance.PlaySFX(damageSfx, 0.5f);
         anim.SetBool("IsAttacking", true);
         while (player != null)
         {
