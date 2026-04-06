@@ -11,6 +11,11 @@ public struct EndingDialogueBlock
     public TMP_Text DialogueTextComponent;
     [Tooltip("The lines of dialogue to type out")]
     [TextArea(3, 5)] public string[] DialogueLines;
+
+    [Header("Cinematic Actions")]
+    [Tooltip("Type an Animator Trigger here (e.g., 'Destroyed') to play it AFTER these lines finish!")]
+    public string BossAnimationTrigger;
+
     [Tooltip("How long to wait before moving to the next block")]
     public float DelayAfterBlock;
 }
@@ -21,6 +26,10 @@ public class TrueEndingSequence : MonoBehaviour
     [SerializeField] private Camera _mainCamera;
     [SerializeField] private MonoBehaviour _cameraFollowScript;
     [SerializeField] private float _panSpeed = 15f;
+
+    [Header("Dialogue Placement")]
+    [Tooltip("How high above the boss's pivot the bubble appears. Increase this if it covers their face!")]
+    [SerializeField] private float _bubbleVerticalOffset = 2.5f; // <-- Tweak this in the Inspector!
 
     [Header("Win Panel Settings")]
     [SerializeField] private GameObject _winPanel;
@@ -44,7 +53,6 @@ public class TrueEndingSequence : MonoBehaviour
     {
         if (_mainCamera == null) _mainCamera = Camera.main;
 
-        // Hide all assigned canvases at the start of the game
         if (_dialogueSequence != null)
         {
             foreach (var block in _dialogueSequence)
@@ -92,12 +100,11 @@ public class TrueEndingSequence : MonoBehaviour
 
                 if (block.DialogueCanvas != null)
                 {
-                    // --- THE FIX: Teleport World Space Bubbles to the Corpse! ---
                     Canvas canvasComp = block.DialogueCanvas.GetComponent<Canvas>();
                     if (canvasComp != null && canvasComp.renderMode == RenderMode.WorldSpace && deadBossTransform != null)
                     {
-                        // Spawns the bubble exactly 1.5 units above the dead boss's center
-                        block.DialogueCanvas.transform.position = deadBossTransform.position + new Vector3(0, 1.5f, 0);
+                        // Places the bubble perfectly using your Inspector offset!
+                        block.DialogueCanvas.transform.position = deadBossTransform.position + new Vector3(0, _bubbleVerticalOffset, 0);
                     }
 
                     block.DialogueCanvas.SetActive(true);
@@ -114,6 +121,17 @@ public class TrueEndingSequence : MonoBehaviour
                 }
 
                 if (block.DialogueCanvas != null) block.DialogueCanvas.SetActive(false);
+
+                // --- TRIGGER THE ANIMATION IN UNSCALED TIME ---
+                if (!string.IsNullOrEmpty(block.BossAnimationTrigger) && deadBossTransform != null)
+                {
+                    Animator bossAnim = deadBossTransform.GetComponent<Animator>();
+                    if (bossAnim != null)
+                    {
+                        bossAnim.updateMode = AnimatorUpdateMode.UnscaledTime;
+                        bossAnim.SetTrigger(block.BossAnimationTrigger);
+                    }
+                }
 
                 if (block.DelayAfterBlock > 0f)
                 {
