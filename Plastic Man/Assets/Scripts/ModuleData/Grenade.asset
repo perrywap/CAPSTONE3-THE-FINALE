@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Grenade
   m_EditorClassIdentifier: Assembly-CSharp::ModuleData
   printedPrefab: {fileID: 3664365491805918091, guid: ca721e788d474cb40a9fe408af0a92ce, type: 3}
-  moduleIcon: {fileID: 1716810865853966846, guid: 33c30cba4b8bf734e8e2994b2dd60d3e, type: 3}
+  moduleIcon: {fileID: 328322047167047715, guid: e94f405bace0ae74f832a8d760c9ad04, type: 3}
   filamentCosts:
   - plasticType: 0
-    amount: 0
+    amount: 5
   - plasticType: 2
-    amount: 0
+    amount: 5
