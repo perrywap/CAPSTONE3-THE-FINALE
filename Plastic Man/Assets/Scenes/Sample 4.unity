@@ -5632,9 +5632,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0198a4bfd99f6834fb9db596218078ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HudLoot
-  _peText: {fileID: 4837044608626417574}
-  _acText: {fileID: 7331717531289597153}
-  _pcText: {fileID: 3302198633255714372}
+  _peText: {fileID: 7571399449450587362}
+  _acText: {fileID: 3654382444220439001}
+  _pcText: {fileID: 7996517673154581599}
 --- !u!4 &770792406 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3436620114335720009, guid: 992ac41e550bb64409ee63325f34b012, type: 3}
@@ -35116,7 +35116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32632c79571fbac489cabe127175d4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NextLevelTrigger
-  nextScene: Credits
+  nextScene: Sample 5
   isLocked: 0
 --- !u!1001 &1944597377
 PrefabInstance:
@@ -42955,7 +42955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03773f656132f14aac30f2f1add5cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragIconManager
-  dragIcon: {fileID: 769155360337919267}
+  dragIcon: {fileID: 2459817971446253152}
 --- !u!224 &1877161393727339519
 RectTransform:
   m_ObjectHideFlags: 0
