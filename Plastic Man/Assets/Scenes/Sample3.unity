@@ -18307,16 +18307,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 83, y: -7, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 106, y: -7, z: 0}
     second:
       serializedVersion: 2
@@ -18388,16 +18378,6 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: -54, y: -4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 83, y: -4, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -18748,16 +18728,6 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 66, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 83, y: -1, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -23459,13 +23429,13 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 1318
+  - m_RefCount: 1315
     m_Data: {fileID: 11400000, guid: b80e9094933c1f14d9f20e9f51466abc, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1318
+  - m_RefCount: 1315
     m_Data: {fileID: -314946819, guid: 169004ef55ed2c9449b3cbc69cad6cd0, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 1318
+  - m_RefCount: 1315
     m_Data:
       e00: 1
       e01: 0
@@ -23484,7 +23454,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1318
+  - m_RefCount: 1315
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -25289,7 +25259,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.075208664}
+  m_Offset: {x: 2.057682, y: -0.47165298}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -25299,7 +25269,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.16, y: 1.2823439}
+  m_Size: {x: 4.275364, y: 4.897192}
   m_EdgeRadius: 0
 --- !u!4 &1944246647
 Transform:
@@ -25310,7 +25280,7 @@ Transform:
   m_GameObject: {fileID: 1944246644}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.262999, y: 3.321, z: 0}
+  m_LocalPosition: {x: 46.3, y: -1.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38761,8 +38731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
-  damageSfx: {fileID: 0}
-  deathSfx: {fileID: 0}
+  damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
+  deathSfx: {fileID: 8300000, guid: 261a539dded9fe84daab22408046b41d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!4 &3661067948231153001
@@ -41486,8 +41456,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
-  damageSfx: {fileID: 0}
-  deathSfx: {fileID: 0}
+  damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
+  deathSfx: {fileID: 8300000, guid: 261a539dded9fe84daab22408046b41d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!1 &4476841136695730547
@@ -47348,7 +47318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
   damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
-  deathSfx: {fileID: 0}
+  deathSfx: {fileID: 8300000, guid: 261a539dded9fe84daab22408046b41d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!114 &6396069787033289710
