@@ -23,6 +23,9 @@ public class PlayerHealth : MonoBehaviour
     private Color _originalColor;
     private bool _isBlinking = false;
 
+    public float MaxHealth { get { return _maxHealth; } set { _maxHealth = value; } }
+    public float CurrentHealth { get { return _currentHealth; } set { _currentHealth = value; } }
+
     private void Awake()
     {
         Instance = this;

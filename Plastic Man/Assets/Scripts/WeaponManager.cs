@@ -434,28 +434,6 @@ public class WeaponManager : MonoBehaviour
             equippedWeapon.SetEnergy(savedWeaponEnergy[activeIndex]);
     }
 
-    private void HandleEnergyBar2s()
-    {
-        for (int i = 0; i < energyBars.Length; i++)
-        {
-            if (i < weapons.Length && weapons[i] != null)
-            {
-                WeaponBase weaponData = weapons[i].GetComponent<WeaponBase>();
-
-                if (weaponData != null)
-                {
-                    energyBars[i].fillAmount = 1f - (savedWeaponEnergy[i] / weaponData.MaxEnergy);
-                    energyBars[i].color = Color.white;
-                }
-            }
-            else
-            {
-                energyBars[i].fillAmount = 0f;
-                energyBars[i].color = new Color(1f, 1f, 1f, 0f);
-            }
-        }
-    }
-
     private void HandleEnergyBars()
     {
         for (int i = 0; i < energyBars.Length; i++)

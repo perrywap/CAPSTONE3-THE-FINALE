@@ -85,12 +85,15 @@ public class PrinterManager : MonoBehaviour
         else if (costs[0].plasticType == PlasticType.Polycarbonate)
             filamentSlot1.sprite = polycarbFilament;
 
-        if (costs[1].plasticType == PlasticType.Acrylic)
-            filamentSlot2.sprite = acrylicFilament;
-        else if (costs[1].plasticType == PlasticType.Polyethylene)
-            filamentSlot2.sprite = polyEthylFilament;
-        else if (costs[1].plasticType == PlasticType.Polycarbonate)
-            filamentSlot2.sprite = polycarbFilament;
+        if (costs.Count == 2)
+        {
+            if (costs[1].plasticType == PlasticType.Acrylic)
+                filamentSlot2.sprite = acrylicFilament;
+            else if (costs[1].plasticType == PlasticType.Polyethylene)
+                filamentSlot2.sprite = polyEthylFilament;
+            else if (costs[1].plasticType == PlasticType.Polycarbonate)
+                filamentSlot2.sprite = polycarbFilament;
+        }        
     }
 
     private void ResetSlots()

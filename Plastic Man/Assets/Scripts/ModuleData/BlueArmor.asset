@@ -17,3 +17,5 @@ MonoBehaviour:
   filamentCosts:
   - plasticType: 0
     amount: 0
+  - plasticType: 0
+    amount: 0

@@ -127,6 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3ba8282a29e42439d8214bdf0e5089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerModule
+  moduleType: 0
+  moduleData: {fileID: 11400000, guid: d2b7b71ebbd6a9a41af8d0981d6130f1, type: 2}
   spriteDirections:
   - {fileID: -427531934135219994, guid: 1b46d24f311f2f945847c41e9315d100, type: 3}
   - {fileID: 5727208580470378298, guid: 4bdb9dfcb6780624e908ee455cd95313, type: 3}
@@ -137,3 +139,4 @@ MonoBehaviour:
   - {fileID: 8657086183733354851, guid: 26593733404916d41a81d4ee1645e12a, type: 3}
   - {fileID: 3858701079274108497, guid: 2649fe0e0aa90f542a6797d0641ca311, type: 3}
   moduleSprite: {fileID: 8932773725600385265}
+  increaseHealthAmount: 35
