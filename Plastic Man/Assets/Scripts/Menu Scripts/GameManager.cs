@@ -13,15 +13,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _winPanel;
 
     [Header("Level Boss (Optional)")]
-    [Tooltip("Drag the Corrupted Printer Enemy here so the game waits for it to explode!")]
     [SerializeField] private RoguePrinterSpawner _levelBoss;
 
     [Header("Enemy Tracker")]
     [SerializeField] private List<GameObject> _enemies = new List<GameObject>();
 
-    [Header("End Level Cutscene")]
-    [Tooltip("Drag Cutscene_LateClear here!")]
+    [Header("Level Events")]
+    [SerializeField] private CutsceneTrigger _midLevelCutscene;
     [SerializeField] private CutsceneTrigger _endLevelCutscene;
+
+    [Header("True Ending Event (Level 5 Only)")]
+    [SerializeField] private TrueEndingSequence _trueEndingSequence;
 
     private bool _isPaused = false;
     public bool IsPaused { get { return _isPaused; } }
@@ -30,12 +32,29 @@ public class GameManager : MonoBehaviour
     private bool _isGameCleared = false;
     public bool IsGameCleared { get { return _isGameCleared; } }
 
-    // --- SAFETY LOCKS & STATE DATA ---
     private bool _hasStartedTracking = false;
+    private bool _midLevelEventTriggered = false;
 
-    // Properties that the Printer needs to read
     public int ActiveEnemyCount => _enemies.Count;
     public bool IsWinPanelActive => _winPanel != null && _winPanel.activeSelf;
+    public CutsceneTrigger MidLevelCutscene => _midLevelCutscene;
+    public TrueEndingSequence trueEndingSequence => _trueEndingSequence;
+
+    public void NotifyMidLevelCutsceneHandled()
+    {
+        _midLevelEventTriggered = true;
+        _hasStartedTracking = false;
+    }
+
+    // --- NEW: Intercepts the win and hands it to the cinematic! ---
+    public void TriggerTrueEnding(Transform corpseTransform)
+    {
+        _isGameCleared = true; // Completely locks out the Update() loop!
+        if (_trueEndingSequence != null)
+        {
+            _trueEndingSequence.PlaySequence(corpseTransform);
+        }
+    }
 
     private void Awake()
     {
@@ -44,7 +63,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        // Prevent an instant-win if the list starts empty, but unlocks if enemies are in the Inspector
         if (_enemies.Count > 0)
         {
             _hasStartedTracking = true;
@@ -55,41 +73,41 @@ public class GameManager : MonoBehaviour
     {
         if (_isGameCleared) return;
 
-        // --- SMART ESCAPE KEY ---
         if (Input.GetKeyDown(KeyCode.Escape) && !_isGameOver)
         {
-            // 1. Close printer if it's open
             if (PrinterInteractable.IsInteracting)
             {
                 PrinterInteractable printer = Object.FindFirstObjectByType<PrinterInteractable>();
                 if (printer != null) printer.ClosePrinter();
             }
-            // 2. Otherwise, pause the game normally (as long as we aren't in dialogue)
             else if (!NPCDialogue.IsTalking)
             {
                 TogglePause();
             }
         }
 
-        // Clean up any enemies that were destroyed
         _enemies.RemoveAll(item => item == null);
 
-        // --- WIN LOGIC ---
         bool bossDefeated = _levelBoss == null || _levelBoss.isDefeated;
 
-        // If enemies die last, the GameManager handles the win.
-        // If the boss dies last, the Boss handles it and calls TriggerWinSequence directly!
-        if (_hasStartedTracking && _enemies.Count <= 0 && bossDefeated)
+        if (_hasStartedTracking && _enemies.Count <= 0 && bossDefeated && !NPCDialogue.IsTalking)
         {
-            TriggerWinSequence(_endLevelCutscene);
+            if (_midLevelCutscene != null && !_midLevelEventTriggered)
+            {
+                _midLevelEventTriggered = true;
+                _hasStartedTracking = false;
+                _midLevelCutscene.PlayFromGameManager();
+            }
+            else if (_midLevelCutscene == null || _midLevelEventTriggered)
+            {
+                TriggerWinSequence(_endLevelCutscene);
+            }
         }
     }
 
-    // --- NEW: Dynamic Win Trigger ---
-    // Allows other scripts (like the Boss) to hand over a specific cutscene to play
     public void TriggerWinSequence(CutsceneTrigger cutsceneToPlay)
     {
-        if (_isGameCleared) return; // Prevent it from firing twice
+        if (_isGameCleared) return;
         _isGameCleared = true;
         StartCoroutine(ShowWinSequence(cutsceneToPlay));
     }
@@ -97,19 +115,12 @@ public class GameManager : MonoBehaviour
     private IEnumerator ShowWinSequence(CutsceneTrigger cutsceneToPlay)
     {
         if (_winPanel != null) _winPanel.SetActive(true);
-
         yield return new WaitForSecondsRealtime(3f);
-
         if (_winPanel != null) _winPanel.SetActive(false);
 
-        // Play whichever cutscene was handed to it
-        if (cutsceneToPlay != null)
-        {
-            cutsceneToPlay.PlayFromGameManager();
-        }
+        if (cutsceneToPlay != null) cutsceneToPlay.PlayFromGameManager();
     }
 
-    // --- ENEMY REGISTRATION ---
     public void RegisterEnemy(GameObject enemy)
     {
         if (!_enemies.Contains(enemy))
@@ -121,13 +132,9 @@ public class GameManager : MonoBehaviour
 
     public void UnregisterEnemy(GameObject enemy)
     {
-        if (_enemies.Contains(enemy))
-        {
-            _enemies.Remove(enemy);
-        }
+        if (_enemies.Contains(enemy)) _enemies.Remove(enemy);
     }
 
-    // --- MENUS & TIME MANAGEMENT ---
     public void TogglePause()
     {
         _isPaused = !_isPaused;
@@ -139,11 +146,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            // Only unfreeze time if we aren't currently talking or using the printer!
-            if (!NPCDialogue.IsTalking && !PrinterInteractable.IsInteracting)
-            {
-                Time.timeScale = 1f;
-            }
+            if (!NPCDialogue.IsTalking && !PrinterInteractable.IsInteracting) Time.timeScale = 1f;
             if (_pausePanel != null) _pausePanel.SetActive(false);
         }
     }
@@ -171,11 +174,7 @@ public class GameManager : MonoBehaviour
     public void ResumeGame()
     {
         _isPaused = false;
-
-        if (!NPCDialogue.IsTalking && !PrinterInteractable.IsInteracting)
-        {
-            Time.timeScale = 1f;
-        }
+        if (!NPCDialogue.IsTalking && !PrinterInteractable.IsInteracting) Time.timeScale = 1f;
         if (_pausePanel != null) _pausePanel.SetActive(false);
     }
 }
