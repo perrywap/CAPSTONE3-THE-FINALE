@@ -30684,7 +30684,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoguePrinterSpawner
   spawnableEnemies:
-  - {fileID: 4298873075404019450, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+  - {fileID: 2269716702073190016, guid: 89ca702f07b0d534e9bdf1268e0eae32, type: 3}
+  - {fileID: 8356992654301642009, guid: 0b342e85d8207754b9491ebb9e6a00a1, type: 3}
   spawnArea: {fileID: 2773823483861915878}
   frontSprite: {fileID: 5739064634167237140}
   spawnInterval: 3
