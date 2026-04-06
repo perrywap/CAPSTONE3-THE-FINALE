@@ -3346,7 +3346,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.220001, y: -37.48, z: -10}
+  m_LocalPosition: {x: -10.220001, y: -37.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3549,7 +3549,7 @@ Transform:
   m_GameObject: {fileID: 552036900}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.220001, y: -37.48, z: -10}
+  m_LocalPosition: {x: -10.220001, y: -37.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19371,7 +19371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3900678631590910362, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -37.48
+      value: -37.6
       objectReference: {fileID: 0}
     - target: {fileID: 3900678631590910362, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: m_LocalPosition.z
@@ -23569,7 +23569,9 @@ MonoBehaviour:
   - {fileID: 3822153816906625357}
   - {fileID: 402108580947470942}
   player: {fileID: 0}
+  energyBars: []
   popupValue: 20
+  activeIndex: -1
 --- !u!114 &3925405457298055014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25959,8 +25961,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrinterManager
   printedSlot: {fileID: 3401893701586803039}
-  moduleSlot: {fileID: 4320066604468706235}
-  filamentSlot: {fileID: 8271544328443593109}
+  filamentSlot1: {fileID: 0}
+  filamentSlot2: {fileID: 0}
+  emptySprite: {fileID: 0}
+  acrylicFilament: {fileID: 0}
+  polyEthylFilament: {fileID: 0}
+  polycarbFilament: {fileID: 0}
   bpSprite: {fileID: 2475077616842384856}
   costs: []
   weapPrefab: {fileID: 0}
