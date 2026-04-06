@@ -15,6 +15,7 @@ public class PrinterInteractable : MonoBehaviour
 
     [Header("Camera Zoom Settings")]
     [SerializeField] private Camera _mainCamera;
+    [Tooltip("CRITICAL: You must assign your Camera Follow Script here so it stops following the player!")]
     [SerializeField] private MonoBehaviour _cameraFollowScript;
     [SerializeField] private float _panSpeed = 20f;
     [Tooltip("How far the camera zooms in. (Lower number = closer)")]
@@ -26,7 +27,6 @@ public class PrinterInteractable : MonoBehaviour
     private float _originalOrthoSize;
     private Vector3 _originalCameraPosition;
 
-    [SerializeField] public AudioClip printerFinishedPrintingSfx;
     private void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -38,6 +38,12 @@ public class PrinterInteractable : MonoBehaviour
         if (_interactPrompt != null) _interactPrompt.SetActive(false);
         if (_printerPanel != null) _printerPanel.SetActive(false);
 
+        // --- NEW SAFETY WARNING ---
+        if (_cameraFollowScript == null)
+        {
+            Debug.LogError($"<color=red>WARNING:</color> The Camera Follow Script is missing on the printer named <b>{gameObject.name}</b>! The camera will get stuck on the player during zoom.");
+        }
+
         IsInteracting = false;
     }
 
@@ -47,7 +53,6 @@ public class PrinterInteractable : MonoBehaviour
 
         if (IsInteracting) return;
 
-        // --- THE INTEGRATED LOCKS ---
         bool isLocked = false;
 
         if (GameManager.Instance != null)
@@ -65,7 +70,6 @@ public class PrinterInteractable : MonoBehaviour
             return;
         }
 
-        // --- NORMAL INTERACTION ---
         if (_playerTransform != null)
         {
             float distance = Vector2.Distance(transform.position, _playerTransform.position);
@@ -90,12 +94,9 @@ public class PrinterInteractable : MonoBehaviour
     private IEnumerator OpenPrinterSequence()
     {
         IsInteracting = true;
-
-        // Tells your rotation script to freeze (just like The Maker!)
         NPCDialogue.IsTalking = true;
         Time.timeScale = 0f;
 
-        // Cache the player's exact spot to lock them down
         Vector3 lockedPlayerPos = Vector3.zero;
         Rigidbody2D playerRb = null;
 
@@ -106,6 +107,8 @@ public class PrinterInteractable : MonoBehaviour
         }
 
         if (_interactPrompt != null) _interactPrompt.SetActive(false);
+
+        // This is where the magic happens (if the slot is filled!)
         if (_cameraFollowScript != null) _cameraFollowScript.enabled = false;
 
         if (_mainCamera != null)
@@ -118,8 +121,6 @@ public class PrinterInteractable : MonoBehaviour
             float timeout = 0f;
             while ((Vector3.Distance(_mainCamera.transform.position, targetPos) > 0.01f || Mathf.Abs(_mainCamera.orthographicSize - _zoomSize) > 0.01f) && timeout < 1.5f)
             {
-                // --- THE ULTIMATE PHYSICAL FREEZE ---
-                // Forces the player to stay glued to their exact coordinates during the entire zoom
                 if (_playerTransform != null)
                 {
                     _playerTransform.position = lockedPlayerPos;
@@ -137,8 +138,6 @@ public class PrinterInteractable : MonoBehaviour
             }
         }
 
-        // Camera finishes, UI opens, and your mouse can interact with it safely!
-        SfxManager.instance.PlaySFX(printerFinishedPrintingSfx, 0.5f); 
         if (_printerPanel != null) _printerPanel.SetActive(true);
     }
 
@@ -152,7 +151,6 @@ public class PrinterInteractable : MonoBehaviour
     {
         if (_printerPanel != null) _printerPanel.SetActive(false);
 
-        // Cache the player's spot so they can't run away while the camera is zooming OUT
         Vector3 lockedPlayerPos = Vector3.zero;
         Rigidbody2D playerRb = null;
 
@@ -169,7 +167,6 @@ public class PrinterInteractable : MonoBehaviour
             float timeout = 0f;
             while ((Vector3.Distance(_mainCamera.transform.position, targetPos) > 0.01f || Mathf.Abs(_mainCamera.orthographicSize - _originalOrthoSize) > 0.01f) && timeout < 1.5f)
             {
-                // --- THE ULTIMATE PHYSICAL FREEZE (ZOOM OUT) ---
                 if (_playerTransform != null)
                 {
                     _playerTransform.position = lockedPlayerPos;
@@ -187,6 +184,7 @@ public class PrinterInteractable : MonoBehaviour
             }
         }
 
+        // Turns the follow script back on!
         if (_cameraFollowScript != null) _cameraFollowScript.enabled = true;
 
         Time.timeScale = 1f;
