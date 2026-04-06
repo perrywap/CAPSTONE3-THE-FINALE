@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 72e143df649a32c49a9699ccb5e48d9b
+guid: fdd0abeb391f3c544883c6f26fb4c7f4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7536116059008001055
-    second: Shredder Spritesheet (128x128)_0
+      213: -4914244433214050374
+    second: MC Armor 1 Rotate Spritesheet (32x32)_0
   - first:
-      213: 968263024647517620
-    second: Shredder Spritesheet (128x128)_1
+      213: 6864517425123689202
+    second: MC Armor 1 Rotate Spritesheet (32x32)_1
   - first:
-      213: -4306849400831598103
-    second: Shredder Spritesheet (128x128)_2
+      213: -8227933177026605868
+    second: MC Armor 1 Rotate Spritesheet (32x32)_2
   - first:
-      213: -6465473043283856074
-    second: Shredder Spritesheet (128x128)_3
+      213: -2369349154185202137
+    second: MC Armor 1 Rotate Spritesheet (32x32)_3
   - first:
-      213: -6551077948382552902
-    second: Shredder Spritesheet (128x128)_4
+      213: 2224660063677353992
+    second: MC Armor 1 Rotate Spritesheet (32x32)_4
   - first:
-      213: 6910015444296175506
-    second: Shredder Spritesheet (128x128)_5
+      213: -1202896526179504484
+    second: MC Armor 1 Rotate Spritesheet (32x32)_5
   - first:
-      213: -2912330050313798910
-    second: Shredder Spritesheet (128x128)_6
+      213: -3311387008281502582
+    second: MC Armor 1 Rotate Spritesheet (32x32)_6
   - first:
-      213: -3267708312278029170
-    second: Shredder Spritesheet (128x128)_7
+      213: -8824678412303477008
+    second: MC Armor 1 Rotate Spritesheet (32x32)_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,177 +121,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shredder Spritesheet (128x128)_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 128
-        height: 128
-      alignment: 9
-      pivot: {x: 0.3723664, y: 0.60490394}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1eb16b45f565a6790800000000000000
-      internalID: -7536116059008001055
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shredder Spritesheet (128x128)_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
-      alignment: 9
-      pivot: {x: 0.3706181, y: 0.60315573}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b5b2414716ff6d00800000000000000
-      internalID: 968263024647517620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shredder Spritesheet (128x128)_2
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
-      alignment: 9
-      pivot: {x: 0.3339014, y: 0.6153946}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9e12452e94ffa34c0800000000000000
-      internalID: -4306849400831598103
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shredder Spritesheet (128x128)_3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 128
-        width: 128
-        height: 128
-      alignment: 9
-      pivot: {x: 0.35313392, y: 0.6118977}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 635b33ec5860646a0800000000000000
-      internalID: -6465473043283856074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shredder Spritesheet (128x128)_4
+      name: blueArmor_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
-      alignment: 9
-      pivot: {x: 0.37061805, y: 0.6049041}
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: abc53c6a055e515a0800000000000000
-      internalID: -6551077948382552902
+      spriteID: 33f979223eb749e4e9354b86c3fe3af5
+      internalID: -71462770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shredder Spritesheet (128x128)_5
+      name: blueArmor_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9c7ea7026f983439f8aad369052740
+      internalID: -991833512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueArmor_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b36fd5f4547f6948b93edd6f0b80213
+      internalID: 1713369843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueArmor_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04580477f331594da923aa58181ee2c
+      internalID: 1504809282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueArmor_4
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 128
-        height: 128
-      alignment: 9
-      pivot: {x: 0.37761164, y: 0.60840094}
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 29f8cbd8f6e45ef50800000000000000
-      internalID: 6910015444296175506
+      spriteID: 46352493350ce784b87f47e00906a964
+      internalID: -141647168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shredder Spritesheet (128x128)_6
+      name: blueArmor_5
       rect:
         serializedVersion: 2
-        x: 256
+        x: 160
         y: 0
-        width: 128
-        height: 128
-      alignment: 9
-      pivot: {x: 0.36886954, y: 0.60315573}
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 20bb95adf335597d0800000000000000
-      internalID: -2912330050313798910
+      spriteID: 91f54e54a8ea85b42b0bfeaf1f174683
+      internalID: -1954321140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shredder Spritesheet (128x128)_7
+      name: blueArmor_6
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 0
-        width: 128
-        height: 128
-      alignment: 9
-      pivot: {x: 0.36886954, y: 0.6101493}
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e8ca3116a94c6a2d0800000000000000
-      internalID: -3267708312278029170
+      spriteID: 59cd19c878341ef4cb1684809bec763e
+      internalID: -1713064189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueArmor_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8756040c357a3b40b6778fb44e3205c
+      internalID: 31141524
       vertices: []
       indices: 
       edges: []
@@ -300,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 02ba6dc57f7111947930c1a9b022051c
+    spriteID: 1ec8368b1f881484b98b10d7cdd028d0
     internalID: 0
     vertices: []
     indices: 
@@ -310,16 +310,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":2.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Shredder Spritesheet (128x128)_0: -7536116059008001055
-      Shredder Spritesheet (128x128)_1: 968263024647517620
-      Shredder Spritesheet (128x128)_2: -4306849400831598103
-      Shredder Spritesheet (128x128)_3: -6465473043283856074
-      Shredder Spritesheet (128x128)_4: -6551077948382552902
-      Shredder Spritesheet (128x128)_5: 6910015444296175506
-      Shredder Spritesheet (128x128)_6: -2912330050313798910
-      Shredder Spritesheet (128x128)_7: -3267708312278029170
+      blueArmor_0: -71462770
+      blueArmor_1: -991833512
+      blueArmor_2: 1713369843
+      blueArmor_3: 1504809282
+      blueArmor_4: -141647168
+      blueArmor_5: -1954321140
+      blueArmor_6: -1713064189
+      blueArmor_7: 31141524
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

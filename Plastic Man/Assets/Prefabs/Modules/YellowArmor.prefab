@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5308902520249621149
+--- !u!1 &860842348879154361
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 947176331226810153}
-  - component: {fileID: 8932773725600385265}
-  - component: {fileID: 37203467059438765}
-  - component: {fileID: 3742371094522253248}
+  - component: {fileID: 104088947946230767}
+  - component: {fileID: 2780490833670005249}
+  - component: {fileID: 8484062691499243810}
+  - component: {fileID: 6249610810763203159}
   m_Layer: 0
-  m_Name: MaskSample
+  m_Name: YellowArmor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &947176331226810153
+--- !u!4 &104088947946230767
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5308902520249621149}
+  m_GameObject: {fileID: 860842348879154361}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -34,14 +34,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8932773725600385265
+--- !u!212 &2780490833670005249
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5308902520249621149}
+  m_GameObject: {fileID: 860842348879154361}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 357006442158401228, guid: 2f30826d0bc745e4ea14b490a1fe4a2e, type: 3}
+  m_Sprite: {fileID: -1850027053, guid: d0034c136e385694d80fc395559eba3d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -93,17 +93,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!95 &37203467059438765
+--- !u!95 &8484062691499243810
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5308902520249621149}
+  m_GameObject: {fileID: 860842348879154361}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e7e1810b3b77d8e4e92d9d9c20d9fca6, type: 2}
+  m_Controller: {fileID: 9100000, guid: ec9f61aed72888b48ad341c2b2a6f808, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -115,25 +115,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3742371094522253248
+--- !u!114 &6249610810763203159
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5308902520249621149}
+  m_GameObject: {fileID: 860842348879154361}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc3ba8282a29e42439d8214bdf0e5089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerModule
   spriteDirections:
-  - {fileID: -4345969612696422427, guid: 0e1e5b83f6c11a848b7a7cb06746f4e5, type: 3}
-  - {fileID: 5840829561421844581, guid: 1446b8dced837ff4da2bab5b96fd373f, type: 3}
-  - {fileID: 5655321678828108626, guid: 6a8d20461335d834fa5b306d5992905e, type: 3}
-  - {fileID: -2897721905832694117, guid: a7cdb378ad7ae724dbfa47e9d11b2c19, type: 3}
-  - {fileID: -2208510542369132325, guid: 74563c1d70a4a9448aac6f088a84f2fd, type: 3}
-  - {fileID: -8478798829971143630, guid: abac4ddaeb9fc2442936110b31f08f2b, type: 3}
-  - {fileID: 357006442158401228, guid: 2f30826d0bc745e4ea14b490a1fe4a2e, type: 3}
-  - {fileID: 8422835935389594753, guid: c67f8273496eb7946b63eded61ce2d83, type: 3}
-  moduleSprite: {fileID: 8932773725600385265}
+  - {fileID: -9757641, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: 405452359, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: 978873637, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: -608659583, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: 1653524151, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: -1918424456, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: -1850027053, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: 1924630893, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  moduleSprite: {fileID: 2780490833670005249}
