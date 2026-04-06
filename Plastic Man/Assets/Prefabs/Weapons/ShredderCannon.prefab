@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 799079452261813002}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.651, y: 0.076, z: 0}
+  m_LocalPosition: {x: 0.71, y: -0.221, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -116,8 +116,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5417780847300892640, guid: c40a020edbfe8ad4cb0785963958f3da, type: 3}
-  m_Color: {r: 0.754717, g: 0.03203986, b: 0.03203986, a: 1}
+  m_Sprite: {fileID: -7536116059008001055, guid: 72e143df649a32c49a9699ccb5e48d9b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -136,7 +136,7 @@ Animator:
   m_GameObject: {fileID: 4208481742703032022}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1b2bb765802f63b42b4c4c48178a5203, type: 2}
+  m_Controller: {fileID: 9100000, guid: d1ac009c3455ead429b12572e667cd5c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -163,6 +163,10 @@ MonoBehaviour:
   fireRate: 0.2
   damage: 10
   isAutomatic: 0
+  maxEnergy: 100
+  currentEnergy: 0
+  depleteAmount: 1
+  regenRate: 0.5
   projectilePrefab: {fileID: 6396809954166474979, guid: 80fd0f6ecbc92ac44a61ff47ced5b94c, type: 3}
   muzzle: {fileID: 1136360572193377570}
   muzzleFlashPrefab: {fileID: 5505631384929673268, guid: b285acb567c094a429b6bc2ce71ba6a5, type: 3}

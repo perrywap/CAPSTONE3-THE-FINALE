@@ -95,7 +95,7 @@ public class PickUps : MonoBehaviour, IPointerClickHandler, IPointerDownHandler,
         transform.position = GetMouseWorld(eventData) + offset;
     }
 
-    public void OnEndDrag(PointerEventData eventData)
+    public void OnEndDra2(PointerEventData eventData)
     {
         IsDraggingAnyPickup = false;
         _isCurrentlyDraggingThis = false;
@@ -130,6 +130,57 @@ public class PickUps : MonoBehaviour, IPointerClickHandler, IPointerDownHandler,
         }
 
         transform.position = originalPosition;
+        if (spriteRenderer != null) spriteRenderer.enabled = true;
+        if (col != null) col.enabled = true;
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        IsDraggingAnyPickup = false;
+        _isCurrentlyDraggingThis = false;
+
+        if (DragIconManager.Instance != null) DragIconManager.Instance.Hide();
+
+        if (eventData.pointerEnter != null)
+        {
+            // WEAPON SLOT FIRST (same as before)
+            WeaponSlot weaponSlot = eventData.pointerEnter.GetComponentInParent<WeaponSlot>();
+
+            if (weaponSlot != null)
+            {
+                if (_isTutorialItem && !HasCompletedDragTutorial)
+                {
+                    if (_tutorialPrompt != null) _tutorialPrompt.SetActive(false);
+                    HasCompletedDragTutorial = true;
+
+                    if (NPCDialogue.IsTalking)
+                    {
+                        NPCDialogue.TutorialWeaponEquippedDuringDialogue = true;
+                        NPCDialogue.PendingDoorEvent = _onTutorialEquipped;
+                    }
+                    else
+                    {
+                        _onTutorialEquipped?.Invoke();
+                    }
+                }
+
+                weaponSlot.TrySetWeapon(this);
+                return;
+            }
+
+            //  MODULE SLOT (NEW)
+            ModuleSlot moduleSlot = eventData.pointerEnter.GetComponentInParent<ModuleSlot>();
+
+            if (moduleSlot != null)
+            {
+                moduleSlot.TrySetModule(this);
+                return;
+            }
+        }
+
+        //  fallback (no valid slot)
+        transform.position = originalPosition;
+
         if (spriteRenderer != null) spriteRenderer.enabled = true;
         if (col != null) col.enabled = true;
     }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035b251a2ff516d4bb13214ab8790909, type: 3}
   m_Name: BossMask
   m_EditorClassIdentifier: Assembly-CSharp::ModuleData
-  printedPrefab: {fileID: 3664365491805918091, guid: 407a05073581e034a9e7a7d05d8dbc1e, type: 3}
+  printedPrefab: {fileID: 3664365491805918091, guid: 7e5b40fb4e34e8d43b641c4036911c7e, type: 3}
   moduleIcon: {fileID: 1716810865853966846, guid: 33c30cba4b8bf734e8e2994b2dd60d3e, type: 3}
   filamentCosts:
   - plasticType: 0

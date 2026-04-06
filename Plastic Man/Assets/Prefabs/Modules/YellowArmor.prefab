@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8484062691499243810}
   - component: {fileID: 6249610810763203159}
   m_Layer: 0
-  m_Name: ArmorSample
+  m_Name: YellowArmor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4914244433214050374, guid: 8a7721a1b27f01b4fa337baeedff76b3, type: 3}
+  m_Sprite: {fileID: -1850027053, guid: d0034c136e385694d80fc395559eba3d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,13 +127,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3ba8282a29e42439d8214bdf0e5089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerModule
+  moduleType: 1
+  moduleData: {fileID: 11400000, guid: 00f4fbb9d38e0ee4cb29ae4cb7b2e48d, type: 2}
   spriteDirections:
-  - {fileID: -8227933177026605868, guid: 8a7721a1b27f01b4fa337baeedff76b3, type: 3}
-  - {fileID: -2369349154185202137, guid: 8a7721a1b27f01b4fa337baeedff76b3, type: 3}
-  - {fileID: 2224660063677353992, guid: 8a7721a1b27f01b4fa337baeedff76b3, type: 3}
-  - {fileID: -1202896526179504484, guid: 8a7721a1b27f01b4fa337baeedff76b3, type: 3}
-  - {fileID: -3311387008281502582, guid: 8a7721a1b27f01b4fa337baeedff76b3, type: 3}
-  - {fileID: -8824678412303477008, guid: 8a7721a1b27f01b4fa337baeedff76b3, type: 3}
-  - {fileID: -4914244433214050374, guid: 8a7721a1b27f01b4fa337baeedff76b3, type: 3}
-  - {fileID: 6864517425123689202, guid: 8a7721a1b27f01b4fa337baeedff76b3, type: 3}
+  - {fileID: -9757641, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: 405452359, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: 978873637, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: -608659583, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: 1653524151, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: -1918424456, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: -1850027053, guid: d0034c136e385694d80fc395559eba3d, type: 3}
+  - {fileID: 1924630893, guid: d0034c136e385694d80fc395559eba3d, type: 3}
   moduleSprite: {fileID: 2780490833670005249}
+  increaseHealthAmount: 75

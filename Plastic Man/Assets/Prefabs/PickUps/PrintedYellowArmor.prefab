@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6514909106731548128}
   - component: {fileID: 2423037942276545621}
   m_Layer: 0
-  m_Name: PrintedShredderCannon
+  m_Name: PrintedYellowArmor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +37,7 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 2, y: 2}
-  m_Pivot: {x: 0.39999998, y: 0.3499999}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &98402463330440687
 SpriteRenderer:
   serializedVersion: 2
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 12
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5417780847300892640, guid: c40a020edbfe8ad4cb0785963958f3da, type: 3}
+  m_Sprite: {fileID: -1850027053, guid: d0034c136e385694d80fc395559eba3d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1bae241f2b8734f951f727acbf9ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickUps
-  weaponPrefab: {fileID: 4208481742703032022, guid: 328ea88c82d1ec04b9370a576dae5d1e, type: 3}
+  weaponPrefab: {fileID: 860842348879154361, guid: f57e1c878462e4442b9a7a16a51593cb, type: 3}
   _isTutorialItem: 0
   _tutorialPrompt: {fileID: 0}
   _onTutorialEquipped:
@@ -152,8 +152,8 @@ BoxCollider2D:
   m_Offset: {x: 0.178257, y: 0.27889302}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
