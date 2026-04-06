@@ -97,6 +97,8 @@ public class PlayerHealth : MonoBehaviour
         {
             _healthBarFill.fillAmount = _currentHealth / _totalMaxHealth;
         }
+
+        Debug.Log($"Player HP: {_currentHealth} / {_totalMaxHealth}");
     }
 
     private void Die()

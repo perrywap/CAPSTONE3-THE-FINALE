@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Dash UI")]
     [Tooltip("Drag your Dash UI object that has the DashCooldownUI script here")]
-    [SerializeField] private DashCooldownUI dashUI; // <-- NEW UI REFERENCE
+    [SerializeField] private DashCooldownUI dashUI;
 
     [Header("After Image Settings")]
     public GameObject afterImagePrefab;
@@ -96,12 +96,18 @@ public class PlayerController : MonoBehaviour
             agent.velocity = Vector3.zero;
         }
 
-        // Toggle footsteps sfx
         if (this.gameObject.GetComponent<PlayerFootSteps>() != null)
             this.gameObject.GetComponent<PlayerFootSteps>().isMoving = animator.GetBool("isMoving");
 
         if (Module.Instance != null)
+        {
             Module.Instance.HandleFrame(animator.GetBool("isMoving"));
+        }
+
+        if (PlayerHealth.Instance != null)
+        {
+            PlayerHealth.Instance.UpdateMaxHealth();
+        }
     }
 
     private void Dash()
@@ -117,12 +123,10 @@ public class PlayerController : MonoBehaviour
             SfxManager.instance.PlaySFX(dashSfx, dashVolume);
         }
 
-        // --- NEW: TRIGGER UI COOLDOWN ---
         if (dashUI != null)
         {
             dashUI.StartCooldown(dashCooldown);
         }
-        // --------------------------------
     }
 
     private void HandleDash()
