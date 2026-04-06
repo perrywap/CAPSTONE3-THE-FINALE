@@ -57,19 +57,34 @@ public class EnemyHealth : MonoBehaviour
             SfxManager.instance.PlaySFX(deathSfx, deathVolume);
         }
 
-        LootSpawner lootSpawner = Object.FindFirstObjectByType<LootSpawner>();
-        if (lootSpawner != null)
+        if (this.gameObject.tag == "Generator")
         {
-            lootSpawner.DropLoot(transform.position);
+            this.gameObject.GetComponent<Animator>().SetTrigger("isDestroyed");
+            RoguePrinterSpawner.Instance.generators.Remove(this.gameObject);
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.UnregisterEnemy(this.gameObject);
+            }
+            return;
         }
 
-        EnemySpawner spawner = Object.FindFirstObjectByType<EnemySpawner>();
-        if (spawner != null)
+        else
         {
-            spawner.RemoveEnemyFromList(gameObject);
-        }
+            LootSpawner lootSpawner = Object.FindFirstObjectByType<LootSpawner>();
+            if (lootSpawner != null)
+            {
+                lootSpawner.DropLoot(transform.position);
+            }
 
-        Destroy(gameObject);
+            EnemySpawner spawner = Object.FindFirstObjectByType<EnemySpawner>();
+            if (spawner != null)
+            {
+                spawner.RemoveEnemyFromList(gameObject);
+            }
+
+            Destroy(gameObject); 
+        }
+        
     }
 
     // FIX: Unregister when the enemy is fully destroyed, rather than just disabled

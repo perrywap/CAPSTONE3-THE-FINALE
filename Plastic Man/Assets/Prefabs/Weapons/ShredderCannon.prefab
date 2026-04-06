@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 3383843249903623237}
   - component: {fileID: 7080636437482876950}
   m_Layer: 0
-  m_Name: GearLauncher
+  m_Name: ShredderCannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

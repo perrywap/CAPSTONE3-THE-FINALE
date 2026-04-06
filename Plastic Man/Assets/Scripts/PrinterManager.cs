@@ -4,18 +4,23 @@ using UnityEngine.UI;
 
 public class PrinterManager : MonoBehaviour
 {
-    [Header("UI Panel")]
-    [SerializeField] private GameObject printerCanvas; // Drag the main UI Panel here
-
     [Header("Slots")]
     [SerializeField] private Transform printedSlot;
-    [SerializeField] private Transform moduleSlot;
-    [SerializeField] private Transform filamentSlot;
+    [SerializeField] private SpriteRenderer filamentSlot1;
+    [SerializeField] private SpriteRenderer filamentSlot2;
 
-    [Header("Settings")]
+    [Header("Filaments")]
+    [SerializeField] private Sprite emptySprite;
+    [SerializeField] private Sprite acrylicFilament;
+    [SerializeField] private Sprite polyEthylFilament; 
+    [SerializeField] private Sprite polycarbFilament;
+
+
+    [Header("Printed Weapon")]
     [SerializeField] private SpriteRenderer bpSprite;
     [SerializeField] private List<FilamentCost> costs = new List<FilamentCost>();
     [SerializeField] private GameObject weapPrefab;
+
 
     private Animator animator;
     private GameObject currentPrintedWeapon;
@@ -23,17 +28,6 @@ public class PrinterManager : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-    }
-
-    public void ClosePanel()
-    {
-        if (printerCanvas != null)
-        {
-            printerCanvas.SetActive(false);
-            Time.timeScale = 1f; // Ensure game unpauses if it was paused
-
-            // Optional: Re-enable player movement script here if you disabled it
-        }
     }
 
     public void Print()
@@ -62,12 +56,15 @@ public class PrinterManager : MonoBehaviour
             return;
         }
 
+
         if (animator != null)
             animator.SetTrigger("print");
+
     }
 
     public void PrintModule()
     {
+        ResetSlots();
         ConsumeFilament();
         SpawnPrintedWeapon();
     }
@@ -80,6 +77,27 @@ public class PrinterManager : MonoBehaviour
         bpSprite.sprite = data.bpSprite;
         costs = new List<FilamentCost>(data.FilamentCosts);
         weapPrefab = data.PrintedPrefab;
+
+        if (costs[0].plasticType == PlasticType.Acrylic)
+            filamentSlot1.sprite = acrylicFilament;
+        else if (costs[0].plasticType == PlasticType.Polyethylene)
+            filamentSlot1.sprite = polyEthylFilament;
+        else if (costs[0].plasticType == PlasticType.Polycarbonate)
+            filamentSlot1.sprite = polycarbFilament;
+
+        if (costs[1].plasticType == PlasticType.Acrylic)
+            filamentSlot2.sprite = acrylicFilament;
+        else if (costs[1].plasticType == PlasticType.Polyethylene)
+            filamentSlot2.sprite = polyEthylFilament;
+        else if (costs[1].plasticType == PlasticType.Polycarbonate)
+            filamentSlot2.sprite = polycarbFilament;
+    }
+
+    private void ResetSlots()
+    {
+        bpSprite.sprite = emptySprite;
+        filamentSlot1.sprite = emptySprite;
+        filamentSlot2.sprite = emptySprite;
     }
 
     private bool HasEnoughFilament()

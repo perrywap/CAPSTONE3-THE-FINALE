@@ -1,46 +1,3 @@
-//using Unity.VisualScripting;
-//using UnityEngine;
-//using UnityEngine.UI;
-//using TMPro;
-
-//public class HpBarComponent : MonoBehaviour
-//{
-//    [SerializeField] private EnemyHealth enemyHealth;
-//    [SerializeField] private Image hpBar;
-//    [SerializeField] private TextMeshProUGUI hpText;
-
-//    private Animator animator;
-//    private float currentHp;
-//    private float maxHp;
-
-
-//    private void Start()
-//    {
-//        animator = GetComponent<Animator>();
-
-//        if (GetComponentInParent<EnemyHealth>() != null) 
-//            enemyHealth = GetComponentInParent<EnemyHealth>();
-
-//        currentHp = enemyHealth.CurrentHealth;
-//        maxHp = enemyHealth.MaxHealth;
-
-//        hpBar.fillAmount = currentHp / maxHp;
-//        hpText.text = currentHp.ToString();
-//    }
-
-//    private void Update()
-//    {
-//        currentHp = enemyHealth.CurrentHealth;
-//        maxHp = enemyHealth.MaxHealth;
-
-//    }
-
-//    public void DecreaseHp()
-//    {
-//        animator.SetTrigger("damaged");
-//    }    
-
-//}
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -54,6 +11,7 @@ public class HpBarComponent : MonoBehaviour
     private Animator animator;
     private float currentHp;
     private float maxHp;
+    private bool isDead = false;
 
     [Header("Visibility Settings")]
     [SerializeField] private float visibleDuration = 2f;
@@ -65,7 +23,6 @@ public class HpBarComponent : MonoBehaviour
     {
         canvasGroup = GetComponent<CanvasGroup>();
 
-        // Ensure there's a CanvasGroup
         if (canvasGroup == null)
             canvasGroup = gameObject.AddComponent<CanvasGroup>();
     }
@@ -82,7 +39,7 @@ public class HpBarComponent : MonoBehaviour
 
         UpdateHpUI();
 
-        HideInstant(); // Start hidden
+        HideInstant();
     }
 
     private void Update()
@@ -90,9 +47,15 @@ public class HpBarComponent : MonoBehaviour
         currentHp = enemyHealth.CurrentHealth;
         maxHp = enemyHealth.MaxHealth;
 
+        if (currentHp <= 0f)
+        {
+            isDead = true;
+            HideInstant();
+            return;
+        }
+
         UpdateHpUI();
 
-        // Handle auto-hide
         if (visibleTimer > 0)
         {
             visibleTimer -= Time.deltaTime;
@@ -112,6 +75,8 @@ public class HpBarComponent : MonoBehaviour
 
     public void OnDamaged()
     {
+        if (isDead) return;
+
         Show();
 
         if (animator != null)
@@ -122,6 +87,7 @@ public class HpBarComponent : MonoBehaviour
 
     private void Show()
     {
+        if (isDead) return;
         canvasGroup.alpha = 1;
     }
 

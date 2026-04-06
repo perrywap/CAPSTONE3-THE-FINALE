@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: 5c4b1eeac11db404cbd0692cf005d79d
+guid: cef7ea3c02b68764ab6495240308dc9f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4409652233626840558
-    second: Sword Atk Spritesheet (128x128)_0
+      213: 4550000089351530395
+    second: Shredder Saw Blade Spritesheet (128x128)_0
   - first:
-      213: 5256477051923167005
-    second: Sword Atk Spritesheet (128x128)_1
+      213: 6692806134086288235
+    second: Shredder Saw Blade Spritesheet (128x128)_1
   - first:
-      213: 4983025964474579471
-    second: Sword Atk Spritesheet (128x128)_2
+      213: -8575801751632606582
+    second: Shredder Saw Blade Spritesheet (128x128)_2
   - first:
-      213: 1017242324157550207
-    second: Sword Atk Spritesheet (128x128)_3
-  - first:
-      213: -4478189164859382506
-    second: Sword Atk Spritesheet (128x128)_4
-  - first:
-      213: -3559898420385435465
-    second: Sword Atk Spritesheet (128x128)_5
-  - first:
-      213: -6659421844987770167
-    second: Sword Atk Spritesheet (128x128)_6
+      213: -2968730442063904952
+    second: Shredder Saw Blade Spritesheet (128x128)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,139 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eede558d75b323d30800000000000000
-      internalID: 4409652233626840558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d177fd95702c2f840800000000000000
-      internalID: 5256477051923167005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_2
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f0a3e07a6b3472540800000000000000
-      internalID: 4983025964474579471
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f7e47e51188fd1e00800000000000000
-      internalID: 1017242324157550207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 615ad875ea64ad1c0800000000000000
-      internalID: -4478189164859382506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_5
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b0b3707f33b89ec0800000000000000
-      internalID: -3559898420385435465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Atk Spritesheet (128x128)_6
+      name: Shredder Saw Blade Spritesheet (128x128)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -265,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ca07087d1bf493a0800000000000000
-      internalID: -6659421844987770167
+      spriteID: b972bcd69f8d42f30800000000000000
+      internalID: 4550000089351530395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shredder Saw Blade Spritesheet (128x128)_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b63c4cc08bf91ec50800000000000000
+      internalID: 6692806134086288235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shredder Saw Blade Spritesheet (128x128)_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a04c15eb1acf880800000000000000
+      internalID: -8575801751632606582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shredder Saw Blade Spritesheet (128x128)_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f74e65463fcc6d0800000000000000
+      internalID: -2968730442063904952
       vertices: []
       indices: 
       edges: []
@@ -275,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a66091bcfe6107642ab18fb41afd8f62
+    spriteID: 2d63bbdfaab78f04fb25a84c47528776
     internalID: 0
     vertices: []
     indices: 
@@ -285,15 +210,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":3.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Sword Atk Spritesheet (128x128)_0: 4409652233626840558
-      Sword Atk Spritesheet (128x128)_1: 5256477051923167005
-      Sword Atk Spritesheet (128x128)_2: 4983025964474579471
-      Sword Atk Spritesheet (128x128)_3: 1017242324157550207
-      Sword Atk Spritesheet (128x128)_4: -4478189164859382506
-      Sword Atk Spritesheet (128x128)_5: -3559898420385435465
-      Sword Atk Spritesheet (128x128)_6: -6659421844987770167
+      Shredder Saw Blade Spritesheet (128x128)_0: 4550000089351530395
+      Shredder Saw Blade Spritesheet (128x128)_1: 6692806134086288235
+      Shredder Saw Blade Spritesheet (128x128)_2: -8575801751632606582
+      Shredder Saw Blade Spritesheet (128x128)_3: -2968730442063904952
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

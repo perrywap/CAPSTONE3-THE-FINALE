@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -133,12 +133,12 @@ TextureImporter:
       name: MC Mask 3 Rotate Spritesheet (32x32)_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 9
-        width: 20
-        height: 21
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: MC Mask 3 Rotate Spritesheet (32x32)_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 9
-        width: 17
-        height: 21
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -177,12 +177,12 @@ TextureImporter:
       name: MC Mask 3 Rotate Spritesheet (32x32)_2
       rect:
         serializedVersion: 2
-        x: 75
-        y: 9
-        width: 12
-        height: 21
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -199,12 +199,12 @@ TextureImporter:
       name: MC Mask 3 Rotate Spritesheet (32x32)_3
       rect:
         serializedVersion: 2
-        x: 105
-        y: 21
-        width: 7
-        height: 9
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -221,12 +221,12 @@ TextureImporter:
       name: MC Mask 3 Rotate Spritesheet (32x32)_4
       rect:
         serializedVersion: 2
-        x: 113
-        y: 12
-        width: 9
-        height: 18
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -243,12 +243,12 @@ TextureImporter:
       name: MC Mask 3 Rotate Spritesheet (32x32)_5
       rect:
         serializedVersion: 2
-        x: 134
-        y: 13
-        width: 9
-        height: 17
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: MC Mask 3 Rotate Spritesheet (32x32)_6
       rect:
         serializedVersion: 2
-        x: 145
-        y: 13
-        width: 9
-        height: 17
+        x: 192
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -287,12 +287,12 @@ TextureImporter:
       name: MC Mask 3 Rotate Spritesheet (32x32)_7
       rect:
         serializedVersion: 2
-        x: 166
-        y: 12
-        width: 9
-        height: 18
+        x: 224
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -305,77 +305,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: MC Mask 3 Rotate Spritesheet (32x32)_8
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 21
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c80fafbffefc3f270800000000000000
-      internalID: 8283192769296134284
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC Mask 3 Rotate Spritesheet (32x32)_9
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 9
-        width: 12
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3491414e23bdf7cd0800000000000000
-      internalID: -2558085051701782205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC Mask 3 Rotate Spritesheet (32x32)_10
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 9
-        width: 17
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f67bd72c7c34e5c30800000000000000
-      internalID: 4349988815327049583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f628aa4a01d961e478aa9edfba621398
     internalID: 0
     vertices: []
     indices: 
@@ -383,19 +317,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       MC Mask 3 Rotate Spritesheet (32x32)_0: -1559063317425945421
       MC Mask 3 Rotate Spritesheet (32x32)_1: -8388394011296562696
-      MC Mask 3 Rotate Spritesheet (32x32)_10: 4349988815327049583
       MC Mask 3 Rotate Spritesheet (32x32)_2: 1203198353681333595
       MC Mask 3 Rotate Spritesheet (32x32)_3: 1159443612636069094
       MC Mask 3 Rotate Spritesheet (32x32)_4: 3335966339699984721
       MC Mask 3 Rotate Spritesheet (32x32)_5: 3183845990928246028
       MC Mask 3 Rotate Spritesheet (32x32)_6: 6952335798567284896
       MC Mask 3 Rotate Spritesheet (32x32)_7: 6176883235168085909
-      MC Mask 3 Rotate Spritesheet (32x32)_8: 8283192769296134284
-      MC Mask 3 Rotate Spritesheet (32x32)_9: -2558085051701782205
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
