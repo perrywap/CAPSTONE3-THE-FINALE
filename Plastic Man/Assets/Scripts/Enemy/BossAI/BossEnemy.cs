@@ -15,6 +15,7 @@ public class BossEnemy : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioClip damageSfx;
     [SerializeField] private AudioClip deathSfx;
+    [SerializeField] private AudioClip SwordSfx;
     [SerializeField] private float damageVolume = 0.5f;
     [SerializeField] private float deathVolume = 0.7f;
 
@@ -87,6 +88,7 @@ public class BossEnemy : MonoBehaviour
         }
         else if (distanceToPlayer <= detectionRange)
         {
+            
             ChasePlayer();
         }
 
@@ -204,6 +206,7 @@ public class BossEnemy : MonoBehaviour
     IEnumerator ExecuteDash(bool includeSlice)
     {
         anim.SetBool("SwordAttack", true);
+        SfxManager.instance.PlaySFX(SwordSfx, 0.5f);
 
         if (anim.GetBool("IsShooting") == true)
             yield return null;
@@ -222,7 +225,7 @@ public class BossEnemy : MonoBehaviour
 
         if (swordHitbox)
             swordHitbox.SetActive(false);
-
+       
         ResetAttackState();
     }
 
@@ -278,6 +281,8 @@ public class BossEnemy : MonoBehaviour
     IEnumerator DashChase()
     {
         anim.SetBool("IsAttacking", true);
+
+       
 
         while (player != null)
         {

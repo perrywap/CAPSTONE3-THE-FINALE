@@ -114,7 +114,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5417780847300892640, guid: c40a020edbfe8ad4cb0785963958f3da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NerfGun
   fireRate: 0.15
-  damage: 100
+  damage: 15
   isAutomatic: 1
   projectilePrefab: {fileID: 6396809954166474979, guid: f940f818a2b7890499ae060585668ba5, type: 3}
   muzzle: {fileID: 1136360572193377570}
