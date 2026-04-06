@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Rifle
   m_EditorClassIdentifier: Assembly-CSharp::ModuleData
   printedPrefab: {fileID: 3664365491805918091, guid: 847458b032b49bb46b541951ed3fbb1d, type: 3}
-  moduleIcon: {fileID: 1716810865853966846, guid: 33c30cba4b8bf734e8e2994b2dd60d3e, type: 3}
+  moduleIcon: {fileID: 9207333203521035116, guid: e94f405bace0ae74f832a8d760c9ad04, type: 3}
   filamentCosts:
   - plasticType: 0
-    amount: 0
-  - plasticType: 2
-    amount: 0
+    amount: 8
+  - plasticType: 1
+    amount: 10

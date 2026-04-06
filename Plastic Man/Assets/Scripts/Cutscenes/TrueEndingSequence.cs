@@ -29,7 +29,7 @@ public class TrueEndingSequence : MonoBehaviour
 
     [Header("Dialogue Placement")]
     [Tooltip("How high above the boss's pivot the bubble appears. Increase this if it covers their face!")]
-    [SerializeField] private float _bubbleVerticalOffset = 2.5f; // <-- Tweak this in the Inspector!
+    [SerializeField] private float _bubbleVerticalOffset = 2.5f;
 
     [Header("Win Panel Settings")]
     [SerializeField] private GameObject _winPanel;
@@ -37,6 +37,14 @@ public class TrueEndingSequence : MonoBehaviour
     [SerializeField] private TMP_Text _winPanelText;
     [TextArea(2, 3)]
     [SerializeField] private string _finalStatusText = "Status: Imperfect.\nStatus: Alive.";
+
+    [Header("Fade To Black Settings")]
+    [Tooltip("How long to wait on the Win Panel before starting the fade")]
+    [SerializeField] private float _waitBeforeFade = 5f; // Set to 5-6 seconds!
+    [Tooltip("How long the fade to black takes to complete")]
+    [SerializeField] private float _fadeDuration = 3f; // A nice, slow 3-second cinematic fade
+    [Tooltip("Drag your full-screen black CanvasGroup here")]
+    [SerializeField] private CanvasGroup _blackFadeScreen;
 
     [Header("The Story Timeline")]
     [SerializeField] private float _typingSpeed = 0.05f;
@@ -60,6 +68,12 @@ public class TrueEndingSequence : MonoBehaviour
                 if (block.DialogueCanvas != null) block.DialogueCanvas.SetActive(false);
             }
         }
+
+        if (_blackFadeScreen != null)
+        {
+            _blackFadeScreen.alpha = 0f;
+            _blackFadeScreen.gameObject.SetActive(false);
+        }
     }
 
     public void PlaySequence(Transform deadBossTransform)
@@ -72,6 +86,7 @@ public class TrueEndingSequence : MonoBehaviour
         NPCDialogue.IsTalking = true;
         Time.timeScale = 0f;
 
+        // Intro Win Panel (Level Cleared)
         if (_winPanel != null) _winPanel.SetActive(true);
         yield return new WaitForSecondsRealtime(3f);
         if (_winPanel != null) _winPanel.SetActive(false);
@@ -92,6 +107,7 @@ public class TrueEndingSequence : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(1f);
 
+        // Play the Dialogue Sequence
         if (_dialogueSequence != null && _dialogueSequence.Length > 0)
         {
             for (int i = 0; i < _dialogueSequence.Length; i++)
@@ -103,7 +119,6 @@ public class TrueEndingSequence : MonoBehaviour
                     Canvas canvasComp = block.DialogueCanvas.GetComponent<Canvas>();
                     if (canvasComp != null && canvasComp.renderMode == RenderMode.WorldSpace && deadBossTransform != null)
                     {
-                        // Places the bubble perfectly using your Inspector offset!
                         block.DialogueCanvas.transform.position = deadBossTransform.position + new Vector3(0, _bubbleVerticalOffset, 0);
                     }
 
@@ -122,7 +137,6 @@ public class TrueEndingSequence : MonoBehaviour
 
                 if (block.DialogueCanvas != null) block.DialogueCanvas.SetActive(false);
 
-                // --- TRIGGER THE ANIMATION IN UNSCALED TIME ---
                 if (!string.IsNullOrEmpty(block.BossAnimationTrigger) && deadBossTransform != null)
                 {
                     Animator bossAnim = deadBossTransform.GetComponent<Animator>();
@@ -140,8 +154,35 @@ public class TrueEndingSequence : MonoBehaviour
             }
         }
 
+        // Show the Final Win Panel
         if (_winPanelText != null) _winPanelText.text = _finalStatusText;
         if (_winPanel != null) _winPanel.SetActive(true);
+
+        // Wait 5-6 seconds while staring at the Win Panel
+        yield return new WaitForSecondsRealtime(_waitBeforeFade);
+
+        // --- THE FIXED FADE SEQUENCE ---
+        if (_blackFadeScreen != null)
+        {
+            _blackFadeScreen.gameObject.SetActive(true);
+            float timer = 0f;
+
+            while (timer < _fadeDuration)
+            {
+                _blackFadeScreen.alpha = Mathf.Lerp(0f, 1f, timer / _fadeDuration);
+                timer += Time.unscaledDeltaTime;
+                yield return null;
+            }
+
+            _blackFadeScreen.alpha = 1f;
+        }
+        else
+        {
+            Debug.LogError("<color=red><b>FADE FAILED:</b> You forgot to drag the BlackFadeScreen CanvasGroup into the TrueEndingSequence Inspector!</color>");
+        }
+
+        // We DO NOT turn off the Win Panel anymore! 
+        // It stays exactly where it is, forever buried under the black screen.
     }
 
     private IEnumerator PlayDialogueSequence(string dialogueToPlay)

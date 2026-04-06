@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pistol
   m_EditorClassIdentifier: Assembly-CSharp::ModuleData
   printedPrefab: {fileID: 3664365491805918091, guid: 25c4a6294e43cc1439552160185ec922, type: 3}
-  moduleIcon: {fileID: 5291525499830962986, guid: 0d5dc6dcf5fef6d4cbf0f3358c667c39, type: 3}
+  moduleIcon: {fileID: 7749757934710043013, guid: e94f405bace0ae74f832a8d760c9ad04, type: 3}
   filamentCosts:
   - plasticType: 0
-    amount: 0
+    amount: 6
