@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3ba8282a29e42439d8214bdf0e5089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerModule
+  _bonusHealth: 25
   spriteDirections:
   - {fileID: -8227933177026605868, guid: 8a7721a1b27f01b4fa337baeedff76b3, type: 3}
   - {fileID: -2369349154185202137, guid: 8a7721a1b27f01b4fa337baeedff76b3, type: 3}

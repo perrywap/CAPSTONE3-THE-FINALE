@@ -7,13 +7,14 @@ public class PlayerHealth : MonoBehaviour
     public static PlayerHealth Instance { get; private set; }
 
     [Header("Health Settings")]
-    [SerializeField] private float _maxHealth = 100f;
+    [SerializeField] private float _baseMaxHealth = 100f;
+    private float _totalMaxHealth;
     private float _currentHealth;
     public bool isDead;
 
     [Header("UI References")]
     [SerializeField] private Image _healthBarFill;
-    [SerializeField] private GameObject _gameOverPanel; 
+    [SerializeField] private GameObject _gameOverPanel;
 
     [Header("Blink Settings")]
     [SerializeField] private int _blinkCount = 3;
@@ -30,19 +31,36 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {
-        _currentHealth = _maxHealth;
         _spriteRenderer = GetComponent<SpriteRenderer>();
         if (_spriteRenderer != null) _originalColor = _spriteRenderer.color;
-
         if (_gameOverPanel != null) _gameOverPanel.SetActive(false);
 
+        UpdateMaxHealth();
+        _currentHealth = _totalMaxHealth;
+        UpdateHealthBar();
+    }
+
+    public void UpdateMaxHealth()
+    {
+        float bonus = 0;
+        PlayerModule[] equippedModules = GetComponentsInChildren<PlayerModule>();
+
+        foreach (var mod in equippedModules)
+        {
+            bonus += mod.BonusHealth;
+        }
+
+        _totalMaxHealth = _baseMaxHealth + bonus;
+        _currentHealth = Mathf.Min(_currentHealth, _totalMaxHealth);
         UpdateHealthBar();
     }
 
     public void TakeDamage(float damage)
     {
+        if (isDead) return;
+
         _currentHealth -= damage;
-        _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth);
+        _currentHealth = Mathf.Clamp(_currentHealth, 0, _totalMaxHealth);
         UpdateHealthBar();
 
         if (!_isBlinking && _currentHealth > 0)
@@ -53,31 +71,20 @@ public class PlayerHealth : MonoBehaviour
         if (_currentHealth <= 0)
         {
             isDead = true;
+            Die();
         }
     }
 
     private IEnumerator BlinkRed()
     {
         _isBlinking = true;
-
         SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
 
         for (int i = 0; i < _blinkCount; i++)
         {
-            foreach (var spr in sprites)
-            {
-                if(spr != null)
-                    spr.color = Color.red; 
-            }
-
+            foreach (var spr in sprites) if (spr != null) spr.color = Color.red;
             yield return new WaitForSeconds(_blinkSpeed);
-
-            foreach (var spr in sprites)
-            {
-                if (spr != null)
-                    spr.color = _originalColor;
-            }
-
+            foreach (var spr in sprites) if (spr != null) spr.color = _originalColor;
             yield return new WaitForSeconds(_blinkSpeed);
         }
 
@@ -88,21 +95,19 @@ public class PlayerHealth : MonoBehaviour
     {
         if (_healthBarFill != null)
         {
-            _healthBarFill.fillAmount = _currentHealth / _maxHealth;
+            _healthBarFill.fillAmount = _currentHealth / _totalMaxHealth;
         }
     }
 
     private void Die()
     {
-        Debug.Log("Player Destroyed!");
-
         if (_gameOverPanel != null)
         {
             _gameOverPanel.SetActive(true);
             Time.timeScale = 0f;
         }
 
-        _spriteRenderer.enabled = false;
+        if (_spriteRenderer != null) _spriteRenderer.enabled = false;
         this.enabled = false;
     }
 }
