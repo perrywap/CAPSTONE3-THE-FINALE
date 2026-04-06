@@ -26,6 +26,7 @@ public class PrinterInteractable : MonoBehaviour
     private float _originalOrthoSize;
     private Vector3 _originalCameraPosition;
 
+    [SerializeField] public AudioClip printerFinishedPrintingSfx;
     private void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -137,6 +138,7 @@ public class PrinterInteractable : MonoBehaviour
         }
 
         // Camera finishes, UI opens, and your mouse can interact with it safely!
+        SfxManager.instance.PlaySFX(printerFinishedPrintingSfx, 0.5f); 
         if (_printerPanel != null) _printerPanel.SetActive(true);
     }
 

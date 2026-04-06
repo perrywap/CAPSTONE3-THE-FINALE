@@ -269,7 +269,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 1984f76b2eb88b54aa4aa774f0983cee, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.327
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -371,7 +371,8 @@ MonoBehaviour:
   phaseTwoCooldownMultiplier: 0.6
   damageSfx: {fileID: 8300000, guid: 5fc7eda0235ffee4f8776339649f9eb3, type: 3}
   deathSfx: {fileID: 0}
-  SwordSfx: {fileID: 8300000, guid: eb21f089079ebea429d5a7a66ed73cea, type: 3}
+  dashSfx: {fileID: 8300000, guid: 8b48abd89bd7eec47bc05cdc51841a31, type: 3}
+  swordSfx: {fileID: 8300000, guid: eb21f089079ebea429d5a7a66ed73cea, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
   movementSpeed: 3.5
