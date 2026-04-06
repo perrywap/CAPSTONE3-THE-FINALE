@@ -25328,7 +25328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32632c79571fbac489cabe127175d4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NextLevelTrigger
-  nextScene: Credits
+  nextScene: Sample 4
   isLocked: 0
 --- !u!1001 &1959301495
 PrefabInstance:
