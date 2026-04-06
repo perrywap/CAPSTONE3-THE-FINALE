@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 954224604674973199}
   - component: {fileID: -5746543693188174616}
   - component: {fileID: 1264432524704298224}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BossEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -371,6 +371,8 @@ MonoBehaviour:
   phaseTwoCooldownMultiplier: 0.6
   damageSfx: {fileID: 8300000, guid: 5fc7eda0235ffee4f8776339649f9eb3, type: 3}
   deathSfx: {fileID: 0}
+  dashSfx: {fileID: 0}
+  swordSfx: {fileID: 0}
   damageVolume: 0.5
   deathVolume: 0.7
   movementSpeed: 3.5
