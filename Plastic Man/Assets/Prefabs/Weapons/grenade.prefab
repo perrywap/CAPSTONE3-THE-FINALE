@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Granade
   fireRate: 0.2
-  damage: 10
+  damage: 50
   isAutomatic: 0
   maxEnergy: 100
   currentEnergy: 0

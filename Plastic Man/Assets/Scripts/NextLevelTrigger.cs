@@ -28,4 +28,14 @@ public class NextLevelTrigger : MonoBehaviour
             SceneManager.LoadScene(nextScene);
         }
     }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1f; 
+        SceneManager.LoadScene("MainMenu");
+    }
 }
