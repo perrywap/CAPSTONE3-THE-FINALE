@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 990604147846082737}
   - component: {fileID: 4454308175596013656}
   m_Layer: 0
-  m_Name: Fans
+  m_Name: Level 3 and 4 Ambiant Sfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,7 +103,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: b66737048535c2948841264b3c2ec20c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3257d7841d08fe242a9f3749215b87b9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

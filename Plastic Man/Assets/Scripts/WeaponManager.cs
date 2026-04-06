@@ -10,13 +10,15 @@ public class WeaponManager : MonoBehaviour
     [SerializeField] private Transform[] slots;
     [SerializeField] private Image[] weaponIcons;
     [SerializeField] private Player player;
+    [SerializeField] private Image[] energyBars;
 
     [Header("Attributes")]
     [SerializeField] private float popupValue = 20f;
 
     private Vector3[] originalPositions;
-    private int activeIndex = -1;
+    public int activeIndex = -1;
     private int lastActiveIndex = -1;
+    private float[] savedWeaponEnergy;
 
     private void Awake()
     {
@@ -33,6 +35,25 @@ public class WeaponManager : MonoBehaviour
             originalPositions[i] = slots[i].position;
         }
 
+        savedWeaponEnergy = new float[weapons.Length];
+
+        for (int i = 0; i < weapons.Length; i++)
+        {
+            if (weapons[i] != null)
+            {
+                WeaponBase weaponData = weapons[i].GetComponent<WeaponBase>();
+
+                if (weaponData != null)
+                    savedWeaponEnergy[i] = weaponData.MaxEnergy;
+                else
+                    savedWeaponEnergy[i] = 0f;
+            }
+            else
+            {
+                savedWeaponEnergy[i] = 0f;
+            }
+        }
+
         RefreshWeaponUI();
     }
 
@@ -41,8 +62,83 @@ public class WeaponManager : MonoBehaviour
         if (NPCDialogue.IsTalking) return;
 
         WeaponChange();
+        SaveActiveWeaponEnergy();
+        RegenerateWeaponEnergy();
+        SyncActiveWeaponEnergy();
         HandleWeaponSlot();
         HandleWeaponIcons();
+        HandleEnergyBars();
+    }
+
+    private void SaveActiveWeaponEnergy()
+    {
+        if (activeIndex < 0 || activeIndex >= weapons.Length)
+            return;
+
+        if (PlayerCombat.Instance == null || PlayerCombat.Instance.EquippedWeapon == null)
+            return;
+
+        WeaponBase equippedWeapon = PlayerCombat.Instance.EquippedWeapon.GetComponent<WeaponBase>();
+
+        if (equippedWeapon != null)
+            savedWeaponEnergy[activeIndex] = equippedWeapon.CurrentEnergy;
+    }
+
+    private void RegenerateWeaponEnergy()
+    {
+        for (int i = 0; i < weapons.Length; i++)
+        {
+            if (weapons[i] == null)
+                continue;
+
+            WeaponBase weaponData = weapons[i].GetComponent<WeaponBase>();
+
+            if (weaponData == null)
+                continue;
+
+            if (savedWeaponEnergy[i] < weaponData.MaxEnergy)
+            {
+                savedWeaponEnergy[i] += weaponData.RegenRate * Time.deltaTime;
+
+                if (savedWeaponEnergy[i] > weaponData.MaxEnergy)
+                    savedWeaponEnergy[i] = weaponData.MaxEnergy;
+            }
+        }
+    }
+
+    private void SyncActiveWeaponEnergy()
+    {
+        if (activeIndex < 0 || activeIndex >= weapons.Length)
+            return;
+
+        if (PlayerCombat.Instance == null || PlayerCombat.Instance.EquippedWeapon == null)
+            return;
+
+        WeaponBase equippedWeapon = PlayerCombat.Instance.EquippedWeapon.GetComponent<WeaponBase>();
+
+        if (equippedWeapon != null)
+            equippedWeapon.SetEnergy(savedWeaponEnergy[activeIndex]);
+    }
+
+    private void HandleEnergyBars()
+    {
+        for (int i = 0; i < energyBars.Length; i++)
+        {
+            if (i < weapons.Length && weapons[i] != null)
+            {
+                WeaponBase weaponData = weapons[i].GetComponent<WeaponBase>();
+
+                if (weaponData != null)
+                {
+                    energyBars[i].fillAmount = 1f - (savedWeaponEnergy[i] / weaponData.MaxEnergy);
+                }
+            }
+            else
+            {
+                energyBars[i].fillAmount = 0f;
+                energyBars[i].color = new Color(1f, 1f, 1f, 0f);
+            }
+        }
     }
 
     private void HandleWeaponIcons()
@@ -76,8 +172,7 @@ public class WeaponManager : MonoBehaviour
             slots[i].position = originalPositions[i];
         }
 
-        if (activeIndex != -1 &&
-            activeIndex < slots.Length)
+        if (activeIndex != -1 && activeIndex < slots.Length)
         {
             slots[activeIndex].position += new Vector3(0, popupValue, 0);
         }
@@ -97,6 +192,8 @@ public class WeaponManager : MonoBehaviour
 
     private void SetWeapon(int index)
     {
+        SaveActiveWeaponEnergy();
+
         if (index >= weapons.Length)
         {
             activeIndex = -1;
@@ -110,6 +207,7 @@ public class WeaponManager : MonoBehaviour
         if (weapons[index] != null)
         {
             PlayerCombat.Instance.ChangeWeapon(weapons[index]);
+            SyncActiveWeaponEnergy();
         }
         else
         {
@@ -132,6 +230,7 @@ public class WeaponManager : MonoBehaviour
         UpdateSlotVisibility();
         HandleWeaponIcons();
         HandleWeaponSlot();
+        HandleEnergyBars();
     }
 
     public void SetWeaponToSlot(int index, GameObject weapon)
@@ -140,8 +239,24 @@ public class WeaponManager : MonoBehaviour
             return;
 
         weapons[index] = weapon;
+
+        if (weapon != null)
+        {
+            WeaponBase weaponData = weapon.GetComponent<WeaponBase>();
+
+            if (weaponData != null)
+                savedWeaponEnergy[index] = weaponData.MaxEnergy;
+            else
+                savedWeaponEnergy[index] = 0f;
+        }
+        else
+        {
+            savedWeaponEnergy[index] = 0f;
+        }
+
         UpdateSlotVisibility();
         HandleWeaponIcons();
         HandleWeaponSlot();
+        HandleEnergyBars();
     }
 }

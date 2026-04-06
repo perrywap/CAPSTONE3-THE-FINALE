@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RoguePrinterSpawner : MonoBehaviour
 {
+    public static RoguePrinterSpawner Instance { get; private set; }
+
     [Header("Reference")]
     [SerializeField] private GameObject[] spawnableEnemies;
     [SerializeField] private Transform spawnArea;
@@ -15,7 +17,7 @@ public class RoguePrinterSpawner : MonoBehaviour
     [SerializeField] private int maxSpawnCount;
 
     [Header("Generator & Sequence Settings")]
-    [SerializeField] private List<GameObject> generators;
+    public List<GameObject> generators;
     [SerializeField] private CutsceneTrigger _enemiesAliveCutscene;
     [SerializeField] private CutsceneTrigger _enemiesDeadCutscene;
     [SerializeField] private GameObject cleanPrinter;
@@ -25,6 +27,11 @@ public class RoguePrinterSpawner : MonoBehaviour
     private float timer;
     private Animator animator;
     private bool _isExploding = false;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
