@@ -44786,9 +44786,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: QuitToMenu
+      - m_Target: {fileID: 6736585842221369739, guid: bfb5e1b02b0c6134a97439cc21472991, type: 3}
+        m_TargetAssemblyTypeName: NextLevelTrigger, Assembly-CSharp
+        m_MethodName: LoadMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
