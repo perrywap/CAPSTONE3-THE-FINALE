@@ -34,6 +34,9 @@ public class BossEnemy : MonoBehaviour
     public float dashSpeed = 18f;
     public float dashDuration = 0.4f;
 
+    [Header("True Ending Visuals")]
+    public Sprite deadBossSprite; // <-- NEW: Drag your dead boss artwork here!
+
     private NavMeshAgent agent;
     private GameObject player;
     private SpriteRenderer spriteRenderer;
@@ -47,10 +50,10 @@ public class BossEnemy : MonoBehaviour
     public float dashSpeedMultiplier = 3f;
 
     private Coroutine chaseRoutine;
+
     void Start()
     {
         currentHealth = maxHealth;
-
         agent = GetComponent<NavMeshAgent>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player");
@@ -61,9 +64,7 @@ public class BossEnemy : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
-        if (swordHitbox)
-            swordHitbox.SetActive(false);
-
+        if (swordHitbox) swordHitbox.SetActive(false);
         FillAbilityQueue();
 
         if (NavMesh.SamplePosition(transform.position, out NavMeshHit hit, 1.0f, NavMesh.AllAreas))
@@ -74,9 +75,7 @@ public class BossEnemy : MonoBehaviour
 
     void Update()
     {
-        if (player == null || isAttacking)
-            return;
-
+        if (player == null || isAttacking) return;
         CheckPhaseTransition();
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
@@ -100,7 +99,6 @@ public class BossEnemy : MonoBehaviour
             isPhaseTwo = true;
             attackCooldown *= phaseTwoCooldownMultiplier;
             spriteRenderer.color = Color.red;
-
             Debug.Log("<color=red><b>PHASE 2:</b> Boss is faster and relentless!</color>");
         }
     }
@@ -108,7 +106,6 @@ public class BossEnemy : MonoBehaviour
     void FillAbilityQueue()
     {
         abilityQueue = new List<int> { 2, 2, 3, 0, 1 };
-
         for (int i = 0; i < abilityQueue.Count; i++)
         {
             int temp = abilityQueue[i];
@@ -123,96 +120,58 @@ public class BossEnemy : MonoBehaviour
         isAttacking = true;
         agent.isStopped = true;
 
-        if (abilityQueue.Count == 0)
-            FillAbilityQueue();
+        if (abilityQueue.Count == 0) FillAbilityQueue();
 
         int choice = abilityQueue[0];
         abilityQueue.RemoveAt(0);
 
         switch (choice)
         {
-            case 0:
-                ExecuteShoot();
-                break;
-
-            case 1:
-                ExecuteGrenade();
-                break;
-
-            case 2:
-                StartCoroutine(ExecuteDash(false));
-                break;
-
-            case 3:
-                StartCoroutine(ExecuteDash(true));
-                break;
+            case 0: ExecuteShoot(); break;
+            case 1: ExecuteGrenade(); break;
+            case 2: StartCoroutine(ExecuteDash(false)); break;
+            case 3: StartCoroutine(ExecuteDash(true)); break;
         }
-
         nextAttackTime = Time.time + attackCooldown;
     }
 
     public void Shoot()
     {
         anim.SetBool("IsShooting", true);
-
-        if (bulletPrefab && firePoint)
-            Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-
+        if (bulletPrefab && firePoint) Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         Invoke("ResetAttackState", 0.3f);
     }
 
-    public void ShootDone()
-    {
-        anim.SetBool("IsShooting", false);
-    }
-
-    public void ExecuteShoot()
-    {
-        anim.SetTrigger("Aim");
-    }
+    public void ShootDone() { anim.SetBool("IsShooting", false); }
+    public void ExecuteShoot() { anim.SetTrigger("Aim"); }
 
     void ExecuteGrenade()
     {
         if (grenadePrefab == null || firePoint == null || player == null) return;
 
-        // Get player position
         Vector3 targetPos = player.transform.position;
         targetPos.z = 0f;
-       
-        // Spawn grenade at fire point
+
         GameObject grenadeObj = Instantiate(grenadePrefab, firePoint.position, Quaternion.identity);
-
-        // Send it to target
         GrenadeProjectile grenade = grenadeObj.GetComponent<GrenadeProjectile>();
-        if (grenade != null)
-        {
-            grenade.SetTarget(targetPos);
-        }
-        anim.SetBool("IsThrowing", true);
+        if (grenade != null) grenade.SetTarget(targetPos);
 
+        anim.SetBool("IsThrowing", true);
         ResetAttackState();
     }
-    public void ExecuteGrenadeDone()
-    {
-        anim.SetBool("IsThrowing", false);
-    }
-    public void SwordAttackDone()
-    {
-        anim.SetBool("SwordAttack", false);
-    }
+
+    public void ExecuteGrenadeDone() { anim.SetBool("IsThrowing", false); }
+    public void SwordAttackDone() { anim.SetBool("SwordAttack", false); }
 
     IEnumerator ExecuteDash(bool includeSlice)
     {
         anim.SetBool("SwordAttack", true);
-
-        if (anim.GetBool("IsShooting") == true)
-            yield return null;
+        if (anim.GetBool("IsShooting") == true) yield return null;
 
         Vector3 dashDir = (player.transform.position - transform.position).normalized;
         float startTime = Time.time;
 
-        if (includeSlice && swordHitbox)
-            swordHitbox.SetActive(true);
+        if (includeSlice && swordHitbox) swordHitbox.SetActive(true);
 
         while (Time.time < startTime + dashDuration)
         {
@@ -220,9 +179,7 @@ public class BossEnemy : MonoBehaviour
             yield return null;
         }
 
-        if (swordHitbox)
-            swordHitbox.SetActive(false);
-
+        if (swordHitbox) swordHitbox.SetActive(false);
         ResetAttackState();
     }
 
@@ -231,19 +188,15 @@ public class BossEnemy : MonoBehaviour
         currentHealth -= damage;
         StartCoroutine(HitFlash());
 
-        Debug.Log($"<color=green>Boss Damaged!</color> Current HP: {currentHealth}");
-
         if (damageSfx != null && SfxManager.instance != null)
             SfxManager.instance.PlaySFX(damageSfx, damageVolume);
 
-        if (currentHealth <= 0)
-            Die();
+        if (currentHealth <= 0) Die();
     }
 
     IEnumerator HitFlash()
     {
         Color baseColor = isPhaseTwo ? Color.red : Color.white;
-
         spriteRenderer.color = Color.yellow;
         yield return new WaitForSeconds(0.05f);
         spriteRenderer.color = baseColor;
@@ -252,80 +205,70 @@ public class BossEnemy : MonoBehaviour
     void Die()
     {
         Debug.Log("<color=yellow>Boss Defeated!</color>");
+        StopAllCoroutines(); // Instantly stops dashing/chasing!
 
         if (deathSfx != null && SfxManager.instance != null)
             SfxManager.instance.PlaySFX(deathSfx, deathVolume);
 
         LootSpawner lootSpawner = Object.FindFirstObjectByType<LootSpawner>();
-        if (lootSpawner != null)
-            lootSpawner.DropLoot(transform.position);
+        if (lootSpawner != null) lootSpawner.DropLoot(transform.position);
 
         EnemySpawner spawner = Object.FindFirstObjectByType<EnemySpawner>();
-        if (spawner != null)
-            spawner.RemoveEnemyFromList(gameObject);
+        if (spawner != null) spawner.RemoveEnemyFromList(gameObject);
 
-        Destroy(gameObject);
+        // --- THE TRUE ENDING TRIGGER ---
+        if (GameManager.Instance != null && GameManager.Instance.trueEndingSequence != null)
+        {
+            // 1. Permanently shut down all combat logic
+            agent.enabled = false;
+            GetComponent<Collider2D>().enabled = false;
+            anim.enabled = false;
+
+            // 2. Snap to the dead sprite
+            if (deadBossSprite != null) spriteRenderer.sprite = deadBossSprite;
+            spriteRenderer.color = Color.white;
+
+            // 3. Command the GameManager to start the cinematic using this exact location
+            GameManager.Instance.TriggerTrueEnding(this.transform);
+
+            // 4. Turn off this script permanently
+            this.enabled = false;
+        }
+        else
+        {
+            // Failsafe for normal levels
+            if (GameManager.Instance != null) GameManager.Instance.UnregisterEnemy(gameObject);
+            Destroy(gameObject);
+        }
     }
 
     void ChasePlayer()
     {
-        if (chaseRoutine == null)
-        {
-            chaseRoutine = StartCoroutine(DashChase());
-        }
+        if (chaseRoutine == null) chaseRoutine = StartCoroutine(DashChase());
     }
 
     IEnumerator DashChase()
     {
         anim.SetBool("IsAttacking", true);
-
         while (player != null)
         {
-            // DASH
             agent.isStopped = false;
             agent.speed = movementSpeed * dashSpeedMultiplier;
             agent.SetDestination(player.transform.position);
-
             yield return new WaitForSeconds(dashTime);
 
-            // STOP
             agent.isStopped = true;
-
             yield return new WaitForSeconds(stopTime);
         }
-
         chaseRoutine = null;
     }
-    void ResetAttackState()
-    {
-        isAttacking = false;
-    }
+
+    void ResetAttackState() { isAttacking = false; }
 
     void FlipSprite()
     {
-        if (isAttacking)
-            return;
-
-        if (agent.velocity.x > 0.1f)
-            spriteRenderer.flipX = false;
-        else if (agent.velocity.x < -0.1f)
-            spriteRenderer.flipX = true;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("<color=cyan>Collision Detected:</color> "
-            + collision.gameObject.name
-            + " | Tag: "
-            + collision.gameObject.tag);
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, detectionRange);
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
+        if (isAttacking) return;
+        if (agent.velocity.x > 0.1f) spriteRenderer.flipX = false;
+        else if (agent.velocity.x < -0.1f) spriteRenderer.flipX = true;
     }
 }

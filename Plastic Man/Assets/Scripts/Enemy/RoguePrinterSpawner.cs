@@ -26,6 +26,7 @@ public class RoguePrinterSpawner : MonoBehaviour
     public bool isDefeated;
     private float timer;
     private Animator animator;
+    private bool _isExploding = false;
 
     private void Awake()
     {
@@ -60,8 +61,11 @@ public class RoguePrinterSpawner : MonoBehaviour
             if (generators[i] == null) generators.RemoveAt(i);
         }
 
-        if (generators.Count <= 0)
+        if (generators.Count <= 0 && !_isExploding)
         {
+            _isExploding = true;
+
+            // --- THE FIX: Instantly tell the game it's defeated, just like your original code! ---
             isDefeated = true;
 
             if (GameManager.Instance != null && GameManager.Instance.ActiveEnemyCount > 0)
@@ -70,9 +74,31 @@ public class RoguePrinterSpawner : MonoBehaviour
             }
             else
             {
-                if (GameManager.Instance != null && _enemiesDeadCutscene != null)
+                if (GameManager.Instance != null)
                 {
-                    GameManager.Instance.TriggerWinSequence(_enemiesDeadCutscene);
+                    // --- THE SMART SWITCH ---
+
+                    // PHASE 1: Is this Level 5? (Does the GameManager have a Statue Reveal cutscene?)
+                    if (GameManager.Instance.MidLevelCutscene != null)
+                    {
+                        if (_enemiesDeadCutscene != null)
+                        {
+                            _enemiesDeadCutscene.SetNextCutscene(GameManager.Instance.MidLevelCutscene);
+                        }
+                        GameManager.Instance.NotifyMidLevelCutsceneHandled();
+
+                        if (_enemiesDeadCutscene != null) _enemiesDeadCutscene.PlayFromGameManager();
+                    }
+
+                    // PHASE 2: Is this Level 1-4? (Normal behavior!)
+                    else
+                    {
+                        if (_enemiesDeadCutscene != null)
+                        {
+                            // Hand the cutscene directly to the GameManager so the Win Panel pops up FIRST!
+                            GameManager.Instance.TriggerWinSequence(_enemiesDeadCutscene);
+                        }
+                    }
                 }
             }
         }
@@ -96,6 +122,8 @@ public class RoguePrinterSpawner : MonoBehaviour
         if (animator != null) animator.SetTrigger("destroyed");
         yield return new WaitForSecondsRealtime(animationDuration);
         if (cleanPrinter != null) cleanPrinter.SetActive(true);
+
+        // Let the GameObject turn off properly without delaying the Win Panel!
         gameObject.SetActive(false);
     }
 }
