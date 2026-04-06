@@ -27142,21 +27142,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!4 &2881400028814424658
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5483480810153068203}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -309.6484, y: -1003.6101, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &2881887615890014401
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27251,6 +27236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoguePrinterSpawner
   spawnableEnemies:
   - {fileID: 4298873075404019450, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+  - {fileID: 8146323617909441126, guid: 404ede8bc74aee843964fd1a37fa888a, type: 3}
   spawnArea: {fileID: 273794822485066006}
   frontSprite: {fileID: 7644701845052589028}
   spawnInterval: 3
@@ -36227,22 +36213,6 @@ GameObject:
   - component: {fileID: 7765627351004878595}
   m_Layer: 5
   m_Name: PolyCarbonatePic
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &5483480810153068203
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2881400028814424658}
-  m_Layer: 0
-  m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47777,4 +47747,3 @@ SceneRoots:
   - {fileID: 1422070137}
   - {fileID: 42267478805487026}
   - {fileID: 655707322249855665}
-  - {fileID: 2881400028814424658}
