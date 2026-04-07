@@ -13,9 +13,13 @@ public class PrinterInteractable : MonoBehaviour
     [Header("Interaction Settings")]
     [SerializeField] private float _interactRadius = 2f;
 
+    // --- NEW: Level 5 Toggle ---
+    [Header("Progression Locks")]
+    [Tooltip("If TRUE, locked until the Area Cleared panel. If FALSE, unlocks anytime 0 enemies are alive (use FALSE for Level 5 mid-printers!).")]
+    [SerializeField] private bool _requireLevelCleared = true;
+
     [Header("Camera Zoom Settings")]
     [SerializeField] private Camera _mainCamera;
-    [Tooltip("CRITICAL: You must assign your Camera Follow Script here so it stops following the player!")]
     [SerializeField] private MonoBehaviour _cameraFollowScript;
     [SerializeField] private float _panSpeed = 20f;
     [Tooltip("How far the camera zooms in. (Lower number = closer)")]
@@ -38,10 +42,9 @@ public class PrinterInteractable : MonoBehaviour
         if (_interactPrompt != null) _interactPrompt.SetActive(false);
         if (_printerPanel != null) _printerPanel.SetActive(false);
 
-        // --- NEW SAFETY WARNING ---
         if (_cameraFollowScript == null)
         {
-            Debug.LogError($"<color=red>WARNING:</color> The Camera Follow Script is missing on the printer named <b>{gameObject.name}</b>! The camera will get stuck on the player during zoom.");
+            Debug.LogError($"<color=red>WARNING:</color> The Camera Follow Script is missing on the printer named <b>{gameObject.name}</b>!");
         }
 
         IsInteracting = false;
@@ -53,12 +56,18 @@ public class PrinterInteractable : MonoBehaviour
 
         if (IsInteracting) return;
 
+        // --- THE INTEGRATED LOCKS ---
         bool isLocked = false;
 
         if (GameManager.Instance != null)
         {
+            // 1. Always lock if enemies are actively fighting you
             if (GameManager.Instance.ActiveEnemyCount > 0) isLocked = true;
-            if (!GameManager.Instance.IsGameCleared) isLocked = true;
+
+            // 2. THE FIX: Only lock behind the Game Cleared state if the box is checked!
+            if (_requireLevelCleared && !GameManager.Instance.IsGameCleared) isLocked = true;
+
+            // 3. Lock if a cinematic win panel is currently on screen
             if (GameManager.Instance.IsWinPanelActive) isLocked = true;
         }
 
@@ -70,6 +79,7 @@ public class PrinterInteractable : MonoBehaviour
             return;
         }
 
+        // --- NORMAL INTERACTION ---
         if (_playerTransform != null)
         {
             float distance = Vector2.Distance(transform.position, _playerTransform.position);
@@ -107,8 +117,6 @@ public class PrinterInteractable : MonoBehaviour
         }
 
         if (_interactPrompt != null) _interactPrompt.SetActive(false);
-
-        // This is where the magic happens (if the slot is filled!)
         if (_cameraFollowScript != null) _cameraFollowScript.enabled = false;
 
         if (_mainCamera != null)
@@ -184,7 +192,6 @@ public class PrinterInteractable : MonoBehaviour
             }
         }
 
-        // Turns the follow script back on!
         if (_cameraFollowScript != null) _cameraFollowScript.enabled = true;
 
         Time.timeScale = 1f;

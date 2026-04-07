@@ -31,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        Time.timeScale = 1f;
     }
 
     void Start()
