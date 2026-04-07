@@ -33802,7 +33802,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PrinterInteractable
   _interactPrompt: {fileID: 112391856130920543}
   _printerPanel: {fileID: 1035837889653601104}
-  _interactRadius: 2
+  _interactRadius: 1.5
+  _requireLevelCleared: 1
   _mainCamera: {fileID: 519420031}
   _cameraFollowScript: {fileID: 519420034}
   _panSpeed: 5
@@ -45097,6 +45098,7 @@ MonoBehaviour:
   bpSprite: {fileID: 2475077616842384856}
   costs: []
   weapPrefab: {fileID: 0}
+  dragPromptUI: {fileID: 0}
 --- !u!114 &5654027289753390835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50645,6 +50647,7 @@ MonoBehaviour:
   bpSprite: {fileID: 4231941007813185411}
   costs: []
   weapPrefab: {fileID: 0}
+  dragPromptUI: {fileID: 0}
 --- !u!114 &7420769937062853178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53942,6 +53945,7 @@ MonoBehaviour:
   _interactPrompt: {fileID: 1912366217}
   _printerPanel: {fileID: 36328536122341510}
   _interactRadius: 2
+  _requireLevelCleared: 1
   _mainCamera: {fileID: 519420031}
   _cameraFollowScript: {fileID: 519420034}
   _panSpeed: 5

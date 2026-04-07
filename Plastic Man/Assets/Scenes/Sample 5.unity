@@ -31870,7 +31870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PrinterInteractable
   _interactPrompt: {fileID: 2611354408192903599}
   _printerPanel: {fileID: 3157628212169206432}
-  _interactRadius: 2
+  _interactRadius: 1.5
   _requireLevelCleared: 0
   _mainCamera: {fileID: 519420031}
   _cameraFollowScript: {fileID: 519420034}
@@ -33944,6 +33944,7 @@ MonoBehaviour:
   bpSprite: {fileID: 2236302057163495027}
   costs: []
   weapPrefab: {fileID: 0}
+  dragPromptUI: {fileID: 0}
 --- !u!114 &4865763213032469640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36693,6 +36694,7 @@ MonoBehaviour:
   bpSprite: {fileID: 2475077616842384856}
   costs: []
   weapPrefab: {fileID: 0}
+  dragPromptUI: {fileID: 0}
 --- !u!1 &5674180058997154498
 GameObject:
   m_ObjectHideFlags: 0
