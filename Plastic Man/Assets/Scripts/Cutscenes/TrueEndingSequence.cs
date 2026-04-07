@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement; // Required for scene loading
 
 [System.Serializable]
 public struct EndingDialogueBlock
@@ -40,11 +41,15 @@ public class TrueEndingSequence : MonoBehaviour
 
     [Header("Fade To Black Settings")]
     [Tooltip("How long to wait on the Win Panel before starting the fade")]
-    [SerializeField] private float _waitBeforeFade = 5f; // Set to 5-6 seconds!
+    [SerializeField] private float _waitBeforeFade = 5f;
     [Tooltip("How long the fade to black takes to complete")]
-    [SerializeField] private float _fadeDuration = 3f; // A nice, slow 3-second cinematic fade
+    [SerializeField] private float _fadeDuration = 3f;
     [Tooltip("Drag your full-screen black CanvasGroup here")]
     [SerializeField] private CanvasGroup _blackFadeScreen;
+
+    [Header("Scene Transition")]
+    [Tooltip("Type the EXACT name of your Credits scene here")]
+    [SerializeField] private string _creditsSceneName = "Credits";
 
     [Header("The Story Timeline")]
     [SerializeField] private float _typingSpeed = 0.05f;
@@ -158,10 +163,9 @@ public class TrueEndingSequence : MonoBehaviour
         if (_winPanelText != null) _winPanelText.text = _finalStatusText;
         if (_winPanel != null) _winPanel.SetActive(true);
 
-        // Wait 5-6 seconds while staring at the Win Panel
         yield return new WaitForSecondsRealtime(_waitBeforeFade);
 
-        // --- THE FIXED FADE SEQUENCE ---
+        // Fade To Black
         if (_blackFadeScreen != null)
         {
             _blackFadeScreen.gameObject.SetActive(true);
@@ -178,11 +182,18 @@ public class TrueEndingSequence : MonoBehaviour
         }
         else
         {
-            Debug.LogError("<color=red><b>FADE FAILED:</b> You forgot to drag the BlackFadeScreen CanvasGroup into the TrueEndingSequence Inspector!</color>");
+            Debug.LogError("FADE FAILED: Missing CanvasGroup reference!");
         }
 
-        // We DO NOT turn off the Win Panel anymore! 
-        // It stays exactly where it is, forever buried under the black screen.
+        // --- NEW TRANSITION ---
+        // Wait for 2 seconds in pure blackness
+        yield return new WaitForSecondsRealtime(2f);
+
+        // Critical: Reset TimeScale so the next scene isn't frozen
+        Time.timeScale = 1f;
+
+        // Load the Credits Scene
+        SceneManager.LoadScene(_creditsSceneName);
     }
 
     private IEnumerator PlayDialogueSequence(string dialogueToPlay)

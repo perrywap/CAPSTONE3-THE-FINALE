@@ -106,12 +106,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Granade
   fireRate: 0.2
-  damage: 50
+  damage: 70
   isAutomatic: 0
   maxEnergy: 100
   currentEnergy: 0
-  depleteAmount: 20
-  regenRate: 17
+  depleteAmount: 50
+  regenRate: 8
   projectilePrefab: {fileID: 1710860951202350425, guid: a0192630e6ce3674ba8659a50a577b81, type: 3}
   maxThrowDistance: 5
   shootSfx: {fileID: 0}

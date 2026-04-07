@@ -161,12 +161,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GearLauncher
   fireRate: 0.5
-  damage: 25
+  damage: 40
   isAutomatic: 0
   maxEnergy: 100
   currentEnergy: 0
-  depleteAmount: 13
-  regenRate: 11
+  depleteAmount: 25
+  regenRate: 8.5
   projectilePrefab: {fileID: 6396809954166474979, guid: 80fd0f6ecbc92ac44a61ff47ced5b94c, type: 3}
   muzzle: {fileID: 1136360572193377570}
   muzzleFlashPrefab: {fileID: 5505631384929673268, guid: b285acb567c094a429b6bc2ce71ba6a5, type: 3}

@@ -173,7 +173,7 @@ MonoBehaviour:
   vfx: {fileID: 3901993834372802186, guid: b049538a50764d24a9cb8648f6797c8d, type: 3}
   speed: 10
   lifetime: 0.75
-  damage: 20
+  damage: 35
   spinSpeed: 720
 --- !u!96 &-1511185685374988226
 TrailRenderer:
