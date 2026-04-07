@@ -16,4 +16,4 @@ MonoBehaviour:
   moduleIcon: {fileID: -2864697077534182132, guid: e94f405bace0ae74f832a8d760c9ad04, type: 3}
   filamentCosts:
   - plasticType: 0
-    amount: 4
+    amount: 2

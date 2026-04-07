@@ -109,8 +109,8 @@ MonoBehaviour:
   damage: 20
   isAutomatic: 1
   maxEnergy: 100
-  currentEnergy: 0
-  depleteAmount: 1
+  currentEnergy: 100
+  depleteAmount: 0
   regenRate: 0.5
   range: 1.5
   hitLayer:

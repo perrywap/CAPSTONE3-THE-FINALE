@@ -5477,7 +5477,7 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1087598243}
   m_HandleRect: {fileID: 1087598242}
-  m_Direction: 3
+  m_Direction: 2
   m_Value: 1
   m_Size: 0.58400726
   m_NumberOfSteps: 0
@@ -6345,8 +6345,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 733272281}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.58400726}
+  m_AnchorMin: {x: 0, y: 0.41599274}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -27478,8 +27478,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
-  damageSfx: {fileID: 0}
-  deathSfx: {fileID: 0}
+  damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
+  deathSfx: {fileID: 8300000, guid: 6a51dc2b61181ce46a98653796e9f04d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!1 &36328536122341510
@@ -34526,7 +34526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
   damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
-  deathSfx: {fileID: 0}
+  deathSfx: {fileID: 8300000, guid: 261a539dded9fe84daab22408046b41d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!1 &6082569315147038871
@@ -37129,8 +37129,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   _maxHealth: 150
-  damageSfx: {fileID: 0}
-  deathSfx: {fileID: 0}
+  damageSfx: {fileID: 8300000, guid: 78de5b18ed99ebc4ca84ce0897970285, type: 3}
+  deathSfx: {fileID: 8300000, guid: 6a51dc2b61181ce46a98653796e9f04d, type: 3}
   damageVolume: 0.5
   deathVolume: 0.7
 --- !u!224 &8173578112678403119
