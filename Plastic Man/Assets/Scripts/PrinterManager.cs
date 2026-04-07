@@ -12,15 +12,17 @@ public class PrinterManager : MonoBehaviour
     [Header("Filaments")]
     [SerializeField] private Sprite emptySprite;
     [SerializeField] private Sprite acrylicFilament;
-    [SerializeField] private Sprite polyEthylFilament; 
+    [SerializeField] private Sprite polyEthylFilament;
     [SerializeField] private Sprite polycarbFilament;
-
 
     [Header("Printed Weapon")]
     [SerializeField] private SpriteRenderer bpSprite;
     [SerializeField] private List<FilamentCost> costs = new List<FilamentCost>();
     [SerializeField] private GameObject weapPrefab;
 
+    [Header("UI Elements")]
+    [Tooltip("Drag the Text GameObject that says 'Drag weapon to slot' here")]
+    [SerializeField] private GameObject dragPromptUI;
 
     private Animator animator;
     private GameObject currentPrintedWeapon;
@@ -28,6 +30,40 @@ public class PrinterManager : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+
+        if (dragPromptUI != null) dragPromptUI.SetActive(false);
+    }
+
+    // --- THE ULTIMATE SMART WATCHER ---
+    private void Update()
+    {
+        if (dragPromptUI == null) return;
+
+        // Question 1: Is the player currently looking at the printer menu?
+        if (PrinterInteractable.IsInteracting)
+        {
+            // Question 2: Is there a weapon physically sitting on the printer tray right now?
+            bool weaponIsWaiting = (currentPrintedWeapon != null && currentPrintedWeapon.transform.parent == printedSlot);
+
+            // If a weapon is waiting, make sure the text is ON.
+            if (weaponIsWaiting && !dragPromptUI.activeSelf)
+            {
+                dragPromptUI.SetActive(true);
+            }
+            // If there is NO weapon (because they grabbed it), make sure the text is OFF.
+            else if (!weaponIsWaiting && dragPromptUI.activeSelf)
+            {
+                dragPromptUI.SetActive(false);
+            }
+        }
+        else
+        {
+            // If the player closed the menu and walked away, ALWAYS hide the text.
+            if (dragPromptUI.activeSelf)
+            {
+                dragPromptUI.SetActive(false);
+            }
+        }
     }
 
     public void Print()
@@ -56,10 +92,9 @@ public class PrinterManager : MonoBehaviour
             return;
         }
 
-
+        // The Update loop handles the UI text automatically now!
         if (animator != null)
             animator.SetTrigger("print");
-
     }
 
     public void PrintModule()
@@ -93,7 +128,7 @@ public class PrinterManager : MonoBehaviour
                 filamentSlot2.sprite = polyEthylFilament;
             else if (costs[1].plasticType == PlasticType.Polycarbonate)
                 filamentSlot2.sprite = polycarbFilament;
-        }        
+        }
     }
 
     private void ResetSlots()
@@ -130,6 +165,7 @@ public class PrinterManager : MonoBehaviour
             Destroy(currentPrintedWeapon);
 
         currentPrintedWeapon = Instantiate(weapPrefab, printedSlot.position, Quaternion.identity, printedSlot);
+        // The Update loop will instantly detect this and turn the text ON!
     }
 
     private int GetPlasticAmount(PlasticType type)
