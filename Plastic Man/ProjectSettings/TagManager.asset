@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - PrinterPanel
   - Generator
+  - HeadModule
+  - BodyModule
   layers:
   - Default
   - TransparentFX

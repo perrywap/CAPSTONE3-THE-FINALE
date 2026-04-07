@@ -232,6 +232,10 @@ MonoBehaviour:
   fireRate: 0.35
   damage: 15
   isAutomatic: 0
+  maxEnergy: 100
+  currentEnergy: 0
+  depleteAmount: 3
+  regenRate: 12
   projectilePrefab: {fileID: 6396809954166474979, guid: f940f818a2b7890499ae060585668ba5, type: 3}
   muzzle: {fileID: 1136360572193377570}
   muzzleFlashPrefab: {fileID: 5505631384929673268, guid: b285acb567c094a429b6bc2ce71ba6a5, type: 3}

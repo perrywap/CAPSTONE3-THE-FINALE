@@ -15,6 +15,8 @@ public class BossEnemy : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioClip damageSfx;
     [SerializeField] private AudioClip deathSfx;
+    [SerializeField] private AudioClip dashSfx;
+    [SerializeField] private AudioClip swordSfx;
     [SerializeField] private float damageVolume = 0.5f;
     [SerializeField] private float deathVolume = 0.7f;
 
@@ -35,7 +37,7 @@ public class BossEnemy : MonoBehaviour
     public float dashDuration = 0.4f;
 
     [Header("True Ending Visuals")]
-    public Sprite deadBossSprite; // <-- NEW: Drag your dead boss artwork here!
+    public Sprite deadBossSprite;
 
     private NavMeshAgent agent;
     private GameObject player;
@@ -50,6 +52,7 @@ public class BossEnemy : MonoBehaviour
     public float dashSpeedMultiplier = 3f;
 
     private Coroutine chaseRoutine;
+    private bool _isDead = false;
 
     void Start()
     {
@@ -75,7 +78,7 @@ public class BossEnemy : MonoBehaviour
 
     void Update()
     {
-        if (player == null || isAttacking) return;
+        if (player == null || isAttacking || _isDead) return;
         CheckPhaseTransition();
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
@@ -99,7 +102,6 @@ public class BossEnemy : MonoBehaviour
             isPhaseTwo = true;
             attackCooldown *= phaseTwoCooldownMultiplier;
             spriteRenderer.color = Color.red;
-            Debug.Log("<color=red><b>PHASE 2:</b> Boss is faster and relentless!</color>");
         }
     }
 
@@ -118,7 +120,7 @@ public class BossEnemy : MonoBehaviour
     void StartAttack()
     {
         isAttacking = true;
-        agent.isStopped = true;
+        if (agent != null) agent.isStopped = true;
 
         if (abilityQueue.Count == 0) FillAbilityQueue();
 
@@ -137,17 +139,18 @@ public class BossEnemy : MonoBehaviour
 
     public void Shoot()
     {
+        if (_isDead) return;
         anim.SetBool("IsShooting", true);
         if (bulletPrefab && firePoint) Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         Invoke("ResetAttackState", 0.3f);
     }
 
-    public void ShootDone() { anim.SetBool("IsShooting", false); }
-    public void ExecuteShoot() { anim.SetTrigger("Aim"); }
+    public void ShootDone() { if (!_isDead) anim.SetBool("IsShooting", false); }
+    public void ExecuteShoot() { if (!_isDead) anim.SetTrigger("Aim"); }
 
     void ExecuteGrenade()
     {
-        if (grenadePrefab == null || firePoint == null || player == null) return;
+        if (grenadePrefab == null || firePoint == null || player == null || _isDead) return;
 
         Vector3 targetPos = player.transform.position;
         targetPos.z = 0f;
@@ -160,11 +163,12 @@ public class BossEnemy : MonoBehaviour
         ResetAttackState();
     }
 
-    public void ExecuteGrenadeDone() { anim.SetBool("IsThrowing", false); }
-    public void SwordAttackDone() { anim.SetBool("SwordAttack", false); }
+    public void ExecuteGrenadeDone() { if (!_isDead) anim.SetBool("IsThrowing", false); }
+    public void SwordAttackDone() { if (!_isDead) anim.SetBool("SwordAttack", false); }
 
     IEnumerator ExecuteDash(bool includeSlice)
     {
+        SfxManager.instance.PlaySFX(swordSfx, 0.7f);
         anim.SetBool("SwordAttack", true);
         if (anim.GetBool("IsShooting") == true) yield return null;
 
@@ -175,6 +179,7 @@ public class BossEnemy : MonoBehaviour
 
         while (Time.time < startTime + dashDuration)
         {
+            if (_isDead) yield break;
             transform.position += dashDir * dashSpeed * Time.deltaTime;
             yield return null;
         }
@@ -185,6 +190,8 @@ public class BossEnemy : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if (_isDead) return;
+
         currentHealth -= damage;
         StartCoroutine(HitFlash());
 
@@ -199,13 +206,15 @@ public class BossEnemy : MonoBehaviour
         Color baseColor = isPhaseTwo ? Color.red : Color.white;
         spriteRenderer.color = Color.yellow;
         yield return new WaitForSeconds(0.05f);
-        spriteRenderer.color = baseColor;
+        if (!_isDead) spriteRenderer.color = baseColor;
     }
 
     void Die()
     {
-        Debug.Log("<color=yellow>Boss Defeated!</color>");
-        StopAllCoroutines(); // Instantly stops dashing/chasing!
+        if (_isDead) return;
+        _isDead = true;
+
+        StopAllCoroutines();
 
         if (deathSfx != null && SfxManager.instance != null)
             SfxManager.instance.PlaySFX(deathSfx, deathVolume);
@@ -216,58 +225,76 @@ public class BossEnemy : MonoBehaviour
         EnemySpawner spawner = Object.FindFirstObjectByType<EnemySpawner>();
         if (spawner != null) spawner.RemoveEnemyFromList(gameObject);
 
-        // --- THE TRUE ENDING TRIGGER ---
         if (GameManager.Instance != null && GameManager.Instance.trueEndingSequence != null)
         {
-            // 1. Permanently shut down all combat logic
-            agent.enabled = false;
-            GetComponent<Collider2D>().enabled = false;
-            anim.enabled = false;
+            if (agent != null) agent.enabled = false;
 
-            // 2. Snap to the dead sprite
-            if (deadBossSprite != null) spriteRenderer.sprite = deadBossSprite;
-            spriteRenderer.color = Color.white;
+            Collider2D[] allColliders = GetComponentsInChildren<Collider2D>();
+            foreach (Collider2D col in allColliders)
+            {
+                col.enabled = false;
+            }
 
-            // 3. Command the GameManager to start the cinematic using this exact location
-            GameManager.Instance.TriggerTrueEnding(this.transform);
-
-            // 4. Turn off this script permanently
-            this.enabled = false;
+            if (anim != null) anim.SetTrigger("Kneel");
         }
         else
         {
-            // Failsafe for normal levels
             if (GameManager.Instance != null) GameManager.Instance.UnregisterEnemy(gameObject);
             Destroy(gameObject);
         }
     }
 
+    public void KneelAnimationDone()
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.TriggerTrueEnding(this.transform);
+        }
+    }
+
+    public void DestroyedAnimationDone()
+    {
+        if (anim != null) anim.enabled = false;
+
+        if (deadBossSprite != null && spriteRenderer != null)
+        {
+            spriteRenderer.sprite = deadBossSprite;
+            spriteRenderer.color = Color.white;
+        }
+
+        this.enabled = false;
+    }
+
     void ChasePlayer()
     {
-        if (chaseRoutine == null) chaseRoutine = StartCoroutine(DashChase());
+        if (chaseRoutine == null && !_isDead) chaseRoutine = StartCoroutine(DashChase());
     }
 
     IEnumerator DashChase()
     {
+        SfxManager.instance.PlaySFX(damageSfx, 0.5f);
         anim.SetBool("IsAttacking", true);
-        while (player != null)
+        while (player != null && !_isDead)
         {
-            agent.isStopped = false;
-            agent.speed = movementSpeed * dashSpeedMultiplier;
-            agent.SetDestination(player.transform.position);
+            if (agent != null)
+            {
+                agent.isStopped = false;
+                agent.speed = movementSpeed * dashSpeedMultiplier;
+                agent.SetDestination(player.transform.position);
+            }
             yield return new WaitForSeconds(dashTime);
 
-            agent.isStopped = true;
+            if (agent != null) agent.isStopped = true;
             yield return new WaitForSeconds(stopTime);
         }
         chaseRoutine = null;
     }
 
-    void ResetAttackState() { isAttacking = false; }
+    void ResetAttackState() { if (!_isDead) isAttacking = false; }
 
     void FlipSprite()
     {
-        if (isAttacking) return;
+        if (isAttacking || _isDead) return;
         if (agent.velocity.x > 0.1f) spriteRenderer.flipX = false;
         else if (agent.velocity.x < -0.1f) spriteRenderer.flipX = true;
     }

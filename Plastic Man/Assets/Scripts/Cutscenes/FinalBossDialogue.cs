@@ -11,7 +11,6 @@ public class FinalBossDialogue : MonoBehaviour
     [SerializeField] private GameObject _questIndicator;
 
     [Header("Story Progression Lock")]
-    [Tooltip("If true, the boss is ready from the start. If false, it waits for UnlockBoss() to be called.")]
     [SerializeField] private bool _isUnlocked = false;
 
     [Header("Dialogue Settings")]
@@ -20,14 +19,11 @@ public class FinalBossDialogue : MonoBehaviour
     [SerializeField] private float _typingSpeed = 0.05f;
 
     [Header("Animator Settings")]
-    [Tooltip("The Animator attached to the Hologram.")]
     [SerializeField] private Animator _npcAnimator;
-    [Tooltip("A Trigger in the Animator to play the teleport/summon out animation.")]
     [SerializeField] private string _teleportTriggerName = "TeleportOut";
 
     [Header("Post-Summon Visuals")]
     [SerializeField] private SpriteRenderer _npcSpriteRenderer;
-    [Tooltip("The sprite of the broken/empty statue to leave behind.")]
     [SerializeField] private Sprite _brokenStatueSprite;
 
     [Header("Boss Summon Settings")]
@@ -59,7 +55,6 @@ public class FinalBossDialogue : MonoBehaviour
 
         if (_speechBubbleCanvas != null) _speechBubbleCanvas.SetActive(false);
         if (_interactPrompt != null) _interactPrompt.SetActive(false);
-
         if (_questIndicator != null) _questIndicator.SetActive(_isUnlocked);
     }
 
@@ -69,8 +64,6 @@ public class FinalBossDialogue : MonoBehaviour
 
         if (_isDialogueActive)
         {
-            if (_interactPrompt != null && _interactPrompt.activeSelf) _interactPrompt.SetActive(false);
-
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (_isTyping) CompleteTextInstantly();
@@ -82,7 +75,6 @@ public class FinalBossDialogue : MonoBehaviour
             if (_playerTransform != null)
             {
                 float distance = Vector2.Distance(transform.position, _playerTransform.position);
-
                 if (distance <= _interactRadius)
                 {
                     if (_interactPrompt != null && !_interactPrompt.activeSelf) _interactPrompt.SetActive(true);
@@ -107,13 +99,21 @@ public class FinalBossDialogue : MonoBehaviour
         NPCDialogue.IsTalking = true;
         Time.timeScale = 0f;
 
+        if (_playerTransform != null)
+        {
+            Rigidbody2D rb = _playerTransform.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.linearVelocity = Vector2.zero;
+                rb.angularVelocity = 0f;
+            }
+        }
+
         if (_interactPrompt != null) _interactPrompt.SetActive(false);
         if (_questIndicator != null) _questIndicator.SetActive(false);
         if (_speechBubbleCanvas != null) _speechBubbleCanvas.SetActive(true);
 
         _isDialogueActive = true;
-        _currentSequenceIndex = 0;
-
         LoadSequence();
     }
 
@@ -137,11 +137,9 @@ public class FinalBossDialogue : MonoBehaviour
         for (int i = firstChar; i <= lastChar; i++)
         {
             while (GameManager.Instance != null && GameManager.Instance.IsPaused) yield return null;
-
             _dialogueText.maxVisibleCharacters = i + 1;
             yield return new WaitForSecondsRealtime(_typingSpeed);
         }
-
         _isTyping = false;
     }
 
@@ -177,7 +175,6 @@ public class FinalBossDialogue : MonoBehaviour
         _isTyping = false;
         _isDialogueActive = false;
         if (_speechBubbleCanvas != null) _speechBubbleCanvas.SetActive(false);
-
         _hasTalkedBefore = true;
         StartCoroutine(SummonSequence());
     }
@@ -185,13 +182,13 @@ public class FinalBossDialogue : MonoBehaviour
     private IEnumerator SummonSequence()
     {
         if (_npcAnimator != null && !string.IsNullOrEmpty(_teleportTriggerName))
-        {
             _npcAnimator.SetTrigger(_teleportTriggerName);
-        }
 
         yield return new WaitForSecondsRealtime(1.5f);
 
         if (_cameraFollowScript != null) _cameraFollowScript.enabled = false;
+
+        // We memorize the EXACT offset and position here!
         Vector3 startPos = _mainCamera.transform.position;
 
         GameObject spawnedBoss = null;
@@ -205,17 +202,14 @@ public class FinalBossDialogue : MonoBehaviour
                 _mainCamera.transform.position = Vector3.MoveTowards(_mainCamera.transform.position, targetPos, _panSpeed * Time.unscaledDeltaTime);
                 yield return null;
             }
+            _mainCamera.transform.position = targetPos; // Hard snap
 
             yield return new WaitForSecondsRealtime(0.5f);
 
             if (_bossPrefab != null)
             {
                 spawnedBoss = Instantiate(_bossPrefab, _bossSpawnLocation.position, Quaternion.identity);
-
-                if (GameManager.Instance != null)
-                {
-                    GameManager.Instance.RegisterEnemy(spawnedBoss);
-                }
+                if (GameManager.Instance != null) GameManager.Instance.RegisterEnemy(spawnedBoss);
 
                 if (_playerTransform != null && spawnedBoss.transform.position.x > _playerTransform.position.x)
                 {
@@ -223,36 +217,31 @@ public class FinalBossDialogue : MonoBehaviour
                     spawnedBoss.transform.rotation = Quaternion.Euler(0, 180, 0);
                 }
             }
-
             yield return new WaitForSecondsRealtime(2f);
         }
 
-        if (_playerTransform != null)
+        // --- THE ANTI-TWITCH FIX ---
+        // Pan directly back to the original camera position, keeping all custom offsets!
+        while (Vector3.Distance(_mainCamera.transform.position, startPos) > 0.01f)
         {
-            Vector3 playerPos = new Vector3(_playerTransform.position.x, _playerTransform.position.y, startPos.z);
-            while (Vector3.Distance(_mainCamera.transform.position, playerPos) > 0.01f)
-            {
-                _mainCamera.transform.position = Vector3.MoveTowards(_mainCamera.transform.position, playerPos, _panSpeed * Time.unscaledDeltaTime);
-                yield return null;
-            }
+            _mainCamera.transform.position = Vector3.MoveTowards(_mainCamera.transform.position, startPos, _panSpeed * Time.unscaledDeltaTime);
+            yield return null;
         }
+
+        // Hard snap
+        _mainCamera.transform.position = startPos;
 
         if (needsTemporaryFlip && spawnedBoss != null)
-        {
             spawnedBoss.transform.rotation = Quaternion.identity;
-        }
 
         if (_cameraFollowScript != null) _cameraFollowScript.enabled = true;
+
         Time.timeScale = 1f;
         NPCDialogue.IsTalking = false;
 
-        // --- THE FIX ---
-        // Instead of hiding the object, we just freeze the animator and swap to the broken sprite!
         if (_npcAnimator != null) _npcAnimator.enabled = false;
         if (_npcSpriteRenderer != null && _brokenStatueSprite != null)
-        {
             _npcSpriteRenderer.sprite = _brokenStatueSprite;
-        }
     }
 
     private void OnDrawGizmos()

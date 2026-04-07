@@ -1375,7 +1375,9 @@ MonoBehaviour:
   _winPanel: {fileID: 1668383448206784496}
   _levelBoss: {fileID: 7783820794334651571}
   _enemies: []
+  _midLevelCutscene: {fileID: 0}
   _endLevelCutscene: {fileID: 635064050}
+  _trueEndingSequence: {fileID: 0}
 --- !u!4 &201983834
 Transform:
   m_ObjectHideFlags: 0
@@ -13554,10 +13556,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: 2728265206295449993, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
-      propertyPath: maxHealth
-      value: 2000
-      objectReference: {fileID: 0}
     - target: {fileID: 6109194982712948880, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.915356
@@ -13597,10 +13595,6 @@ PrefabInstance:
     - target: {fileID: 6109194982712948880, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9051449062607133440, guid: dc6f05dd27177ce4886cde8535f30246, type: 3}
-      propertyPath: m_Volume
-      value: 0.327
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13761,6 +13755,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796746458}
   m_CullTransparentMesh: 1
+--- !u!1001 &1836913278
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4298873075404019450, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+      propertyPath: m_Name
+      value: Level 1 slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620837613927415655, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.068913
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620837613927415655, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 24.932766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620837613927415655, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620837613927415655, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620837613927415655, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620837613927415655, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620837613927415655, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620837613927415655, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620837613927415655, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620837613927415655, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dad96731e4b51ff4fa0be256002997fe, type: 3}
 --- !u!1 &1907690775
 GameObject:
   m_ObjectHideFlags: 0
@@ -16465,6 +16516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponSlot
   slotIndex: 3
+  equipOnDrop: 1
 --- !u!114 &868094605173407803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16799,6 +16851,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1748852602615044287, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
+      propertyPath: damagedSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 230bb46d523a03c4799fbf6a8fdff2ce, type: 3}
     - target: {fileID: 1748852602615044287, guid: a7292bb6d03015b4ab5ca36c29e88242, type: 3}
       propertyPath: _gameOverPanel
       value: 
@@ -21004,12 +21060,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponUI
   weapons:
+  - {fileID: 1710860951202350425, guid: e32c0fec66c2e914ebe3e1b1a0278c06, type: 3}
   - {fileID: 4208481742703032022, guid: 9eb1972074313464ca36e25958ad800d, type: 3}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   slots:
-  - {fileID: 2624334355798386321}
+  - {fileID: 6678776078463175857, guid: e32c0fec66c2e914ebe3e1b1a0278c06, type: 3}
   - {fileID: 7160838118823423704}
   - {fileID: 7781100444637764034}
   - {fileID: 1911583208732908288}
@@ -21019,7 +21075,9 @@ MonoBehaviour:
   - {fileID: 3822153816906625357}
   - {fileID: 402108580947470942}
   player: {fileID: 0}
+  energyBars: []
   popupValue: 20
+  activeIndex: -1
 --- !u!114 &3925405457298055014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22548,6 +22606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponSlot
   slotIndex: 1
+  equipOnDrop: 1
 --- !u!223 &4897512422197053989
 Canvas:
   m_ObjectHideFlags: 0
@@ -23405,8 +23464,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrinterManager
   printedSlot: {fileID: 3401893701586803039}
-  moduleSlot: {fileID: 4320066604468706235}
-  filamentSlot: {fileID: 8271544328443593109}
+  filamentSlot1: {fileID: 0}
+  filamentSlot2: {fileID: 0}
+  emptySprite: {fileID: 0}
+  acrylicFilament: {fileID: 0}
+  polyEthylFilament: {fileID: 0}
+  polycarbFilament: {fileID: 0}
   bpSprite: {fileID: 2475077616842384856}
   costs: []
   weapPrefab: {fileID: 0}
@@ -24710,6 +24773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponSlot
   slotIndex: 0
+  equipOnDrop: 1
 --- !u!212 &6710933357128644506
 SpriteRenderer:
   serializedVersion: 2
@@ -27488,6 +27552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponSlot
   slotIndex: 2
+  equipOnDrop: 1
 --- !u!114 &8635363811009155049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28477,3 +28542,4 @@ SceneRoots:
   - {fileID: 199838773}
   - {fileID: 45808217}
   - {fileID: 1698197943}
+  - {fileID: 1836913278}

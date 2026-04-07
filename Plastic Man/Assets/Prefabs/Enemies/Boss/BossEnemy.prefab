@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 954224604674973199}
   - component: {fileID: -5746543693188174616}
   - component: {fileID: 1264432524704298224}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BossEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -371,7 +371,8 @@ MonoBehaviour:
   phaseTwoCooldownMultiplier: 0.6
   damageSfx: {fileID: 8300000, guid: 5fc7eda0235ffee4f8776339649f9eb3, type: 3}
   deathSfx: {fileID: 0}
-  SwordSfx: {fileID: 8300000, guid: eb21f089079ebea429d5a7a66ed73cea, type: 3}
+  dashSfx: {fileID: 0}
+  swordSfx: {fileID: 0}
   damageVolume: 0.5
   deathVolume: 0.7
   movementSpeed: 3.5
@@ -384,7 +385,7 @@ MonoBehaviour:
   attackCooldown: 3
   dashSpeed: 15
   dashDuration: 0.3
-  deadBossSprite: {fileID: -5712444473150110338, guid: 90187d1d0fc996d4793a02946df83b6f, type: 3}
+  deadBossSprite: {fileID: 1810470051378425243, guid: 0e60b357ce2b7d24bbf10754c0be6a3c, type: 3}
   dashTime: 0.2
   stopTime: 0.3
   dashSpeedMultiplier: 3

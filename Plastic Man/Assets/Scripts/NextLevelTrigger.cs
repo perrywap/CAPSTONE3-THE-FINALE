@@ -25,7 +25,17 @@ public class NextLevelTrigger : MonoBehaviour
 
         if(player != null )
         {
-            Debug.Log("next level");
+            SceneManager.LoadScene(nextScene);
         }
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1f; 
+        SceneManager.LoadScene("MainMenu");
     }
 }

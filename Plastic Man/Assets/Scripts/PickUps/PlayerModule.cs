@@ -1,13 +1,22 @@
 using UnityEngine;
 
+public enum PlayerModuleType
+{
+    HEAD,
+    BODY,
+}
+
 public class PlayerModule : MonoBehaviour
 {
-    [Header("Armor Stats")]
-    [SerializeField] private float _bonusHealth = 15f;
-    public float BonusHealth => _bonusHealth;
-
+    [SerializeField] private PlayerModuleType moduleType;
+    [SerializeField] private ModuleData moduleData;
     [SerializeField] private Sprite[] spriteDirections;
     [SerializeField] private SpriteRenderer moduleSprite;
+    [SerializeField] private float increaseHealthAmount;
+
+    public PlayerModuleType ModuleType => moduleType;
+    public ModuleData ModuleData => moduleData;
+    public Sprite IconSprite => moduleData != null ? moduleData.bpSprite : null;
 
     private void Update()
     {
@@ -34,5 +43,25 @@ public class PlayerModule : MonoBehaviour
             moduleSprite.sprite = spriteDirections[6];
         else if (angle >= 292.5f && angle < 337.5f)
             moduleSprite.sprite = spriteDirections[7];
+    }
+
+    public void OnEquip()
+    {
+        if (PlayerHealth.Instance == null)
+            return;
+
+        PlayerHealth.Instance.MaxHealth += increaseHealthAmount;
+        PlayerHealth.Instance.CurrentHealth += increaseHealthAmount;
+    }
+
+    public void OnUnequip()
+    {
+        if (PlayerHealth.Instance == null)
+            return;
+
+        PlayerHealth.Instance.MaxHealth -= increaseHealthAmount;
+
+        if (PlayerHealth.Instance.CurrentHealth > PlayerHealth.Instance.MaxHealth)
+            PlayerHealth.Instance.CurrentHealth = PlayerHealth.Instance.MaxHealth;
     }
 }

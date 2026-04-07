@@ -6,12 +6,12 @@ public class Sword : WeaponBase
     [SerializeField] private LayerMask hitLayer;
 
     [Header("Audio")]
-    [SerializeField] private AudioClip swingSfx; 
+    [SerializeField] private AudioClip swingSfx;
     [SerializeField] private float swingVolume = 0.5f;
 
     protected override void Fire(Vector3 origin, Vector3 direction)
     {
-   
+
         if (swingSfx != null)
         {
             SfxManager.instance.PlaySFX(swingSfx, swingVolume);
@@ -22,20 +22,22 @@ public class Sword : WeaponBase
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(hitPosition, hitRadius, hitLayer);
 
-        //foreach (Collider2D hit in hits)
-        //{
-        //    hit.GetComponent<EnemyHealth>().TakeDamage(damage);
-        //    Debug.Log("Slashed");
-        //}
-
         foreach (Collider2D hit in hits)
         {
+            // 1. First, check if we hit a normal enemy
             EnemyHealth enemy = hit.GetComponentInParent<EnemyHealth>();
-
             if (enemy != null)
             {
                 enemy.TakeDamage(damage);
-                Debug.Log("Slashed");
+                Debug.Log("Slashed Normal Enemy");
+            }
+
+            // 2. Next, check if we hit the Boss!
+            BossEnemy boss = hit.GetComponentInParent<BossEnemy>();
+            if (boss != null)
+            {
+                boss.TakeDamage(damage);
+                Debug.Log("Slashed the Boss!");
             }
         }
 

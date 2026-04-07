@@ -41,8 +41,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2912846576692131108}
   m_Layer: 0
-  m_Name: PlayerModule
-  m_TagString: Untagged
+  m_Name: HeadModule
+  m_TagString: HeadModule
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 1871546582162279677}
   m_Layer: 0
   m_Name: BodyModule
-  m_TagString: Untagged
+  m_TagString: BodyModule
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 3585979852734191622}
   - component: {fileID: 3260932154076827769}
   - component: {fileID: 3140495259404842674}
+  - component: {fileID: 2427758844201486549}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -390,6 +391,7 @@ MonoBehaviour:
   dashCooldown: 4
   dashSfx: {fileID: 0}
   dashVolume: 0.5
+  dashUI: {fileID: 0}
   afterImagePrefab: {fileID: 8045429306492461762, guid: f3094a468da3154498c1792bd95a788d, type: 3}
   afterImageSpacing: 0.05
 --- !u!114 &3140495259404842674
@@ -408,3 +410,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 58a77480e5766b444acb68fc6c3dfcbd, type: 3}
   footStepsVolume: 0.1
   isMoving: 0
+--- !u!114 &2427758844201486549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7778651085268212264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd12fb97ed2d0c41874866604f85700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerModuleManager
+  headModuleHolder: {fileID: 2912846576692131108}
+  bodyModuleHolder: {fileID: 1871546582162279677}
