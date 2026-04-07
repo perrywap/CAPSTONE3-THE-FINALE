@@ -2875,6 +2875,7 @@ MonoBehaviour:
   _waitBeforeFade: 3
   _fadeDuration: 2
   _blackFadeScreen: {fileID: 242586871}
+  _creditsSceneName: Credits
   _typingSpeed: 0.05
   _dialogueSequence:
   - DialogueCanvas: {fileID: 2074373771}
@@ -41192,7 +41193,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 500}
+  m_SizeDelta: {x: 560, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7054820008897546721
 CanvasRenderer:
